@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmBattle.Designer.vb">
+      <DependentUpon>frmBattle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBattle.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmGym1.Designer.vb">
       <DependentUpon>frmGym1.vb</DependentUpon>
     </Compile>
@@ -157,6 +163,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmBattle.resx">
+      <DependentUpon>frmBattle.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBattleSelect.resx">
       <DependentUpon>frmBattleSelect.vb</DependentUpon>
     </EmbeddedResource>
