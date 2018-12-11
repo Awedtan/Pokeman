@@ -73,10 +73,52 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmGym1.Designer.vb">
+      <DependentUpon>frmGym1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGym1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBattleSelect.Designer.vb">
+      <DependentUpon>frmBattleSelect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBattleSelect.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmBox.Designer.vb">
       <DependentUpon>frmBox.vb</DependentUpon>
     </Compile>
     <Compile Include="frmBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGym2.Designer.vb">
+      <DependentUpon>frmGym2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGym2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGym3.Designer.vb">
+      <DependentUpon>frmGym3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGym3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGym4.Designer.vb">
+      <DependentUpon>frmGym4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGym4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGym5.Designer.vb">
+      <DependentUpon>frmGym5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGym5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHauntedHouse.Designer.vb">
+      <DependentUpon>frmHauntedHouse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHauntedHouse.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMainMenu.vb">
@@ -84,6 +126,12 @@
     </Compile>
     <Compile Include="frmMainMenu.Designer.vb">
       <DependentUpon>frmMainMenu.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMewtwoEncounter.Designer.vb">
+      <DependentUpon>frmMewtwoEncounter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMewtwoEncounter.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -109,6 +157,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmBattleSelect.resx">
+      <DependentUpon>frmBattleSelect.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBox.resx">
       <DependentUpon>frmBox.vb</DependentUpon>
     </EmbeddedResource>
