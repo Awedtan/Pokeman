@@ -1,0 +1,29 @@
+C:\Users\danie\source\repos\Pokeman Menu\Pokeman\bin\Debug\Pokeman.exe.config
+C:\Users\danie\source\repos\Pokeman Menu\Pokeman\bin\Debug\Pokeman.exe
+C:\Users\danie\source\repos\Pokeman Menu\Pokeman\bin\Debug\Pokeman.pdb
+C:\Users\danie\source\repos\Pokeman Menu\Pokeman\bin\Debug\Pokeman.xml
+C:\Users\danie\source\repos\Pokeman Menu\Pokeman\obj\Debug\Pokeman.vbprojAssemblyReference.cache
+C:\Users\danie\source\repos\Pokeman Menu\Pokeman\obj\Debug\Pokeman.MainMenu.resources
+C:\Users\danie\source\repos\Pokeman Menu\Pokeman\obj\Debug\Pokeman.Resources.resources
+C:\Users\danie\source\repos\Pokeman Menu\Pokeman\obj\Debug\Pokeman.frmShopMenu.resources
+C:\Users\danie\source\repos\Pokeman Menu\Pokeman\obj\Debug\Pokeman.vbproj.GenerateResource.cache
+C:\Users\danie\source\repos\Pokeman Menu\Pokeman\obj\Debug\Pokeman.vbproj.CoreCompileInputs.cache
+C:\Users\danie\source\repos\Pokeman Menu\Pokeman\obj\Debug\Pokeman.exe
+C:\Users\danie\source\repos\Pokeman Menu\Pokeman\obj\Debug\Pokeman.xml
+C:\Users\danie\source\repos\Pokeman Menu\Pokeman\obj\Debug\Pokeman.pdb
+C:\Users\danie\source\repos\Pokeman Menu\Pokeman\obj\Debug\Pokeman.frmBox.resources
+C:\Users\samue_000\Desktop\Pokeman\bin\Debug\Pokeman.exe.config
+C:\Users\samue_000\Desktop\Pokeman\bin\Debug\Pokeman.exe
+C:\Users\samue_000\Desktop\Pokeman\bin\Debug\Pokeman.pdb
+C:\Users\samue_000\Desktop\Pokeman\bin\Debug\Pokeman.xml
+C:\Users\samue_000\Desktop\Pokeman\obj\Debug\Pokeman.vbprojAssemblyReference.cache
+C:\Users\samue_000\Desktop\Pokeman\obj\Debug\Pokeman.frmBattleSelect.resources
+C:\Users\samue_000\Desktop\Pokeman\obj\Debug\Pokeman.frmBox.resources
+C:\Users\samue_000\Desktop\Pokeman\obj\Debug\Pokeman.MainMenu.resources
+C:\Users\samue_000\Desktop\Pokeman\obj\Debug\Pokeman.Resources.resources
+C:\Users\samue_000\Desktop\Pokeman\obj\Debug\Pokeman.frmShopMenu.resources
+C:\Users\samue_000\Desktop\Pokeman\obj\Debug\Pokeman.vbproj.GenerateResource.cache
+C:\Users\samue_000\Desktop\Pokeman\obj\Debug\Pokeman.vbproj.CoreCompileInputs.cache
+C:\Users\samue_000\Desktop\Pokeman\obj\Debug\Pokeman.exe
+C:\Users\samue_000\Desktop\Pokeman\obj\Debug\Pokeman.xml
+C:\Users\samue_000\Desktop\Pokeman\obj\Debug\Pokeman.pdb
