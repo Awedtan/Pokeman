@@ -1,5 +1,5 @@
 ﻿Public Class frmBox
 
-	Dim test As Integer = frm
+	Dim test As String = frmMainMenu.Bulbasaur(1)
 
 End Class
