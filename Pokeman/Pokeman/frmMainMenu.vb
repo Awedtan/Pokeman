@@ -8,7 +8,7 @@
 	Dim BattleSelect As New frmBattleSelect
 
 
-	'Pokeman name, health, attack, defense, obtained, selected
+	'Pokeman name, health, attack, defense, obtained, selected, type1, type 2
 
 	'Special cases:
 	'Nidoran(m&f), Farfetch'd, Mr. Mime
