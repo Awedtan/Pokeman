@@ -298,7 +298,7 @@ Partial Class frmBattleSelect
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1084, 366)
+        Me.ClientSize = New System.Drawing.Size(1101, 366)
         Me.Controls.Add(Me.Button27)
         Me.Controls.Add(Me.Button26)
         Me.Controls.Add(Me.Button25)

@@ -22,9 +22,41 @@ Partial Class frmGym5
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmGym5))
+        Me.picPlayer = New System.Windows.Forms.PictureBox()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        CType(Me.picPlayer, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'picPlayer
+        '
+        Me.picPlayer.Image = CType(resources.GetObject("picPlayer.Image"), System.Drawing.Image)
+        Me.picPlayer.Location = New System.Drawing.Point(382, 203)
+        Me.picPlayer.Name = "picPlayer"
+        Me.picPlayer.Size = New System.Drawing.Size(37, 44)
+        Me.picPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.picPlayer.TabIndex = 1
+        Me.picPlayer.TabStop = False
+        '
+        'Timer1
+        '
+        Me.Timer1.Enabled = True
+        Me.Timer1.Interval = 5
+        '
+        'frmGym5
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.picPlayer)
+        Me.Name = "frmGym5"
         Me.Text = "frmGym5"
+        CType(Me.picPlayer, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+
     End Sub
+
+    Friend WithEvents picPlayer As PictureBox
+    Friend WithEvents Timer1 As Timer
 End Class
