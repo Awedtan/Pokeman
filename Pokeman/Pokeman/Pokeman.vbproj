@@ -73,12 +73,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmBattle.Designer.vb">
-      <DependentUpon>frmBattle.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmBattle.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="frmGym1.Designer.vb">
       <DependentUpon>frmGym1.vb</DependentUpon>
     </Compile>
@@ -163,17 +157,35 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frmBattle.resx">
-      <DependentUpon>frmBattle.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmBattleSelect.resx">
       <DependentUpon>frmBattleSelect.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBox.resx">
       <DependentUpon>frmBox.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmGym1.resx">
+      <DependentUpon>frmGym1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGym2.resx">
+      <DependentUpon>frmGym2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGym3.resx">
+      <DependentUpon>frmGym3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGym4.resx">
+      <DependentUpon>frmGym4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGym5.resx">
+      <DependentUpon>frmGym5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHauntedHouse.resx">
+      <DependentUpon>frmHauntedHouse.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMainMenu.resx">
       <DependentUpon>frmMainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMewtwoEncounter.resx">
+      <DependentUpon>frmMewtwoEncounter.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
