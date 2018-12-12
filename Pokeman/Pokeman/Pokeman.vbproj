@@ -121,6 +121,12 @@
     <Compile Include="frmHauntedHouse.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmInBattle.Designer.vb">
+      <DependentUpon>frmInBattle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInBattle.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmMainMenu.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmHauntedHouse.resx">
       <DependentUpon>frmHauntedHouse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInBattle.resx">
+      <DependentUpon>frmInBattle.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMainMenu.resx">
       <DependentUpon>frmMainMenu.vb</DependentUpon>

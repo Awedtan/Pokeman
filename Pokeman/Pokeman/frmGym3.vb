@@ -4,7 +4,7 @@
     Dim leftp As Boolean = False
     Dim rightp As Boolean = False
     Dim loc As Point
-    Private Sub frmGym1_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
+    Private Sub frmGym1_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
         Select Case e.KeyCode
             Case Keys.W
                 up = True
@@ -17,7 +17,7 @@
         End Select
     End Sub
 
-    Private Sub frmGym1_KeyUp(sender As Object, e As KeyEventArgs) Handles MyBase.KeyUp
+    Private Sub frmGym1_KeyUp(sender As Object, e As KeyEventArgs) Handles Me.KeyUp
         Select Case e.KeyCode
             Case Keys.W
                 up = False
@@ -31,21 +31,47 @@
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+
         If up = True Then
             loc = New Point(picPlayer.Location.X, picPlayer.Location.Y - 3)
             picPlayer.Location = loc
+            For Each picturebox In Me.Controls
+                If picturebox IsNot picPlayer AndAlso picPlayer.Bounds.IntersectsWith(picturebox.Bounds) Then
+                    loc = New Point(picPlayer.Location.X, picPlayer.Location.Y + 3)
+                    picPlayer.Location = loc
+                End If
+            Next
         End If
         If leftp = True Then
             loc = New Point(picPlayer.Location.X - 3, picPlayer.Location.Y)
             picPlayer.Location = loc
+            For Each picturebox In Me.Controls
+                If picturebox IsNot picPlayer AndAlso picPlayer.Bounds.IntersectsWith(picturebox.Bounds) Then
+                    loc = New Point(picPlayer.Location.X + 3, picPlayer.Location.Y)
+                    picPlayer.Location = loc
+                End If
+            Next
         End If
         If rightp = True Then
             loc = New Point(picPlayer.Location.X + 3, picPlayer.Location.Y)
             picPlayer.Location = loc
+            For Each picturebox In Me.Controls
+                If picturebox IsNot picPlayer AndAlso picPlayer.Bounds.IntersectsWith(picturebox.Bounds) Then
+                    loc = New Point(picPlayer.Location.X - 3, picPlayer.Location.Y)
+                    picPlayer.Location = loc
+                End If
+            Next
         End If
         If down = True Then
             loc = New Point(picPlayer.Location.X, picPlayer.Location.Y + 3)
             picPlayer.Location = loc
+            For Each picturebox In Me.Controls
+                If picturebox IsNot picPlayer AndAlso picPlayer.Bounds.IntersectsWith(picturebox.Bounds) Then
+                    loc = New Point(picPlayer.Location.X, picPlayer.Location.Y - 3)
+                    picPlayer.Location = loc
+                End If
+            Next
         End If
+
     End Sub
 End Class

@@ -37,7 +37,7 @@
             picPlayer.Location = loc
             For Each picturebox In Me.Controls
                 If picturebox IsNot picPlayer AndAlso picPlayer.Bounds.IntersectsWith(picturebox.Bounds) Then
-                    loc = New Point(picPlayer.Location.X, picPlayer.Location.Y + 4)
+                    loc = New Point(picPlayer.Location.X, picPlayer.Location.Y + 3)
                     picPlayer.Location = loc
                 End If
             Next
@@ -47,7 +47,7 @@
             picPlayer.Location = loc
             For Each picturebox In Me.Controls
                 If picturebox IsNot picPlayer AndAlso picPlayer.Bounds.IntersectsWith(picturebox.Bounds) Then
-                    loc = New Point(picPlayer.Location.X + 4, picPlayer.Location.Y)
+                    loc = New Point(picPlayer.Location.X + 3, picPlayer.Location.Y)
                     picPlayer.Location = loc
                 End If
             Next
@@ -57,7 +57,7 @@
             picPlayer.Location = loc
             For Each picturebox In Me.Controls
                 If picturebox IsNot picPlayer AndAlso picPlayer.Bounds.IntersectsWith(picturebox.Bounds) Then
-                    loc = New Point(picPlayer.Location.X - 4, picPlayer.Location.Y)
+                    loc = New Point(picPlayer.Location.X - 3, picPlayer.Location.Y)
                     picPlayer.Location = loc
                 End If
             Next
@@ -67,7 +67,7 @@
             picPlayer.Location = loc
             For Each picturebox In Me.Controls
                 If picturebox IsNot picPlayer AndAlso picPlayer.Bounds.IntersectsWith(picturebox.Bounds) Then
-                    loc = New Point(picPlayer.Location.X, picPlayer.Location.Y - 4)
+                    loc = New Point(picPlayer.Location.X, picPlayer.Location.Y - 3)
                     picPlayer.Location = loc
                 End If
             Next

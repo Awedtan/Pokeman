@@ -601,7 +601,7 @@ Partial Class frmGym1
         Me.picPlayer.Location = New System.Drawing.Point(431, 352)
         Me.picPlayer.Name = "picPlayer"
         Me.picPlayer.Size = New System.Drawing.Size(37, 44)
-        Me.picPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.picPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picPlayer.TabIndex = 54
         Me.picPlayer.TabStop = False
         '
