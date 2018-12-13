@@ -6,7 +6,7 @@
     Dim gym5 As New frmGym5
     Dim HauntedHouse As New frmHauntedHouse
     Dim MewtwoEncounter As New frmMewtwoEncounter
-
+    Dim Inbattle As New frmInBattle
     Dim trainerbattle As Boolean
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -38,18 +38,7 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click 'Route 1
-        Randomize()
-        trainerbattle = False
-        Dim pokemon As Integer = Rnd() * 5
-        Select Case pokemon
-            Case 1
-
-            Case 2
-            Case 3
-            Case 4
-            Case 5
-
-        End Select
+        frmInBattle.Show()
     End Sub
 
     Private Sub Button18_Click(sender As Object, e As EventArgs) Handles Button18.Click
