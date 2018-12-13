@@ -22,55 +22,65 @@ Partial Class frmInBattle
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.btnMove1 = New System.Windows.Forms.Button()
+        Me.btnMove2 = New System.Windows.Forms.Button()
+        Me.btnMove3 = New System.Windows.Forms.Button()
+        Me.btnMove4 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
+        Me.btnPokeball = New System.Windows.Forms.Button()
+        Me.btnLL = New System.Windows.Forms.Button()
+        Me.btnMM = New System.Windows.Forms.Button()
+        Me.btnFF = New System.Windows.Forms.Button()
+        Me.picYPokemon = New System.Windows.Forms.PictureBox()
+        Me.picEPokemon = New System.Windows.Forms.PictureBox()
+        Me.lblYName = New System.Windows.Forms.Label()
+        Me.lblYType = New System.Windows.Forms.Label()
+        Me.lblYHp = New System.Windows.Forms.Label()
+        Me.lblEHp = New System.Windows.Forms.Label()
+        Me.lblEType = New System.Windows.Forms.Label()
+        Me.lblEName = New System.Windows.Forms.Label()
+        CType(Me.picYPokemon, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picEPokemon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Button1
+        'btnMove1
         '
-        Me.Button1.Location = New System.Drawing.Point(432, 545)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(102, 36)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Move 1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnMove1.Location = New System.Drawing.Point(432, 545)
+        Me.btnMove1.Name = "btnMove1"
+        Me.btnMove1.Size = New System.Drawing.Size(102, 36)
+        Me.btnMove1.TabIndex = 0
+        Me.btnMove1.Text = "Move 1"
+        Me.btnMove1.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnMove2
         '
-        Me.Button2.Location = New System.Drawing.Point(621, 545)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(102, 36)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Move 2"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnMove2.Location = New System.Drawing.Point(621, 545)
+        Me.btnMove2.Name = "btnMove2"
+        Me.btnMove2.Size = New System.Drawing.Size(102, 36)
+        Me.btnMove2.TabIndex = 1
+        Me.btnMove2.Text = "Move 2"
+        Me.btnMove2.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btnMove3
         '
-        Me.Button3.Location = New System.Drawing.Point(432, 606)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(102, 36)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Move 3"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnMove3.Location = New System.Drawing.Point(432, 606)
+        Me.btnMove3.Name = "btnMove3"
+        Me.btnMove3.Size = New System.Drawing.Size(102, 36)
+        Me.btnMove3.TabIndex = 2
+        Me.btnMove3.Text = "Move 3"
+        Me.btnMove3.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btnMove4
         '
-        Me.Button4.Location = New System.Drawing.Point(621, 606)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(102, 36)
-        Me.Button4.TabIndex = 3
-        Me.Button4.Text = "Move 4"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btnMove4.Location = New System.Drawing.Point(621, 606)
+        Me.btnMove4.Name = "btnMove4"
+        Me.btnMove4.Size = New System.Drawing.Size(102, 36)
+        Me.btnMove4.TabIndex = 3
+        Me.btnMove4.Text = "Move 4"
+        Me.btnMove4.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -108,76 +118,168 @@ Partial Class frmInBattle
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Label4"
         '
-        'Button5
+        'btnPokeball
         '
-        Me.Button5.Location = New System.Drawing.Point(23, 545)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(102, 36)
-        Me.Button5.TabIndex = 8
-        Me.Button5.Text = "Pokeball"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.btnPokeball.Location = New System.Drawing.Point(23, 545)
+        Me.btnPokeball.Name = "btnPokeball"
+        Me.btnPokeball.Size = New System.Drawing.Size(102, 36)
+        Me.btnPokeball.TabIndex = 8
+        Me.btnPokeball.Text = "Pokeball"
+        Me.btnPokeball.UseVisualStyleBackColor = True
         '
-        'Button6
+        'btnLL
         '
-        Me.Button6.Location = New System.Drawing.Point(23, 596)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(102, 22)
-        Me.Button6.TabIndex = 9
-        Me.Button6.Text = "Little Lotion"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.btnLL.Location = New System.Drawing.Point(23, 596)
+        Me.btnLL.Name = "btnLL"
+        Me.btnLL.Size = New System.Drawing.Size(102, 22)
+        Me.btnLL.TabIndex = 9
+        Me.btnLL.Text = "Little Lotion"
+        Me.btnLL.UseVisualStyleBackColor = True
         '
-        'Button7
+        'btnMM
         '
-        Me.Button7.Location = New System.Drawing.Point(23, 624)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(102, 22)
-        Me.Button7.TabIndex = 10
-        Me.Button7.Text = "Medium Medpack"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.btnMM.Location = New System.Drawing.Point(23, 624)
+        Me.btnMM.Name = "btnMM"
+        Me.btnMM.Size = New System.Drawing.Size(102, 22)
+        Me.btnMM.TabIndex = 10
+        Me.btnMM.Text = "Medium Medpack"
+        Me.btnMM.UseVisualStyleBackColor = True
         '
-        'Button8
+        'btnFF
         '
-        Me.Button8.Location = New System.Drawing.Point(23, 650)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(102, 22)
-        Me.Button8.TabIndex = 11
-        Me.Button8.Text = "Full Feast"
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.btnFF.Location = New System.Drawing.Point(23, 650)
+        Me.btnFF.Name = "btnFF"
+        Me.btnFF.Size = New System.Drawing.Size(102, 22)
+        Me.btnFF.TabIndex = 11
+        Me.btnFF.Text = "Full Feast"
+        Me.btnFF.UseVisualStyleBackColor = True
+        '
+        'picYPokemon
+        '
+        Me.picYPokemon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.picYPokemon.Location = New System.Drawing.Point(43, 280)
+        Me.picYPokemon.Name = "picYPokemon"
+        Me.picYPokemon.Size = New System.Drawing.Size(278, 231)
+        Me.picYPokemon.TabIndex = 12
+        Me.picYPokemon.TabStop = False
+        '
+        'picEPokemon
+        '
+        Me.picEPokemon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.picEPokemon.Location = New System.Drawing.Point(559, 33)
+        Me.picEPokemon.Name = "picEPokemon"
+        Me.picEPokemon.Size = New System.Drawing.Size(198, 167)
+        Me.picEPokemon.TabIndex = 13
+        Me.picEPokemon.TabStop = False
+        '
+        'lblYName
+        '
+        Me.lblYName.AutoSize = True
+        Me.lblYName.Location = New System.Drawing.Point(469, 346)
+        Me.lblYName.Name = "lblYName"
+        Me.lblYName.Size = New System.Drawing.Size(35, 13)
+        Me.lblYName.TabIndex = 14
+        Me.lblYName.Text = "Name"
+        '
+        'lblYType
+        '
+        Me.lblYType.AutoSize = True
+        Me.lblYType.Location = New System.Drawing.Point(469, 372)
+        Me.lblYType.Name = "lblYType"
+        Me.lblYType.Size = New System.Drawing.Size(31, 13)
+        Me.lblYType.TabIndex = 15
+        Me.lblYType.Text = "Type"
+        '
+        'lblYHp
+        '
+        Me.lblYHp.AutoSize = True
+        Me.lblYHp.Location = New System.Drawing.Point(469, 397)
+        Me.lblYHp.Name = "lblYHp"
+        Me.lblYHp.Size = New System.Drawing.Size(63, 13)
+        Me.lblYHp.TabIndex = 16
+        Me.lblYHp.Text = "Hp/Max Hp"
+        '
+        'lblEHp
+        '
+        Me.lblEHp.AutoSize = True
+        Me.lblEHp.Location = New System.Drawing.Point(40, 84)
+        Me.lblEHp.Name = "lblEHp"
+        Me.lblEHp.Size = New System.Drawing.Size(63, 13)
+        Me.lblEHp.TabIndex = 19
+        Me.lblEHp.Text = "Hp/Max Hp"
+        '
+        'lblEType
+        '
+        Me.lblEType.AutoSize = True
+        Me.lblEType.Location = New System.Drawing.Point(40, 59)
+        Me.lblEType.Name = "lblEType"
+        Me.lblEType.Size = New System.Drawing.Size(31, 13)
+        Me.lblEType.TabIndex = 18
+        Me.lblEType.Text = "Type"
+        '
+        'lblEName
+        '
+        Me.lblEName.AutoSize = True
+        Me.lblEName.Location = New System.Drawing.Point(40, 33)
+        Me.lblEName.Name = "lblEName"
+        Me.lblEName.Size = New System.Drawing.Size(35, 13)
+        Me.lblEName.TabIndex = 17
+        Me.lblEName.Text = "Name"
         '
         'frmInBattle
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 690)
-        Me.Controls.Add(Me.Button8)
-        Me.Controls.Add(Me.Button7)
-        Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.lblEHp)
+        Me.Controls.Add(Me.lblEType)
+        Me.Controls.Add(Me.lblEName)
+        Me.Controls.Add(Me.lblYHp)
+        Me.Controls.Add(Me.lblYType)
+        Me.Controls.Add(Me.lblYName)
+        Me.Controls.Add(Me.picEPokemon)
+        Me.Controls.Add(Me.picYPokemon)
+        Me.Controls.Add(Me.btnFF)
+        Me.Controls.Add(Me.btnMM)
+        Me.Controls.Add(Me.btnLL)
+        Me.Controls.Add(Me.btnPokeball)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnMove4)
+        Me.Controls.Add(Me.btnMove3)
+        Me.Controls.Add(Me.btnMove2)
+        Me.Controls.Add(Me.btnMove1)
         Me.Name = "frmInBattle"
         Me.Text = "frmInBattle"
+        CType(Me.picYPokemon, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picEPokemon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents btnMove1 As Button
+    Friend WithEvents btnMove2 As Button
+    Friend WithEvents btnMove3 As Button
+    Friend WithEvents btnMove4 As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button7 As Button
-    Friend WithEvents Button8 As Button
+    Friend WithEvents btnPokeball As Button
+    Friend WithEvents btnLL As Button
+    Friend WithEvents btnMM As Button
+    Friend WithEvents btnFF As Button
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents picYPokemon As PictureBox
+    Friend WithEvents picEPokemon As PictureBox
+    Friend WithEvents lblYName As Label
+    Friend WithEvents lblYType As Label
+    Friend WithEvents lblYHp As Label
+    Friend WithEvents lblEHp As Label
+    Friend WithEvents lblEType As Label
+    Friend WithEvents lblEName As Label
 End Class
