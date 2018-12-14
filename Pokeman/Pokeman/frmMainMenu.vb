@@ -1,11 +1,11 @@
 ﻿Public Class frmMainMenu
 
-	Dim Currency As Integer
-	Dim Ballcount As Integer
+    Dim Currency As Integer
+    Dim Ballcount As Integer
 
-	Dim ShopMenu As New frmShopMenu
-	Dim Box As New frmBox
-	Dim BattleSelect As New frmBattleSelect
+    Dim ShopMenu As New frmShopMenu
+    Dim Box As New frmBox
+    Dim BattleSelect As New frmBattleSelect
 
 
     'Pokeman name, health, attack, defense, speed, special, obtained, selected, type1, type2, move1, move2, move3, move4
@@ -20,44 +20,44 @@
     Public Shared Charmander() As String = {"Charmander", 39, 52, 43, 65, 50, 0, 0, 5, 0}
     Public Shared Charmeleon() As String = {"Charmeleon", 58, 64, 58, 80, 65, 0, 0, 5, 0}
     Public Shared Charizard() As String = {"Charizard", 78, 84, 78, 100, 85, 0, 0, 5, 6}
-    Public Shared Squirtle() As String = {"Squirtle", 44, 48, 65, 43, 50, 0, 0, 15, 0}
+    Public Shared Squirtle() As String = {"Squirtle", 44, 48, 65, 43, 50, 0, 0, 15, 0, "Tackle", "Water Gun", "Bubble", "Tail Whip"}
     Public Shared Wartortle() As String = {"Wartortle", 59, 63, 80, 58, 65, 0, 0, 15, 0}
     Public Shared Blastoise() As String = {"Blastoise", 79, 83, 100, 78, 85, 0, 0, 15, 0}
-    Public Shared Caterpie() As String = {"Caterpie", 45, 30, 35, 56, 20, 0, 0, 1, 0}
-    Public Shared Metapod() As String = {"Metapod", 50, 20, 55, 30, 25, 0, 0, 1, 0}
-    Public Shared Butterfree() As String = {"Butterfree", 60, 45, 50, 70, 80, 0, 0, 1, 6}
-    Public Shared Weedle() As String = {"Weedle", 40, 35, 30, 50, 20, 0, 0, 1, 12}
-    Public Shared Kakuna() As String = {"Kakuna", 45, 25, 50, 35, 25, 0, 0, 1, 12}
-    Public Shared Beedrill() As String = {"Beedrill", 35, 80, 40, 75, 45, 0, 0, 1, 12}
-    Public Shared Pidgey() As String = {"Pidgey", 40, 45, 40, 56, 35, 0, 0, 11, 6}
-    Public Shared Pidgeotto() As String = {"Pidgeotto", 63, 60, 55, 71, 50, 0, 0, 11, 6}
+    Public Shared Caterpie() As String = {"Caterpie", 45, 30, 35, 56, 20, 0, 0, 1, 0, "String Shot", "Tackle", "Nothing", "Nothing"}
+    Public Shared Metapod() As String = {"Metapod", 50, 20, 55, 30, 25, 0, 0, 1, 0, "Harden", "Nothing", "Nothing", "Nothing"}
+    Public Shared Butterfree() As String = {"Butterfree", 60, 45, 50, 70, 80, 0, 0, 1, 6, "Poison Powder", "Confusion", "Gust", "Double-Edge"}
+    Public Shared Weedle() As String = {"Weedle", 40, 35, 30, 50, 20, 0, 0, 1, 12, "Poison Sting", "String Shot", "Nothing", "Nothing"}
+    Public Shared Kakuna() As String = {"Kakuna", 45, 25, 50, 35, 25, 0, 0, 1, 12, "Harden", "Nothing", "Nothing", "Nothing"}
+    Public Shared Beedrill() As String = {"Beedrill", 35, 80, 40, 75, 45, 0, 0, 1, 12, "Poison Sting", "Pin Missile", "Skull Bash", "Swords Dance"}
+    Public Shared Pidgey() As String = {"Pidgey", 40, 45, 40, 56, 35, 0, 0, 11, 6, "Wing Attack", "Quick Attack", "Sand Attack", "Whirlwind"}
+    Public Shared Pidgeotto() As String = {"Pidgeotto", 63, 60, 55, 71, 50, 0, 0, 11, 6, "Wing Attack", "Whirlwind", "Razor Wind", "Fly"}
     Public Shared Pidgeot() As String = {"Pidgeot", 83, 80, 75, 91, 70, 0, 0, 11, 6}
-    Public Shared Rattata() As String = {"Rattata", 30, 56, 35, 72, 25, 0, 0, 11, 0}
-    Public Shared Raticate() As String = {"Raticate", 55, 81, 60, 97, 50, 0, 0, 11, 0}
-    Public Shared Spearow() As String = {"Spearow", 40, 60, 30, 70, 31, 0, 0, 11, 6}
+    Public Shared Rattata() As String = {"Rattata", 30, 56, 35, 72, 25, 0, 0, 11, 0, "Quick Attack", "Tail Whip", "Super Fang", "Rage"}
+    Public Shared Raticate() As String = {"Raticate", 55, 81, 60, 97, 50, 0, 0, 11, 0, "Hyper Fang", "Super Fang", "Bide", "Dig"}
+    Public Shared Spearow() As String = {"Spearow", 40, 60, 30, 70, 31, 0, 0, 11, 6, "Drill Peck", "Fury Attack", "Growl", "Peck"}
     Public Shared Fearow() As String = {"Fearow", 65, 90, 65, 100, 61, 0, 0, 11, 6}
-    Public Shared Ekans() As String = {"Ekans", 35, 60, 44, 55, 40, 0, 0, 12, 0}
+    Public Shared Ekans() As String = {"Ekans", 35, 60, 44, 55, 40, 0, 0, 12, 0, "Poison Sting", "Bite", "Glare", "Screech"}
     Public Shared Arbok() As String = {"Arbok", 60, 85, 69, 80, 65, 0, 0, 12, 0}
     Public Shared Pikachu() As String = {"Pikachu", 35, 55, 30, 90, 50, 0, 0, 10, 0}
     Public Shared Raichu() As String = {"Raichu", 60, 90, 55, 100, 90, 0, 0, 10, 0}
     Public Shared Sandshrew() As String = {"Sandshrew", 50, 75, 85, 40, 30, 0, 0, 9, 0}
     Public Shared Sandslash() As String = {"Sandslash", 75, 100, 110, 65, 55, 0, 0, 9, 0}
-    Public Shared Nidoranm() As String = {"Nidoran (female)", 55, 47, 52, 41, 40, 0, 0, 12, 0}
-    Public Shared Nidorina() As String = {"Nidorina", 70, 62, 67, 56, 55, 0, 0, 12, 0}
+    Public Shared Nidoranm() As String = {"Nidoran (female)", 55, 47, 52, 41, 40, 0, 0, 12, 0, "Horn Attack", "Poison Sting", "Fury Attack", "Leer"}
+    Public Shared Nidorina() As String = {"Nidorina", 70, 62, 67, 56, 55, 0, 0, 12, 0, "Horn Attack", "Double Kick", "Poison Sting", "Rage"}
     Public Shared Nidoqueen() As String = {"Nidoqueen", 90, 82, 87, 76, 75, 0, 0, 12, 9}
-    Public Shared Nidoranf() As String = {"Nidoran (male)", 46, 57, 40, 50, 40, 0, 0, 12, 0}
-    Public Shared Nidorino() As String = {"Nidorino", 61, 72, 57, 65, 55, 0, 0, 12, 0}
+    Public Shared Nidoranf() As String = {"Nidoran (male)", 46, 57, 40, 50, 40, 0, 0, 12, 0, "Horn Attack", "Poison Sting", "Fury Attack", "Leer"}
+    Public Shared Nidorino() As String = {"Nidorino", 61, 72, 57, 65, 55, 0, 0, 12, 0, "Horn Attack", "Double Kick", "Poison Sting", "Rage"}
     Public Shared Nidoking() As String = {"Nidoking", 81, 92, 77, 85, 75, 0, 0, 12, 9}
     Public Shared Clefairy() As String = {"Clefairy", 70, 45, 48, 35, 60, 0, 0, 11, 0}
     Public Shared Clefable() As String = {"Clefable", 95, 70, 73, 60, 85, 0, 0, 11, 0}
-    Public Shared Vulpix() As String = {"Vulpix", 38, 41, 40, 65, 65, 0, 0, 5, 0}
+    Public Shared Vulpix() As String = {"Vulpix", 38, 41, 40, 65, 65, 0, 0, 5, 0, "Ember", "Flamethrower", "Tail Whip", "Body Slam"}
     Public Shared Ninetales() As String = {"Ninetales", 73, 76, 75, 100, 100, 0, 0, 5, 0}
     Public Shared Jigglypuff() As String = {"Jigglypuff", 115, 45, 20, 20, 25, 0, 0, 11, 0}
     Public Shared Wigglytuff() As String = {"Wigglytuff", 140, 70, 45, 45, 50, 0, 0, 11, 0}
     Public Shared Zubat() As String = {"Zubat", 40, 45, 35, 55, 40, 0, 0, 12, 6}
     Public Shared Golbat() As String = {"Golbat", 75, 80, 70, 90, 75, 0, 0, 12, 6}
-    Public Shared Oddish() As String = {"Oddish", 45, 50, 55, 30, 75, 0, 0, 7, 12}
-    Public Shared Gloom() As String = {"Gloom", 60, 65, 70, 40, 85, 0, 0, 7, 12}
+    Public Shared Oddish() As String = {"Oddish", 45, 50, 55, 30, 75, 0, 0, 7, 12, "Absorb", "Stun Spore", "Acid", "Take Down"}
+    Public Shared Gloom() As String = {"Gloom", 60, 65, 70, 40, 85, 0, 0, 7, 12, "Absorb", "Petal Dance", "Solar Beam", "Acid"}
     Public Shared Vileplume() As String = {"Vileplume", 75, 80, 85, 50, 100, 0, 0, 7, 12}
     Public Shared Paras() As String = {"Paras", 35, 70, 55, 25, 55, 0, 0, 1, 7}
     Public Shared Parasect() As String = {"Parasect", 60, 95, 80, 30, 80, 0, 0, 1, 7}
@@ -82,8 +82,8 @@
     Public Shared Machop() As String = {"Machop", 70, 80, 50, 35, 35, 0, 0, 4, 0}
     Public Shared Machoke() As String = {"Machoke", 80, 100, 70, 45, 50, 0, 0, 4, 0}
     Public Shared Machamp() As String = {"Machamp", 90, 130, 80, 55, 65, 0, 0, 4, 0}
-    Public Shared Bellsprout() As String = {"Bellsprout", 50, 75, 35, 40, 70, 0, 0, 7, 12}
-    Public Shared Weepinbell() As String = {"Weepinbell", 65, 90, 50, 55, 85, 0, 0, 7, 12}
+    Public Shared Bellsprout() As String = {"Bellsprout", 50, 75, 35, 40, 70, 0, 0, 7, 12, "Vine Whip", "Growth", "Poison Powder", "Acid"}
+    Public Shared Weepinbell() As String = {"Weepinbell", 65, 90, 50, 55, 85, 0, 0, 7, 12, "Vine Whip", "Razor Leaf", "Poison Powder", "Slam"}
     Public Shared Victreebel() As String = {"Victreebel", 80, 105, 65, 70, 100, 0, 0, 7, 12}
     Public Shared Tentacool() As String = {"Tentacool", 40, 40, 35, 70, 100, 0, 0, 15, 12}
     Public Shared Tentacruel() As String = {"Tentacruel", 80, 70, 65, 100, 120, 0, 0, 15, 12}
@@ -146,7 +146,7 @@
     Public Shared Gyarados() As String = {"Gyarados", 95, 125, 79, 81, 100, 0, 0, 15, 6}
     Public Shared Lapras() As String = {"Lapras", 130, 85, 80, 60, 95, 0, 0, 15, 3}
     Public Shared Ditto() As String = {"Ditto", 48, 48, 48, 48, 48, 0, 0, 11, 0}
-    Public Shared Eevee() As String = {"Eevee", 55, 55, 50, 55, 65, 0, 0, 11, 0}
+    Public Shared Eevee() As String = {"Eevee", 55, 55, 50, 55, 65, 0, 0, 11, 0, "Double-Edge", "Swift", "Bite", "Sand Attack"}
     Public Shared Vaporeon() As String = {"Vaporeon", 130, 65, 60, 65, 110, 0, 0, 15, 0}
     Public Shared Jolteon() As String = {"Jolteon", 65, 65, 60, 130, 110, 0, 0, 10, 0}
     Public Shared Flareon() As String = {"Flareon", 65, 130, 60, 65, 110, 0, 0, 5, 0}
@@ -175,18 +175,18 @@
 
     Private Sub btnStore_Click(sender As Object, e As EventArgs) Handles btnStore.Click
 
-		frmShopMenu.Show()
+        frmShopMenu.Show()
 
-	End Sub
+    End Sub
 
-	Private Sub btnBox_Click(sender As Object, e As EventArgs) Handles btnBox.Click
+    Private Sub btnBox_Click(sender As Object, e As EventArgs) Handles btnBox.Click
 
-		frmBox.Show()
+        frmBox.Show()
 
-	End Sub
+    End Sub
 
-	Private Sub btnBattle_Click(sender As Object, e As EventArgs) Handles btnBattle.Click
-		frmBattleSelect.Show()
-	End Sub
+    Private Sub btnBattle_Click(sender As Object, e As EventArgs) Handles btnBattle.Click
+        frmBattleSelect.Show()
+    End Sub
 
 End Class
