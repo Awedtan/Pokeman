@@ -1,4 +1,4 @@
-﻿Public Class frmMainMenu
+Public Class frmMainMenu
 
     Dim Currency As Integer
     Dim Ballcount As Integer
