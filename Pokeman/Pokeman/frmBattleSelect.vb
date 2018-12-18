@@ -9,16 +9,16 @@
 	Dim HauntedHouse As New frmHauntedHouse
 	Dim MewtwoEncounter As New frmMewtwoEncounter
 	Dim InBattle As New frmInBattle
-	Dim BirdNest As New frmBirdNest
+	'Dim BirdNest As New frmBirdNest
 
 	Dim trainerbattle As Boolean
 
-	Dim pokemon1(14) As String
-	Dim pokemon2(14) As String
-	Dim pokemon3(14) As String
-	Dim pokemon4(14) As String
-	Dim pokemon5(14) As String
-	Dim pokemon6(14) As String
+	Public Shared enemypokemon1(14) As String
+	Public Shared enemypokemon2(14) As String
+	Public Shared enemypokemon3(14) As String
+	Public Shared enemypokemon4(14) As String
+	Public Shared enemypokemon5(14) As String
+	Public Shared enemypokemon6(14) As String
 
 	Dim num As Integer
 
@@ -32,15 +32,15 @@
 
 		Select Case num
 			Case 1
-				pokemon1 = frmMainMenu.Rattata
+				enemypokemon1 = frmMainMenu.Rattata
 			Case 2
-				pokemon1 = frmMainMenu.Spearow
+				enemypokemon1 = frmMainMenu.Spearow
 			Case 3
-				pokemon1 = frmMainMenu.Pidgey
+				enemypokemon1 = frmMainMenu.Pidgey
 			Case 4
-				pokemon1 = frmMainMenu.Weedle
+				enemypokemon1 = frmMainMenu.Weedle
 			Case 5
-				pokemon1 = frmMainMenu.Caterpie
+				enemypokemon1 = frmMainMenu.Caterpie
 		End Select
 
 		frmInBattle.Show()
@@ -51,7 +51,7 @@
 
 		trainerbattle = True
 
-		pokemon1 = frmMainMenu.Caterpie
+		enemypokemon1 = frmMainMenu.Caterpie
 
 		frmInBattle.Show()
 
@@ -67,17 +67,17 @@
 
 		Select Case num
 			Case 1
-				pokemon1 = frmMainMenu.Eevee
+				enemypokemon1 = frmMainMenu.Eevee
 			Case 2
-				pokemon1 = frmMainMenu.Bellsprout
+				enemypokemon1 = frmMainMenu.Bellsprout
 			Case 3
-				pokemon1 = frmMainMenu.Oddish
+				enemypokemon1 = frmMainMenu.Oddish
 			Case 4
-				pokemon1 = frmMainMenu.Vulpix
+				enemypokemon1 = frmMainMenu.Vulpix
 			Case 5
-				pokemon1 = frmMainMenu.Nidoranf
+				enemypokemon1 = frmMainMenu.Nidoranf
 			Case 6
-				pokemon1 = frmMainMenu.Nidoranm
+				enemypokemon1 = frmMainMenu.Nidoranm
 		End Select
 
 		frmInBattle.Show()
@@ -88,7 +88,7 @@
 
 		trainerbattle = True
 
-		pokemon1 = frmMainMenu.Pidgeotto
+		enemypokemon1 = frmMainMenu.Pidgeotto
 
 		frmInBattle.Show()
 
@@ -112,21 +112,21 @@
 
 		Select Case num
 			Case 1
-				pokemon1 = frmMainMenu.Metapod
+				enemypokemon1 = frmMainMenu.Metapod
 			Case 2
-				pokemon1 = frmMainMenu.Butterfree
+				enemypokemon1 = frmMainMenu.Butterfree
 			Case 3
-				pokemon1 = frmMainMenu.Kakuna
+				enemypokemon1 = frmMainMenu.Kakuna
 			Case 4
-				pokemon1 = frmMainMenu.Beedrill
+				enemypokemon1 = frmMainMenu.Beedrill
 			Case 5
-				pokemon1 = frmMainMenu.Pidgeotto
+				enemypokemon1 = frmMainMenu.Pidgeotto
 			Case 6
-				pokemon1 = frmMainMenu.Nidorino
+				enemypokemon1 = frmMainMenu.Nidorino
 			Case 7
-				pokemon1 = frmMainMenu.Nidorina
+				enemypokemon1 = frmMainMenu.Nidorina
 			Case 8
-				pokemon1 = frmMainMenu.Raticate
+				enemypokemon1 = frmMainMenu.Raticate
 		End Select
 
 		frmInBattle.Show()
@@ -137,8 +137,8 @@
 
 		trainerbattle = True
 
-		pokemon1 = frmMainMenu.Squirtle
-		pokemon2 = frmMainMenu.Squirtle
+		enemypokemon1 = frmMainMenu.Squirtle
+		enemypokemon2 = frmMainMenu.Squirtle
 
 		frmInBattle.Show()
 
@@ -154,19 +154,19 @@
 
 		Select Case num
 			Case 1
-				pokemon1 = frmMainMenu.Ekans
+				enemypokemon1 = frmMainMenu.Ekans
 			Case 2
-				pokemon1 = frmMainMenu.Pikachu
+				enemypokemon1 = frmMainMenu.Pikachu
 			Case 3
-				pokemon1 = frmMainMenu.Raichu
+				enemypokemon1 = frmMainMenu.Raichu
 			Case 4
-				pokemon1 = frmMainMenu.Diglett
+				enemypokemon1 = frmMainMenu.Diglett
 			Case 5
-				pokemon1 = frmMainMenu.Meowth
+				enemypokemon1 = frmMainMenu.Meowth
 			Case 6
-				pokemon1 = frmMainMenu.Magnemite
+				enemypokemon1 = frmMainMenu.Magnemite
 			Case 7
-				pokemon1 = frmMainMenu.Voltorb
+				enemypokemon1 = frmMainMenu.Voltorb
 		End Select
 
 		frmInBattle.Show()
@@ -177,9 +177,9 @@
 
 		trainerbattle = True
 
-		pokemon1 = frmMainMenu.Grimer
-		pokemon2 = frmMainMenu.Pikachu
-		pokemon3 = frmMainMenu.Diglett
+		enemypokemon1 = frmMainMenu.Grimer
+		enemypokemon2 = frmMainMenu.Pikachu
+		enemypokemon3 = frmMainMenu.Diglett
 
 		frmInBattle.Show()
 
@@ -203,25 +203,25 @@
 
 		Select Case num
 			Case 1
-				pokemon1 = frmMainMenu.Gloom
+				enemypokemon1 = frmMainMenu.Gloom
 			Case 2
-				pokemon1 = frmMainMenu.Paras
+				enemypokemon1 = frmMainMenu.Paras
 			Case 3
-				pokemon1 = frmMainMenu.Parasect
+				enemypokemon1 = frmMainMenu.Parasect
 			Case 4
-				pokemon1 = frmMainMenu.Venonat
+				enemypokemon1 = frmMainMenu.Venonat
 			Case 5
-				pokemon1 = frmMainMenu.Magnemite
+				enemypokemon1 = frmMainMenu.Magnemite
 			Case 6
-				pokemon1 = frmMainMenu.Magneton
+				enemypokemon1 = frmMainMenu.Magneton
 			Case 7
-				pokemon1 = frmMainMenu.Electrode
+				enemypokemon1 = frmMainMenu.Electrode
 			Case 8
-				pokemon1 = frmMainMenu.Gastly
+				enemypokemon1 = frmMainMenu.Gastly
 			Case 9
-				pokemon1 = frmMainMenu.Electabuzz
+				enemypokemon1 = frmMainMenu.Electabuzz
 			Case 10
-				pokemon1 = frmMainMenu.Jolteon
+				enemypokemon1 = frmMainMenu.Jolteon
 		End Select
 
 		frmInBattle.Show()
@@ -232,9 +232,9 @@
 
 		trainerbattle = True
 
-		pokemon1 = frmMainMenu.Zubat
-		pokemon2 = frmMainMenu.Pikachu
-		pokemon3 = frmMainMenu.Gastly
+		enemypokemon1 = frmMainMenu.Zubat
+		enemypokemon2 = frmMainMenu.Pikachu
+		enemypokemon3 = frmMainMenu.Gastly
 
 		frmInBattle.Show()
 
@@ -250,7 +250,7 @@
 
 		trainerbattle = True
 
-		pokemon1 = frmMainMenu.Gengar 'make him powerful or something
+		enemypokemon1 = frmMainMenu.Gengar 'make him powerful or something
 
 	End Sub
 
@@ -266,17 +266,17 @@
 
 		'Select Case num
 		'	Case 1
-		'		pokemon1 = frmMainMenu.Ponyta
+		'		enemypokemon1 = frmMainMenu.Ponyta
 		'	Case 2
-		'		pokemon1 = frmMainMenu.Pidgeot
+		'		enemypokemon1 = frmMainMenu.Pidgeot
 		'	Case 3
-		'		pokemon1 = frmMainMenu.Fearow
+		'		enemypokemon1 = frmMainMenu.Fearow
 		'	Case 4
-		'		pokemon1 = frmMainMenu.Growlithe
+		'		enemypokemon1 = frmMainMenu.Growlithe
 		'	Case 5
-		'		pokemon1 = frmMainMenu.Arcanine
+		'		enemypokemon1 = frmMainMenu.Arcanine
 		'	Case 6
-		'		pokemon1 = frmMainMenu.Farfetchd
+		'		enemypokemon1 = frmMainMenu.Farfetchd
 		'End Select
 
 		'frmMainMenu.route6counter += 1
@@ -288,25 +288,25 @@
 
 		'Select Case num
 		'	Case 1
-		'		pokemon1 = frmMainMenu.Ponyta
+		'		enemypokemon1 = frmMainMenu.Ponyta
 		'	Case 2
-		'		pokemon1 = frmMainMenu.Pidgeot
+		'		enemypokemon1 = frmMainMenu.Pidgeot
 		'	Case 3
-		'		pokemon1 = frmMainMenu.Fearow
+		'		enemypokemon1 = frmMainMenu.Fearow
 		'	Case 4
-		'		pokemon1 = frmMainMenu.Growlithe
+		'		enemypokemon1 = frmMainMenu.Growlithe
 		'	Case 5
-		'		pokemon1 = frmMainMenu.Arcanine
+		'		enemypokemon1 = frmMainMenu.Arcanine
 		'	Case 6
-		'		pokemon1 = frmMainMenu.Farfetchd
+		'		enemypokemon1 = frmMainMenu.Farfetchd
 		'	Case 7
-		'		pokemon1 = frmMainMenu.Rapidash
+		'		enemypokemon1 = frmMainMenu.Rapidash
 		'	Case 8
-		'		pokemon1 = frmMainMenu.Ninetales
+		'		enemypokemon1 = frmMainMenu.Ninetales
 		'	Case 9
-		'		pokemon1 = frmMainMenu.Magmar
+		'		enemypokemon1 = frmMainMenu.Magmar
 		'	Case 10
-		'		pokemon1 = frmMainMenu.Flareon
+		'		enemypokemon1 = frmMainMenu.Flareon
 		'End Select
 
 
@@ -318,8 +318,8 @@
 
 		trainerbattle = True
 
-		pokemon1 = frmMainMenu.Fearow
-		pokemon2 = frmMainMenu.Graveler
+		enemypokemon1 = frmMainMenu.Fearow
+		enemypokemon2 = frmMainMenu.Graveler
 
 		frmInBattle.Show()
 
@@ -345,19 +345,19 @@
 
 		'Select Case num
 		'	Case 1
-		'		pokemon1 = frmMainMenu.Vileplume
+		'		enemypokemon1 = frmMainMenu.Vileplume
 		'	Case 2
-		'		pokemon1 = frmMainMenu.Poliwag
+		'		enemypokemon1 = frmMainMenu.Poliwag
 		'	Case 3
-		'		pokemon1 = frmMainMenu.Poliwhirl
+		'		enemypokemon1 = frmMainMenu.Poliwhirl
 		'	Case 4
-		'		pokemon1 = frmMainMenu.Seel
+		'		enemypokemon1 = frmMainMenu.Seel
 		'	Case 5
-		'		pokemon1 = frmMainMenu.Shellder
+		'		enemypokemon1 = frmMainMenu.Shellder
 		'	Case 6
-		'		pokemon1 = frmMainMenu.Krabby
+		'		enemypokemon1 = frmMainMenu.Krabby
 		'	Case 7
-		'		pokemon1 = frmMainMenu.Magikarp
+		'		enemypokemon1 = frmMainMenu.Magikarp
 		'End Select
 
 		'frmMainMenu.route7counter += 1
@@ -369,27 +369,27 @@
 
 		'Select Case num
 		'	Case 1
-		'		pokemon1 = frmMainMenu.Vileplume
+		'		enemypokemon1 = frmMainMenu.Vileplume
 		'	Case 2
-		'		pokemon1 = frmMainMenu.Poliwag
+		'		enemypokemon1 = frmMainMenu.Poliwag
 		'	Case 3
-		'		pokemon1 = frmMainMenu.Poliwhirl
+		'		enemypokemon1 = frmMainMenu.Poliwhirl
 		'	Case 4
-		'		pokemon1 = frmMainMenu.Seel
+		'		enemypokemon1 = frmMainMenu.Seel
 		'	Case 5
-		'		pokemon1 = frmMainMenu.Shellder
+		'		enemypokemon1 = frmMainMenu.Shellder
 		'	Case 6
-		'		pokemon1 = frmMainMenu.Krabby
+		'		enemypokemon1 = frmMainMenu.Krabby
 		'	Case 7
-		'		pokemon1 = frmMainMenu.Magikarp
+		'		enemypokemon1 = frmMainMenu.Magikarp
 		'	Case 8
-		'		pokemon1 = frmMainMenu.Poliwrath
+		'		enemypokemon1 = frmMainMenu.Poliwrath
 		'	Case 9
-		'		pokemon1 = frmMainMenu.Dewgong
+		'		enemypokemon1 = frmMainMenu.Dewgong
 		'	Case 10
-		'		pokemon1 = frmMainMenu.Kingler
+		'		enemypokemon1 = frmMainMenu.Kingler
 		'	Case 11
-		'		pokemon1 = frmMaineMenu.Lapras
+		'		enemypokemon1 = frmMaineMenu.Lapras
 		'	Case 12
 		'		pokeon1 = frmMainMenu.Vaporeon
 		'End Select
@@ -403,9 +403,9 @@
 
 		trainerbattle = True
 
-		pokemon1 = frmMainMenu.Exeggutor
-		pokemon2 = frmMainMenu.Butterfree
-		pokemon3 = frmMainMenu.Sandslash
+		enemypokemon1 = frmMainMenu.Exeggutor
+		enemypokemon2 = frmMainMenu.Butterfree
+		enemypokemon3 = frmMainMenu.Sandslash
 
 		frmInBattle.Show()
 
@@ -429,27 +429,27 @@
 
 		Select Case num
 			Case 1
-				pokemon1 = frmMainMenu.Arbok
+				enemypokemon1 = frmMainMenu.Arbok
 			Case 2
-				pokemon1 = frmMainMenu.Clefairy
+				enemypokemon1 = frmMainMenu.Clefairy
 			Case 3
-				pokemon1 = frmMainMenu.Clefable
+				enemypokemon1 = frmMainMenu.Clefable
 			Case 4
-				pokemon1 = frmMainMenu.Jigglypuff
+				enemypokemon1 = frmMainMenu.Jigglypuff
 			Case 5
-				pokemon1 = frmMainMenu.Wigglytuff
+				enemypokemon1 = frmMainMenu.Wigglytuff
 			Case 6
-				pokemon1 = frmMainMenu.Venomoth
+				enemypokemon1 = frmMainMenu.Venomoth
 			Case 7
-				pokemon1 = frmMainMenu.Abra
+				enemypokemon1 = frmMainMenu.Abra
 			Case 8
-				pokemon1 = frmMainMenu.Kadabra
+				enemypokemon1 = frmMainMenu.Kadabra
 			Case 9
-				pokemon1 = frmMainMenu.Doduo
+				enemypokemon1 = frmMainMenu.Doduo
 			Case 10
-				pokemon1 = frmMainMenu.Dodrio
+				enemypokemon1 = frmMainMenu.Dodrio
 			Case 11
-				pokemon1 = frmMainMenu.Tauros
+				enemypokemon1 = frmMainMenu.Tauros
 		End Select
 
 		frmInBattle.Show()
@@ -460,10 +460,10 @@
 
 		trainerbattle = True
 
-		pokemon1 = frmMainMenu.Tauros
-		pokemon2 = frmMainMenu.Eevee
-		pokemon3 = frmMainMenu.Parasect
-		pokemon4 = frmMainMenu.Gloom
+		enemypokemon1 = frmMainMenu.Tauros
+		enemypokemon2 = frmMainMenu.Eevee
+		enemypokemon3 = frmMainMenu.Parasect
+		enemypokemon4 = frmMainMenu.Gloom
 
 		frmInBattle.Show()
 
@@ -477,14 +477,14 @@
 
 		Select Case num
 			Case 1
-				pokemon1 = frmMainMenu.Moltres
+				enemypokemon1 = frmMainMenu.Moltres
 			Case 2
-				pokemon1 = frmMainMenu.Zapdos
+				enemypokemon1 = frmMainMenu.Zapdos
 			Case 3
-				pokemon1 = frmMainMenu.Articuno
+				enemypokemon1 = frmMainMenu.Articuno
 		End Select
 
-		frmBirdNest.Show()
+		'frmBirdNest.Show()
 
 	End Sub
 
@@ -498,37 +498,37 @@
 
 		Select Case num
 			Case 1
-				pokemon1 = frmMainMenu.Psyduck
+				enemypokemon1 = frmMainMenu.Psyduck
 			Case 2
-				pokemon1 = frmMainMenu.Golduck
+				enemypokemon1 = frmMainMenu.Golduck
 			Case 3
-				pokemon1 = frmMainMenu.Machop
+				enemypokemon1 = frmMainMenu.Machop
 			Case 4
-				pokemon1 = frmMainMenu.Machoke
+				enemypokemon1 = frmMainMenu.Machoke
 			Case 5
-				pokemon1 = frmMainMenu.Hypno
+				enemypokemon1 = frmMainMenu.Hypno
 			Case 6
-				pokemon1 = frmMainMenu.Arbok
+				enemypokemon1 = frmMainMenu.Arbok
 			Case 7
-				pokemon1 = frmMainMenu.Clefairy
+				enemypokemon1 = frmMainMenu.Clefairy
 			Case 8
-				pokemon1 = frmMainMenu.Clefable
+				enemypokemon1 = frmMainMenu.Clefable
 			Case 9
-				pokemon1 = frmMainMenu.Jigglypuff
+				enemypokemon1 = frmMainMenu.Jigglypuff
 			Case 10
-				pokemon1 = frmMainMenu.Wigglytuff
+				enemypokemon1 = frmMainMenu.Wigglytuff
 			Case 11
-				pokemon1 = frmMainMenu.Venomoth
+				enemypokemon1 = frmMainMenu.Venomoth
 			Case 12
-				pokemon1 = frmMainMenu.Abra
+				enemypokemon1 = frmMainMenu.Abra
 			Case 13
-				pokemon1 = frmMainMenu.Kadabra
+				enemypokemon1 = frmMainMenu.Kadabra
 			Case 14
-				pokemon1 = frmMainMenu.Doduo
+				enemypokemon1 = frmMainMenu.Doduo
 			Case 15
-				pokemon1 = frmMainMenu.Dodrio
+				enemypokemon1 = frmMainMenu.Dodrio
 			Case 16
-				pokemon1 = frmMainMenu.Tauros
+				enemypokemon1 = frmMainMenu.Tauros
 		End Select
 
 		frmInBattle.Show()
@@ -539,11 +539,11 @@
 
 		trainerbattle = True
 
-		pokemon1 = frmMainMenu.Dragonair
-		pokemon2 = frmMainMenu.Charizard
-		pokemon3 = frmMainMenu.Arbok
-		pokemon4 = frmMainMenu.Gyarados
-		pokemon5 = frmMainMenu.Dragonite
+		enemypokemon1 = frmMainMenu.Dragonair
+		enemypokemon2 = frmMainMenu.Charizard
+		enemypokemon3 = frmMainMenu.Arbok
+		enemypokemon4 = frmMainMenu.Gyarados
+		enemypokemon5 = frmMainMenu.Dragonite
 
 		frmInBattle.Show()
 
@@ -559,21 +559,21 @@
 
 		Select Case num
 			Case 1
-				pokemon1 = frmMainMenu.Snorlax
+				enemypokemon1 = frmMainMenu.Snorlax
 			Case 2
-				pokemon1 = frmMainMenu.Dragonair
+				enemypokemon1 = frmMainMenu.Dragonair
 			Case 3
-				pokemon1 = frmMainMenu.Dragonite
+				enemypokemon1 = frmMainMenu.Dragonite
 			Case 4
-				pokemon1 = frmMainMenu.Alakazam
+				enemypokemon1 = frmMainMenu.Alakazam
 			Case 5
-				pokemon1 = frmMainMenu.Golem
+				enemypokemon1 = frmMainMenu.Golem
 			Case 6
-				pokemon1 = frmMainMenu.Onix
+				enemypokemon1 = frmMainMenu.Onix
 			Case 7
-				pokemon1 = frmMainMenu.Kangaskhan
+				enemypokemon1 = frmMainMenu.Kangaskhan
 			Case 8
-				pokemon1 = frmMainMenu.Machamp
+				enemypokemon1 = frmMainMenu.Machamp
 		End Select
 
 		frmInBattle.Show()
@@ -584,10 +584,10 @@
 
 		trainerbattle = True
 
-		pokemon1 = frmMainMenu.Blastoise
-		pokemon2 = frmMainMenu.Charizard
-		pokemon3 = frmMainMenu.Venusaur
-		pokemon4 = frmMainMenu.Magikarp
+		enemypokemon1 = frmMainMenu.Blastoise
+		enemypokemon2 = frmMainMenu.Charizard
+		enemypokemon3 = frmMainMenu.Venusaur
+		enemypokemon4 = frmMainMenu.Magikarp
 
 		frmInBattle.Show()
 
@@ -597,12 +597,12 @@
 
 		trainerbattle = True
 
-		pokemon1 = frmMainMenu.Ryu
-		pokemon2 = frmMainMenu.Ken
-		pokemon3 = frmMainMenu.Blanka
-		pokemon4 = frmMainMenu.MBison
-		pokemon5 = frmMainMenu.Akuma
-		pokemon6 = frmMainMenu.Balrog
+		enemypokemon1 = frmMainMenu.Ryu
+		enemypokemon2 = frmMainMenu.Ken
+		enemypokemon3 = frmMainMenu.Blanka
+		enemypokemon4 = frmMainMenu.MBison
+		enemypokemon5 = frmMainMenu.Akuma
+		enemypokemon6 = frmMainMenu.Balrog
 
 		frmInBattle.Show()
 
