@@ -545,7 +545,7 @@
 		enemypokemon4 = frmMainMenu.Gyarados
 		enemypokemon5 = frmMainMenu.Dragonite
 
-		frmInBattle.Show()
+		frmGym5.Show()
 
 	End Sub
 
@@ -604,7 +604,7 @@
 		enemypokemon5 = frmMainMenu.Akuma
 		enemypokemon6 = frmMainMenu.Balrog
 
-		frmInBattle.Show()
+		'frmInBattle.Show()
 
 	End Sub
 

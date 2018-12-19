@@ -42,6 +42,7 @@ Partial Class frmInBattle
 		Me.lblEHp = New System.Windows.Forms.Label()
 		Me.lblEType = New System.Windows.Forms.Label()
 		Me.lblEName = New System.Windows.Forms.Label()
+		Me.Label7 = New System.Windows.Forms.Label()
 		CType(Me.picYPokemon, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.picEPokemon, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.SuspendLayout()
@@ -226,11 +227,21 @@ Partial Class frmInBattle
 		Me.lblEName.TabIndex = 17
 		Me.lblEName.Text = "Name"
 		'
+		'Label7
+		'
+		Me.Label7.AutoSize = True
+		Me.Label7.Location = New System.Drawing.Point(304, 140)
+		Me.Label7.Name = "Label7"
+		Me.Label7.Size = New System.Drawing.Size(39, 13)
+		Me.Label7.TabIndex = 20
+		Me.Label7.Text = "Label7"
+		'
 		'frmInBattle
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
 		Me.ClientSize = New System.Drawing.Size(800, 690)
+		Me.Controls.Add(Me.Label7)
 		Me.Controls.Add(Me.lblEHp)
 		Me.Controls.Add(Me.lblEType)
 		Me.Controls.Add(Me.lblEName)
@@ -282,4 +293,5 @@ Partial Class frmInBattle
     Friend WithEvents lblEHp As Label
     Friend WithEvents lblEType As Label
     Friend WithEvents lblEName As Label
+	Friend WithEvents Label7 As Label
 End Class
