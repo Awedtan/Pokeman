@@ -7,27 +7,30 @@ Public Class frmMainMenu
     Dim Box As New frmBox
     Dim BattleSelect As New frmBattleSelect
 
-    Dim route6counter As Integer
-    Dim route7counter As Integer
+	Public Shared route6counter As Integer
+	Public Shared route7counter As Integer
 
-    'Pokeman name, health, attack, defense, speed, special, obtained, selected, type1, type2, move1, move2, move3, move4
-    '      0          1       2       3       4       5         6         7       8      9      10     11     13    14
+	'Pokeman name, health, attack, defense, speed, special, obtained, selected, type1, type2, move1, move2, move3, move4
+	'      0          1       2       3       4       5         6         7       8      9      10     11     13    14
 
-    'Special cases:
-    'Nidoran(m&f), Farfetch'd, Mr. Mime
+	'Bug, Dragon, Ice, FIghting, Fire, Flying, Grass, Ghost, Ground, Electric, Normal , Poison, Psychic, Rock, Water
+	' 1      2     3     4         5      6     7        8       9      10       11       12        13     14     15
 
-    Public Shared Bulbasaur() As String = {"Bulbasaur", 45, 49, 49, 45, 65, 0, 0, 7, 12, "Absorb", "Razor Leaf", "Cut", "Vine Whip"}
-    Public Shared Ivysaur() As String = {"Ivysaur", 60, 62, 63, 60, 80, 0, 0, 7, 12, "Mega Drain", "Razor Leaf", "Take Down", "Poison Powder"}
+	'Special cases:
+	'Nidoran(m&f), Farfetch'd, Mr. Mime
+
+	Public Shared Bulbasaur() As String = {"Bulbasaur", 45, 49, 49, 45, 65, 1, 0, 7, 12, "Absorb", "Razor Leaf", "Cut", "Vine Whip"}
+	Public Shared Ivysaur() As String = {"Ivysaur", 60, 62, 63, 60, 80, 0, 0, 7, 12, "Mega Drain", "Razor Leaf", "Take Down", "Poison Powder"}
     Public Shared Venusaur() As String = {"Venusaur", 80, 82, 83, 80, 100, 0, 0, 7, 12, "Mega Drain", "Leech Seed", "Double-Edge", "Solar Beam"}
-    Public Shared Charmander() As String = {"Charmander", 39, 52, 43, 65, 50, 0, 0, 5, 0, "Ember", "Scratch", "Growl", "Fire Spin"}
-    Public Shared Charmeleon() As String = {"Charmeleon", 58, 64, 58, 80, 65, 0, 0, 5, 0}
+	Public Shared Charmander() As String = {"Charmander", 39, 52, 43, 65, 50, 1, 0, 5, 0, "Ember", "Scratch", "Growl", "Fire Spin"}
+	Public Shared Charmeleon() As String = {"Charmeleon", 58, 64, 58, 80, 65, 0, 0, 5, 0}
     Public Shared Charizard() As String = {"Charizard", 78, 84, 78, 100, 85, 0, 0, 5, 6, "Fire Blast", "Fly", "Seismic Toss", "Slash"}
-    Public Shared Squirtle() As String = {"Squirtle", 44, 48, 65, 43, 50, 0, 0, 15, 0, "Tackle", "Water Gun", "Bubble", "Tail Whip"}
-    Public Shared Wartortle() As String = {"Wartortle", 59, 63, 80, 58, 65, 0, 0, 15, 0}
+	Public Shared Squirtle() As String = {"Squirtle", 44, 48, 65, 43, 50, 1, 0, 15, 0, "Tackle", "Water Gun", "Bubble", "Tail Whip"}
+	Public Shared Wartortle() As String = {"Wartortle", 59, 63, 80, 58, 65, 0, 0, 15, 0}
     Public Shared Blastoise() As String = {"Blastoise", 79, 83, 100, 78, 85, 0, 0, 15, 0, "Hydro Pump", "Defense Curl", "Double-Edge", "Blizzard"}
     Public Shared Caterpie() As String = {"Caterpie", 45, 30, 35, 56, 20, 0, 0, 1, 0, "String Shot", "Tackle", "Nothing", "Nothing"}
-    Public Shared Metapod() As String = {"Metapod", 50, 20, 55, 30, 25, 0, 0, 1, 0, "Harden", "Nothing", "Nothing", "Nothing"}
-    Public Shared Butterfree() As String = {"Butterfree", 60, 45, 50, 70, 80, 0, 0, 1, 6, "Poison Powder", "Confusion", "Gust", "Double-Edge"}
+	Public Shared Metapod() As String = {"Metapod", 50, 20, 55, 30, 25, 1, 0, 1, 0, "Harden", "Nothing", "Nothing", "Nothing"}
+	Public Shared Butterfree() As String = {"Butterfree", 60, 45, 50, 70, 80, 0, 0, 1, 6, "Poison Powder", "Confusion", "Gust", "Double-Edge"}
     Public Shared Weedle() As String = {"Weedle", 40, 35, 30, 50, 20, 0, 0, 1, 12, "Poison Sting", "String Shot", "Nothing", "Nothing"}
     Public Shared Kakuna() As String = {"Kakuna", 45, 25, 50, 35, 25, 0, 0, 1, 12, "Harden", "Nothing", "Nothing", "Nothing"}
     Public Shared Beedrill() As String = {"Beedrill", 35, 80, 40, 75, 45, 0, 0, 1, 12, "Poison Sting", "Pin Missile", "Skull Bash", "Swords Dance"}
@@ -175,19 +178,33 @@ Public Class frmMainMenu
     Public Shared Akuma() As String = {"Akuma", 80, 150, 80, 110, 120, 0, 0, 4, 12, "Hadouken", "Raging Demon", "Gou Shoryuken", "Ahura Senku"} 'teleport
     Public Shared Balrog() As String = {"Balrog", 125, 125, 120, 75, 60, 0, 0, 4, 4, "Buffalo Headbutt", "Super Running Uppercut", "Dash Punch", "Head Bomber"}
 
-    Private Sub btnStore_Click(sender As Object, e As EventArgs) Handles btnStore.Click
+	Public Shared yourpokemon1(14) As String
+	Public Shared yourpokemon2(14) As String
+	Public Shared yourpokemon3(14) As String
+	Public Shared yourpokemon4(14) As String
+	Public Shared yourpokemon5(14) As String
+	Public Shared yourpokemon6(14) As String
 
-        frmShopMenu.Show()
+	Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
 
-    End Sub
+		lblPokeman1.Text = yourpokemon1(0)
+		lblPokeman2.Text = yourpokemon2(0)
+		lblPokeman3.Text = yourpokemon3(0)
+		lblPokeman4.Text = yourpokemon4(0)
+		lblPokeman5.Text = yourpokemon5(0)
+		lblPokeman6.Text = yourpokemon6(0)
 
-    Private Sub btnBox_Click(sender As Object, e As EventArgs) Handles btnBox.Click
+	End Sub
 
-        frmBox.Show()
+	Private Sub btnStore_Click(sender As Object, e As EventArgs) Handles btnStore.Click
+		frmShopMenu.Show()
+	End Sub
 
-    End Sub
+	Private Sub btnBox_Click(sender As Object, e As EventArgs) Handles btnBox.Click
+		frmBox.Show()
+	End Sub
 
-    Private Sub btnBattle_Click(sender As Object, e As EventArgs) Handles btnBattle.Click
+	Private Sub btnBattle_Click(sender As Object, e As EventArgs) Handles btnBattle.Click
         frmBattleSelect.Show()
     End Sub
 

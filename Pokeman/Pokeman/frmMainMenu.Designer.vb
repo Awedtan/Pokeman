@@ -22,6 +22,7 @@ Partial Class frmMainMenu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+		Me.components = New System.ComponentModel.Container()
 		Me.btnBattle = New System.Windows.Forms.Button()
 		Me.btnStore = New System.Windows.Forms.Button()
 		Me.btnBox = New System.Windows.Forms.Button()
@@ -36,6 +37,7 @@ Partial Class frmMainMenu
 		Me.lblLotion = New System.Windows.Forms.Label()
 		Me.lblMedpack = New System.Windows.Forms.Label()
 		Me.lblFeast = New System.Windows.Forms.Label()
+		Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
 		Me.SuspendLayout()
 		'
 		'btnBattle
@@ -164,6 +166,11 @@ Partial Class frmMainMenu
 		Me.lblFeast.TabIndex = 13
 		Me.lblFeast.Text = "# of Full Feast"
 		'
+		'Timer1
+		'
+		Me.Timer1.Enabled = True
+		Me.Timer1.Interval = 1
+		'
 		'frmMainMenu
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -204,4 +211,5 @@ Partial Class frmMainMenu
     Friend WithEvents lblLotion As Label
     Friend WithEvents lblMedpack As Label
     Friend WithEvents lblFeast As Label
+	Friend WithEvents Timer1 As Timer
 End Class

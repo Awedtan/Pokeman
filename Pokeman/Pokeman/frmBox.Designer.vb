@@ -22,8 +22,7 @@ Partial Class frmBox
 	'Do not modify it using the code editor.
 	<System.Diagnostics.DebuggerStepThrough()> _
 	Private Sub InitializeComponent()
-		Me.components = New System.ComponentModel.Container()
-		Me.Label1 = New System.Windows.Forms.Label()
+		Me.lblBulbasaur = New System.Windows.Forms.Label()
 		Me.GroupBox1 = New System.Windows.Forms.GroupBox()
 		Me.Button4 = New System.Windows.Forms.Button()
 		Me.Button3 = New System.Windows.Forms.Button()
@@ -33,28 +32,35 @@ Partial Class frmBox
 		Me.PictureBox2 = New System.Windows.Forms.PictureBox()
 		Me.PictureBox1 = New System.Windows.Forms.PictureBox()
 		Me.PictureBox43 = New System.Windows.Forms.PictureBox()
-		Me.Label4 = New System.Windows.Forms.Label()
-		Me.Label3 = New System.Windows.Forms.Label()
-		Me.Label2 = New System.Windows.Forms.Label()
+		Me.lblCaterpie = New System.Windows.Forms.Label()
+		Me.lblSquirtle = New System.Windows.Forms.Label()
+		Me.lblCharmander = New System.Windows.Forms.Label()
 		Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+		Me.Button5 = New System.Windows.Forms.Button()
 		Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+		Me.Button6 = New System.Windows.Forms.Button()
 		Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+		Me.Button7 = New System.Windows.Forms.Button()
+		Me.Button8 = New System.Windows.Forms.Button()
 		Me.PictureBox5 = New System.Windows.Forms.PictureBox()
 		Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-		Me.Label5 = New System.Windows.Forms.Label()
-		Me.Label6 = New System.Windows.Forms.Label()
-		Me.Label7 = New System.Windows.Forms.Label()
-		Me.Label8 = New System.Windows.Forms.Label()
+		Me.lblKakuna = New System.Windows.Forms.Label()
+		Me.lblWeedle = New System.Windows.Forms.Label()
+		Me.lblButterfree = New System.Windows.Forms.Label()
+		Me.lblMetapod = New System.Windows.Forms.Label()
 		Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+		Me.Button9 = New System.Windows.Forms.Button()
 		Me.PictureBox11 = New System.Windows.Forms.PictureBox()
+		Me.Button10 = New System.Windows.Forms.Button()
 		Me.PictureBox10 = New System.Windows.Forms.PictureBox()
+		Me.Button11 = New System.Windows.Forms.Button()
+		Me.Button12 = New System.Windows.Forms.Button()
 		Me.PictureBox9 = New System.Windows.Forms.PictureBox()
 		Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-		Me.Label9 = New System.Windows.Forms.Label()
-		Me.Label10 = New System.Windows.Forms.Label()
-		Me.Label11 = New System.Windows.Forms.Label()
-		Me.Label12 = New System.Windows.Forms.Label()
-		Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+		Me.lblPidgeot = New System.Windows.Forms.Label()
+		Me.lblPidgeotto = New System.Windows.Forms.Label()
+		Me.lblPidgey = New System.Windows.Forms.Label()
+		Me.lblBeedrill = New System.Windows.Forms.Label()
 		Me.GroupBox1.SuspendLayout()
 		CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -72,14 +78,14 @@ Partial Class frmBox
 		CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.SuspendLayout()
 		'
-		'Label1
+		'lblBulbasaur
 		'
-		Me.Label1.AutoSize = True
-		Me.Label1.Location = New System.Drawing.Point(6, 62)
-		Me.Label1.Name = "Label1"
-		Me.Label1.Size = New System.Drawing.Size(54, 13)
-		Me.Label1.TabIndex = 0
-		Me.Label1.Text = "Bulbasaur"
+		Me.lblBulbasaur.AutoSize = True
+		Me.lblBulbasaur.Location = New System.Drawing.Point(6, 65)
+		Me.lblBulbasaur.Name = "lblBulbasaur"
+		Me.lblBulbasaur.Size = New System.Drawing.Size(54, 13)
+		Me.lblBulbasaur.TabIndex = 0
+		Me.lblBulbasaur.Text = "Bulbasaur"
 		'
 		'GroupBox1
 		'
@@ -91,55 +97,54 @@ Partial Class frmBox
 		Me.GroupBox1.Controls.Add(Me.PictureBox2)
 		Me.GroupBox1.Controls.Add(Me.PictureBox1)
 		Me.GroupBox1.Controls.Add(Me.PictureBox43)
-		Me.GroupBox1.Controls.Add(Me.Label4)
-		Me.GroupBox1.Controls.Add(Me.Label3)
-		Me.GroupBox1.Controls.Add(Me.Label2)
-		Me.GroupBox1.Controls.Add(Me.Label1)
+		Me.GroupBox1.Controls.Add(Me.lblCaterpie)
+		Me.GroupBox1.Controls.Add(Me.lblSquirtle)
+		Me.GroupBox1.Controls.Add(Me.lblCharmander)
+		Me.GroupBox1.Controls.Add(Me.lblBulbasaur)
 		Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
 		Me.GroupBox1.Name = "GroupBox1"
 		Me.GroupBox1.Size = New System.Drawing.Size(200, 359)
 		Me.GroupBox1.TabIndex = 1
 		Me.GroupBox1.TabStop = False
-		Me.GroupBox1.Text = "GroupBox1"
 		'
 		'Button4
 		'
 		Me.Button4.Enabled = False
-		Me.Button4.Location = New System.Drawing.Point(1, 309)
+		Me.Button4.Location = New System.Drawing.Point(0, 312)
 		Me.Button4.Name = "Button4"
 		Me.Button4.Size = New System.Drawing.Size(59, 24)
 		Me.Button4.TabIndex = 53
-		Me.Button4.Text = "Button4"
+		Me.Button4.Text = "Select"
 		Me.Button4.UseVisualStyleBackColor = True
 		'
 		'Button3
 		'
 		Me.Button3.Enabled = False
-		Me.Button3.Location = New System.Drawing.Point(1, 232)
+		Me.Button3.Location = New System.Drawing.Point(0, 235)
 		Me.Button3.Name = "Button3"
 		Me.Button3.Size = New System.Drawing.Size(59, 24)
 		Me.Button3.TabIndex = 52
-		Me.Button3.Text = "Button3"
+		Me.Button3.Text = "Select"
 		Me.Button3.UseVisualStyleBackColor = True
 		'
 		'Button2
 		'
 		Me.Button2.Enabled = False
-		Me.Button2.Location = New System.Drawing.Point(1, 155)
+		Me.Button2.Location = New System.Drawing.Point(0, 158)
 		Me.Button2.Name = "Button2"
 		Me.Button2.Size = New System.Drawing.Size(59, 24)
 		Me.Button2.TabIndex = 51
-		Me.Button2.Text = "Button2"
+		Me.Button2.Text = "Select"
 		Me.Button2.UseVisualStyleBackColor = True
 		'
 		'Button1
 		'
 		Me.Button1.Enabled = False
-		Me.Button1.Location = New System.Drawing.Point(1, 78)
+		Me.Button1.Location = New System.Drawing.Point(0, 81)
 		Me.Button1.Name = "Button1"
 		Me.Button1.Size = New System.Drawing.Size(59, 24)
 		Me.Button1.TabIndex = 50
-		Me.Button1.Text = "Button1"
+		Me.Button1.Text = "Select"
 		Me.Button1.UseVisualStyleBackColor = True
 		'
 		'PictureBox3
@@ -178,49 +183,62 @@ Partial Class frmBox
 		Me.PictureBox43.TabIndex = 46
 		Me.PictureBox43.TabStop = False
 		'
-		'Label4
+		'lblCaterpie
 		'
-		Me.Label4.AutoSize = True
-		Me.Label4.Location = New System.Drawing.Point(6, 293)
-		Me.Label4.Name = "Label4"
-		Me.Label4.Size = New System.Drawing.Size(54, 13)
-		Me.Label4.TabIndex = 10
-		Me.Label4.Text = "Bulbasaur"
+		Me.lblCaterpie.AutoSize = True
+		Me.lblCaterpie.Location = New System.Drawing.Point(6, 296)
+		Me.lblCaterpie.Name = "lblCaterpie"
+		Me.lblCaterpie.Size = New System.Drawing.Size(46, 13)
+		Me.lblCaterpie.TabIndex = 10
+		Me.lblCaterpie.Text = "Caterpie"
 		'
-		'Label3
+		'lblSquirtle
 		'
-		Me.Label3.AutoSize = True
-		Me.Label3.Location = New System.Drawing.Point(6, 216)
-		Me.Label3.Name = "Label3"
-		Me.Label3.Size = New System.Drawing.Size(42, 13)
-		Me.Label3.TabIndex = 8
-		Me.Label3.Text = "Squirtle"
+		Me.lblSquirtle.AutoSize = True
+		Me.lblSquirtle.Location = New System.Drawing.Point(6, 219)
+		Me.lblSquirtle.Name = "lblSquirtle"
+		Me.lblSquirtle.Size = New System.Drawing.Size(42, 13)
+		Me.lblSquirtle.TabIndex = 8
+		Me.lblSquirtle.Text = "Squirtle"
 		'
-		'Label2
+		'lblCharmander
 		'
-		Me.Label2.AutoSize = True
-		Me.Label2.Location = New System.Drawing.Point(6, 139)
-		Me.Label2.Name = "Label2"
-		Me.Label2.Size = New System.Drawing.Size(41, 13)
-		Me.Label2.TabIndex = 6
-		Me.Label2.Text = "Ivysaur"
+		Me.lblCharmander.AutoSize = True
+		Me.lblCharmander.Location = New System.Drawing.Point(6, 142)
+		Me.lblCharmander.Name = "lblCharmander"
+		Me.lblCharmander.Size = New System.Drawing.Size(64, 13)
+		Me.lblCharmander.TabIndex = 6
+		Me.lblCharmander.Text = "Charmander"
 		'
 		'GroupBox2
 		'
+		Me.GroupBox2.Controls.Add(Me.Button5)
 		Me.GroupBox2.Controls.Add(Me.PictureBox7)
+		Me.GroupBox2.Controls.Add(Me.Button6)
 		Me.GroupBox2.Controls.Add(Me.PictureBox6)
+		Me.GroupBox2.Controls.Add(Me.Button7)
+		Me.GroupBox2.Controls.Add(Me.Button8)
 		Me.GroupBox2.Controls.Add(Me.PictureBox5)
 		Me.GroupBox2.Controls.Add(Me.PictureBox4)
-		Me.GroupBox2.Controls.Add(Me.Label5)
-		Me.GroupBox2.Controls.Add(Me.Label6)
-		Me.GroupBox2.Controls.Add(Me.Label7)
-		Me.GroupBox2.Controls.Add(Me.Label8)
+		Me.GroupBox2.Controls.Add(Me.lblKakuna)
+		Me.GroupBox2.Controls.Add(Me.lblWeedle)
+		Me.GroupBox2.Controls.Add(Me.lblButterfree)
+		Me.GroupBox2.Controls.Add(Me.lblMetapod)
 		Me.GroupBox2.Location = New System.Drawing.Point(218, 15)
 		Me.GroupBox2.Name = "GroupBox2"
 		Me.GroupBox2.Size = New System.Drawing.Size(200, 359)
 		Me.GroupBox2.TabIndex = 11
 		Me.GroupBox2.TabStop = False
-		Me.GroupBox2.Text = "GroupBox2"
+		'
+		'Button5
+		'
+		Me.Button5.Enabled = False
+		Me.Button5.Location = New System.Drawing.Point(0, 309)
+		Me.Button5.Name = "Button5"
+		Me.Button5.Size = New System.Drawing.Size(59, 24)
+		Me.Button5.TabIndex = 57
+		Me.Button5.Text = "Select"
+		Me.Button5.UseVisualStyleBackColor = True
 		'
 		'PictureBox7
 		'
@@ -231,6 +249,16 @@ Partial Class frmBox
 		Me.PictureBox7.TabIndex = 53
 		Me.PictureBox7.TabStop = False
 		'
+		'Button6
+		'
+		Me.Button6.Enabled = False
+		Me.Button6.Location = New System.Drawing.Point(0, 232)
+		Me.Button6.Name = "Button6"
+		Me.Button6.Size = New System.Drawing.Size(59, 24)
+		Me.Button6.TabIndex = 56
+		Me.Button6.Text = "Select"
+		Me.Button6.UseVisualStyleBackColor = True
+		'
 		'PictureBox6
 		'
 		Me.PictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
@@ -239,6 +267,26 @@ Partial Class frmBox
 		Me.PictureBox6.Size = New System.Drawing.Size(75, 71)
 		Me.PictureBox6.TabIndex = 52
 		Me.PictureBox6.TabStop = False
+		'
+		'Button7
+		'
+		Me.Button7.Enabled = False
+		Me.Button7.Location = New System.Drawing.Point(0, 155)
+		Me.Button7.Name = "Button7"
+		Me.Button7.Size = New System.Drawing.Size(59, 24)
+		Me.Button7.TabIndex = 55
+		Me.Button7.Text = "Select"
+		Me.Button7.UseVisualStyleBackColor = True
+		'
+		'Button8
+		'
+		Me.Button8.Enabled = False
+		Me.Button8.Location = New System.Drawing.Point(0, 78)
+		Me.Button8.Name = "Button8"
+		Me.Button8.Size = New System.Drawing.Size(59, 24)
+		Me.Button8.TabIndex = 54
+		Me.Button8.Text = "Select"
+		Me.Button8.UseVisualStyleBackColor = True
 		'
 		'PictureBox5
 		'
@@ -258,58 +306,71 @@ Partial Class frmBox
 		Me.PictureBox4.TabIndex = 50
 		Me.PictureBox4.TabStop = False
 		'
-		'Label5
+		'lblKakuna
 		'
-		Me.Label5.AutoSize = True
-		Me.Label5.Location = New System.Drawing.Point(6, 293)
-		Me.Label5.Name = "Label5"
-		Me.Label5.Size = New System.Drawing.Size(46, 13)
-		Me.Label5.TabIndex = 10
-		Me.Label5.Text = "Pikachu"
+		Me.lblKakuna.AutoSize = True
+		Me.lblKakuna.Location = New System.Drawing.Point(6, 293)
+		Me.lblKakuna.Name = "lblKakuna"
+		Me.lblKakuna.Size = New System.Drawing.Size(44, 13)
+		Me.lblKakuna.TabIndex = 10
+		Me.lblKakuna.Text = "Kakuna"
 		'
-		'Label6
+		'lblWeedle
 		'
-		Me.Label6.AutoSize = True
-		Me.Label6.Location = New System.Drawing.Point(6, 216)
-		Me.Label6.Name = "Label6"
-		Me.Label6.Size = New System.Drawing.Size(46, 13)
-		Me.Label6.TabIndex = 8
-		Me.Label6.Text = "Pikachu"
+		Me.lblWeedle.AutoSize = True
+		Me.lblWeedle.Location = New System.Drawing.Point(6, 216)
+		Me.lblWeedle.Name = "lblWeedle"
+		Me.lblWeedle.Size = New System.Drawing.Size(44, 13)
+		Me.lblWeedle.TabIndex = 8
+		Me.lblWeedle.Text = "Weedle"
 		'
-		'Label7
+		'lblButterfree
 		'
-		Me.Label7.AutoSize = True
-		Me.Label7.Location = New System.Drawing.Point(6, 139)
-		Me.Label7.Name = "Label7"
-		Me.Label7.Size = New System.Drawing.Size(64, 13)
-		Me.Label7.TabIndex = 6
-		Me.Label7.Text = "Charmander"
+		Me.lblButterfree.AutoSize = True
+		Me.lblButterfree.Location = New System.Drawing.Point(2, 139)
+		Me.lblButterfree.Name = "lblButterfree"
+		Me.lblButterfree.Size = New System.Drawing.Size(53, 13)
+		Me.lblButterfree.TabIndex = 6
+		Me.lblButterfree.Text = "Butterfree"
 		'
-		'Label8
+		'lblMetapod
 		'
-		Me.Label8.AutoSize = True
-		Me.Label8.Location = New System.Drawing.Point(6, 62)
-		Me.Label8.Name = "Label8"
-		Me.Label8.Size = New System.Drawing.Size(46, 13)
-		Me.Label8.TabIndex = 0
-		Me.Label8.Text = "Pikachu"
+		Me.lblMetapod.AutoSize = True
+		Me.lblMetapod.Location = New System.Drawing.Point(6, 62)
+		Me.lblMetapod.Name = "lblMetapod"
+		Me.lblMetapod.Size = New System.Drawing.Size(49, 13)
+		Me.lblMetapod.TabIndex = 0
+		Me.lblMetapod.Text = "Metapod"
 		'
 		'GroupBox3
 		'
+		Me.GroupBox3.Controls.Add(Me.Button9)
 		Me.GroupBox3.Controls.Add(Me.PictureBox11)
+		Me.GroupBox3.Controls.Add(Me.Button10)
 		Me.GroupBox3.Controls.Add(Me.PictureBox10)
+		Me.GroupBox3.Controls.Add(Me.Button11)
+		Me.GroupBox3.Controls.Add(Me.Button12)
 		Me.GroupBox3.Controls.Add(Me.PictureBox9)
 		Me.GroupBox3.Controls.Add(Me.PictureBox8)
-		Me.GroupBox3.Controls.Add(Me.Label9)
-		Me.GroupBox3.Controls.Add(Me.Label10)
-		Me.GroupBox3.Controls.Add(Me.Label11)
-		Me.GroupBox3.Controls.Add(Me.Label12)
+		Me.GroupBox3.Controls.Add(Me.lblPidgeot)
+		Me.GroupBox3.Controls.Add(Me.lblPidgeotto)
+		Me.GroupBox3.Controls.Add(Me.lblPidgey)
+		Me.GroupBox3.Controls.Add(Me.lblBeedrill)
 		Me.GroupBox3.Location = New System.Drawing.Point(424, 15)
 		Me.GroupBox3.Name = "GroupBox3"
 		Me.GroupBox3.Size = New System.Drawing.Size(200, 359)
 		Me.GroupBox3.TabIndex = 12
 		Me.GroupBox3.TabStop = False
-		Me.GroupBox3.Text = "GroupBox3"
+		'
+		'Button9
+		'
+		Me.Button9.Enabled = False
+		Me.Button9.Location = New System.Drawing.Point(0, 309)
+		Me.Button9.Name = "Button9"
+		Me.Button9.Size = New System.Drawing.Size(59, 24)
+		Me.Button9.TabIndex = 61
+		Me.Button9.Text = "Select"
+		Me.Button9.UseVisualStyleBackColor = True
 		'
 		'PictureBox11
 		'
@@ -320,6 +381,16 @@ Partial Class frmBox
 		Me.PictureBox11.TabIndex = 57
 		Me.PictureBox11.TabStop = False
 		'
+		'Button10
+		'
+		Me.Button10.Enabled = False
+		Me.Button10.Location = New System.Drawing.Point(0, 232)
+		Me.Button10.Name = "Button10"
+		Me.Button10.Size = New System.Drawing.Size(59, 24)
+		Me.Button10.TabIndex = 60
+		Me.Button10.Text = "Select"
+		Me.Button10.UseVisualStyleBackColor = True
+		'
 		'PictureBox10
 		'
 		Me.PictureBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
@@ -328,6 +399,26 @@ Partial Class frmBox
 		Me.PictureBox10.Size = New System.Drawing.Size(75, 71)
 		Me.PictureBox10.TabIndex = 56
 		Me.PictureBox10.TabStop = False
+		'
+		'Button11
+		'
+		Me.Button11.Enabled = False
+		Me.Button11.Location = New System.Drawing.Point(0, 155)
+		Me.Button11.Name = "Button11"
+		Me.Button11.Size = New System.Drawing.Size(59, 24)
+		Me.Button11.TabIndex = 59
+		Me.Button11.Text = "Select"
+		Me.Button11.UseVisualStyleBackColor = True
+		'
+		'Button12
+		'
+		Me.Button12.Enabled = False
+		Me.Button12.Location = New System.Drawing.Point(0, 78)
+		Me.Button12.Name = "Button12"
+		Me.Button12.Size = New System.Drawing.Size(59, 24)
+		Me.Button12.TabIndex = 58
+		Me.Button12.Text = "Select"
+		Me.Button12.UseVisualStyleBackColor = True
 		'
 		'PictureBox9
 		'
@@ -347,46 +438,41 @@ Partial Class frmBox
 		Me.PictureBox8.TabIndex = 54
 		Me.PictureBox8.TabStop = False
 		'
-		'Label9
+		'lblPidgeot
 		'
-		Me.Label9.AutoSize = True
-		Me.Label9.Location = New System.Drawing.Point(6, 293)
-		Me.Label9.Name = "Label9"
-		Me.Label9.Size = New System.Drawing.Size(46, 13)
-		Me.Label9.TabIndex = 10
-		Me.Label9.Text = "Pikachu"
+		Me.lblPidgeot.AutoSize = True
+		Me.lblPidgeot.Location = New System.Drawing.Point(6, 293)
+		Me.lblPidgeot.Name = "lblPidgeot"
+		Me.lblPidgeot.Size = New System.Drawing.Size(43, 13)
+		Me.lblPidgeot.TabIndex = 10
+		Me.lblPidgeot.Text = "Pidgeot"
 		'
-		'Label10
+		'lblPidgeotto
 		'
-		Me.Label10.AutoSize = True
-		Me.Label10.Location = New System.Drawing.Point(6, 216)
-		Me.Label10.Name = "Label10"
-		Me.Label10.Size = New System.Drawing.Size(46, 13)
-		Me.Label10.TabIndex = 8
-		Me.Label10.Text = "Pikachu"
+		Me.lblPidgeotto.AutoSize = True
+		Me.lblPidgeotto.Location = New System.Drawing.Point(6, 216)
+		Me.lblPidgeotto.Name = "lblPidgeotto"
+		Me.lblPidgeotto.Size = New System.Drawing.Size(52, 13)
+		Me.lblPidgeotto.TabIndex = 8
+		Me.lblPidgeotto.Text = "Pidgeotto"
 		'
-		'Label11
+		'lblPidgey
 		'
-		Me.Label11.AutoSize = True
-		Me.Label11.Location = New System.Drawing.Point(6, 139)
-		Me.Label11.Name = "Label11"
-		Me.Label11.Size = New System.Drawing.Size(64, 13)
-		Me.Label11.TabIndex = 6
-		Me.Label11.Text = "Charmander"
+		Me.lblPidgey.AutoSize = True
+		Me.lblPidgey.Location = New System.Drawing.Point(6, 139)
+		Me.lblPidgey.Name = "lblPidgey"
+		Me.lblPidgey.Size = New System.Drawing.Size(39, 13)
+		Me.lblPidgey.TabIndex = 6
+		Me.lblPidgey.Text = "Pidgey"
 		'
-		'Label12
+		'lblBeedrill
 		'
-		Me.Label12.AutoSize = True
-		Me.Label12.Location = New System.Drawing.Point(6, 62)
-		Me.Label12.Name = "Label12"
-		Me.Label12.Size = New System.Drawing.Size(46, 13)
-		Me.Label12.TabIndex = 0
-		Me.Label12.Text = "Pikachu"
-		'
-		'Timer1
-		'
-		Me.Timer1.Enabled = True
-		Me.Timer1.Interval = 1
+		Me.lblBeedrill.AutoSize = True
+		Me.lblBeedrill.Location = New System.Drawing.Point(6, 62)
+		Me.lblBeedrill.Name = "lblBeedrill"
+		Me.lblBeedrill.Size = New System.Drawing.Size(41, 13)
+		Me.lblBeedrill.TabIndex = 0
+		Me.lblBeedrill.Text = "Beedrill"
 		'
 		'frmBox
 		'
@@ -420,21 +506,21 @@ Partial Class frmBox
 
 	End Sub
 
-	Friend WithEvents Label1 As Label
+	Friend WithEvents lblBulbasaur As Label
 	Friend WithEvents GroupBox1 As GroupBox
-	Friend WithEvents Label2 As Label
-	Friend WithEvents Label4 As Label
-	Friend WithEvents Label3 As Label
+	Friend WithEvents lblCharmander As Label
+	Friend WithEvents lblCaterpie As Label
+	Friend WithEvents lblSquirtle As Label
 	Friend WithEvents GroupBox2 As GroupBox
-	Friend WithEvents Label5 As Label
-	Friend WithEvents Label6 As Label
-	Friend WithEvents Label7 As Label
-	Friend WithEvents Label8 As Label
+	Friend WithEvents lblKakuna As Label
+	Friend WithEvents lblWeedle As Label
+	Friend WithEvents lblButterfree As Label
+	Friend WithEvents lblMetapod As Label
 	Friend WithEvents GroupBox3 As GroupBox
-	Friend WithEvents Label9 As Label
-	Friend WithEvents Label10 As Label
-	Friend WithEvents Label11 As Label
-	Friend WithEvents Label12 As Label
+	Friend WithEvents lblPidgeot As Label
+	Friend WithEvents lblPidgeotto As Label
+	Friend WithEvents lblPidgey As Label
+	Friend WithEvents lblBeedrill As Label
 	Friend WithEvents Button4 As Button
 	Friend WithEvents Button3 As Button
 	Friend WithEvents Button2 As Button
@@ -451,5 +537,12 @@ Partial Class frmBox
 	Friend WithEvents PictureBox10 As PictureBox
 	Friend WithEvents PictureBox9 As PictureBox
 	Friend WithEvents PictureBox8 As PictureBox
-	Friend WithEvents Timer1 As Timer
+	Friend WithEvents Button5 As Button
+	Friend WithEvents Button6 As Button
+	Friend WithEvents Button7 As Button
+	Friend WithEvents Button8 As Button
+	Friend WithEvents Button9 As Button
+	Friend WithEvents Button10 As Button
+	Friend WithEvents Button11 As Button
+	Friend WithEvents Button12 As Button
 End Class
