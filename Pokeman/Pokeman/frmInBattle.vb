@@ -1,4 +1,4 @@
-﻿Public Class frmInBattle
+Public Class frmInBattle
 
 	Function catchp(ByVal ran As Integer) As Boolean
 
@@ -596,7 +596,7 @@
 
 				If catchp(num) Then
 
-					frmMainMenu.Duduo(6) = 1
+					frmMainMenu.Doduo(6) = 1
 
 				End If
 
@@ -609,22 +609,141 @@
 				End If
 
 			Case "Tauros"
+
+				If catchp(num) Then
+
+					frmMainMenu.Tauros(6) = 1
+
+				End If
+
 			Case "Moltres"
+
+				If catchp(num) Then
+
+					frmMainMenu.Moltres(6) = 1
+
+				End If
+
 			Case "Zapdos"
+
+				If catchp(num) Then
+
+					frmMainMenu.Zapdos(6) = 1
+
+				End If
+
 			Case "Articuno"
+
+				If catchp(num) Then
+
+					frmMainMenu.Articuno(6) = 1
+
+				End If
+
 			Case "Psyduck"
+
+				If catchp(num) Then
+
+					frmMainMenu.Psyduck(6) = 1
+
+				End If
+
 			Case "Golduck"
+
+				If catchp(num) Then
+
+					frmMainMenu.Golduck(6) = 1
+
+				End If
+
 			Case "Machoke"
+
+				If catchp(num) Then
+
+					frmMainMenu.Machoke(6) = 1
+
+				End If
+
 			Case "Machop"
+
+				If catchp(num) Then
+
+					frmMainMenu.Machop(6) = 1
+
+				End If
+
 			Case "Hypno"
+
+				If catchp(num) Then
+
+					frmMainMenu.Hypno(6) = 1
+
+				End If
+
 			Case "Snorlax"
+
+				If catchp(num) Then
+
+					frmMainMenu.Snorlax(6) = 1
+
+				End If
+
 			Case "Dragonair"
+
+				If catchp(num) Then
+
+					frmMainMenu.Dragonair(6) = 1
+
+				End If
+
 			Case "Dragonite"
+
+				If catchp(num) Then
+
+					frmMainMenu.Dragonite(6) = 1
+
+				End If
+
 			Case "Alakazam"
+
+				If catchp(num) Then
+
+					frmMainMenu.Alakazam(6) = 1
+
+				End If
+
 			Case "Golem"
+
+				If catchp(num) Then
+
+					frmMainMenu.Golem(6) = 1
+
+				End If
+
 			Case "Onix"
+
+				If catchp(num) Then
+
+					frmMainMenu.Onix(6) = 1
+
+				End If
+
 			Case "Kangaskhan"
+
+				If catchp(num) Then
+
+					frmMainMenu.Kangaskhan(6) = 1
+
+				End If
+
 			Case "Machamp"
+
+				If catchp(num) Then
+
+					frmMainMenu.Machamp(6) = 1
+
+				End If
+
 		End Select
 
 	End Sub
