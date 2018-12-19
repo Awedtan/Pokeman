@@ -19,7 +19,7 @@ Public Class frmMainMenu
     Public Shared Bulbasaur() As String = {"Bulbasaur", 45, 49, 49, 45, 65, 0, 0, 7, 12, "Absorb", "Razor Leaf", "Cut", "Vine Whip"}
     Public Shared Ivysaur() As String = {"Ivysaur", 60, 62, 63, 60, 80, 0, 0, 7, 12, "Mega Drain", "Razor Leaf", "Take Down", "Poison Powder"}
     Public Shared Venusaur() As String = {"Venusaur", 80, 82, 83, 80, 100, 0, 0, 7, 12, "Mega Drain", "Leech Seed", "Double-Edge", "Solar Beam"}
-    Public Shared Charmander() As String = {"Charmander", 39, 52, 43, 65, 50, 0, 0, 5, 0}
+    Public Shared Charmander() As String = {"Charmander", 39, 52, 43, 65, 50, 0, 0, 5, 0, "Ember", "Scratch", "Growl", "Fire Spin"}
     Public Shared Charmeleon() As String = {"Charmeleon", 58, 64, 58, 80, 65, 0, 0, 5, 0}
     Public Shared Charizard() As String = {"Charizard", 78, 84, 78, 100, 85, 0, 0, 5, 6, "Fire Blast", "Fly", "Seismic Toss", "Slash"}
     Public Shared Squirtle() As String = {"Squirtle", 44, 48, 65, 43, 50, 0, 0, 15, 0, "Tackle", "Water Gun", "Bubble", "Tail Whip"}
@@ -165,8 +165,8 @@ Public Class frmMainMenu
     Public Shared Dratini() As String = {"Dratini", 41, 64, 45, 50, 50, 0, 0, 2, 0}
     Public Shared Dragonair() As String = {"Dragonair", 61, 84, 65, 70, 70, 0, 0, 2, 0, "Thunder", "Wrap", "Hyper Beam", "Surf"}
     Public Shared Dragonite() As String = {"Dragonite", 91, 134, 95, 80, 100, 0, 0, 2, 6, "Thunder", "Hyper Beam", "Surf", "Blizzard"}
-    Public Shared Mewtwo() As String = {"Mewtwo", 106, 110, 90, 130, 154, 0, 0, 13, 0}
-    Public Shared Mew() As String = {"Mew", 100, 100, 100, 100, 100, 0, 0, 13, 0}
+    Public Shared Mewtwo() As String = {"Mewtwo", 106, 110, 90, 130, 154, 0, 0, 13, 0, "Recover", "Barrier ", "Psychic", "Thunder"}
+    Public Shared Mew() As String = {"Mew", 100, 100, 100, 100, 100, 0, 0, 13, 0, "Psychic", "Metronone", "Mega Punch", "Explosion"}
 
     Public Shared Ryu() As String = {"Ryu", 100, 100, 100, 100, 100, 0, 0, 4, 11, "Hadouken", "Shoryuken", "Hurricane Kick", "Collarbone Breaker"}
     Public Shared Ken() As String = {"Ken", 100, 100, 100, 100, 100, 0, 0, 4, 11, "Hadouken", "Heat Rush", "Guren Enjinkyaku", "Quick Step"}

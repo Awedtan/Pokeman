@@ -31,7 +31,9 @@
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-
+        If picPlayer.Bounds.IntersectsWith(Panel1.Bounds) Then
+            frmInBattle.Show()
+        End If
         If up = True Then
             loc = New Point(picPlayer.Location.X, picPlayer.Location.Y - 3)
             picPlayer.Location = loc

@@ -77,6 +77,7 @@ Partial Class frmGym1
         Me.PictureBox50 = New System.Windows.Forms.PictureBox()
         Me.PictureBox51 = New System.Windows.Forms.PictureBox()
         Me.picPlayer = New System.Windows.Forms.PictureBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -605,11 +606,19 @@ Partial Class frmGym1
         Me.picPlayer.TabIndex = 54
         Me.picPlayer.TabStop = False
         '
+        'Panel1
+        '
+        Me.Panel1.Location = New System.Drawing.Point(42, 490)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(211, 15)
+        Me.Panel1.TabIndex = 55
+        '
         'frmGym1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(899, 749)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.picPlayer)
         Me.Controls.Add(Me.PictureBox51)
         Me.Controls.Add(Me.PictureBox49)
@@ -772,4 +781,5 @@ Partial Class frmGym1
     Friend WithEvents PictureBox50 As PictureBox
     Friend WithEvents PictureBox51 As PictureBox
     Friend WithEvents picPlayer As PictureBox
+    Friend WithEvents Panel1 As Panel
 End Class
