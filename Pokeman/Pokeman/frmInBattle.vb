@@ -1,750 +1,972 @@
-Public Class frmInBattle
+﻿Public Class frmInBattle
+    Dim yourturn As Boolean
+    Dim status As Integer
+    Dim movetype As Integer
+    'burn, freeze, paralyze, poison, badly poisoned, sleep, confused, bound, LS, 
+    '  1     2        3         4           5          6      7          8    9
+
+    Function catchp(ByVal ran As Integer) As Boolean
+
+        If enemypokemon1inbattle(1) > (frmBattleSelect.enemypokemon1(1) / 2) Then
+
+            If ran = 2 Then
+
+                catchp = True
+
+            Else
+
+                catchp = False
+
+            End If
+
+        ElseIf enemypokemon1inbattle(1) > ((frmBattleSelect.enemypokemon1(1) / 2) / 2) Then
+
+            If ran < 5 Then
+
+                catchp = True
+
+            Else
+
+                catchp = False
+
+            End If
+
+        Else
+            If ran < 17 Then
+
+                catchp = True
+
+            Else
+
+                catchp = False
+
+            End If
+        End If
+    End Function
+
+    Function DAttackS(ByVal yourtype As Integer, ByVal theirtype As Integer) As Integer
+        DAttackS = 3
+        Select Case movetype
+            Case 1
+                Select Case enemypokemon(8)
+                    Case 4, 5, 6, 8
+                        DAttackS -= 1
+                    Case 7, 12, 13
+                        DAttackS += 1
+                End Select
+                Select Case enemypokemon(9)
+                    Case 4, 5, 6, 8
+                        DAttackS -= 1
+                    Case 7, 12, 13
+                        DAttackS += 1
+                End Select
+
+            Case 2
+                Select Case enemypokemon(8)
+                    Case 2
+                        DAttackS += 1
+                End Select
+                Select Case enemypokemon(9)
+                    Case 2
+                        DAttackS += 1
+                End Select
+
+            Case 3
+                Select Case enemypokemon(8)
+                    Case 15
+                        DAttackS -= 1
+                    Case 2, 6, 7, 9,
+                         DAttackS = DAttackS + 1
+                End Select
+                Select Case enemypokemon(9)
+                    Case 15
+                        DAttackS -= 1
+                    Case 2, 6, 7, 9,
+                         DAttackS = DAttackS + 1
+                End Select
+
+            Case 4
+                Select Case enemypokemon(8)
+                    Case 6, 12, 1, 13
+                        DAttackS -= 1
+                    Case 11, 14, 3
+                        DAttackS += 1
+                    Case 8
+                        DAttackS -= 10
+                End Select
+                Select Case enemypokemon(9)
+                    Case 6, 12, 1, 13
+                        DAttackS -= 1
+                    Case 11, 14, 3
+                        DAttackS += 1
+                    Case 8
+                        DAttackS -= 10
+                End Select
+
+            Case 5
+                Select Case enemypokemon(8)
+                    Case 14, 5, 15, 2
+                        DAttackS -= 1
+                    Case 1, 7, 3
+                        DAttackS += 1
+                End Select
+                Select Case enemypokemon(9)
+                    Case 14, 5, 15, 2
+                        DAttackS -= 1
+                    Case 1, 7, 3
+                        DAttackS += 1
+                End Select
+
+            Case 6
+                Select Case enemypokemon(8)
+                    Case 14, 10
+                        DAttackS -= 1
+                    Case 4, 1, 7
+                        DAttackS += 1
+                End Select
+                Select Case enemypokemon(9)
+                    Case 14, 10
+                        DAttackS -= 1
+                    Case 4, 1, 7
+                        DAttackS += 1
+                End Select
+            Case 7
+                Select Case enemypokemon(8)
+                    Case 6, 12, 1, 5, 7, 2
+                        DAttackS -= 1
+                    Case 9, 14, 15
+                        DAttackS += 1
+                End Select
+                Select Case enemypokemon(9)
+                    Case 6, 12, 1, 5, 7, 2
+                        DAttackS -= 1
+                    Case 9, 14, 15
+                        DAttackS += 1
+                End Select
+            Case 8
+                Select Case enemypokemon(8)
+                    Case 11, 13
+                        DAttackS -= 10
+                    Case 8
+                        DAttackS += 1
+                End Select
+                Select Case enemypokemon(9)
+                    Case 11, 13
+                        DAttackS -= 10
+                    Case 8
+                        DAttackS += 1
+                End Select
+            Case 9
+                Select Case enemypokemon(8)
+                    Case 6
+                        DAttackS -= 10
+                    Case 1, 7
+                        DAttackS -= 1
+                    Case 12, 14, 5, 10
+                        DAttackS += 1
+                End Select
+                Select Case enemypokemon(9)
+                    Case 6
+                        DAttackS -= 10
+                    Case 1, 7
+                        DAttackS -= 1
+                    Case 12, 14, 5, 10
+                        DAttackS += 1
+                End Select
+            Case 10
+                Select Case enemypokemon(8)
+                    Case 9
+                        DAttackS -= 10
+                    Case 7, 10, 2
+                        DAttackS -= 1
+                    Case 6, 15
+                        DAttackS += 1
+                End Select
+                Select Case enemypokemon(9)
+                    Case 9
+                        DAttackS -= 10
+                    Case 7, 10, 2
+                        DAttackS -= 1
+                    Case 6, 15
+                        DAttackS += 1
+                End Select
+            Case 11
+                Select Case enemypokemon(8)
+                    Case 14
+                        DAttackS -= 1
+                    Case 8
+                        DAttackS -= 10
+                End Select
+                Select Case enemypokemon(9)
+                    Case 14
+                        DAttackS -= 1
+                    Case 8
+                        DAttackS -= 10
+                End Select
+            Case 12
+                Select Case enemypokemon(8)
+                    Case 12, 9, 14, 8
+                        DAttackS -= 1
+                    Case 1, 7
+                        DAttackS += 1
+                End Select
+                Select Case enemypokemon(9)
+                    Case 12, 9, 14, 8
+                        DAttackS -= 1
+                    Case 1, 7
+                        DAttackS += 1
+                End Select
+            Case 13
+                Select Case enemypokemon(8)
+                    Case 13
+                        DAttackS -= 1
+                    Case 4, 12,
+                         DAttackS = DAttackS + 1
+                End Select
+                Select Case enemypokemon(9)
+                    Case 13
+                        DAttackS -= 1
+                    Case 4, 12,
+                         DAttackS = DAttackS + 1
+                End Select
+            Case 14
+                Select Case enemypokemon(8)
+                    Case 4, 9
+                        DAttackS -= 1
+                    Case 6, 1, 3
+                        DAttackS += 1
+                End Select
+                Select Case enemypokemon(9)
+                    Case 4, 9
+                        DAttackS -= 1
+                    Case 6, 1, 3
+                        DAttackS += 1
+                End Select
+            Case 15
+                Select Case enemypokemon(8)
+                    Case 15, 7, 2
+                        DAttackS -= 1
+                    Case 9, 14, 5
+                        DAttackS += 1
+                End Select
+        End Select
+    End Function
+
+    Dim yourpokemon() As String '= frmMainMenu.yourpokemon1
+    Dim enemypokemon() As String
+
+    Dim EYourPokemon() As String
+    Dim EEnemyPokemon() As String
+    Dim TempSwapStat() As String
+
+    Dim tempattack As Double
+    Dim tempspecial As Double
+    ' tempattack = tempattack * 2
+    'tempspecial = tempspecial * 2
+
+    Dim enemypokemon1inbattle(14) As String
+    Dim enemypokemon2inbattle(14) As String
+    Dim enemypokemon3inbattle(14) As String
+    Dim enemypokemon4inbattle(14) As String
+    Dim enemypokemon5inbattle(14) As String
+    Dim enemypokemon6inbattle(14) As String
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnMove1.Click
+        Select Case yourpokemon(10)
+            Case "Absorb"
+                enemypokemon(1) -= yourpokemon(5) * 20 / enemypokemon(5)
+                yourpokemon(1) += yourpokemon(5) * 20 / enemypokemon(5) / 2
+
+        End Select
+    End Sub
+
+    Private Sub btnPokeball_Click(sender As Object, e As EventArgs) Handles btnPokeball.Click
+
+        'enemypokemon1inbattle(0) = "Rattata"
+
+        'frmBattleSelect.enemypokemon1(1) = 100
+        'enemypokemon1inbattle(1) = 100
+
+        Dim num As Integer
+
+        Randomize()
+
+        num = Int(20 * Rnd(1))
+
+        Select Case enemypokemon1inbattle(0)
+            Case "Rattata"
+
+                If catchp(num) Then
+
+                    frmMainMenu.Rattata(6) = 1
+
+                End If
+
+            Case "Spearow"
+
+                If catchp(num) Then
+
+                    frmMainMenu.Spearow(6) = 1
+
+                End If
+
+            Case "Pidgey"
+
+                If catchp(num) Then
+
+                    frmMainMenu.Pidgey(6) = 1
+
+                End If
+
+            Case "Weedle"
+
+                If catchp(num) Then
+
+                    frmMainMenu.Weedle(6) = 1
+
+                End If
+
+            Case "Caterpie"
+
+                If catchp(num) Then
+
+                    frmMainMenu.Caterpie(6) = 1
+
+                End If
 
-	Function catchp(ByVal ran As Integer) As Boolean
+            Case "Eevee"
 
-		If enemypokemon1inbattle(1) > (frmBattleSelect.enemypokemon1(1) / 2) Then
+                If catchp(num) Then
 
-			If ran = 2 Then
+                    frmMainMenu.Eevee(6) = 1
 
-				catchp = True
+                End If
 
-			Else
+            Case "Bellspout"
 
-				catchp = False
+                If catchp(num) Then
 
-			End If
+                    frmMainMenu.Bellsprout(6) = 1
 
-		ElseIf enemypokemon1inbattle(1) > ((frmBattleSelect.enemypokemon1(1) / 2) / 2) Then
+                End If
 
-			If ran < 5 Then
+            Case "Oddish"
 
-				catchp = True
+                If catchp(num) Then
 
-			Else
+                    frmMainMenu.Oddish(6) = 1
 
-				catchp = False
+                End If
 
-			End If
+            Case "Vulpix"
 
-		Else
-			If ran < 17 Then
+                If catchp(num) Then
 
-				catchp = True
+                    frmMainMenu.Vulpix(6) = 1
 
-			Else
+                End If
 
-				catchp = False
+            Case "Nidoran (male)"
 
-			End If
-		End If
-	End Function
+                If catchp(num) Then
 
-	Dim yourpokemon() As String
+                    frmMainMenu.Nidoranm(6) = 1
 
-	Dim enemypokemon1inbattle(14) As String
-	Dim enemypokemon2inbattle(14) As String
-	Dim enemypokemon3inbattle(14) As String
-	Dim enemypokemon4inbattle(14) As String
-	Dim enemypokemon5inbattle(14) As String
-	Dim enemypokemon6inbattle(14) As String
+                End If
 
-	Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnMove1.Click
-		Select Case yourpokemon(1)
-			Case 45
-				Label1.Text = "1"
-			Case 49
-				Label1.Text = "0"
+            Case "Nidoran (female)"
 
-		End Select
-	End Sub
+                If catchp(num) Then
 
-	Private Sub btnPokeball_Click(sender As Object, e As EventArgs) Handles btnPokeball.Click
+                    frmMainMenu.Nidoranf(6) = 1
 
-		'enemypokemon1inbattle(0) = "Rattata"
+                End If
 
-		'frmBattleSelect.enemypokemon1(1) = 100
-		'enemypokemon1inbattle(1) = 100
+            Case "Metapod"
 
-		Dim num As Integer
+                If catchp(num) Then
 
-		Randomize()
+                    frmMainMenu.Metapod(6) = 1
 
-		num = Int(20 * Rnd(1))
+                End If
 
-		Select Case enemypokemon1inbattle(0)
-			Case "Rattata"
+            Case "Butterfree"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Rattata(6) = 1
+                    frmMainMenu.Butterfree(6) = 1
 
-				End If
+                End If
 
-			Case "Spearow"
+            Case "Kakuna"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Spearow(6) = 1
+                    frmMainMenu.Kakuna(6) = 1
 
-				End If
+                End If
 
-			Case "Pidgey"
+            Case "Beedrill"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Pidgey(6) = 1
+                    frmMainMenu.Beedrill(6) = 1
 
-				End If
+                End If
 
-			Case "Weedle"
+            Case "Pidgeotto"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Weedle(6) = 1
+                    frmMainMenu.Pidgeotto(6) = 1
 
-				End If
+                End If
 
-			Case "Caterpie"
+            Case "Nidorino"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Caterpie(6) = 1
+                    frmMainMenu.Nidorino(6) = 1
 
-				End If
+                End If
 
-			Case "Eevee"
+            Case "Nidorina"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Eevee(6) = 1
+                    frmMainMenu.Nidorina(6) = 1
 
-				End If
+                End If
 
-			Case "Bellspout"
+            Case "Raticate"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Bellsprout(6) = 1
+                    frmMainMenu.Raticate(6) = 1
 
-				End If
+                End If
 
-			Case "Oddish"
+            Case "Ekans"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Oddish(6) = 1
+                    frmMainMenu.Ekans(6) = 1
 
-				End If
+                End If
 
-			Case "Vulpix"
+            Case "Pikachu"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Vulpix(6) = 1
+                    frmMainMenu.Pikachu(6) = 1
 
-				End If
+                End If
 
-			Case "Nidoran (male)"
+            Case "Raichu"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Nidoranm(6) = 1
+                    frmMainMenu.Raichu(6) = 1
 
-				End If
+                End If
 
-			Case "Nidoran (female)"
+            Case "Diglett"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Nidoranf(6) = 1
+                    frmMainMenu.Diglett(6) = 1
 
-				End If
+                End If
 
-			Case "Metapod"
+            Case "Meowth"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Metapod(6) = 1
+                    frmMainMenu.Meowth(6) = 1
 
-				End If
+                End If
 
-			Case "Butterfree"
+            Case "Magnemite"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Butterfree(6) = 1
+                    frmMainMenu.Magnemite(6) = 1
 
-				End If
+                End If
 
-			Case "Kakuna"
+            Case "Voltorb"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Kakuna(6) = 1
+                    frmMainMenu.Voltorb(6) = 1
 
-				End If
+                End If
 
-			Case "Beedrill"
+            Case "Gloom"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Beedrill(6) = 1
+                    frmMainMenu.Gloom(6) = 1
 
-				End If
+                End If
 
-			Case "Pidgeotto"
+            Case "Paras"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Pidgeotto(6) = 1
+                    frmMainMenu.Paras(6) = 1
 
-				End If
+                End If
 
-			Case "Nidorino"
+            Case "Parasect"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Nidorino(6) = 1
+                    frmMainMenu.Parasect(6) = 1
 
-				End If
+                End If
 
-			Case "Nidorina"
+            Case "Venonat"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Nidorina(6) = 1
+                    frmMainMenu.Venonat(6) = 1
 
-				End If
+                End If
 
-			Case "Raticate"
+            Case "Magneton"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Raticate(6) = 1
+                    frmMainMenu.Magneton(6) = 1
 
-				End If
+                End If
 
-			Case "Ekans"
+            Case "Electrode"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Ekans(6) = 1
+                    frmMainMenu.Electrode(6) = 1
 
-				End If
+                End If
 
-			Case "Pikachu"
+            Case "Gastly"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Pikachu(6) = 1
+                    frmMainMenu.Gastly(6) = 1
 
-				End If
+                End If
 
-			Case "Raichu"
+            Case "Electabuzz"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Raichu(6) = 1
+                    frmMainMenu.Electabuzz(6) = 1
 
-				End If
+                End If
 
-			Case "Diglett"
+            Case "Jolteon"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Diglett(6) = 1
+                    frmMainMenu.Jolteon(6) = 1
 
-				End If
+                End If
 
-			Case "Meowth"
+            Case "Ponyta"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Meowth(6) = 1
+                    frmMainMenu.Ponyta(6) = 1
 
-				End If
+                End If
 
-			Case "Magnemite"
+            Case "Pidgeot"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Magnemite(6) = 1
+                    frmMainMenu.Pidgeot(6) = 1
 
-				End If
+                End If
 
-			Case "Voltorb"
+            Case "Fearow"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Voltorb(6) = 1
+                    frmMainMenu.Fearow(6) = 1
 
-				End If
+                End If
 
-			Case "Gloom"
+            Case "Growlithe"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Gloom(6) = 1
+                    frmMainMenu.Growlithe(6) = 1
 
-				End If
+                End If
 
-			Case "Paras"
+            Case "Arcanine"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Paras(6) = 1
+                    frmMainMenu.Arcanine(6) = 1
 
-				End If
+                End If
 
-			Case "Parasect"
+            Case "Farfetch'd"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Parasect(6) = 1
+                    frmMainMenu.Farfetchd(6) = 1
 
-				End If
+                End If
 
-			Case "Venonat"
+            Case "Rapidash"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Venonat(6) = 1
+                    frmMainMenu.Rapidash(6) = 1
 
-				End If
+                End If
 
-			Case "Magneton"
+            Case "Ninetales"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Magneton(6) = 1
+                    frmMainMenu.Ninetales(6) = 1
 
-				End If
+                End If
 
-			Case "Electrode"
+            Case "Magmar"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Electrode(6) = 1
+                    frmMainMenu.Magmar(6) = 1
 
-				End If
+                End If
 
-			Case "Gastly"
+            Case "Flareon"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Gastly(6) = 1
+                    frmMainMenu.Flareon(6) = 1
 
-				End If
+                End If
 
-			Case "Electabuzz"
+            Case "Vileplume"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Electabuzz(6) = 1
+                    frmMainMenu.Vileplume(6) = 1
 
-				End If
+                End If
 
-			Case "Jolteon"
+            Case "Poliwag"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Jolteon(6) = 1
+                    frmMainMenu.Poliwag(6) = 1
 
-				End If
+                End If
 
-			Case "Ponyta"
+            Case "Poliwhirl"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Ponyta(6) = 1
+                    frmMainMenu.Poliwhirl(6) = 1
 
-				End If
+                End If
 
-			Case "Pidgeot"
+            Case "Seel"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Pidgeot(6) = 1
+                    frmMainMenu.Seel(6) = 1
 
-				End If
+                End If
 
-			Case "Fearow"
+            Case "Shellder"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Fearow(6) = 1
+                    frmMainMenu.Shellder(6) = 1
 
-				End If
+                End If
 
-			Case "Growlithe"
+            Case "Krabby"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Growlithe(6) = 1
+                    frmMainMenu.Krabby(6) = 1
 
-				End If
+                End If
 
-			Case "Arcanine"
+            Case "Magikarp"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Arcanine(6) = 1
+                    frmMainMenu.Magikarp(6) = 1
 
-				End If
+                End If
 
-			Case "Farfetch'd"
+            Case "Poliwrath"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Farfetchd(6) = 1
+                    frmMainMenu.Poliwrath(6) = 1
 
-				End If
+                End If
 
-			Case "Rapidash"
+            Case "Dewgong"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Rapidash(6) = 1
+                    frmMainMenu.Dewgong(6) = 1
 
-				End If
+                End If
 
-			Case "Ninetales"
+            Case "Kingler"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Ninetales(6) = 1
+                    frmMainMenu.Kingler(6) = 1
 
-				End If
+                End If
 
-			Case "Magmar"
+            Case "Lapras"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Magmar(6) = 1
+                    frmMainMenu.Lapras(6) = 1
 
-				End If
+                End If
 
-			Case "Flareon"
+            Case "Vaporeon"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Flareon(6) = 1
+                    frmMainMenu.Vaporeon(6) = 1
 
-				End If
+                End If
 
-			Case "Vileplume"
+            Case "Arbok"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Vileplume(6) = 1
+                    frmMainMenu.Arbok(6) = 1
 
-				End If
+                End If
 
-			Case "Poliwag"
+            Case "Clefairy"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Poliwag(6) = 1
+                    frmMainMenu.Clefairy(6) = 1
 
-				End If
+                End If
 
-			Case "Poliwhirl"
+            Case "Clefable"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Poliwhirl(6) = 1
+                    frmMainMenu.Clefable(6) = 1
 
-				End If
+                End If
 
-			Case "Seel"
+            Case "Jigglypuff"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Seel(6) = 1
+                    frmMainMenu.Jigglypuff(6) = 1
 
-				End If
+                End If
 
-			Case "Shellder"
+            Case "Wigglytuff"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Shellder(6) = 1
+                    frmMainMenu.Wigglytuff(6) = 1
 
-				End If
+                End If
 
-			Case "Krabby"
+            Case "Venomoth"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Krabby(6) = 1
+                    frmMainMenu.Venomoth(6) = 1
 
-				End If
+                End If
 
-			Case "Magikarp"
+            Case "Abra"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Magikarp(6) = 1
+                    frmMainMenu.Abra(6) = 1
 
-				End If
+                End If
 
-			Case "Poliwrath"
+            Case "Kadabra"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Poliwrath(6) = 1
+                    frmMainMenu.Kadabra(6) = 1
 
-				End If
+                End If
 
-			Case "Dewgong"
+            Case "Doduo"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Dewgong(6) = 1
+                    frmMainMenu.Doduo(6) = 1
 
-				End If
+                End If
 
-			Case "Kingler"
+            Case "Dodrio"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Kingler(6) = 1
+                    frmMainMenu.Dodrio(6) = 1
 
-				End If
+                End If
 
-			Case "Lapras"
+            Case "Tauros"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Lapras(6) = 1
+                    frmMainMenu.Tauros(6) = 1
 
-				End If
+                End If
 
-			Case "Vaporeon"
+            Case "Moltres"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Vaporeon(6) = 1
+                    frmMainMenu.Moltres(6) = 1
 
-				End If
+                End If
 
-			Case "Arbok"
+            Case "Zapdos"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Arbok(6) = 1
+                    frmMainMenu.Zapdos(6) = 1
 
-				End If
+                End If
 
-			Case "Clefairy"
+            Case "Articuno"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Clefairy(6) = 1
+                    frmMainMenu.Articuno(6) = 1
 
-				End If
+                End If
 
-			Case "Clefable"
+            Case "Psyduck"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Clefable(6) = 1
+                    frmMainMenu.Psyduck(6) = 1
 
-				End If
+                End If
 
-			Case "Jigglypuff"
+            Case "Golduck"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Jigglypuff(6) = 1
+                    frmMainMenu.Golduck(6) = 1
 
-				End If
+                End If
 
-			Case "Wigglytuff"
+            Case "Machoke"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Wigglytuff(6) = 1
+                    frmMainMenu.Machoke(6) = 1
 
-				End If
+                End If
 
-			Case "Venomoth"
+            Case "Machop"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Venomoth(6) = 1
+                    frmMainMenu.Machop(6) = 1
 
-				End If
+                End If
 
-			Case "Abra"
+            Case "Hypno"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Abra(6) = 1
+                    frmMainMenu.Hypno(6) = 1
 
-				End If
+                End If
 
-			Case "Kadabra"
+            Case "Snorlax"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Kadabra(6) = 1
+                    frmMainMenu.Snorlax(6) = 1
 
-				End If
+                End If
 
-			Case "Doduo"
+            Case "Dragonair"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Doduo(6) = 1
+                    frmMainMenu.Dragonair(6) = 1
 
-				End If
+                End If
 
-			Case "Dodrio"
+            Case "Dragonite"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Dodrio(6) = 1
+                    frmMainMenu.Dragonite(6) = 1
 
-				End If
+                End If
 
-			Case "Tauros"
+            Case "Alakazam"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Tauros(6) = 1
+                    frmMainMenu.Alakazam(6) = 1
 
-				End If
+                End If
 
-			Case "Moltres"
+            Case "Golem"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Moltres(6) = 1
+                    frmMainMenu.Golem(6) = 1
 
-				End If
+                End If
 
-			Case "Zapdos"
+            Case "Onix"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Zapdos(6) = 1
+                    frmMainMenu.Onix(6) = 1
 
-				End If
+                End If
 
-			Case "Articuno"
+            Case "Kangaskhan"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Articuno(6) = 1
+                    frmMainMenu.Kangaskhan(6) = 1
 
-				End If
+                End If
 
-			Case "Psyduck"
+            Case "Machamp"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Psyduck(6) = 1
+                    frmMainMenu.Machamp(6) = 1
 
-				End If
+                End If
 
-			Case "Golduck"
+        End Select
 
-				If catchp(num) Then
-
-					frmMainMenu.Golduck(6) = 1
-
-				End If
-
-			Case "Machoke"
-
-				If catchp(num) Then
-
-					frmMainMenu.Machoke(6) = 1
-
-				End If
-
-			Case "Machop"
-
-				If catchp(num) Then
-
-					frmMainMenu.Machop(6) = 1
-
-				End If
-
-			Case "Hypno"
-
-				If catchp(num) Then
-
-					frmMainMenu.Hypno(6) = 1
-
-				End If
-
-			Case "Snorlax"
-
-				If catchp(num) Then
-
-					frmMainMenu.Snorlax(6) = 1
-
-				End If
-
-			Case "Dragonair"
-
-				If catchp(num) Then
-
-					frmMainMenu.Dragonair(6) = 1
-
-				End If
-
-			Case "Dragonite"
-
-				If catchp(num) Then
-
-					frmMainMenu.Dragonite(6) = 1
-
-				End If
-
-			Case "Alakazam"
-
-				If catchp(num) Then
-
-					frmMainMenu.Alakazam(6) = 1
-
-				End If
-
-			Case "Golem"
-
-				If catchp(num) Then
-
-					frmMainMenu.Golem(6) = 1
-
-				End If
-
-			Case "Onix"
-
-				If catchp(num) Then
-
-					frmMainMenu.Onix(6) = 1
-
-				End If
-
-			Case "Kangaskhan"
-
-				If catchp(num) Then
-
-					frmMainMenu.Kangaskhan(6) = 1
-
-				End If
-
-			Case "Machamp"
-
-				If catchp(num) Then
-
-					frmMainMenu.Machamp(6) = 1
-
-				End If
-
-		End Select
-
-	End Sub
+    End Sub
 End Class
