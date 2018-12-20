@@ -44,9 +44,9 @@
         End If
     End Function
 
-    Function DAttackS(ByVal yourtype As Integer, ByVal theirtype As Integer) As Integer
+    Function DAttackS(ByVal yourtype As Integer) As Integer
         DAttackS = 3
-        Select Case movetype
+        Select Case yourtype
             Case 1
                 Select Case enemypokemon(8)
                     Case 4, 5, 6, 8
@@ -253,7 +253,7 @@
     End Function
 
     Dim yourpokemon() As String '= frmMainMenu.yourpokemon1
-    Dim enemypokemon() As String
+    Dim enemypokemon() As String = frmMainMenu.Balrog
 
     Dim EYourPokemon() As String
     Dim EEnemyPokemon() As String
@@ -272,12 +272,27 @@
     Dim enemypokemon6inbattle(14) As String
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnMove1.Click
-        Select Case yourpokemon(10)
-            Case "Absorb"
-                enemypokemon(1) -= yourpokemon(5) * 20 / enemypokemon(5)
-                yourpokemon(1) += yourpokemon(5) * 20 / enemypokemon(5) / 2
-
+        '  Select Case yourpokemon(10)
+        'Case "Absorb"
+        'enemypokemon(1) -= yourpokemon(5) * 20 / enemypokemon(5)
+        ' yourpokemon(1) += yourpokemon(5) * 20 / enemypokemon(5) / 2
+        '
+        ''  End Select
+        Select Case DAttackS(6)
+            Case 1
+                Label1.Text = "not very-"
+            Case 2
+                Label1.Text = "not very"
+            Case 3
+                Label1.Text = "norm"
+            Case 4
+                Label1.Text = "sup eff"
+            Case 5
+                Label1.Text = "sup eff+"
+            Case DAttackS(7) < 0
+                Label1.Text = "no effect"
         End Select
+
     End Sub
 
     Private Sub btnPokeball_Click(sender As Object, e As EventArgs) Handles btnPokeball.Click
