@@ -73,6 +73,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmBirdNest.Designer.vb">
+      <DependentUpon>frmBirdNest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBirdNest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBox2.Designer.vb">
+      <DependentUpon>frmBox2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBox2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmGym1.Designer.vb">
       <DependentUpon>frmGym1.vb</DependentUpon>
     </Compile>

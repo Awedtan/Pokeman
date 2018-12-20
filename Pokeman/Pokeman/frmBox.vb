@@ -1,53 +1,55 @@
 ﻿Public Class frmBox
 
+	Dim Box2 As New frmBox2
+
 	Private Sub frmBox_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
 		If frmMainMenu.Bulbasaur(6) = 1 Then
-			Button1.Enabled = True
+			btnBulbasaur.Enabled = True
 		End If
 
 		If frmMainMenu.Charmander(6) = 1 Then
-			Button2.Enabled = True
+			btnCharmander.Enabled = True
 		End If
 
 		If frmMainMenu.Squirtle(6) = 1 Then
-			Button3.Enabled = True
+			btnSquirtle.Enabled = True
 		End If
 
 		If frmMainMenu.Caterpie(6) = 1 Then
-			Button4.Enabled = True
+			btnCaterpie.Enabled = True
 		End If
 
 		If frmMainMenu.Metapod(6) = 1 Then
-			Button8.Enabled = True
+			btnMetapod.Enabled = True
 		End If
 
 		If frmMainMenu.Butterfree(6) = 1 Then
-			Button7.Enabled = True
+			btnButterfree.Enabled = True
 		End If
 
 		If frmMainMenu.Weedle(6) = 1 Then
-			Button6.Enabled = True
+			btnWeedle.Enabled = True
 		End If
 
 		If frmMainMenu.Kakuna(6) = 1 Then
-			Button5.Enabled = True
+			btnKakuna.Enabled = True
 		End If
 
 		If frmMainMenu.Beedrill(6) = 1 Then
-			Button12.Enabled = True
+			btnBeedrill.Enabled = True
 		End If
 
 		If frmMainMenu.Pidgey(6) = 1 Then
-			Button11.Enabled = True
+			btnPidgey.Enabled = True
 		End If
 
 		If frmMainMenu.Pidgeotto(6) = 1 Then
-			Button10.Enabled = True
+			btnPidgeotto.Enabled = True
 		End If
 
 		If frmMainMenu.Pidgeot(6) = 1 Then
-			Button9.Enabled = True
+			btnPidgeot.Enabled = True
 		End If
 
 	End Sub
@@ -250,53 +252,254 @@
 				frmMainMenu.Butterfree(7) = 1
 			End If
 		End If
+		If pokemon = "Weedle" Then
+
+			If frmMainMenu.Weedle(7) = 0 Then
+				slot = Val(InputBox("Which slot from 1 to 6 would you like to put this pokeman in? (0 to cancel)", "Confirm Selection"))
+			End If
+
+			If slot = 1 Then
+
+				frmMainMenu.yourpokemon1 = frmMainMenu.Weedle
+				frmMainMenu.Weedle(7) = 1
+			ElseIf slot = 2 Then
+
+				frmMainMenu.yourpokemon2 = frmMainMenu.Weedle
+				frmMainMenu.Weedle(7) = 1
+			ElseIf slot = 3 Then
+
+				frmMainMenu.yourpokemon3 = frmMainMenu.Weedle
+				frmMainMenu.Weedle(7) = 1
+			ElseIf slot = 4 Then
+
+				frmMainMenu.yourpokemon4 = frmMainMenu.Weedle
+				frmMainMenu.Weedle(7) = 1
+			ElseIf slot = 5 Then
+
+				frmMainMenu.yourpokemon5 = frmMainMenu.Weedle
+				frmMainMenu.Weedle(7) = 1
+			ElseIf slot = 6 Then
+
+				frmMainMenu.yourpokemon6 = frmMainMenu.Weedle
+				frmMainMenu.Weedle(7) = 1
+			End If
+		End If
+		If pokemon = "Kakuna" Then
+
+			If frmMainMenu.Kakuna(7) = 0 Then
+				slot = Val(InputBox("Which slot from 1 to 6 would you like to put this pokeman in? (0 to cancel)", "Confirm Selection"))
+			End If
+
+			If slot = 1 Then
+
+				frmMainMenu.yourpokemon1 = frmMainMenu.Kakuna
+				frmMainMenu.Kakuna(7) = 1
+			ElseIf slot = 2 Then
+
+				frmMainMenu.yourpokemon2 = frmMainMenu.Kakuna
+				frmMainMenu.Kakuna(7) = 1
+			ElseIf slot = 3 Then
+
+				frmMainMenu.yourpokemon3 = frmMainMenu.Kakuna
+				frmMainMenu.Kakuna(7) = 1
+			ElseIf slot = 4 Then
+
+				frmMainMenu.yourpokemon4 = frmMainMenu.Kakuna
+				frmMainMenu.Kakuna(7) = 1
+			ElseIf slot = 5 Then
+
+				frmMainMenu.yourpokemon5 = frmMainMenu.Kakuna
+				frmMainMenu.Kakuna(7) = 1
+			ElseIf slot = 6 Then
+
+				frmMainMenu.yourpokemon6 = frmMainMenu.Kakuna
+				frmMainMenu.Kakuna(7) = 1
+			End If
+		End If
+		If pokemon = "Beedrill" Then
+
+			If frmMainMenu.Beedrill(7) = 0 Then
+				slot = Val(InputBox("Which slot from 1 to 6 would you like to put this pokeman in? (0 to cancel)", "Confirm Selection"))
+			End If
+
+			If slot = 1 Then
+
+				frmMainMenu.yourpokemon1 = frmMainMenu.Beedrill
+				frmMainMenu.Beedrill(7) = 1
+			ElseIf slot = 2 Then
+
+				frmMainMenu.yourpokemon2 = frmMainMenu.Beedrill
+				frmMainMenu.Beedrill(7) = 1
+			ElseIf slot = 3 Then
+
+				frmMainMenu.yourpokemon3 = frmMainMenu.Beedrill
+				frmMainMenu.Beedrill(7) = 1
+			ElseIf slot = 4 Then
+
+				frmMainMenu.yourpokemon4 = frmMainMenu.Beedrill
+				frmMainMenu.Beedrill(7) = 1
+			ElseIf slot = 5 Then
+
+				frmMainMenu.yourpokemon5 = frmMainMenu.Beedrill
+				frmMainMenu.Beedrill(7) = 1
+			ElseIf slot = 6 Then
+
+				frmMainMenu.yourpokemon6 = frmMainMenu.Beedrill
+				frmMainMenu.Beedrill(7) = 1
+			End If
+		End If
+		If pokemon = "Pidgey" Then
+
+			If frmMainMenu.Pidgey(7) = 0 Then
+				slot = Val(InputBox("Which slot from 1 to 6 would you like to put this pokeman in? (0 to cancel)", "Confirm Selection"))
+			End If
+
+			If slot = 1 Then
+
+				frmMainMenu.yourpokemon1 = frmMainMenu.Pidgey
+				frmMainMenu.Pidgey(7) = 1
+			ElseIf slot = 2 Then
+
+				frmMainMenu.yourpokemon2 = frmMainMenu.Pidgey
+				frmMainMenu.Pidgey(7) = 1
+			ElseIf slot = 3 Then
+
+				frmMainMenu.yourpokemon3 = frmMainMenu.Pidgey
+				frmMainMenu.Pidgey(7) = 1
+			ElseIf slot = 4 Then
+
+				frmMainMenu.yourpokemon4 = frmMainMenu.Pidgey
+				frmMainMenu.Pidgey(7) = 1
+			ElseIf slot = 5 Then
+
+				frmMainMenu.yourpokemon5 = frmMainMenu.Pidgey
+				frmMainMenu.Pidgey(7) = 1
+			ElseIf slot = 6 Then
+
+				frmMainMenu.yourpokemon6 = frmMainMenu.Pidgey
+				frmMainMenu.Pidgey(7) = 1
+			End If
+		End If
+		If pokemon = "Pidgeotto" Then
+
+			If frmMainMenu.Pidgeotto(7) = 0 Then
+				slot = Val(InputBox("Which slot from 1 to 6 would you like to put this pokeman in? (0 to cancel)", "Confirm Selection"))
+			End If
+
+			If slot = 1 Then
+
+				frmMainMenu.yourpokemon1 = frmMainMenu.Pidgeotto
+				frmMainMenu.Pidgeotto(7) = 1
+			ElseIf slot = 2 Then
+
+				frmMainMenu.yourpokemon2 = frmMainMenu.Pidgeotto
+				frmMainMenu.Pidgeotto(7) = 1
+			ElseIf slot = 3 Then
+
+				frmMainMenu.yourpokemon3 = frmMainMenu.Pidgeotto
+				frmMainMenu.Pidgeotto(7) = 1
+			ElseIf slot = 4 Then
+
+				frmMainMenu.yourpokemon4 = frmMainMenu.Pidgeotto
+				frmMainMenu.Pidgeotto(7) = 1
+			ElseIf slot = 5 Then
+
+				frmMainMenu.yourpokemon5 = frmMainMenu.Pidgeotto
+				frmMainMenu.Pidgeotto(7) = 1
+			ElseIf slot = 6 Then
+
+				frmMainMenu.yourpokemon6 = frmMainMenu.Pidgeotto
+				frmMainMenu.Pidgeotto(7) = 1
+			End If
+		End If
+		If pokemon = "Pidgeot" Then
+
+			If frmMainMenu.Pidgeot(7) = 0 Then
+				slot = Val(InputBox("Which slot from 1 to 6 would you like to put this pokeman in? (0 to cancel)", "Confirm Selection"))
+			End If
+
+			If slot = 1 Then
+
+				frmMainMenu.yourpokemon1 = frmMainMenu.Pidgeot
+				frmMainMenu.Pidgeot(7) = 1
+			ElseIf slot = 2 Then
+
+				frmMainMenu.yourpokemon2 = frmMainMenu.Pidgeot
+				frmMainMenu.Pidgeot(7) = 1
+			ElseIf slot = 3 Then
+
+				frmMainMenu.yourpokemon3 = frmMainMenu.Pidgeot
+				frmMainMenu.Pidgeot(7) = 1
+			ElseIf slot = 4 Then
+
+				frmMainMenu.yourpokemon4 = frmMainMenu.Pidgeot
+				frmMainMenu.Pidgeot(7) = 1
+			ElseIf slot = 5 Then
+
+				frmMainMenu.yourpokemon5 = frmMainMenu.Pidgeot
+				frmMainMenu.Pidgeot(7) = 1
+			ElseIf slot = 6 Then
+
+				frmMainMenu.yourpokemon6 = frmMainMenu.Pidgeot
+				frmMainMenu.Pidgeot(7) = 1
+			End If
+		End If
 	End Function
 
-	Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+	Private Sub btnBulbasaur_Click(sender As Object, e As EventArgs) Handles btnBulbasaur.Click
 		switch("Bulbasaur")
 	End Sub
 
-	Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+	Private Sub btnCharmander_Click(sender As Object, e As EventArgs) Handles btnCharmander.Click
 		switch("Charmander")
 	End Sub
 
-	Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+	Private Sub btnSquirtle_Click(sender As Object, e As EventArgs) Handles btnSquirtle.Click
 		switch("Squirtle")
 	End Sub
 
-	Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+	Private Sub btnCaterpie_Click(sender As Object, e As EventArgs) Handles btnCaterpie.Click
 		switch("Caterpie")
 	End Sub
 
-	Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+	Private Sub btnMetapod_click(sender As Object, e As EventArgs) Handles btnMetapod.Click
 		switch("Metapod")
 	End Sub
 
-	Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+	Private Sub btnButterfree_Click(sender As Object, e As EventArgs) Handles btnButterfree.Click
 		switch("Butterfree")
 	End Sub
 
-	Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+	Private Sub btnWeedle_Click(sender As Object, e As EventArgs) Handles btnWeedle.Click
 		switch("Weedle")
 	End Sub
 
-	Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+	Private Sub btnKakuna_Click(sender As Object, e As EventArgs) Handles btnKakuna.Click
 		switch("Kakuna")
 	End Sub
 
-	Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+	Private Sub btnBeedrill_Click(sender As Object, e As EventArgs) Handles btnBeedrill.Click
 		switch("Beedrill")
 	End Sub
 
-	Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+	Private Sub btnPidgey_Click(sender As Object, e As EventArgs) Handles btnPidgey.Click
 		switch("Pidgey")
 	End Sub
 
-	Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+	Private Sub btnPidgeotto_Click(sender As Object, e As EventArgs) Handles btnPidgeotto.Click
 		switch("Pidgeotto")
 	End Sub
 
-	Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+	Private Sub btnPidgeot_Click(sender As Object, e As EventArgs) Handles btnPidgeot.Click
 		switch("Pidgeot")
+	End Sub
+
+	Private Sub btnPrevious_Click(sender As Object, e As EventArgs) Handles btnPrevious.Click
+		Me.Close()
+	End Sub
+
+	Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
+		frmBox2.Show()
+		Me.Close()
 	End Sub
 End Class
