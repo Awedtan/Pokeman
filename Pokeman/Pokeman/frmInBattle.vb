@@ -252,8 +252,11 @@
         End Select
     End Function
 
-    Dim yourpokemon() As String '= frmMainMenu.yourpokemon1
-    Dim enemypokemon() As String = frmMainMenu.Balrog
+    Dim yourpokemon() As String = frmMainMenu.yourpokemon1
+    Dim enemypokemon() As String = frmMainMenu.Squirtle
+
+    Dim yourpokemonstat() As String = yourpokemon
+    Dim enemypokemonstat() As String = enemypokemon
 
     Dim EYourPokemon() As String
     Dim EEnemyPokemon() As String
@@ -272,26 +275,109 @@
     Dim enemypokemon6inbattle(14) As String
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnMove1.Click
-        '  Select Case yourpokemon(10)
-        'Case "Absorb"
-        'enemypokemon(1) -= yourpokemon(5) * 20 / enemypokemon(5)
-        ' yourpokemon(1) += yourpokemon(5) * 20 / enemypokemon(5) / 2
-        '
-        ''  End Select
-        Select Case DAttackS(6)
-            Case 1
-                Label1.Text = "not very-"
-            Case 2
-                Label1.Text = "not very"
-            Case 3
-                Label1.Text = "norm"
-            Case 4
-                Label1.Text = "sup eff"
-            Case 5
-                Label1.Text = "sup eff+"
-            Case DAttackS(7) < 0
-                Label1.Text = "no effect"
+        Dim tempattack As Double
+        Dim tempspecial As Double
+        Dim chance As Integer
+
+        Select Case yourpokemon(10)
+            Case "Absorb"
+                Select Case DAttackS(7)
+                    Case 1
+                        tempattack = yourpokemon(2) / 4
+                        tempspecial = yourpokemon(5) / 4
+                    Case 2
+                        tempattack = yourpokemon(2) / 2
+                        tempspecial = yourpokemon(5) / 2
+                    Case 3
+                        tempattack = yourpokemon(2)
+                        tempspecial = yourpokemon(5)
+                    Case 4
+                        tempattack = yourpokemon(2) * 2
+                        tempspecial = yourpokemon(5) * 2
+                    Case 5
+                        tempattack = yourpokemon(2) * 4
+                        tempspecial = yourpokemon(5) * 4
+                    Case DAttackS(7) < 0
+                        tempattack = 0
+                        tempspecial = 0
+                End Select
+                enemypokemon(1) -= tempspecial * 10 / enemypokemon(5)
+                yourpokemon(1) += tempspecial * 5 / enemypokemon(5) / 2
+
+                lblYHp.Text = yourpokemon(1)
+                lblEHp.Text = enemypokemon(1)
+            Case "Acid"
+                Select Case DAttackS(12)
+                    Case 1
+                        tempattack = yourpokemon(2) / 4
+                        tempspecial = yourpokemon(5) / 4
+                    Case 2
+                        tempattack = yourpokemon(2) / 2
+                        tempspecial = yourpokemon(5) / 2
+                    Case 3
+                        tempattack = yourpokemon(2)
+                        tempspecial = yourpokemon(5)
+                    Case 4
+                        tempattack = yourpokemon(2) * 2
+                        tempspecial = yourpokemon(5) * 2
+                    Case 5
+                        tempattack = yourpokemon(2) * 4
+                        tempspecial = yourpokemon(5) * 4
+                    Case DAttackS(7) < 0
+                        tempattack = 0
+                        tempspecial = 0
+                End Select
+                enemypokemon(1) -= tempspecial * 15 / enemypokemon(5)
+                chance = 1 + Rnd() * 3
+                If chance = 1 Then
+                    enemypokemon(3) -= enemypokemonstat(3) / 2
+                    Label7.Text = "Enemy Defence Was Lowered by 1 Stage!"
+                End If
+
+                lblYHp.Text = yourpokemon(1)
+                lblEHp.Text = enemypokemon(1)
+            Case "Acid Armor"
+                yourpokemon(3) += yourpokemonstat(3)
+                Label7.Text = "Your defence went up by 2 stages!"
+            Case "Agility"
+                yourpokemon(4) += yourpokemonstat(4)
+                Label7.Text = "Your speed went up by 2 stages!"
+            Case "Amnesia"
+                yourpokemon(5) += yourpokemonstat(5)
+                Label7.Text = "Your special went up by 2 stages!"
+            Case "Aurora Beam"
+                Select Case DAttackS(3)
+                    Case 1
+                        tempattack = yourpokemon(2) / 4
+                        tempspecial = yourpokemon(5) / 4
+                    Case 2
+                        tempattack = yourpokemon(2) / 2
+                        tempspecial = yourpokemon(5) / 2
+                    Case 3
+                        tempattack = yourpokemon(2)
+                        tempspecial = yourpokemon(5)
+                    Case 4
+                        tempattack = yourpokemon(2) * 2
+                        tempspecial = yourpokemon(5) * 2
+                    Case 5
+                        tempattack = yourpokemon(2) * 4
+                        tempspecial = yourpokemon(5) * 4
+                    Case DAttackS(7) < 0
+                        tempattack = 0
+                        tempspecial = 0
+                End Select
+                enemypokemon(1) -= tempspecial * 32.5 / enemypokemon(5)
+                chance = 1 + Rnd() * 3
+                If chance = 1 Then
+                    enemypokemon(2) -= enemypokemonstat(2) / 2
+                    Label7.Text = "Enemy Attack Was Lowered by 1 Stage!"
+                End If
+
+                lblYHp.Text = yourpokemon(1)
+                lblEHp.Text = enemypokemon(1)
+            Case "Barrage"
         End Select
+
 
     End Sub
 
@@ -983,5 +1069,12 @@
 
         End Select
 
+    End Sub
+
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+        lblYName.Text = yourpokemon(0)
+        lblYHp.Text = yourpokemon(1)
+        lblEName.Text = enemypokemon(0)
+        lblEHp.Text = enemypokemon(1)
     End Sub
 End Class
