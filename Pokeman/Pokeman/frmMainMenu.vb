@@ -19,17 +19,17 @@ Public Class frmMainMenu
 	'Special cases:
 	'Nidoran(m&f), Farfetch'd, Mr. Mime
 
-	Public Shared Bulbasaur() As String = {"Bulbasaur", 45, 49, 49, 45, 65, 1, 0, 7, 12, "Absorb", "Razor Leaf", "Cut", "Vine Whip"}
+	Public Shared Bulbasaur() As String = {"Bulbasaur", 45, 49, 49, 45, 65, 0, 0, 7, 12, "Absorb", "Razor Leaf", "Cut", "Vine Whip"}
 	Public Shared Ivysaur() As String = {"Ivysaur", 60, 62, 63, 60, 80, 0, 0, 7, 12, "Mega Drain", "Razor Leaf", "Take Down", "Poison Powder"}
     Public Shared Venusaur() As String = {"Venusaur", 80, 82, 83, 80, 100, 0, 0, 7, 12, "Mega Drain", "Leech Seed", "Double-Edge", "Solar Beam"}
-	Public Shared Charmander() As String = {"Charmander", 39, 52, 43, 65, 50, 1, 0, 5, 0, "Ember", "Scratch", "Growl", "Fire Spin"}
+	Public Shared Charmander() As String = {"Charmander", 39, 52, 43, 65, 50, 0, 0, 5, 0, "Ember", "Scratch", "Growl", "Fire Spin"}
 	Public Shared Charmeleon() As String = {"Charmeleon", 58, 64, 58, 80, 65, 0, 0, 5, 0}
     Public Shared Charizard() As String = {"Charizard", 78, 84, 78, 100, 85, 0, 0, 5, 6, "Fire Blast", "Fly", "Seismic Toss", "Slash"}
-	Public Shared Squirtle() As String = {"Squirtle", 44, 48, 65, 43, 50, 1, 0, 15, 0, "Tackle", "Water Gun", "Bubble", "Tail Whip"}
+	Public Shared Squirtle() As String = {"Squirtle", 44, 48, 65, 43, 50, 0, 0, 15, 0, "Tackle", "Water Gun", "Bubble", "Tail Whip"}
 	Public Shared Wartortle() As String = {"Wartortle", 59, 63, 80, 58, 65, 0, 0, 15, 0}
     Public Shared Blastoise() As String = {"Blastoise", 79, 83, 100, 78, 85, 0, 0, 15, 0, "Hydro Pump", "Defense Curl", "Double-Edge", "Blizzard"}
     Public Shared Caterpie() As String = {"Caterpie", 45, 30, 35, 56, 20, 0, 0, 1, 0, "String Shot", "Tackle", "Nothing", "Nothing"}
-	Public Shared Metapod() As String = {"Metapod", 50, 20, 55, 30, 25, 1, 0, 1, 0, "Harden", "Nothing", "Nothing", "Nothing"}
+	Public Shared Metapod() As String = {"Metapod", 50, 20, 55, 30, 25, 0, 0, 1, 0, "Harden", "Nothing", "Nothing", "Nothing"}
 	Public Shared Butterfree() As String = {"Butterfree", 60, 45, 50, 70, 80, 0, 0, 1, 6, "Poison Powder", "Confusion", "Gust", "Double-Edge"}
     Public Shared Weedle() As String = {"Weedle", 40, 35, 30, 50, 20, 0, 0, 1, 12, "Poison Sting", "String Shot", "Nothing", "Nothing"}
     Public Shared Kakuna() As String = {"Kakuna", 45, 25, 50, 35, 25, 0, 0, 1, 12, "Harden", "Nothing", "Nothing", "Nothing"}

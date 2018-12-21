@@ -24,10 +24,10 @@ Partial Class frmBox
 	Private Sub InitializeComponent()
 		Me.lblBulbasaur = New System.Windows.Forms.Label()
 		Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-		Me.Button4 = New System.Windows.Forms.Button()
-		Me.Button3 = New System.Windows.Forms.Button()
-		Me.Button2 = New System.Windows.Forms.Button()
-		Me.Button1 = New System.Windows.Forms.Button()
+		Me.btnCaterpie = New System.Windows.Forms.Button()
+		Me.btnSquirtle = New System.Windows.Forms.Button()
+		Me.btnCharmander = New System.Windows.Forms.Button()
+		Me.btnBulbasaur = New System.Windows.Forms.Button()
 		Me.PictureBox3 = New System.Windows.Forms.PictureBox()
 		Me.PictureBox2 = New System.Windows.Forms.PictureBox()
 		Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -36,12 +36,12 @@ Partial Class frmBox
 		Me.lblSquirtle = New System.Windows.Forms.Label()
 		Me.lblCharmander = New System.Windows.Forms.Label()
 		Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-		Me.Button5 = New System.Windows.Forms.Button()
+		Me.btnKakuna = New System.Windows.Forms.Button()
 		Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-		Me.Button6 = New System.Windows.Forms.Button()
+		Me.btnWeedle = New System.Windows.Forms.Button()
 		Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-		Me.Button7 = New System.Windows.Forms.Button()
-		Me.Button8 = New System.Windows.Forms.Button()
+		Me.btnButterfree = New System.Windows.Forms.Button()
+		Me.btnMetapod = New System.Windows.Forms.Button()
 		Me.PictureBox5 = New System.Windows.Forms.PictureBox()
 		Me.PictureBox4 = New System.Windows.Forms.PictureBox()
 		Me.lblKakuna = New System.Windows.Forms.Label()
@@ -49,18 +49,20 @@ Partial Class frmBox
 		Me.lblButterfree = New System.Windows.Forms.Label()
 		Me.lblMetapod = New System.Windows.Forms.Label()
 		Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-		Me.Button9 = New System.Windows.Forms.Button()
+		Me.btnPidgeot = New System.Windows.Forms.Button()
 		Me.PictureBox11 = New System.Windows.Forms.PictureBox()
-		Me.Button10 = New System.Windows.Forms.Button()
+		Me.btnPidgeotto = New System.Windows.Forms.Button()
 		Me.PictureBox10 = New System.Windows.Forms.PictureBox()
-		Me.Button11 = New System.Windows.Forms.Button()
-		Me.Button12 = New System.Windows.Forms.Button()
+		Me.btnPidgey = New System.Windows.Forms.Button()
+		Me.btnBeedrill = New System.Windows.Forms.Button()
 		Me.PictureBox9 = New System.Windows.Forms.PictureBox()
 		Me.PictureBox8 = New System.Windows.Forms.PictureBox()
 		Me.lblPidgeot = New System.Windows.Forms.Label()
 		Me.lblPidgeotto = New System.Windows.Forms.Label()
 		Me.lblPidgey = New System.Windows.Forms.Label()
 		Me.lblBeedrill = New System.Windows.Forms.Label()
+		Me.btnPrevious = New System.Windows.Forms.Button()
+		Me.btnNext = New System.Windows.Forms.Button()
 		Me.GroupBox1.SuspendLayout()
 		CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -89,10 +91,10 @@ Partial Class frmBox
 		'
 		'GroupBox1
 		'
-		Me.GroupBox1.Controls.Add(Me.Button4)
-		Me.GroupBox1.Controls.Add(Me.Button3)
-		Me.GroupBox1.Controls.Add(Me.Button2)
-		Me.GroupBox1.Controls.Add(Me.Button1)
+		Me.GroupBox1.Controls.Add(Me.btnCaterpie)
+		Me.GroupBox1.Controls.Add(Me.btnSquirtle)
+		Me.GroupBox1.Controls.Add(Me.btnCharmander)
+		Me.GroupBox1.Controls.Add(Me.btnBulbasaur)
 		Me.GroupBox1.Controls.Add(Me.PictureBox3)
 		Me.GroupBox1.Controls.Add(Me.PictureBox2)
 		Me.GroupBox1.Controls.Add(Me.PictureBox1)
@@ -101,51 +103,51 @@ Partial Class frmBox
 		Me.GroupBox1.Controls.Add(Me.lblSquirtle)
 		Me.GroupBox1.Controls.Add(Me.lblCharmander)
 		Me.GroupBox1.Controls.Add(Me.lblBulbasaur)
-		Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
+		Me.GroupBox1.Location = New System.Drawing.Point(50, 12)
 		Me.GroupBox1.Name = "GroupBox1"
 		Me.GroupBox1.Size = New System.Drawing.Size(200, 359)
 		Me.GroupBox1.TabIndex = 1
 		Me.GroupBox1.TabStop = False
 		'
-		'Button4
+		'btnCaterpie
 		'
-		Me.Button4.Enabled = False
-		Me.Button4.Location = New System.Drawing.Point(0, 312)
-		Me.Button4.Name = "Button4"
-		Me.Button4.Size = New System.Drawing.Size(59, 24)
-		Me.Button4.TabIndex = 53
-		Me.Button4.Text = "Select"
-		Me.Button4.UseVisualStyleBackColor = True
+		Me.btnCaterpie.Enabled = False
+		Me.btnCaterpie.Location = New System.Drawing.Point(0, 312)
+		Me.btnCaterpie.Name = "btnCaterpie"
+		Me.btnCaterpie.Size = New System.Drawing.Size(59, 24)
+		Me.btnCaterpie.TabIndex = 53
+		Me.btnCaterpie.Text = "Select"
+		Me.btnCaterpie.UseVisualStyleBackColor = True
 		'
-		'Button3
+		'btnSquirtle
 		'
-		Me.Button3.Enabled = False
-		Me.Button3.Location = New System.Drawing.Point(0, 235)
-		Me.Button3.Name = "Button3"
-		Me.Button3.Size = New System.Drawing.Size(59, 24)
-		Me.Button3.TabIndex = 52
-		Me.Button3.Text = "Select"
-		Me.Button3.UseVisualStyleBackColor = True
+		Me.btnSquirtle.Enabled = False
+		Me.btnSquirtle.Location = New System.Drawing.Point(0, 235)
+		Me.btnSquirtle.Name = "btnSquirtle"
+		Me.btnSquirtle.Size = New System.Drawing.Size(59, 24)
+		Me.btnSquirtle.TabIndex = 52
+		Me.btnSquirtle.Text = "Select"
+		Me.btnSquirtle.UseVisualStyleBackColor = True
 		'
-		'Button2
+		'btnCharmander
 		'
-		Me.Button2.Enabled = False
-		Me.Button2.Location = New System.Drawing.Point(0, 158)
-		Me.Button2.Name = "Button2"
-		Me.Button2.Size = New System.Drawing.Size(59, 24)
-		Me.Button2.TabIndex = 51
-		Me.Button2.Text = "Select"
-		Me.Button2.UseVisualStyleBackColor = True
+		Me.btnCharmander.Enabled = False
+		Me.btnCharmander.Location = New System.Drawing.Point(0, 158)
+		Me.btnCharmander.Name = "btnCharmander"
+		Me.btnCharmander.Size = New System.Drawing.Size(59, 24)
+		Me.btnCharmander.TabIndex = 51
+		Me.btnCharmander.Text = "Select"
+		Me.btnCharmander.UseVisualStyleBackColor = True
 		'
-		'Button1
+		'btnBulbasaur
 		'
-		Me.Button1.Enabled = False
-		Me.Button1.Location = New System.Drawing.Point(0, 81)
-		Me.Button1.Name = "Button1"
-		Me.Button1.Size = New System.Drawing.Size(59, 24)
-		Me.Button1.TabIndex = 50
-		Me.Button1.Text = "Select"
-		Me.Button1.UseVisualStyleBackColor = True
+		Me.btnBulbasaur.Enabled = False
+		Me.btnBulbasaur.Location = New System.Drawing.Point(0, 81)
+		Me.btnBulbasaur.Name = "btnBulbasaur"
+		Me.btnBulbasaur.Size = New System.Drawing.Size(59, 24)
+		Me.btnBulbasaur.TabIndex = 50
+		Me.btnBulbasaur.Text = "Select"
+		Me.btnBulbasaur.UseVisualStyleBackColor = True
 		'
 		'PictureBox3
 		'
@@ -212,33 +214,33 @@ Partial Class frmBox
 		'
 		'GroupBox2
 		'
-		Me.GroupBox2.Controls.Add(Me.Button5)
+		Me.GroupBox2.Controls.Add(Me.btnKakuna)
 		Me.GroupBox2.Controls.Add(Me.PictureBox7)
-		Me.GroupBox2.Controls.Add(Me.Button6)
+		Me.GroupBox2.Controls.Add(Me.btnWeedle)
 		Me.GroupBox2.Controls.Add(Me.PictureBox6)
-		Me.GroupBox2.Controls.Add(Me.Button7)
-		Me.GroupBox2.Controls.Add(Me.Button8)
+		Me.GroupBox2.Controls.Add(Me.btnButterfree)
+		Me.GroupBox2.Controls.Add(Me.btnMetapod)
 		Me.GroupBox2.Controls.Add(Me.PictureBox5)
 		Me.GroupBox2.Controls.Add(Me.PictureBox4)
 		Me.GroupBox2.Controls.Add(Me.lblKakuna)
 		Me.GroupBox2.Controls.Add(Me.lblWeedle)
 		Me.GroupBox2.Controls.Add(Me.lblButterfree)
 		Me.GroupBox2.Controls.Add(Me.lblMetapod)
-		Me.GroupBox2.Location = New System.Drawing.Point(218, 15)
+		Me.GroupBox2.Location = New System.Drawing.Point(256, 15)
 		Me.GroupBox2.Name = "GroupBox2"
 		Me.GroupBox2.Size = New System.Drawing.Size(200, 359)
 		Me.GroupBox2.TabIndex = 11
 		Me.GroupBox2.TabStop = False
 		'
-		'Button5
+		'btnKakuna
 		'
-		Me.Button5.Enabled = False
-		Me.Button5.Location = New System.Drawing.Point(0, 309)
-		Me.Button5.Name = "Button5"
-		Me.Button5.Size = New System.Drawing.Size(59, 24)
-		Me.Button5.TabIndex = 57
-		Me.Button5.Text = "Select"
-		Me.Button5.UseVisualStyleBackColor = True
+		Me.btnKakuna.Enabled = False
+		Me.btnKakuna.Location = New System.Drawing.Point(0, 309)
+		Me.btnKakuna.Name = "btnKakuna"
+		Me.btnKakuna.Size = New System.Drawing.Size(59, 24)
+		Me.btnKakuna.TabIndex = 57
+		Me.btnKakuna.Text = "Select"
+		Me.btnKakuna.UseVisualStyleBackColor = True
 		'
 		'PictureBox7
 		'
@@ -249,15 +251,15 @@ Partial Class frmBox
 		Me.PictureBox7.TabIndex = 53
 		Me.PictureBox7.TabStop = False
 		'
-		'Button6
+		'btnWeedle
 		'
-		Me.Button6.Enabled = False
-		Me.Button6.Location = New System.Drawing.Point(0, 232)
-		Me.Button6.Name = "Button6"
-		Me.Button6.Size = New System.Drawing.Size(59, 24)
-		Me.Button6.TabIndex = 56
-		Me.Button6.Text = "Select"
-		Me.Button6.UseVisualStyleBackColor = True
+		Me.btnWeedle.Enabled = False
+		Me.btnWeedle.Location = New System.Drawing.Point(0, 232)
+		Me.btnWeedle.Name = "btnWeedle"
+		Me.btnWeedle.Size = New System.Drawing.Size(59, 24)
+		Me.btnWeedle.TabIndex = 56
+		Me.btnWeedle.Text = "Select"
+		Me.btnWeedle.UseVisualStyleBackColor = True
 		'
 		'PictureBox6
 		'
@@ -268,25 +270,25 @@ Partial Class frmBox
 		Me.PictureBox6.TabIndex = 52
 		Me.PictureBox6.TabStop = False
 		'
-		'Button7
+		'btnButterfree
 		'
-		Me.Button7.Enabled = False
-		Me.Button7.Location = New System.Drawing.Point(0, 155)
-		Me.Button7.Name = "Button7"
-		Me.Button7.Size = New System.Drawing.Size(59, 24)
-		Me.Button7.TabIndex = 55
-		Me.Button7.Text = "Select"
-		Me.Button7.UseVisualStyleBackColor = True
+		Me.btnButterfree.Enabled = False
+		Me.btnButterfree.Location = New System.Drawing.Point(0, 155)
+		Me.btnButterfree.Name = "btnButterfree"
+		Me.btnButterfree.Size = New System.Drawing.Size(59, 24)
+		Me.btnButterfree.TabIndex = 55
+		Me.btnButterfree.Text = "Select"
+		Me.btnButterfree.UseVisualStyleBackColor = True
 		'
-		'Button8
+		'btnMetapod
 		'
-		Me.Button8.Enabled = False
-		Me.Button8.Location = New System.Drawing.Point(0, 78)
-		Me.Button8.Name = "Button8"
-		Me.Button8.Size = New System.Drawing.Size(59, 24)
-		Me.Button8.TabIndex = 54
-		Me.Button8.Text = "Select"
-		Me.Button8.UseVisualStyleBackColor = True
+		Me.btnMetapod.Enabled = False
+		Me.btnMetapod.Location = New System.Drawing.Point(0, 78)
+		Me.btnMetapod.Name = "btnMetapod"
+		Me.btnMetapod.Size = New System.Drawing.Size(59, 24)
+		Me.btnMetapod.TabIndex = 54
+		Me.btnMetapod.Text = "Select"
+		Me.btnMetapod.UseVisualStyleBackColor = True
 		'
 		'PictureBox5
 		'
@@ -344,33 +346,33 @@ Partial Class frmBox
 		'
 		'GroupBox3
 		'
-		Me.GroupBox3.Controls.Add(Me.Button9)
+		Me.GroupBox3.Controls.Add(Me.btnPidgeot)
 		Me.GroupBox3.Controls.Add(Me.PictureBox11)
-		Me.GroupBox3.Controls.Add(Me.Button10)
+		Me.GroupBox3.Controls.Add(Me.btnPidgeotto)
 		Me.GroupBox3.Controls.Add(Me.PictureBox10)
-		Me.GroupBox3.Controls.Add(Me.Button11)
-		Me.GroupBox3.Controls.Add(Me.Button12)
+		Me.GroupBox3.Controls.Add(Me.btnPidgey)
+		Me.GroupBox3.Controls.Add(Me.btnBeedrill)
 		Me.GroupBox3.Controls.Add(Me.PictureBox9)
 		Me.GroupBox3.Controls.Add(Me.PictureBox8)
 		Me.GroupBox3.Controls.Add(Me.lblPidgeot)
 		Me.GroupBox3.Controls.Add(Me.lblPidgeotto)
 		Me.GroupBox3.Controls.Add(Me.lblPidgey)
 		Me.GroupBox3.Controls.Add(Me.lblBeedrill)
-		Me.GroupBox3.Location = New System.Drawing.Point(424, 15)
+		Me.GroupBox3.Location = New System.Drawing.Point(462, 15)
 		Me.GroupBox3.Name = "GroupBox3"
 		Me.GroupBox3.Size = New System.Drawing.Size(200, 359)
 		Me.GroupBox3.TabIndex = 12
 		Me.GroupBox3.TabStop = False
 		'
-		'Button9
+		'btnPidgeot
 		'
-		Me.Button9.Enabled = False
-		Me.Button9.Location = New System.Drawing.Point(0, 309)
-		Me.Button9.Name = "Button9"
-		Me.Button9.Size = New System.Drawing.Size(59, 24)
-		Me.Button9.TabIndex = 61
-		Me.Button9.Text = "Select"
-		Me.Button9.UseVisualStyleBackColor = True
+		Me.btnPidgeot.Enabled = False
+		Me.btnPidgeot.Location = New System.Drawing.Point(0, 309)
+		Me.btnPidgeot.Name = "btnPidgeot"
+		Me.btnPidgeot.Size = New System.Drawing.Size(59, 24)
+		Me.btnPidgeot.TabIndex = 61
+		Me.btnPidgeot.Text = "Select"
+		Me.btnPidgeot.UseVisualStyleBackColor = True
 		'
 		'PictureBox11
 		'
@@ -381,15 +383,15 @@ Partial Class frmBox
 		Me.PictureBox11.TabIndex = 57
 		Me.PictureBox11.TabStop = False
 		'
-		'Button10
+		'btnPidgeotto
 		'
-		Me.Button10.Enabled = False
-		Me.Button10.Location = New System.Drawing.Point(0, 232)
-		Me.Button10.Name = "Button10"
-		Me.Button10.Size = New System.Drawing.Size(59, 24)
-		Me.Button10.TabIndex = 60
-		Me.Button10.Text = "Select"
-		Me.Button10.UseVisualStyleBackColor = True
+		Me.btnPidgeotto.Enabled = False
+		Me.btnPidgeotto.Location = New System.Drawing.Point(0, 232)
+		Me.btnPidgeotto.Name = "btnPidgeotto"
+		Me.btnPidgeotto.Size = New System.Drawing.Size(59, 24)
+		Me.btnPidgeotto.TabIndex = 60
+		Me.btnPidgeotto.Text = "Select"
+		Me.btnPidgeotto.UseVisualStyleBackColor = True
 		'
 		'PictureBox10
 		'
@@ -400,25 +402,25 @@ Partial Class frmBox
 		Me.PictureBox10.TabIndex = 56
 		Me.PictureBox10.TabStop = False
 		'
-		'Button11
+		'btnPidgey
 		'
-		Me.Button11.Enabled = False
-		Me.Button11.Location = New System.Drawing.Point(0, 155)
-		Me.Button11.Name = "Button11"
-		Me.Button11.Size = New System.Drawing.Size(59, 24)
-		Me.Button11.TabIndex = 59
-		Me.Button11.Text = "Select"
-		Me.Button11.UseVisualStyleBackColor = True
+		Me.btnPidgey.Enabled = False
+		Me.btnPidgey.Location = New System.Drawing.Point(0, 155)
+		Me.btnPidgey.Name = "btnPidgey"
+		Me.btnPidgey.Size = New System.Drawing.Size(59, 24)
+		Me.btnPidgey.TabIndex = 59
+		Me.btnPidgey.Text = "Select"
+		Me.btnPidgey.UseVisualStyleBackColor = True
 		'
-		'Button12
+		'btnBeedrill
 		'
-		Me.Button12.Enabled = False
-		Me.Button12.Location = New System.Drawing.Point(0, 78)
-		Me.Button12.Name = "Button12"
-		Me.Button12.Size = New System.Drawing.Size(59, 24)
-		Me.Button12.TabIndex = 58
-		Me.Button12.Text = "Select"
-		Me.Button12.UseVisualStyleBackColor = True
+		Me.btnBeedrill.Enabled = False
+		Me.btnBeedrill.Location = New System.Drawing.Point(0, 78)
+		Me.btnBeedrill.Name = "btnBeedrill"
+		Me.btnBeedrill.Size = New System.Drawing.Size(59, 24)
+		Me.btnBeedrill.TabIndex = 58
+		Me.btnBeedrill.Text = "Select"
+		Me.btnBeedrill.UseVisualStyleBackColor = True
 		'
 		'PictureBox9
 		'
@@ -474,11 +476,31 @@ Partial Class frmBox
 		Me.lblBeedrill.TabIndex = 0
 		Me.lblBeedrill.Text = "Beedrill"
 		'
+		'btnPrevious
+		'
+		Me.btnPrevious.Location = New System.Drawing.Point(12, 385)
+		Me.btnPrevious.Name = "btnPrevious"
+		Me.btnPrevious.Size = New System.Drawing.Size(75, 23)
+		Me.btnPrevious.TabIndex = 13
+		Me.btnPrevious.Text = "Previous"
+		Me.btnPrevious.UseVisualStyleBackColor = True
+		'
+		'btnNext
+		'
+		Me.btnNext.Location = New System.Drawing.Point(632, 385)
+		Me.btnNext.Name = "btnNext"
+		Me.btnNext.Size = New System.Drawing.Size(75, 23)
+		Me.btnNext.TabIndex = 14
+		Me.btnNext.Text = "Next"
+		Me.btnNext.UseVisualStyleBackColor = True
+		'
 		'frmBox
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-		Me.ClientSize = New System.Drawing.Size(661, 386)
+		Me.ClientSize = New System.Drawing.Size(719, 420)
+		Me.Controls.Add(Me.btnNext)
+		Me.Controls.Add(Me.btnPrevious)
 		Me.Controls.Add(Me.GroupBox3)
 		Me.Controls.Add(Me.GroupBox2)
 		Me.Controls.Add(Me.GroupBox1)
@@ -521,10 +543,10 @@ Partial Class frmBox
 	Friend WithEvents lblPidgeotto As Label
 	Friend WithEvents lblPidgey As Label
 	Friend WithEvents lblBeedrill As Label
-	Friend WithEvents Button4 As Button
-	Friend WithEvents Button3 As Button
-	Friend WithEvents Button2 As Button
-	Friend WithEvents Button1 As Button
+	Friend WithEvents btnCaterpie As Button
+	Friend WithEvents btnSquirtle As Button
+	Friend WithEvents btnCharmander As Button
+	Friend WithEvents btnBulbasaur As Button
 	Friend WithEvents PictureBox3 As PictureBox
 	Friend WithEvents PictureBox2 As PictureBox
 	Friend WithEvents PictureBox1 As PictureBox
@@ -537,12 +559,14 @@ Partial Class frmBox
 	Friend WithEvents PictureBox10 As PictureBox
 	Friend WithEvents PictureBox9 As PictureBox
 	Friend WithEvents PictureBox8 As PictureBox
-	Friend WithEvents Button5 As Button
-	Friend WithEvents Button6 As Button
-	Friend WithEvents Button7 As Button
-	Friend WithEvents Button8 As Button
-	Friend WithEvents Button9 As Button
-	Friend WithEvents Button10 As Button
-	Friend WithEvents Button11 As Button
-	Friend WithEvents Button12 As Button
+	Friend WithEvents btnKakuna As Button
+	Friend WithEvents btnWeedle As Button
+	Friend WithEvents btnButterfree As Button
+	Friend WithEvents btnMetapod As Button
+	Friend WithEvents btnPidgeot As Button
+	Friend WithEvents btnPidgeotto As Button
+	Friend WithEvents btnPidgey As Button
+	Friend WithEvents btnBeedrill As Button
+	Friend WithEvents btnPrevious As Button
+	Friend WithEvents btnNext As Button
 End Class
