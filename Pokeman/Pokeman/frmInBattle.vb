@@ -260,7 +260,10 @@
     Dim yourpokemonstat() As String = frmMainMenu.Pidgeot 'just so stat boosting moves have a base value to work off of
     Dim enemypokemonstat() As String = frmMainMenu.Squirtle
 
-    Dim EYourPokemon() As String
+	Dim enemymaxhp As Integer = frmMainMenu.Squirtle(1)
+	Dim yourmaxhp As Integer = frmMainMenu.Pidgeot(1)
+
+	Dim EYourPokemon() As String
     Dim EEnemyPokemon() As String
     Dim TempSwapStat() As String
 
@@ -303,10 +306,9 @@
     Dim payday As Boolean
 
     Dim movecat As Integer ' 1 = damaging, 2 = selfstatus, 3 = estatus
-    Dim counter As Integer
+	Dim counter As Integer
 
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnMove1.Click
+	Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnMove1.Click
         ' If yourpokemon(4) >= enemypokemon(4) Then
         yourturn = True
         counter = 0
@@ -12081,10 +12083,10 @@
         btnMove3.Text = yourpokemon(12)
         btnMove4.Text = yourpokemon(13)
         lblYName.Text = yourpokemon(0)
-        lblYHp.Text = yourpokemon(1) & " / " & yourpokemonstat(1)
-        lblEName.Text = enemypokemon(0)
-        lblEHp.Text = enemypokemon(1) & " / " & enemypokemonstat(1)
-    End Sub
+		lblYHp.Text = yourpokemon(1) & " / " & yourmaxhp
+		lblEName.Text = enemypokemon(0)
+		lblEHp.Text = enemypokemon(1) & " / " & enemymaxhp
+	End Sub
 
     Private Sub yturn_Tick(sender As Object, e As EventArgs) Handles yturn.Tick
         counter += 1
@@ -12096,9 +12098,9 @@
             Case 2
                 yourpokemon(1) = Int(yourpokemon(1))
                 enemypokemon(1) = Int(enemypokemon(1))
-                lblYHp.Text = yourpokemon(1) & " / " & yourpokemonstat(1)
-                lblEHp.Text = enemypokemon(1) & " / " & enemypokemonstat(1)
-        End Select
+				lblYHp.Text = yourpokemon(1) & " / " & yourmaxhp
+				lblEHp.Text = enemypokemon(1) & " / " & enemymaxhp
+		End Select
 
     End Sub
 End Class
