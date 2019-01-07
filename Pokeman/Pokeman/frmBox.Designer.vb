@@ -329,7 +329,7 @@ Partial Class frmBox
 		'lblButterfree
 		'
 		Me.lblButterfree.AutoSize = True
-		Me.lblButterfree.Location = New System.Drawing.Point(2, 139)
+		Me.lblButterfree.Location = New System.Drawing.Point(6, 139)
 		Me.lblButterfree.Name = "lblButterfree"
 		Me.lblButterfree.Size = New System.Drawing.Size(53, 13)
 		Me.lblButterfree.TabIndex = 6

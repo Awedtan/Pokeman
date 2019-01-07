@@ -2,52 +2,52 @@
 
 	Private Sub frmBox2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-		If frmMainMenu.Bulbasaur(6) = 1 Then
-			btnBulbasaur.Enabled = True
+		If frmMainMenu.Rattata(6) = 1 Then
+			btnRattata.Enabled = True
 		End If
 
-		If frmMainMenu.Charmander(6) = 1 Then
-			btnCharmander.Enabled = True
+		If frmMainMenu.Raticate(6) = 1 Then
+			btnRaticate.Enabled = True
 		End If
 
-		If frmMainMenu.Squirtle(6) = 1 Then
-			btnSquirtle.Enabled = True
+		If frmMainMenu.Spearow(6) = 1 Then
+			btnSpearow.Enabled = True
 		End If
 
-		If frmMainMenu.Caterpie(6) = 1 Then
-			btnCaterpie.Enabled = True
+		If frmMainMenu.Fearow(6) = 1 Then
+			btnFearow.Enabled = True
 		End If
 
-		If frmMainMenu.Metapod(6) = 1 Then
-			btnMetapod.Enabled = True
+		If frmMainMenu.Ekans(6) = 1 Then
+			btnEkans.Enabled = True
 		End If
 
-		If frmMainMenu.Butterfree(6) = 1 Then
-			btnButterfree.Enabled = True
+		If frmMainMenu.Arbok(6) = 1 Then
+			btnArbok.Enabled = True
 		End If
 
-		If frmMainMenu.Weedle(6) = 1 Then
-			btnWeedle.Enabled = True
+		If frmMainMenu.Pikachu(6) = 1 Then
+			btnPikachu.Enabled = True
 		End If
 
-		If frmMainMenu.Kakuna(6) = 1 Then
-			btnKakuna.Enabled = True
+		If frmMainMenu.Raichu(6) = 1 Then
+			btnRaichu.Enabled = True
 		End If
 
-		If frmMainMenu.Beedrill(6) = 1 Then
-			btnBeedrill.Enabled = True
+		If frmMainMenu.Nidoranf(6) = 1 Then
+			btnNidoranf.Enabled = True
 		End If
 
-		If frmMainMenu.Pidgey(6) = 1 Then
-			btnPidgey.Enabled = True
+		If frmMainMenu.Nidorina(6) = 1 Then
+			btnNidorina.Enabled = True
 		End If
 
-		If frmMainMenu.Pidgeotto(6) = 1 Then
-			btnPidgeotto.Enabled = True
+		If frmMainMenu.Nidoqueen(6) = 1 Then
+			btnNidoqueen.Enabled = True
 		End If
 
-		If frmMainMenu.Pidgeot(6) = 1 Then
-			btnPidgeot.Enabled = True
+		If frmMainMenu.Nidoranm(6) = 1 Then
+			btnNidoranm.Enabled = True
 		End If
 
 	End Sub
@@ -56,447 +56,449 @@
 
 		Dim slot As Integer
 
-		If pokemon = "Bulbasaur" Then
+		If pokemon = "Rattata" Then
 
-			If frmMainMenu.Bulbasaur(7) = 0 Then
+			If frmMainMenu.Rattata(7) = 0 Then
 				slot = Val(InputBox("Which slot from 1 to 6 would you like to put this pokeman in? (0 to cancel)", "Confirm Selection"))
 			End If
 
 			If slot = 1 Then
 
-				frmMainMenu.yourpokemon1 = frmMainMenu.Bulbasaur
-				frmMainMenu.Bulbasaur(7) = 1
+				frmMainMenu.yourpokemon1 = frmMainMenu.Rattata
+				frmMainMenu.Rattata(7) = 1
 			ElseIf slot = 2 Then
 
-				frmMainMenu.yourpokemon2 = frmMainMenu.Bulbasaur
-				frmMainMenu.Bulbasaur(7) = 1
+				frmMainMenu.yourpokemon2 = frmMainMenu.Rattata
+				frmMainMenu.Rattata(7) = 1
 			ElseIf slot = 3 Then
 
-				frmMainMenu.yourpokemon3 = frmMainMenu.Bulbasaur
-				frmMainMenu.Bulbasaur(7) = 1
+				frmMainMenu.yourpokemon3 = frmMainMenu.Rattata
+				frmMainMenu.Rattata(7) = 1
 			ElseIf slot = 4 Then
 
-				frmMainMenu.yourpokemon4 = frmMainMenu.Bulbasaur
-				frmMainMenu.Bulbasaur(7) = 1
+				frmMainMenu.yourpokemon4 = frmMainMenu.Rattata
+				frmMainMenu.Rattata(7) = 1
 			ElseIf slot = 5 Then
 
-				frmMainMenu.yourpokemon5 = frmMainMenu.Bulbasaur
-				frmMainMenu.Bulbasaur(7) = 1
+				frmMainMenu.yourpokemon5 = frmMainMenu.Rattata
+				frmMainMenu.Rattata(7) = 1
 			ElseIf slot = 6 Then
 
-				frmMainMenu.yourpokemon6 = frmMainMenu.Bulbasaur
-				frmMainMenu.Bulbasaur(7) = 1
+				frmMainMenu.yourpokemon6 = frmMainMenu.Rattata
+				frmMainMenu.Rattata(7) = 1
 			End If
 		End If
 
-		If pokemon = "Charmander" Then
+		If pokemon = "Raticate" Then
 
-			If frmMainMenu.Charmander(7) = 0 Then
+			If frmMainMenu.Raticate(7) = 0 Then
 				slot = Val(InputBox("Which slot from 1 to 6 would you like to put this pokeman in? (0 to cancel)", "Confirm Selection"))
 			End If
 
 			If slot = 1 Then
 
-				frmMainMenu.yourpokemon1 = frmMainMenu.Charmander
-				frmMainMenu.Charmander(7) = 1
+				frmMainMenu.yourpokemon1 = frmMainMenu.Raticate
+				frmMainMenu.Raticate(7) = 1
 			ElseIf slot = 2 Then
 
-				frmMainMenu.yourpokemon2 = frmMainMenu.Charmander
-				frmMainMenu.Charmander(7) = 1
+				frmMainMenu.yourpokemon2 = frmMainMenu.Raticate
+				frmMainMenu.Raticate(7) = 1
 			ElseIf slot = 3 Then
 
-				frmMainMenu.yourpokemon3 = frmMainMenu.Charmander
-				frmMainMenu.Charmander(7) = 1
+				frmMainMenu.yourpokemon3 = frmMainMenu.Raticate
+				frmMainMenu.Raticate(7) = 1
 			ElseIf slot = 4 Then
 
-				frmMainMenu.yourpokemon4 = frmMainMenu.Charmander
-				frmMainMenu.Charmander(7) = 1
+				frmMainMenu.yourpokemon4 = frmMainMenu.Raticate
+				frmMainMenu.Raticate(7) = 1
 			ElseIf slot = 5 Then
 
-				frmMainMenu.yourpokemon5 = frmMainMenu.Charmander
-				frmMainMenu.Charmander(7) = 1
+				frmMainMenu.yourpokemon5 = frmMainMenu.Raticate
+				frmMainMenu.Raticate(7) = 1
 			ElseIf slot = 6 Then
 
-				frmMainMenu.yourpokemon6 = frmMainMenu.Charmander
-				frmMainMenu.Charmander(7) = 1
+				frmMainMenu.yourpokemon6 = frmMainMenu.Raticate
+				frmMainMenu.Raticate(7) = 1
 			End If
 		End If
 
-		If pokemon = "Squirtle" Then
+		If pokemon = "Spearow" Then
 
-			If frmMainMenu.Squirtle(7) = 0 Then
+			If frmMainMenu.Spearow(7) = 0 Then
 				slot = Val(InputBox("Which slot from 1 to 6 would you like to put this pokeman in? (0 to cancel)", "Confirm Selection"))
 			End If
 
 			If slot = 1 Then
 
-				frmMainMenu.yourpokemon1 = frmMainMenu.Squirtle
-				frmMainMenu.Squirtle(7) = 1
+				frmMainMenu.yourpokemon1 = frmMainMenu.Spearow
+				frmMainMenu.Spearow(7) = 1
 			ElseIf slot = 2 Then
 
-				frmMainMenu.yourpokemon2 = frmMainMenu.Squirtle
-				frmMainMenu.Squirtle(7) = 1
+				frmMainMenu.yourpokemon2 = frmMainMenu.Spearow
+				frmMainMenu.Spearow(7) = 1
 			ElseIf slot = 3 Then
 
-				frmMainMenu.yourpokemon3 = frmMainMenu.Squirtle
-				frmMainMenu.Squirtle(7) = 1
+				frmMainMenu.yourpokemon3 = frmMainMenu.Spearow
+				frmMainMenu.Spearow(7) = 1
 			ElseIf slot = 4 Then
 
-				frmMainMenu.yourpokemon4 = frmMainMenu.Squirtle
-				frmMainMenu.Squirtle(7) = 1
+				frmMainMenu.yourpokemon4 = frmMainMenu.Spearow
+				frmMainMenu.Spearow(7) = 1
 			ElseIf slot = 5 Then
 
-				frmMainMenu.yourpokemon5 = frmMainMenu.Squirtle
-				frmMainMenu.Squirtle(7) = 1
+				frmMainMenu.yourpokemon5 = frmMainMenu.Spearow
+				frmMainMenu.Spearow(7) = 1
 			ElseIf slot = 6 Then
 
-				frmMainMenu.yourpokemon6 = frmMainMenu.Squirtle
-				frmMainMenu.Squirtle(7) = 1
+				frmMainMenu.yourpokemon6 = frmMainMenu.Spearow
+				frmMainMenu.Spearow(7) = 1
 			End If
 		End If
-		If pokemon = "Caterpie" Then
+		If pokemon = "Fearow" Then
 
-			If frmMainMenu.Caterpie(7) = 0 Then
+			If frmMainMenu.Fearow(7) = 0 Then
 				slot = Val(InputBox("Which slot from 1 to 6 would you like to put this pokeman in? (0 to cancel)", "Confirm Selection"))
 			End If
 
 			If slot = 1 Then
 
-				frmMainMenu.yourpokemon1 = frmMainMenu.Caterpie
-				frmMainMenu.Caterpie(7) = 1
+				frmMainMenu.yourpokemon1 = frmMainMenu.Fearow
+				frmMainMenu.Fearow(7) = 1
 			ElseIf slot = 2 Then
 
-				frmMainMenu.yourpokemon2 = frmMainMenu.Caterpie
-				frmMainMenu.Caterpie(7) = 1
+				frmMainMenu.yourpokemon2 = frmMainMenu.Fearow
+				frmMainMenu.Fearow(7) = 1
 			ElseIf slot = 3 Then
 
-				frmMainMenu.yourpokemon3 = frmMainMenu.Caterpie
-				frmMainMenu.Caterpie(7) = 1
+				frmMainMenu.yourpokemon3 = frmMainMenu.Fearow
+				frmMainMenu.Fearow(7) = 1
 			ElseIf slot = 4 Then
 
-				frmMainMenu.yourpokemon4 = frmMainMenu.Caterpie
-				frmMainMenu.Caterpie(7) = 1
+				frmMainMenu.yourpokemon4 = frmMainMenu.Fearow
+				frmMainMenu.Fearow(7) = 1
 			ElseIf slot = 5 Then
 
-				frmMainMenu.yourpokemon5 = frmMainMenu.Caterpie
-				frmMainMenu.Caterpie(7) = 1
+				frmMainMenu.yourpokemon5 = frmMainMenu.Fearow
+				frmMainMenu.Fearow(7) = 1
 			ElseIf slot = 6 Then
 
-				frmMainMenu.yourpokemon6 = frmMainMenu.Caterpie
-				frmMainMenu.Caterpie(7) = 1
+				frmMainMenu.yourpokemon6 = frmMainMenu.Fearow
+				frmMainMenu.Fearow(7) = 1
 			End If
 		End If
-		If pokemon = "Metapod" Then
+		If pokemon = "Ekans" Then
 
-			If frmMainMenu.Metapod(7) = 0 Then
+			If frmMainMenu.Ekans(7) = 0 Then
 				slot = Val(InputBox("Which slot from 1 to 6 would you like to put this pokeman in? (0 to cancel)", "Confirm Selection"))
 			End If
 
 			If slot = 1 Then
 
-				frmMainMenu.yourpokemon1 = frmMainMenu.Metapod
-				frmMainMenu.Metapod(7) = 1
+				frmMainMenu.yourpokemon1 = frmMainMenu.Ekans
+				frmMainMenu.Ekans(7) = 1
 			ElseIf slot = 2 Then
 
-				frmMainMenu.yourpokemon2 = frmMainMenu.Metapod
-				frmMainMenu.Metapod(7) = 1
+				frmMainMenu.yourpokemon2 = frmMainMenu.Ekans
+				frmMainMenu.Ekans(7) = 1
 			ElseIf slot = 3 Then
 
-				frmMainMenu.yourpokemon3 = frmMainMenu.Metapod
-				frmMainMenu.Metapod(7) = 1
+				frmMainMenu.yourpokemon3 = frmMainMenu.Ekans
+				frmMainMenu.Ekans(7) = 1
 			ElseIf slot = 4 Then
 
-				frmMainMenu.yourpokemon4 = frmMainMenu.Metapod
-				frmMainMenu.Metapod(7) = 1
+				frmMainMenu.yourpokemon4 = frmMainMenu.Ekans
+				frmMainMenu.Ekans(7) = 1
 			ElseIf slot = 5 Then
 
-				frmMainMenu.yourpokemon5 = frmMainMenu.Metapod
-				frmMainMenu.Metapod(7) = 1
+				frmMainMenu.yourpokemon5 = frmMainMenu.Ekans
+				frmMainMenu.Ekans(7) = 1
 			ElseIf slot = 6 Then
 
-				frmMainMenu.yourpokemon6 = frmMainMenu.Metapod
-				frmMainMenu.Metapod(7) = 1
+				frmMainMenu.yourpokemon6 = frmMainMenu.Ekans
+				frmMainMenu.Ekans(7) = 1
 			End If
 		End If
-		If pokemon = "Butterfree" Then
+		If pokemon = "Arbok" Then
 
-			If frmMainMenu.Butterfree(7) = 0 Then
+			If frmMainMenu.Arbok(7) = 0 Then
 				slot = Val(InputBox("Which slot from 1 to 6 would you like to put this pokeman in? (0 to cancel)", "Confirm Selection"))
 			End If
 
 			If slot = 1 Then
 
-				frmMainMenu.yourpokemon1 = frmMainMenu.Butterfree
-				frmMainMenu.Butterfree(7) = 1
+				frmMainMenu.yourpokemon1 = frmMainMenu.Arbok
+				frmMainMenu.Arbok(7) = 1
 			ElseIf slot = 2 Then
 
-				frmMainMenu.yourpokemon2 = frmMainMenu.Butterfree
-				frmMainMenu.Butterfree(7) = 1
+				frmMainMenu.yourpokemon2 = frmMainMenu.Arbok
+				frmMainMenu.Arbok(7) = 1
 			ElseIf slot = 3 Then
 
-				frmMainMenu.yourpokemon3 = frmMainMenu.Butterfree
-				frmMainMenu.Butterfree(7) = 1
+				frmMainMenu.yourpokemon3 = frmMainMenu.Arbok
+				frmMainMenu.Arbok(7) = 1
 			ElseIf slot = 4 Then
 
-				frmMainMenu.yourpokemon4 = frmMainMenu.Butterfree
-				frmMainMenu.Butterfree(7) = 1
+				frmMainMenu.yourpokemon4 = frmMainMenu.Arbok
+				frmMainMenu.Arbok(7) = 1
 			ElseIf slot = 5 Then
 
-				frmMainMenu.yourpokemon5 = frmMainMenu.Butterfree
-				frmMainMenu.Butterfree(7) = 1
+				frmMainMenu.yourpokemon5 = frmMainMenu.Arbok
+				frmMainMenu.Arbok(7) = 1
 			ElseIf slot = 6 Then
 
-				frmMainMenu.yourpokemon6 = frmMainMenu.Butterfree
-				frmMainMenu.Butterfree(7) = 1
+				frmMainMenu.yourpokemon6 = frmMainMenu.Arbok
+				frmMainMenu.Arbok(7) = 1
 			End If
 		End If
-		If pokemon = "Weedle" Then
+		If pokemon = "Pikachu" Then
 
-			If frmMainMenu.Weedle(7) = 0 Then
+			If frmMainMenu.Pikachu(7) = 0 Then
 				slot = Val(InputBox("Which slot from 1 to 6 would you like to put this pokeman in? (0 to cancel)", "Confirm Selection"))
 			End If
 
 			If slot = 1 Then
 
-				frmMainMenu.yourpokemon1 = frmMainMenu.Weedle
-				frmMainMenu.Weedle(7) = 1
+				frmMainMenu.yourpokemon1 = frmMainMenu.Pikachu
+				frmMainMenu.Pikachu(7) = 1
 			ElseIf slot = 2 Then
 
-				frmMainMenu.yourpokemon2 = frmMainMenu.Weedle
-				frmMainMenu.Weedle(7) = 1
+				frmMainMenu.yourpokemon2 = frmMainMenu.Pikachu
+				frmMainMenu.Pikachu(7) = 1
 			ElseIf slot = 3 Then
 
-				frmMainMenu.yourpokemon3 = frmMainMenu.Weedle
-				frmMainMenu.Weedle(7) = 1
+				frmMainMenu.yourpokemon3 = frmMainMenu.Pikachu
+				frmMainMenu.Pikachu(7) = 1
 			ElseIf slot = 4 Then
 
-				frmMainMenu.yourpokemon4 = frmMainMenu.Weedle
-				frmMainMenu.Weedle(7) = 1
+				frmMainMenu.yourpokemon4 = frmMainMenu.Pikachu
+				frmMainMenu.Pikachu(7) = 1
 			ElseIf slot = 5 Then
 
-				frmMainMenu.yourpokemon5 = frmMainMenu.Weedle
-				frmMainMenu.Weedle(7) = 1
+				frmMainMenu.yourpokemon5 = frmMainMenu.Pikachu
+				frmMainMenu.Pikachu(7) = 1
 			ElseIf slot = 6 Then
 
-				frmMainMenu.yourpokemon6 = frmMainMenu.Weedle
-				frmMainMenu.Weedle(7) = 1
+				frmMainMenu.yourpokemon6 = frmMainMenu.Pikachu
+				frmMainMenu.Pikachu(7) = 1
 			End If
 		End If
-		If pokemon = "Kakuna" Then
+		If pokemon = "Raichu" Then
 
-			If frmMainMenu.Kakuna(7) = 0 Then
+			If frmMainMenu.Raichu(7) = 0 Then
 				slot = Val(InputBox("Which slot from 1 to 6 would you like to put this pokeman in? (0 to cancel)", "Confirm Selection"))
 			End If
 
 			If slot = 1 Then
 
-				frmMainMenu.yourpokemon1 = frmMainMenu.Kakuna
-				frmMainMenu.Kakuna(7) = 1
+				frmMainMenu.yourpokemon1 = frmMainMenu.Raichu
+				frmMainMenu.Raichu(7) = 1
 			ElseIf slot = 2 Then
 
-				frmMainMenu.yourpokemon2 = frmMainMenu.Kakuna
-				frmMainMenu.Kakuna(7) = 1
+				frmMainMenu.yourpokemon2 = frmMainMenu.Raichu
+				frmMainMenu.Raichu(7) = 1
 			ElseIf slot = 3 Then
 
-				frmMainMenu.yourpokemon3 = frmMainMenu.Kakuna
-				frmMainMenu.Kakuna(7) = 1
+				frmMainMenu.yourpokemon3 = frmMainMenu.Raichu
+				frmMainMenu.Raichu(7) = 1
 			ElseIf slot = 4 Then
 
-				frmMainMenu.yourpokemon4 = frmMainMenu.Kakuna
-				frmMainMenu.Kakuna(7) = 1
+				frmMainMenu.yourpokemon4 = frmMainMenu.Raichu
+				frmMainMenu.Raichu(7) = 1
 			ElseIf slot = 5 Then
 
-				frmMainMenu.yourpokemon5 = frmMainMenu.Kakuna
-				frmMainMenu.Kakuna(7) = 1
+				frmMainMenu.yourpokemon5 = frmMainMenu.Raichu
+				frmMainMenu.Raichu(7) = 1
 			ElseIf slot = 6 Then
 
-				frmMainMenu.yourpokemon6 = frmMainMenu.Kakuna
-				frmMainMenu.Kakuna(7) = 1
+				frmMainMenu.yourpokemon6 = frmMainMenu.Raichu
+				frmMainMenu.Raichu(7) = 1
 			End If
 		End If
-		If pokemon = "Beedrill" Then
+		If pokemon = "Nidoranf" Then
 
-			If frmMainMenu.Beedrill(7) = 0 Then
+			If frmMainMenu.Nidoranf(7) = 0 Then
 				slot = Val(InputBox("Which slot from 1 to 6 would you like to put this pokeman in? (0 to cancel)", "Confirm Selection"))
 			End If
 
 			If slot = 1 Then
 
-				frmMainMenu.yourpokemon1 = frmMainMenu.Beedrill
-				frmMainMenu.Beedrill(7) = 1
+				frmMainMenu.yourpokemon1 = frmMainMenu.Nidoranf
+				frmMainMenu.Nidoranf(7) = 1
 			ElseIf slot = 2 Then
 
-				frmMainMenu.yourpokemon2 = frmMainMenu.Beedrill
-				frmMainMenu.Beedrill(7) = 1
+				frmMainMenu.yourpokemon2 = frmMainMenu.Nidoranf
+				frmMainMenu.Nidoranf(7) = 1
 			ElseIf slot = 3 Then
 
-				frmMainMenu.yourpokemon3 = frmMainMenu.Beedrill
-				frmMainMenu.Beedrill(7) = 1
+				frmMainMenu.yourpokemon3 = frmMainMenu.Nidoranf
+				frmMainMenu.Nidoranf(7) = 1
 			ElseIf slot = 4 Then
 
-				frmMainMenu.yourpokemon4 = frmMainMenu.Beedrill
-				frmMainMenu.Beedrill(7) = 1
+				frmMainMenu.yourpokemon4 = frmMainMenu.Nidoranf
+				frmMainMenu.Nidoranf(7) = 1
 			ElseIf slot = 5 Then
 
-				frmMainMenu.yourpokemon5 = frmMainMenu.Beedrill
-				frmMainMenu.Beedrill(7) = 1
+				frmMainMenu.yourpokemon5 = frmMainMenu.Nidoranf
+				frmMainMenu.Nidoranf(7) = 1
 			ElseIf slot = 6 Then
 
-				frmMainMenu.yourpokemon6 = frmMainMenu.Beedrill
-				frmMainMenu.Beedrill(7) = 1
+				frmMainMenu.yourpokemon6 = frmMainMenu.Nidoranf
+				frmMainMenu.Nidoranf(7) = 1
 			End If
 		End If
-		If pokemon = "Pidgey" Then
+		If pokemon = "Nidorina" Then
 
-			If frmMainMenu.Pidgey(7) = 0 Then
+			If frmMainMenu.Nidorina(7) = 0 Then
 				slot = Val(InputBox("Which slot from 1 to 6 would you like to put this pokeman in? (0 to cancel)", "Confirm Selection"))
 			End If
 
 			If slot = 1 Then
 
-				frmMainMenu.yourpokemon1 = frmMainMenu.Pidgey
-				frmMainMenu.Pidgey(7) = 1
+				frmMainMenu.yourpokemon1 = frmMainMenu.Nidorina
+				frmMainMenu.Nidorina(7) = 1
 			ElseIf slot = 2 Then
 
-				frmMainMenu.yourpokemon2 = frmMainMenu.Pidgey
-				frmMainMenu.Pidgey(7) = 1
+				frmMainMenu.yourpokemon2 = frmMainMenu.Nidorina
+				frmMainMenu.Nidorina(7) = 1
 			ElseIf slot = 3 Then
 
-				frmMainMenu.yourpokemon3 = frmMainMenu.Pidgey
-				frmMainMenu.Pidgey(7) = 1
+				frmMainMenu.yourpokemon3 = frmMainMenu.Nidorina
+				frmMainMenu.Nidorina(7) = 1
 			ElseIf slot = 4 Then
 
-				frmMainMenu.yourpokemon4 = frmMainMenu.Pidgey
-				frmMainMenu.Pidgey(7) = 1
+				frmMainMenu.yourpokemon4 = frmMainMenu.Nidorina
+				frmMainMenu.Nidorina(7) = 1
 			ElseIf slot = 5 Then
 
-				frmMainMenu.yourpokemon5 = frmMainMenu.Pidgey
-				frmMainMenu.Pidgey(7) = 1
+				frmMainMenu.yourpokemon5 = frmMainMenu.Nidorina
+				frmMainMenu.Nidorina(7) = 1
 			ElseIf slot = 6 Then
 
-				frmMainMenu.yourpokemon6 = frmMainMenu.Pidgey
-				frmMainMenu.Pidgey(7) = 1
+				frmMainMenu.yourpokemon6 = frmMainMenu.Nidorina
+				frmMainMenu.Nidorina(7) = 1
 			End If
 		End If
-		If pokemon = "Pidgeotto" Then
+		If pokemon = "Nidoqueen" Then
 
-			If frmMainMenu.Pidgeotto(7) = 0 Then
+			If frmMainMenu.Nidoqueen(7) = 0 Then
 				slot = Val(InputBox("Which slot from 1 to 6 would you like to put this pokeman in? (0 to cancel)", "Confirm Selection"))
 			End If
 
 			If slot = 1 Then
 
-				frmMainMenu.yourpokemon1 = frmMainMenu.Pidgeotto
-				frmMainMenu.Pidgeotto(7) = 1
+				frmMainMenu.yourpokemon1 = frmMainMenu.Nidoqueen
+				frmMainMenu.Nidoqueen(7) = 1
 			ElseIf slot = 2 Then
 
-				frmMainMenu.yourpokemon2 = frmMainMenu.Pidgeotto
-				frmMainMenu.Pidgeotto(7) = 1
+				frmMainMenu.yourpokemon2 = frmMainMenu.Nidoqueen
+				frmMainMenu.Nidoqueen(7) = 1
 			ElseIf slot = 3 Then
 
-				frmMainMenu.yourpokemon3 = frmMainMenu.Pidgeotto
-				frmMainMenu.Pidgeotto(7) = 1
+				frmMainMenu.yourpokemon3 = frmMainMenu.Nidoqueen
+				frmMainMenu.Nidoqueen(7) = 1
 			ElseIf slot = 4 Then
 
-				frmMainMenu.yourpokemon4 = frmMainMenu.Pidgeotto
-				frmMainMenu.Pidgeotto(7) = 1
+				frmMainMenu.yourpokemon4 = frmMainMenu.Nidoqueen
+				frmMainMenu.Nidoqueen(7) = 1
 			ElseIf slot = 5 Then
 
-				frmMainMenu.yourpokemon5 = frmMainMenu.Pidgeotto
-				frmMainMenu.Pidgeotto(7) = 1
+				frmMainMenu.yourpokemon5 = frmMainMenu.Nidoqueen
+				frmMainMenu.Nidoqueen(7) = 1
 			ElseIf slot = 6 Then
 
-				frmMainMenu.yourpokemon6 = frmMainMenu.Pidgeotto
-				frmMainMenu.Pidgeotto(7) = 1
+				frmMainMenu.yourpokemon6 = frmMainMenu.Nidoqueen
+				frmMainMenu.Nidoqueen(7) = 1
 			End If
 		End If
-		If pokemon = "Pidgeot" Then
+		If pokemon = "Nidoranm" Then
 
-			If frmMainMenu.Pidgeot(7) = 0 Then
+			If frmMainMenu.Nidoranm(7) = 0 Then
 				slot = Val(InputBox("Which slot from 1 to 6 would you like to put this pokeman in? (0 to cancel)", "Confirm Selection"))
 			End If
 
 			If slot = 1 Then
 
-				frmMainMenu.yourpokemon1 = frmMainMenu.Pidgeot
-				frmMainMenu.Pidgeot(7) = 1
+				frmMainMenu.yourpokemon1 = frmMainMenu.Nidoranm
+				frmMainMenu.Nidoranm(7) = 1
 			ElseIf slot = 2 Then
 
-				frmMainMenu.yourpokemon2 = frmMainMenu.Pidgeot
-				frmMainMenu.Pidgeot(7) = 1
+				frmMainMenu.yourpokemon2 = frmMainMenu.Nidoranm
+				frmMainMenu.Nidoranm(7) = 1
 			ElseIf slot = 3 Then
 
-				frmMainMenu.yourpokemon3 = frmMainMenu.Pidgeot
-				frmMainMenu.Pidgeot(7) = 1
+				frmMainMenu.yourpokemon3 = frmMainMenu.Nidoranm
+				frmMainMenu.Nidoranm(7) = 1
 			ElseIf slot = 4 Then
 
-				frmMainMenu.yourpokemon4 = frmMainMenu.Pidgeot
-				frmMainMenu.Pidgeot(7) = 1
+				frmMainMenu.yourpokemon4 = frmMainMenu.Nidoranm
+				frmMainMenu.Nidoranm(7) = 1
 			ElseIf slot = 5 Then
 
-				frmMainMenu.yourpokemon5 = frmMainMenu.Pidgeot
-				frmMainMenu.Pidgeot(7) = 1
+				frmMainMenu.yourpokemon5 = frmMainMenu.Nidoranm
+				frmMainMenu.Nidoranm(7) = 1
 			ElseIf slot = 6 Then
 
-				frmMainMenu.yourpokemon6 = frmMainMenu.Pidgeot
-				frmMainMenu.Pidgeot(7) = 1
+				frmMainMenu.yourpokemon6 = frmMainMenu.Nidoranm
+				frmMainMenu.Nidoranm(7) = 1
 			End If
 		End If
 	End Function
 
-	Private Sub btnBulbasaur_Click(sender As Object, e As EventArgs) Handles btnBulbasaur.Click
-		switch("Bulbasaur")
+	Private Sub btnRattata_Click(sender As Object, e As EventArgs) Handles btnRattata.Click
+		switch("Rattata")
 	End Sub
 
-	Private Sub btnCharmander_Click(sender As Object, e As EventArgs) Handles btnCharmander.Click
-		switch("Charmander")
+	Private Sub btnRaticate_Click(sender As Object, e As EventArgs) Handles btnRaticate.Click
+		switch("Raticate")
 	End Sub
 
-	Private Sub btnSquirtle_Click(sender As Object, e As EventArgs) Handles btnSquirtle.Click
-		switch("Squirtle")
+	Private Sub btnSpearow_Click(sender As Object, e As EventArgs) Handles btnSpearow.Click
+		switch("Spearow")
 	End Sub
 
-	Private Sub btnCaterpie_Click(sender As Object, e As EventArgs) Handles btnCaterpie.Click
-		switch("Caterpie")
+	Private Sub btnFearow_Click(sender As Object, e As EventArgs) Handles btnFearow.Click
+		switch("Fearow")
 	End Sub
 
-	Private Sub btnMetapod_click(sender As Object, e As EventArgs) Handles btnMetapod.Click
-		switch("Metapod")
+	Private Sub btnEkans_click(sender As Object, e As EventArgs) Handles btnEkans.Click
+		switch("Ekans")
 	End Sub
 
-	Private Sub btnButterfree_Click(sender As Object, e As EventArgs) Handles btnButterfree.Click
-		switch("Butterfree")
+	Private Sub btnArbok_Click(sender As Object, e As EventArgs) Handles btnArbok.Click
+		switch("Arbok")
 	End Sub
 
-	Private Sub btnWeedle_Click(sender As Object, e As EventArgs) Handles btnWeedle.Click
-		switch("Weedle")
+	Private Sub btnPikachu_Click(sender As Object, e As EventArgs) Handles btnPikachu.Click
+		switch("Pikachu")
 	End Sub
 
-	Private Sub btnKakuna_Click(sender As Object, e As EventArgs) Handles btnKakuna.Click
-		switch("Kakuna")
+	Private Sub btnRaichu_Click(sender As Object, e As EventArgs) Handles btnRaichu.Click
+		switch("Raichu")
 	End Sub
 
-	Private Sub btnBeedrill_Click(sender As Object, e As EventArgs) Handles btnBeedrill.Click
-		switch("Beedrill")
+	Private Sub btnNidoranf_Click(sender As Object, e As EventArgs) Handles btnNidoranf.Click
+		switch("Nidoranf")
 	End Sub
 
-	Private Sub btnPidgey_Click(sender As Object, e As EventArgs) Handles btnPidgey.Click
-		switch("Pidgey")
+	Private Sub btnNidorina_Click(sender As Object, e As EventArgs) Handles btnNidorina.Click
+		switch("Nidorina")
 	End Sub
 
-	Private Sub btnPidgeotto_Click(sender As Object, e As EventArgs) Handles btnPidgeotto.Click
-		switch("Pidgeotto")
+	Private Sub btnNidoqueen_Click(sender As Object, e As EventArgs) Handles btnNidoqueen.Click
+		switch("Nidoqueen")
 	End Sub
 
-	Private Sub btnPidgeot_Click(sender As Object, e As EventArgs) Handles btnPidgeot.Click
-		switch("Pidgeot")
+	Private Sub btnNidoranm_Click(sender As Object, e As EventArgs) Handles btnNidoranm.Click
+		switch("Nidoranm")
 	End Sub
 
 	Private Sub btnPrevious_Click(sender As Object, e As EventArgs) Handles btnPrevious.Click
+		frmBox.Show()
 		Me.Close()
 	End Sub
 
 	Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
+		frmBox3.Show()
 		Me.Close()
 	End Sub
 End Class

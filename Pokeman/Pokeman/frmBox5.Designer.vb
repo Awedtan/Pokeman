@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmBox2
+Partial Class frmBox5
 	Inherits System.Windows.Forms.Form
 
 	'Form overrides dispose to clean up the component list.
@@ -22,48 +22,48 @@ Partial Class frmBox2
 	'Do not modify it using the code editor.
 	<System.Diagnostics.DebuggerStepThrough()> _
 	Private Sub InitializeComponent()
-		Me.lblRattata = New System.Windows.Forms.Label()
+		Me.lblAbra = New System.Windows.Forms.Label()
 		Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-		Me.btnFearow = New System.Windows.Forms.Button()
-		Me.btnSpearow = New System.Windows.Forms.Button()
-		Me.btnRaticate = New System.Windows.Forms.Button()
-		Me.btnRattata = New System.Windows.Forms.Button()
+		Me.btnMachop = New System.Windows.Forms.Button()
+		Me.btnAlakazam = New System.Windows.Forms.Button()
+		Me.btnKadabra = New System.Windows.Forms.Button()
+		Me.btnAbra = New System.Windows.Forms.Button()
 		Me.PictureBox3 = New System.Windows.Forms.PictureBox()
 		Me.PictureBox2 = New System.Windows.Forms.PictureBox()
 		Me.PictureBox1 = New System.Windows.Forms.PictureBox()
 		Me.PictureBox43 = New System.Windows.Forms.PictureBox()
-		Me.lblFearow = New System.Windows.Forms.Label()
-		Me.lblSpearow = New System.Windows.Forms.Label()
-		Me.lblRaticate = New System.Windows.Forms.Label()
+		Me.llblMachop = New System.Windows.Forms.Label()
+		Me.lblAlakazam = New System.Windows.Forms.Label()
+		Me.lblKadabra = New System.Windows.Forms.Label()
 		Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-		Me.btnRaichu = New System.Windows.Forms.Button()
+		Me.lblMachoke = New System.Windows.Forms.Label()
+		Me.btnGolem = New System.Windows.Forms.Button()
 		Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-		Me.btnPikachu = New System.Windows.Forms.Button()
+		Me.btnBellsprout = New System.Windows.Forms.Button()
 		Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-		Me.btnArbok = New System.Windows.Forms.Button()
-		Me.btnEkans = New System.Windows.Forms.Button()
+		Me.btnPsyduck = New System.Windows.Forms.Button()
+		Me.btnMachoke = New System.Windows.Forms.Button()
 		Me.PictureBox5 = New System.Windows.Forms.PictureBox()
 		Me.PictureBox4 = New System.Windows.Forms.PictureBox()
 		Me.lblKakuna = New System.Windows.Forms.Label()
-		Me.lblPikachu = New System.Windows.Forms.Label()
-		Me.lblArbok = New System.Windows.Forms.Label()
-		Me.lblEkans = New System.Windows.Forms.Label()
+		Me.lblGolem = New System.Windows.Forms.Label()
+		Me.lblBellsprout = New System.Windows.Forms.Label()
+		Me.lblMachamp = New System.Windows.Forms.Label()
+		Me.lblPonyta = New System.Windows.Forms.Label()
 		Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-		Me.btnNidoranm = New System.Windows.Forms.Button()
+		Me.btnMagneton = New System.Windows.Forms.Button()
 		Me.PictureBox11 = New System.Windows.Forms.PictureBox()
-		Me.btnNidoqueen = New System.Windows.Forms.Button()
+		Me.btnMagnemite = New System.Windows.Forms.Button()
 		Me.PictureBox10 = New System.Windows.Forms.PictureBox()
-		Me.btnNidorina = New System.Windows.Forms.Button()
-		Me.btnNidoranf = New System.Windows.Forms.Button()
+		Me.btnRapidash = New System.Windows.Forms.Button()
+		Me.btnPonyta = New System.Windows.Forms.Button()
 		Me.PictureBox9 = New System.Windows.Forms.PictureBox()
 		Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-		Me.lblNidoranm = New System.Windows.Forms.Label()
-		Me.lblNidoqueen = New System.Windows.Forms.Label()
-		Me.lblNidorina = New System.Windows.Forms.Label()
-		Me.lblNidoranf = New System.Windows.Forms.Label()
+		Me.lblMagneton = New System.Windows.Forms.Label()
+		Me.lblMagnemite = New System.Windows.Forms.Label()
+		Me.lblRapidash = New System.Windows.Forms.Label()
 		Me.btnPrevious = New System.Windows.Forms.Button()
 		Me.btnNext = New System.Windows.Forms.Button()
-		Me.lblRaichu = New System.Windows.Forms.Label()
 		Me.GroupBox1.SuspendLayout()
 		CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -81,74 +81,74 @@ Partial Class frmBox2
 		CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.SuspendLayout()
 		'
-		'lblRattata
+		'lblAbra
 		'
-		Me.lblRattata.AutoSize = True
-		Me.lblRattata.Location = New System.Drawing.Point(6, 65)
-		Me.lblRattata.Name = "lblRattata"
-		Me.lblRattata.Size = New System.Drawing.Size(42, 13)
-		Me.lblRattata.TabIndex = 0
-		Me.lblRattata.Text = "Rattata"
+		Me.lblAbra.AutoSize = True
+		Me.lblAbra.Location = New System.Drawing.Point(6, 65)
+		Me.lblAbra.Name = "lblAbra"
+		Me.lblAbra.Size = New System.Drawing.Size(29, 13)
+		Me.lblAbra.TabIndex = 0
+		Me.lblAbra.Text = "Abra"
 		'
 		'GroupBox1
 		'
-		Me.GroupBox1.Controls.Add(Me.btnFearow)
-		Me.GroupBox1.Controls.Add(Me.btnSpearow)
-		Me.GroupBox1.Controls.Add(Me.btnRaticate)
-		Me.GroupBox1.Controls.Add(Me.btnRattata)
+		Me.GroupBox1.Controls.Add(Me.btnMachop)
+		Me.GroupBox1.Controls.Add(Me.btnAlakazam)
+		Me.GroupBox1.Controls.Add(Me.btnKadabra)
+		Me.GroupBox1.Controls.Add(Me.btnAbra)
 		Me.GroupBox1.Controls.Add(Me.PictureBox3)
 		Me.GroupBox1.Controls.Add(Me.PictureBox2)
 		Me.GroupBox1.Controls.Add(Me.PictureBox1)
 		Me.GroupBox1.Controls.Add(Me.PictureBox43)
-		Me.GroupBox1.Controls.Add(Me.lblFearow)
-		Me.GroupBox1.Controls.Add(Me.lblSpearow)
-		Me.GroupBox1.Controls.Add(Me.lblRaticate)
-		Me.GroupBox1.Controls.Add(Me.lblRattata)
+		Me.GroupBox1.Controls.Add(Me.llblMachop)
+		Me.GroupBox1.Controls.Add(Me.lblAlakazam)
+		Me.GroupBox1.Controls.Add(Me.lblKadabra)
+		Me.GroupBox1.Controls.Add(Me.lblAbra)
 		Me.GroupBox1.Location = New System.Drawing.Point(50, 12)
 		Me.GroupBox1.Name = "GroupBox1"
 		Me.GroupBox1.Size = New System.Drawing.Size(200, 359)
 		Me.GroupBox1.TabIndex = 1
 		Me.GroupBox1.TabStop = False
 		'
-		'btnFearow
+		'btnMachop
 		'
-		Me.btnFearow.Enabled = False
-		Me.btnFearow.Location = New System.Drawing.Point(0, 312)
-		Me.btnFearow.Name = "btnFearow"
-		Me.btnFearow.Size = New System.Drawing.Size(59, 24)
-		Me.btnFearow.TabIndex = 53
-		Me.btnFearow.Text = "Select"
-		Me.btnFearow.UseVisualStyleBackColor = True
+		Me.btnMachop.Enabled = False
+		Me.btnMachop.Location = New System.Drawing.Point(0, 312)
+		Me.btnMachop.Name = "btnMachop"
+		Me.btnMachop.Size = New System.Drawing.Size(59, 24)
+		Me.btnMachop.TabIndex = 53
+		Me.btnMachop.Text = "Select"
+		Me.btnMachop.UseVisualStyleBackColor = True
 		'
-		'btnSpearow
+		'btnAlakazam
 		'
-		Me.btnSpearow.Enabled = False
-		Me.btnSpearow.Location = New System.Drawing.Point(0, 235)
-		Me.btnSpearow.Name = "btnSpearow"
-		Me.btnSpearow.Size = New System.Drawing.Size(59, 24)
-		Me.btnSpearow.TabIndex = 52
-		Me.btnSpearow.Text = "Select"
-		Me.btnSpearow.UseVisualStyleBackColor = True
+		Me.btnAlakazam.Enabled = False
+		Me.btnAlakazam.Location = New System.Drawing.Point(0, 235)
+		Me.btnAlakazam.Name = "btnAlakazam"
+		Me.btnAlakazam.Size = New System.Drawing.Size(59, 24)
+		Me.btnAlakazam.TabIndex = 52
+		Me.btnAlakazam.Text = "Select"
+		Me.btnAlakazam.UseVisualStyleBackColor = True
 		'
-		'btnRaticate
+		'btnKadabra
 		'
-		Me.btnRaticate.Enabled = False
-		Me.btnRaticate.Location = New System.Drawing.Point(0, 158)
-		Me.btnRaticate.Name = "btnRaticate"
-		Me.btnRaticate.Size = New System.Drawing.Size(59, 24)
-		Me.btnRaticate.TabIndex = 51
-		Me.btnRaticate.Text = "Select"
-		Me.btnRaticate.UseVisualStyleBackColor = True
+		Me.btnKadabra.Enabled = False
+		Me.btnKadabra.Location = New System.Drawing.Point(0, 158)
+		Me.btnKadabra.Name = "btnKadabra"
+		Me.btnKadabra.Size = New System.Drawing.Size(59, 24)
+		Me.btnKadabra.TabIndex = 51
+		Me.btnKadabra.Text = "Select"
+		Me.btnKadabra.UseVisualStyleBackColor = True
 		'
-		'btnRattata
+		'btnAbra
 		'
-		Me.btnRattata.Enabled = False
-		Me.btnRattata.Location = New System.Drawing.Point(0, 81)
-		Me.btnRattata.Name = "btnRattata"
-		Me.btnRattata.Size = New System.Drawing.Size(59, 24)
-		Me.btnRattata.TabIndex = 50
-		Me.btnRattata.Text = "Select"
-		Me.btnRattata.UseVisualStyleBackColor = True
+		Me.btnAbra.Enabled = False
+		Me.btnAbra.Location = New System.Drawing.Point(0, 81)
+		Me.btnAbra.Name = "btnAbra"
+		Me.btnAbra.Size = New System.Drawing.Size(59, 24)
+		Me.btnAbra.TabIndex = 50
+		Me.btnAbra.Text = "Select"
+		Me.btnAbra.UseVisualStyleBackColor = True
 		'
 		'PictureBox3
 		'
@@ -186,63 +186,72 @@ Partial Class frmBox2
 		Me.PictureBox43.TabIndex = 46
 		Me.PictureBox43.TabStop = False
 		'
-		'lblFearow
+		'llblMachop
 		'
-		Me.lblFearow.AutoSize = True
-		Me.lblFearow.Location = New System.Drawing.Point(6, 296)
-		Me.lblFearow.Name = "lblFearow"
-		Me.lblFearow.Size = New System.Drawing.Size(42, 13)
-		Me.lblFearow.TabIndex = 10
-		Me.lblFearow.Text = "Fearow"
+		Me.llblMachop.AutoSize = True
+		Me.llblMachop.Location = New System.Drawing.Point(6, 296)
+		Me.llblMachop.Name = "llblMachop"
+		Me.llblMachop.Size = New System.Drawing.Size(46, 13)
+		Me.llblMachop.TabIndex = 10
+		Me.llblMachop.Text = "Machop"
 		'
-		'lblSpearow
+		'lblAlakazam
 		'
-		Me.lblSpearow.AutoSize = True
-		Me.lblSpearow.Location = New System.Drawing.Point(6, 219)
-		Me.lblSpearow.Name = "lblSpearow"
-		Me.lblSpearow.Size = New System.Drawing.Size(49, 13)
-		Me.lblSpearow.TabIndex = 8
-		Me.lblSpearow.Text = "Spearow"
+		Me.lblAlakazam.AutoSize = True
+		Me.lblAlakazam.Location = New System.Drawing.Point(6, 219)
+		Me.lblAlakazam.Name = "lblAlakazam"
+		Me.lblAlakazam.Size = New System.Drawing.Size(53, 13)
+		Me.lblAlakazam.TabIndex = 8
+		Me.lblAlakazam.Text = "Alakazam"
 		'
-		'lblRaticate
+		'lblKadabra
 		'
-		Me.lblRaticate.AutoSize = True
-		Me.lblRaticate.Location = New System.Drawing.Point(6, 142)
-		Me.lblRaticate.Name = "lblRaticate"
-		Me.lblRaticate.Size = New System.Drawing.Size(47, 13)
-		Me.lblRaticate.TabIndex = 6
-		Me.lblRaticate.Text = "Raticate"
+		Me.lblKadabra.AutoSize = True
+		Me.lblKadabra.Location = New System.Drawing.Point(6, 142)
+		Me.lblKadabra.Name = "lblKadabra"
+		Me.lblKadabra.Size = New System.Drawing.Size(47, 13)
+		Me.lblKadabra.TabIndex = 6
+		Me.lblKadabra.Text = "Kadabra"
 		'
 		'GroupBox2
 		'
-		Me.GroupBox2.Controls.Add(Me.lblRaichu)
-		Me.GroupBox2.Controls.Add(Me.btnRaichu)
+		Me.GroupBox2.Controls.Add(Me.lblMachoke)
+		Me.GroupBox2.Controls.Add(Me.btnGolem)
 		Me.GroupBox2.Controls.Add(Me.PictureBox7)
-		Me.GroupBox2.Controls.Add(Me.btnPikachu)
+		Me.GroupBox2.Controls.Add(Me.btnBellsprout)
 		Me.GroupBox2.Controls.Add(Me.PictureBox6)
-		Me.GroupBox2.Controls.Add(Me.btnArbok)
-		Me.GroupBox2.Controls.Add(Me.btnEkans)
+		Me.GroupBox2.Controls.Add(Me.btnPsyduck)
+		Me.GroupBox2.Controls.Add(Me.btnMachoke)
 		Me.GroupBox2.Controls.Add(Me.PictureBox5)
 		Me.GroupBox2.Controls.Add(Me.PictureBox4)
 		Me.GroupBox2.Controls.Add(Me.lblKakuna)
-		Me.GroupBox2.Controls.Add(Me.lblPikachu)
-		Me.GroupBox2.Controls.Add(Me.lblArbok)
-		Me.GroupBox2.Controls.Add(Me.lblEkans)
+		Me.GroupBox2.Controls.Add(Me.lblGolem)
+		Me.GroupBox2.Controls.Add(Me.lblBellsprout)
+		Me.GroupBox2.Controls.Add(Me.lblMachamp)
 		Me.GroupBox2.Location = New System.Drawing.Point(256, 15)
 		Me.GroupBox2.Name = "GroupBox2"
 		Me.GroupBox2.Size = New System.Drawing.Size(200, 359)
 		Me.GroupBox2.TabIndex = 11
 		Me.GroupBox2.TabStop = False
 		'
-		'btnRaichu
+		'lblMachoke
 		'
-		Me.btnRaichu.Enabled = False
-		Me.btnRaichu.Location = New System.Drawing.Point(0, 309)
-		Me.btnRaichu.Name = "btnRaichu"
-		Me.btnRaichu.Size = New System.Drawing.Size(59, 24)
-		Me.btnRaichu.TabIndex = 57
-		Me.btnRaichu.Text = "Select"
-		Me.btnRaichu.UseVisualStyleBackColor = True
+		Me.lblMachoke.AutoSize = True
+		Me.lblMachoke.Location = New System.Drawing.Point(6, 62)
+		Me.lblMachoke.Name = "lblMachoke"
+		Me.lblMachoke.Size = New System.Drawing.Size(52, 13)
+		Me.lblMachoke.TabIndex = 58
+		Me.lblMachoke.Text = "Machoke"
+		'
+		'btnGolem
+		'
+		Me.btnGolem.Enabled = False
+		Me.btnGolem.Location = New System.Drawing.Point(0, 309)
+		Me.btnGolem.Name = "btnGolem"
+		Me.btnGolem.Size = New System.Drawing.Size(59, 24)
+		Me.btnGolem.TabIndex = 57
+		Me.btnGolem.Text = "Select"
+		Me.btnGolem.UseVisualStyleBackColor = True
 		'
 		'PictureBox7
 		'
@@ -253,15 +262,15 @@ Partial Class frmBox2
 		Me.PictureBox7.TabIndex = 53
 		Me.PictureBox7.TabStop = False
 		'
-		'btnPikachu
+		'btnBellsprout
 		'
-		Me.btnPikachu.Enabled = False
-		Me.btnPikachu.Location = New System.Drawing.Point(0, 232)
-		Me.btnPikachu.Name = "btnPikachu"
-		Me.btnPikachu.Size = New System.Drawing.Size(59, 24)
-		Me.btnPikachu.TabIndex = 56
-		Me.btnPikachu.Text = "Select"
-		Me.btnPikachu.UseVisualStyleBackColor = True
+		Me.btnBellsprout.Enabled = False
+		Me.btnBellsprout.Location = New System.Drawing.Point(0, 232)
+		Me.btnBellsprout.Name = "btnBellsprout"
+		Me.btnBellsprout.Size = New System.Drawing.Size(59, 24)
+		Me.btnBellsprout.TabIndex = 56
+		Me.btnBellsprout.Text = "Select"
+		Me.btnBellsprout.UseVisualStyleBackColor = True
 		'
 		'PictureBox6
 		'
@@ -272,25 +281,25 @@ Partial Class frmBox2
 		Me.PictureBox6.TabIndex = 52
 		Me.PictureBox6.TabStop = False
 		'
-		'btnArbok
+		'btnPsyduck
 		'
-		Me.btnArbok.Enabled = False
-		Me.btnArbok.Location = New System.Drawing.Point(0, 155)
-		Me.btnArbok.Name = "btnArbok"
-		Me.btnArbok.Size = New System.Drawing.Size(59, 24)
-		Me.btnArbok.TabIndex = 55
-		Me.btnArbok.Text = "Select"
-		Me.btnArbok.UseVisualStyleBackColor = True
+		Me.btnPsyduck.Enabled = False
+		Me.btnPsyduck.Location = New System.Drawing.Point(0, 155)
+		Me.btnPsyduck.Name = "btnPsyduck"
+		Me.btnPsyduck.Size = New System.Drawing.Size(59, 24)
+		Me.btnPsyduck.TabIndex = 55
+		Me.btnPsyduck.Text = "Select"
+		Me.btnPsyduck.UseVisualStyleBackColor = True
 		'
-		'btnEkans
+		'btnMachoke
 		'
-		Me.btnEkans.Enabled = False
-		Me.btnEkans.Location = New System.Drawing.Point(0, 78)
-		Me.btnEkans.Name = "btnEkans"
-		Me.btnEkans.Size = New System.Drawing.Size(59, 24)
-		Me.btnEkans.TabIndex = 54
-		Me.btnEkans.Text = "Select"
-		Me.btnEkans.UseVisualStyleBackColor = True
+		Me.btnMachoke.Enabled = False
+		Me.btnMachoke.Location = New System.Drawing.Point(0, 78)
+		Me.btnMachoke.Name = "btnMachoke"
+		Me.btnMachoke.Size = New System.Drawing.Size(59, 24)
+		Me.btnMachoke.TabIndex = 54
+		Me.btnMachoke.Text = "Select"
+		Me.btnMachoke.UseVisualStyleBackColor = True
 		'
 		'PictureBox5
 		'
@@ -319,62 +328,71 @@ Partial Class frmBox2
 		Me.lblKakuna.TabIndex = 10
 		Me.lblKakuna.Text = "Raichu"
 		'
-		'lblPikachu
+		'lblGolem
 		'
-		Me.lblPikachu.AutoSize = True
-		Me.lblPikachu.Location = New System.Drawing.Point(6, 216)
-		Me.lblPikachu.Name = "lblPikachu"
-		Me.lblPikachu.Size = New System.Drawing.Size(46, 13)
-		Me.lblPikachu.TabIndex = 8
-		Me.lblPikachu.Text = "Pikachu"
+		Me.lblGolem.AutoSize = True
+		Me.lblGolem.Location = New System.Drawing.Point(6, 293)
+		Me.lblGolem.Name = "lblGolem"
+		Me.lblGolem.Size = New System.Drawing.Size(37, 13)
+		Me.lblGolem.TabIndex = 8
+		Me.lblGolem.Text = "Golem"
 		'
-		'lblArbok
+		'lblBellsprout
 		'
-		Me.lblArbok.AutoSize = True
-		Me.lblArbok.Location = New System.Drawing.Point(6, 139)
-		Me.lblArbok.Name = "lblArbok"
-		Me.lblArbok.Size = New System.Drawing.Size(35, 13)
-		Me.lblArbok.TabIndex = 6
-		Me.lblArbok.Text = "Arbok"
+		Me.lblBellsprout.AutoSize = True
+		Me.lblBellsprout.Location = New System.Drawing.Point(6, 216)
+		Me.lblBellsprout.Name = "lblBellsprout"
+		Me.lblBellsprout.Size = New System.Drawing.Size(53, 13)
+		Me.lblBellsprout.TabIndex = 6
+		Me.lblBellsprout.Text = "Bellsprout"
 		'
-		'lblEkans
+		'lblMachamp
 		'
-		Me.lblEkans.AutoSize = True
-		Me.lblEkans.Location = New System.Drawing.Point(6, 62)
-		Me.lblEkans.Name = "lblEkans"
-		Me.lblEkans.Size = New System.Drawing.Size(37, 13)
-		Me.lblEkans.TabIndex = 0
-		Me.lblEkans.Text = "Ekans"
+		Me.lblMachamp.AutoSize = True
+		Me.lblMachamp.Location = New System.Drawing.Point(6, 139)
+		Me.lblMachamp.Name = "lblMachamp"
+		Me.lblMachamp.Size = New System.Drawing.Size(54, 13)
+		Me.lblMachamp.TabIndex = 0
+		Me.lblMachamp.Text = "Machamp"
+		'
+		'lblPonyta
+		'
+		Me.lblPonyta.AutoSize = True
+		Me.lblPonyta.Location = New System.Drawing.Point(6, 62)
+		Me.lblPonyta.Name = "lblPonyta"
+		Me.lblPonyta.Size = New System.Drawing.Size(40, 13)
+		Me.lblPonyta.TabIndex = 54
+		Me.lblPonyta.Text = "Ponyta"
 		'
 		'GroupBox3
 		'
-		Me.GroupBox3.Controls.Add(Me.btnNidoranm)
+		Me.GroupBox3.Controls.Add(Me.lblPonyta)
+		Me.GroupBox3.Controls.Add(Me.btnMagneton)
 		Me.GroupBox3.Controls.Add(Me.PictureBox11)
-		Me.GroupBox3.Controls.Add(Me.btnNidoqueen)
+		Me.GroupBox3.Controls.Add(Me.btnMagnemite)
 		Me.GroupBox3.Controls.Add(Me.PictureBox10)
-		Me.GroupBox3.Controls.Add(Me.btnNidorina)
-		Me.GroupBox3.Controls.Add(Me.btnNidoranf)
+		Me.GroupBox3.Controls.Add(Me.btnRapidash)
+		Me.GroupBox3.Controls.Add(Me.btnPonyta)
 		Me.GroupBox3.Controls.Add(Me.PictureBox9)
 		Me.GroupBox3.Controls.Add(Me.PictureBox8)
-		Me.GroupBox3.Controls.Add(Me.lblNidoranm)
-		Me.GroupBox3.Controls.Add(Me.lblNidoqueen)
-		Me.GroupBox3.Controls.Add(Me.lblNidorina)
-		Me.GroupBox3.Controls.Add(Me.lblNidoranf)
+		Me.GroupBox3.Controls.Add(Me.lblMagneton)
+		Me.GroupBox3.Controls.Add(Me.lblMagnemite)
+		Me.GroupBox3.Controls.Add(Me.lblRapidash)
 		Me.GroupBox3.Location = New System.Drawing.Point(462, 15)
 		Me.GroupBox3.Name = "GroupBox3"
 		Me.GroupBox3.Size = New System.Drawing.Size(200, 359)
 		Me.GroupBox3.TabIndex = 12
 		Me.GroupBox3.TabStop = False
 		'
-		'btnNidoranm
+		'btnMagneton
 		'
-		Me.btnNidoranm.Enabled = False
-		Me.btnNidoranm.Location = New System.Drawing.Point(0, 309)
-		Me.btnNidoranm.Name = "btnNidoranm"
-		Me.btnNidoranm.Size = New System.Drawing.Size(59, 24)
-		Me.btnNidoranm.TabIndex = 61
-		Me.btnNidoranm.Text = "Select"
-		Me.btnNidoranm.UseVisualStyleBackColor = True
+		Me.btnMagneton.Enabled = False
+		Me.btnMagneton.Location = New System.Drawing.Point(0, 309)
+		Me.btnMagneton.Name = "btnMagneton"
+		Me.btnMagneton.Size = New System.Drawing.Size(59, 24)
+		Me.btnMagneton.TabIndex = 61
+		Me.btnMagneton.Text = "Select"
+		Me.btnMagneton.UseVisualStyleBackColor = True
 		'
 		'PictureBox11
 		'
@@ -385,15 +403,15 @@ Partial Class frmBox2
 		Me.PictureBox11.TabIndex = 57
 		Me.PictureBox11.TabStop = False
 		'
-		'btnNidoqueen
+		'btnMagnemite
 		'
-		Me.btnNidoqueen.Enabled = False
-		Me.btnNidoqueen.Location = New System.Drawing.Point(0, 232)
-		Me.btnNidoqueen.Name = "btnNidoqueen"
-		Me.btnNidoqueen.Size = New System.Drawing.Size(59, 24)
-		Me.btnNidoqueen.TabIndex = 60
-		Me.btnNidoqueen.Text = "Select"
-		Me.btnNidoqueen.UseVisualStyleBackColor = True
+		Me.btnMagnemite.Enabled = False
+		Me.btnMagnemite.Location = New System.Drawing.Point(0, 232)
+		Me.btnMagnemite.Name = "btnMagnemite"
+		Me.btnMagnemite.Size = New System.Drawing.Size(59, 24)
+		Me.btnMagnemite.TabIndex = 60
+		Me.btnMagnemite.Text = "Select"
+		Me.btnMagnemite.UseVisualStyleBackColor = True
 		'
 		'PictureBox10
 		'
@@ -404,25 +422,25 @@ Partial Class frmBox2
 		Me.PictureBox10.TabIndex = 56
 		Me.PictureBox10.TabStop = False
 		'
-		'btnNidorina
+		'btnRapidash
 		'
-		Me.btnNidorina.Enabled = False
-		Me.btnNidorina.Location = New System.Drawing.Point(0, 155)
-		Me.btnNidorina.Name = "btnNidorina"
-		Me.btnNidorina.Size = New System.Drawing.Size(59, 24)
-		Me.btnNidorina.TabIndex = 59
-		Me.btnNidorina.Text = "Select"
-		Me.btnNidorina.UseVisualStyleBackColor = True
+		Me.btnRapidash.Enabled = False
+		Me.btnRapidash.Location = New System.Drawing.Point(-3, 152)
+		Me.btnRapidash.Name = "btnRapidash"
+		Me.btnRapidash.Size = New System.Drawing.Size(59, 24)
+		Me.btnRapidash.TabIndex = 59
+		Me.btnRapidash.Text = "Select"
+		Me.btnRapidash.UseVisualStyleBackColor = True
 		'
-		'btnNidoranf
+		'btnPonyta
 		'
-		Me.btnNidoranf.Enabled = False
-		Me.btnNidoranf.Location = New System.Drawing.Point(0, 78)
-		Me.btnNidoranf.Name = "btnNidoranf"
-		Me.btnNidoranf.Size = New System.Drawing.Size(59, 24)
-		Me.btnNidoranf.TabIndex = 58
-		Me.btnNidoranf.Text = "Select"
-		Me.btnNidoranf.UseVisualStyleBackColor = True
+		Me.btnPonyta.Enabled = False
+		Me.btnPonyta.Location = New System.Drawing.Point(0, 78)
+		Me.btnPonyta.Name = "btnPonyta"
+		Me.btnPonyta.Size = New System.Drawing.Size(59, 24)
+		Me.btnPonyta.TabIndex = 58
+		Me.btnPonyta.Text = "Select"
+		Me.btnPonyta.UseVisualStyleBackColor = True
 		'
 		'PictureBox9
 		'
@@ -442,41 +460,32 @@ Partial Class frmBox2
 		Me.PictureBox8.TabIndex = 54
 		Me.PictureBox8.TabStop = False
 		'
-		'lblNidoranm
+		'lblMagneton
 		'
-		Me.lblNidoranm.AutoSize = True
-		Me.lblNidoranm.Location = New System.Drawing.Point(6, 293)
-		Me.lblNidoranm.Name = "lblNidoranm"
-		Me.lblNidoranm.Size = New System.Drawing.Size(75, 13)
-		Me.lblNidoranm.TabIndex = 10
-		Me.lblNidoranm.Text = "Nidoran (male)"
+		Me.lblMagneton.AutoSize = True
+		Me.lblMagneton.Location = New System.Drawing.Point(6, 293)
+		Me.lblMagneton.Name = "lblMagneton"
+		Me.lblMagneton.Size = New System.Drawing.Size(55, 13)
+		Me.lblMagneton.TabIndex = 8
+		Me.lblMagneton.Text = "Magneton"
 		'
-		'lblNidoqueen
+		'lblMagnemite
 		'
-		Me.lblNidoqueen.AutoSize = True
-		Me.lblNidoqueen.Location = New System.Drawing.Point(6, 216)
-		Me.lblNidoqueen.Name = "lblNidoqueen"
-		Me.lblNidoqueen.Size = New System.Drawing.Size(59, 13)
-		Me.lblNidoqueen.TabIndex = 8
-		Me.lblNidoqueen.Text = "Nidoqueen"
+		Me.lblMagnemite.AutoSize = True
+		Me.lblMagnemite.Location = New System.Drawing.Point(6, 216)
+		Me.lblMagnemite.Name = "lblMagnemite"
+		Me.lblMagnemite.Size = New System.Drawing.Size(59, 13)
+		Me.lblMagnemite.TabIndex = 6
+		Me.lblMagnemite.Text = "Magnemite"
 		'
-		'lblNidorina
+		'lblRapidash
 		'
-		Me.lblNidorina.AutoSize = True
-		Me.lblNidorina.Location = New System.Drawing.Point(6, 139)
-		Me.lblNidorina.Name = "lblNidorina"
-		Me.lblNidorina.Size = New System.Drawing.Size(46, 13)
-		Me.lblNidorina.TabIndex = 6
-		Me.lblNidorina.Text = "Nidorina"
-		'
-		'lblNidoranf
-		'
-		Me.lblNidoranf.AutoSize = True
-		Me.lblNidoranf.Location = New System.Drawing.Point(6, 62)
-		Me.lblNidoranf.Name = "lblNidoranf"
-		Me.lblNidoranf.Size = New System.Drawing.Size(84, 13)
-		Me.lblNidoranf.TabIndex = 0
-		Me.lblNidoranf.Text = "Nidoran (female)"
+		Me.lblRapidash.AutoSize = True
+		Me.lblRapidash.Location = New System.Drawing.Point(4, 136)
+		Me.lblRapidash.Name = "lblRapidash"
+		Me.lblRapidash.Size = New System.Drawing.Size(52, 13)
+		Me.lblRapidash.TabIndex = 0
+		Me.lblRapidash.Text = "Rapidash"
 		'
 		'btnPrevious
 		'
@@ -496,16 +505,7 @@ Partial Class frmBox2
 		Me.btnNext.Text = "Next"
 		Me.btnNext.UseVisualStyleBackColor = True
 		'
-		'lblRaichu
-		'
-		Me.lblRaichu.AutoSize = True
-		Me.lblRaichu.Location = New System.Drawing.Point(6, 293)
-		Me.lblRaichu.Name = "lblRaichu"
-		Me.lblRaichu.Size = New System.Drawing.Size(41, 13)
-		Me.lblRaichu.TabIndex = 54
-		Me.lblRaichu.Text = "Raichu"
-		'
-		'frmBox2
+		'frmBox5
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -515,8 +515,8 @@ Partial Class frmBox2
 		Me.Controls.Add(Me.GroupBox3)
 		Me.Controls.Add(Me.GroupBox2)
 		Me.Controls.Add(Me.GroupBox1)
-		Me.Name = "frmBox2"
-		Me.Text = "frmBox2"
+		Me.Name = "frmBox5"
+		Me.Text = "frmBox5"
 		Me.GroupBox1.ResumeLayout(False)
 		Me.GroupBox1.PerformLayout()
 		CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -539,25 +539,24 @@ Partial Class frmBox2
 
 	End Sub
 
-	Friend WithEvents lblRattata As Label
+	Friend WithEvents lblAbra As Label
 	Friend WithEvents GroupBox1 As GroupBox
-	Friend WithEvents lblRaticate As Label
-	Friend WithEvents lblFearow As Label
-	Friend WithEvents lblSpearow As Label
+	Friend WithEvents lblKadabra As Label
+	Friend WithEvents llblMachop As Label
+	Friend WithEvents lblAlakazam As Label
 	Friend WithEvents GroupBox2 As GroupBox
 	Friend WithEvents lblKakuna As Label
-	Friend WithEvents lblPikachu As Label
-	Friend WithEvents lblArbok As Label
-	Friend WithEvents lblEkans As Label
+	Friend WithEvents lblGolem As Label
+	Friend WithEvents lblBellsprout As Label
+	Friend WithEvents lblMachamp As Label
 	Friend WithEvents GroupBox3 As GroupBox
-	Friend WithEvents lblNidoranm As Label
-	Friend WithEvents lblNidoqueen As Label
-	Friend WithEvents lblNidorina As Label
-	Friend WithEvents lblNidoranf As Label
-	Friend WithEvents btnFearow As Button
-	Friend WithEvents btnSpearow As Button
-	Friend WithEvents btnRaticate As Button
-	Friend WithEvents btnRattata As Button
+	Friend WithEvents lblMagneton As Label
+	Friend WithEvents lblMagnemite As Label
+	Friend WithEvents lblRapidash As Label
+	Friend WithEvents btnMachop As Button
+	Friend WithEvents btnAlakazam As Button
+	Friend WithEvents btnKadabra As Button
+	Friend WithEvents btnAbra As Button
 	Friend WithEvents PictureBox3 As PictureBox
 	Friend WithEvents PictureBox2 As PictureBox
 	Friend WithEvents PictureBox1 As PictureBox
@@ -570,15 +569,16 @@ Partial Class frmBox2
 	Friend WithEvents PictureBox10 As PictureBox
 	Friend WithEvents PictureBox9 As PictureBox
 	Friend WithEvents PictureBox8 As PictureBox
-	Friend WithEvents btnRaichu As Button
-	Friend WithEvents btnPikachu As Button
-	Friend WithEvents btnArbok As Button
-	Friend WithEvents btnEkans As Button
-	Friend WithEvents btnNidoranm As Button
-	Friend WithEvents btnNidoqueen As Button
-	Friend WithEvents btnNidorina As Button
-	Friend WithEvents btnNidoranf As Button
+	Friend WithEvents btnGolem As Button
+	Friend WithEvents btnBellsprout As Button
+	Friend WithEvents btnPsyduck As Button
+	Friend WithEvents btnMachoke As Button
+	Friend WithEvents btnMagneton As Button
+	Friend WithEvents btnMagnemite As Button
+	Friend WithEvents btnRapidash As Button
+	Friend WithEvents btnPonyta As Button
 	Friend WithEvents btnPrevious As Button
 	Friend WithEvents btnNext As Button
-	Friend WithEvents lblRaichu As Label
+	Friend WithEvents lblPonyta As Label
+	Friend WithEvents lblMachoke As Label
 End Class

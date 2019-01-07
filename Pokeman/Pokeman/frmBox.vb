@@ -495,6 +495,7 @@
 	End Sub
 
 	Private Sub btnPrevious_Click(sender As Object, e As EventArgs) Handles btnPrevious.Click
+		frmBox8.Show()
 		Me.Close()
 	End Sub
 
