@@ -1,3 +1,3 @@
 # Pokeman
 
-Visual Basic Project for Computer Studies class
+Visual basic project for Computer Studies class
