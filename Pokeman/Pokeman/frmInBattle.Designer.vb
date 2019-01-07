@@ -300,7 +300,7 @@ Partial Class frmInBattle
         '
         'yturn
         '
-        Me.yturn.Interval = 1200
+        Me.yturn.Interval = 1000
         '
         'eturn
         '
