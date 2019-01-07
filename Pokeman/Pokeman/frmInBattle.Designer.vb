@@ -22,6 +22,7 @@ Partial Class frmInBattle
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.btnMove1 = New System.Windows.Forms.Button()
         Me.btnMove2 = New System.Windows.Forms.Button()
         Me.btnMove3 = New System.Windows.Forms.Button()
@@ -44,6 +45,21 @@ Partial Class frmInBattle
         Me.lblEName = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.TimerBarrage = New System.Windows.Forms.Timer(Me.components)
+        Me.TimerFuryAttack = New System.Windows.Forms.Timer(Me.components)
+        Me.TimerFurySwipes = New System.Windows.Forms.Timer(Me.components)
+        Me.TimerPinMissile = New System.Windows.Forms.Timer(Me.components)
+        Me.TimerSpikeCannon = New System.Windows.Forms.Timer(Me.components)
+        Me.TimerHurricaneKick = New System.Windows.Forms.Timer(Me.components)
+        Me.TimerBonemerang = New System.Windows.Forms.Timer(Me.components)
+        Me.TimerDoubleKick = New System.Windows.Forms.Timer(Me.components)
+        Me.TimerDoubleSlap = New System.Windows.Forms.Timer(Me.components)
+        Me.yturn = New System.Windows.Forms.Timer(Me.components)
+        Me.eturn = New System.Windows.Forms.Timer(Me.components)
+        Me.ydamage = New System.Windows.Forms.Timer(Me.components)
+        Me.edamage = New System.Windows.Forms.Timer(Me.components)
+        Me.yspec = New System.Windows.Forms.Timer(Me.components)
+        Me.espec = New System.Windows.Forms.Timer(Me.components)
         CType(Me.picYPokemon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picEPokemon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -231,7 +247,7 @@ Partial Class frmInBattle
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(304, 140)
+        Me.Label7.Location = New System.Drawing.Point(377, 690)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(39, 13)
         Me.Label7.TabIndex = 20
@@ -246,11 +262,71 @@ Partial Class frmInBattle
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'TimerBarrage
+        '
+        Me.TimerBarrage.Interval = 400
+        '
+        'TimerFuryAttack
+        '
+        Me.TimerFuryAttack.Interval = 400
+        '
+        'TimerFurySwipes
+        '
+        Me.TimerFurySwipes.Interval = 400
+        '
+        'TimerPinMissile
+        '
+        Me.TimerPinMissile.Interval = 400
+        '
+        'TimerSpikeCannon
+        '
+        Me.TimerSpikeCannon.Interval = 400
+        '
+        'TimerHurricaneKick
+        '
+        Me.TimerHurricaneKick.Interval = 400
+        '
+        'TimerBonemerang
+        '
+        Me.TimerBonemerang.Interval = 400
+        '
+        'TimerDoubleKick
+        '
+        Me.TimerDoubleKick.Interval = 400
+        '
+        'TimerDoubleSlap
+        '
+        Me.TimerDoubleSlap.Interval = 400
+        '
+        'yturn
+        '
+        Me.yturn.Interval = 1000
+        '
+        'eturn
+        '
+        Me.eturn.Interval = 1200
+        '
+        'ydamage
+        '
+        Me.ydamage.Interval = 300
+        '
+        'edamage
+        '
+        Me.edamage.Interval = 300
+        '
+        'yspec
+        '
+        Me.yspec.Interval = 300
+        '
+        'espec
+        '
+        Me.espec.Interval = 300
+        '
         'frmInBattle
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 690)
+        Me.ClientSize = New System.Drawing.Size(800, 745)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.lblEHp)
@@ -306,4 +382,19 @@ Partial Class frmInBattle
     Friend WithEvents lblEName As Label
 	Friend WithEvents Label7 As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents TimerBarrage As Timer
+    Friend WithEvents TimerFuryAttack As Timer
+    Friend WithEvents TimerFurySwipes As Timer
+    Friend WithEvents TimerPinMissile As Timer
+    Friend WithEvents TimerSpikeCannon As Timer
+    Friend WithEvents TimerHurricaneKick As Timer
+    Friend WithEvents TimerBonemerang As Timer
+    Friend WithEvents TimerDoubleKick As Timer
+    Friend WithEvents TimerDoubleSlap As Timer
+    Friend WithEvents yturn As Timer
+    Friend WithEvents eturn As Timer
+    Friend WithEvents ydamage As Timer
+    Friend WithEvents edamage As Timer
+    Friend WithEvents yspec As Timer
+    Friend WithEvents espec As Timer
 End Class

@@ -11,7 +11,7 @@
 	Dim InBattle As New frmInBattle
 	'Dim BirdNest As New frmBirdNest
 
-	Dim trainerbattle As Boolean
+	Public Shared trainerbattle As Boolean
 
 	Public Shared enemypokemon1(14) As String
 	Public Shared enemypokemon2(14) As String
