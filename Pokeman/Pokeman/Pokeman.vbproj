@@ -85,6 +85,42 @@
     <Compile Include="frmBox2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmBox3.Designer.vb">
+      <DependentUpon>frmBox3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBox3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBox4.Designer.vb">
+      <DependentUpon>frmBox4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBox4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBox5.Designer.vb">
+      <DependentUpon>frmBox5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBox5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBox6.Designer.vb">
+      <DependentUpon>frmBox6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBox6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBox7.Designer.vb">
+      <DependentUpon>frmBox7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBox7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBox8.Designer.vb">
+      <DependentUpon>frmBox8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBox8.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmGym1.Designer.vb">
       <DependentUpon>frmGym1.vb</DependentUpon>
     </Compile>

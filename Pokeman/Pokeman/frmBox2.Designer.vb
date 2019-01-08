@@ -36,6 +36,7 @@ Partial Class frmBox2
 		Me.lblSpearow = New System.Windows.Forms.Label()
 		Me.lblRaticate = New System.Windows.Forms.Label()
 		Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+		Me.lblRaichu = New System.Windows.Forms.Label()
 		Me.btnRaichu = New System.Windows.Forms.Button()
 		Me.PictureBox7 = New System.Windows.Forms.PictureBox()
 		Me.btnPikachu = New System.Windows.Forms.Button()
@@ -63,7 +64,6 @@ Partial Class frmBox2
 		Me.lblNidoranf = New System.Windows.Forms.Label()
 		Me.btnPrevious = New System.Windows.Forms.Button()
 		Me.btnNext = New System.Windows.Forms.Button()
-		Me.lblRaichu = New System.Windows.Forms.Label()
 		Me.GroupBox1.SuspendLayout()
 		CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -233,6 +233,15 @@ Partial Class frmBox2
 		Me.GroupBox2.Size = New System.Drawing.Size(200, 359)
 		Me.GroupBox2.TabIndex = 11
 		Me.GroupBox2.TabStop = False
+		'
+		'lblRaichu
+		'
+		Me.lblRaichu.AutoSize = True
+		Me.lblRaichu.Location = New System.Drawing.Point(6, 293)
+		Me.lblRaichu.Name = "lblRaichu"
+		Me.lblRaichu.Size = New System.Drawing.Size(41, 13)
+		Me.lblRaichu.TabIndex = 54
+		Me.lblRaichu.Text = "Raichu"
 		'
 		'btnRaichu
 		'
@@ -496,15 +505,6 @@ Partial Class frmBox2
 		Me.btnNext.Text = "Next"
 		Me.btnNext.UseVisualStyleBackColor = True
 		'
-		'lblRaichu
-		'
-		Me.lblRaichu.AutoSize = True
-		Me.lblRaichu.Location = New System.Drawing.Point(6, 293)
-		Me.lblRaichu.Name = "lblRaichu"
-		Me.lblRaichu.Size = New System.Drawing.Size(41, 13)
-		Me.lblRaichu.TabIndex = 54
-		Me.lblRaichu.Text = "Raichu"
-		'
 		'frmBox2
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -516,7 +516,7 @@ Partial Class frmBox2
 		Me.Controls.Add(Me.GroupBox2)
 		Me.Controls.Add(Me.GroupBox1)
 		Me.Name = "frmBox2"
-		Me.Text = "frmBox2"
+		Me.Text = " "
 		Me.GroupBox1.ResumeLayout(False)
 		Me.GroupBox1.PerformLayout()
 		CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
