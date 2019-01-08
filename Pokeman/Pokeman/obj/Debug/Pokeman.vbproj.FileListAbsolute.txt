@@ -73,3 +73,10 @@ C:\Users\danie\Documents\School\Pokeman\Pokeman\Pokeman\obj\Debug\Pokeman.vbproj
 C:\Users\danie\Documents\School\Pokeman\Pokeman\Pokeman\obj\Debug\Pokeman.exe
 C:\Users\danie\Documents\School\Pokeman\Pokeman\Pokeman\obj\Debug\Pokeman.xml
 C:\Users\danie\Documents\School\Pokeman\Pokeman\Pokeman\obj\Debug\Pokeman.pdb
+C:\Users\danie\Documents\School\Pokeman\Pokeman\Pokeman\obj\Debug\Pokeman.frmBox2.resources
+C:\Users\danie\Documents\School\Pokeman\Pokeman\Pokeman\obj\Debug\Pokeman.frmBox3.resources
+C:\Users\danie\Documents\School\Pokeman\Pokeman\Pokeman\obj\Debug\Pokeman.frmBox4.resources
+C:\Users\danie\Documents\School\Pokeman\Pokeman\Pokeman\obj\Debug\Pokeman.frmBox5.resources
+C:\Users\danie\Documents\School\Pokeman\Pokeman\Pokeman\obj\Debug\Pokeman.frmBox6.resources
+C:\Users\danie\Documents\School\Pokeman\Pokeman\Pokeman\obj\Debug\Pokeman.frmBox7.resources
+C:\Users\danie\Documents\School\Pokeman\Pokeman\Pokeman\obj\Debug\Pokeman.frmBox8.resources

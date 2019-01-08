@@ -28,57 +28,57 @@ Partial Class frmBox3
 		Me.btnClefairy = New System.Windows.Forms.Button()
 		Me.btnNidoking = New System.Windows.Forms.Button()
 		Me.btnNidorino = New System.Windows.Forms.Button()
-		Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-		Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-		Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-		Me.PictureBox43 = New System.Windows.Forms.PictureBox()
 		Me.lblClefable = New System.Windows.Forms.Label()
 		Me.lblClefairy = New System.Windows.Forms.Label()
 		Me.lblNidoking = New System.Windows.Forms.Label()
 		Me.GroupBox2 = New System.Windows.Forms.GroupBox()
 		Me.lblWigglytuff = New System.Windows.Forms.Label()
 		Me.btnWigglytuff = New System.Windows.Forms.Button()
-		Me.PictureBox7 = New System.Windows.Forms.PictureBox()
 		Me.btnJigglypuff = New System.Windows.Forms.Button()
-		Me.PictureBox6 = New System.Windows.Forms.PictureBox()
 		Me.btnNinetales = New System.Windows.Forms.Button()
 		Me.btnVulpix = New System.Windows.Forms.Button()
-		Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-		Me.PictureBox4 = New System.Windows.Forms.PictureBox()
 		Me.lblKakuna = New System.Windows.Forms.Label()
 		Me.lblJigglypuff = New System.Windows.Forms.Label()
 		Me.lblNinetales = New System.Windows.Forms.Label()
 		Me.lblVulpix = New System.Windows.Forms.Label()
 		Me.GroupBox3 = New System.Windows.Forms.GroupBox()
 		Me.btnParas = New System.Windows.Forms.Button()
-		Me.PictureBox11 = New System.Windows.Forms.PictureBox()
 		Me.btnVileplume = New System.Windows.Forms.Button()
-		Me.PictureBox10 = New System.Windows.Forms.PictureBox()
 		Me.btnGloom = New System.Windows.Forms.Button()
 		Me.btnOddish = New System.Windows.Forms.Button()
-		Me.PictureBox9 = New System.Windows.Forms.PictureBox()
-		Me.PictureBox8 = New System.Windows.Forms.PictureBox()
 		Me.lblParas = New System.Windows.Forms.Label()
 		Me.lblVileplume = New System.Windows.Forms.Label()
 		Me.lblGloom = New System.Windows.Forms.Label()
 		Me.lblOddish = New System.Windows.Forms.Label()
 		Me.btnPrevious = New System.Windows.Forms.Button()
 		Me.btnNext = New System.Windows.Forms.Button()
+		Me.PictureBox11 = New System.Windows.Forms.PictureBox()
+		Me.PictureBox10 = New System.Windows.Forms.PictureBox()
+		Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+		Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+		Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+		Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+		Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+		Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+		Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+		Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+		Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+		Me.PictureBox43 = New System.Windows.Forms.PictureBox()
 		Me.GroupBox1.SuspendLayout()
-		CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.PictureBox43, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.GroupBox2.SuspendLayout()
-		CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.GroupBox3.SuspendLayout()
 		CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.PictureBox43, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.SuspendLayout()
 		'
 		'lblNidorino
@@ -150,42 +150,6 @@ Partial Class frmBox3
 		Me.btnNidorino.Text = "Select"
 		Me.btnNidorino.UseVisualStyleBackColor = True
 		'
-		'PictureBox3
-		'
-		Me.PictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.PictureBox3.Location = New System.Drawing.Point(119, 262)
-		Me.PictureBox3.Name = "PictureBox3"
-		Me.PictureBox3.Size = New System.Drawing.Size(75, 71)
-		Me.PictureBox3.TabIndex = 49
-		Me.PictureBox3.TabStop = False
-		'
-		'PictureBox2
-		'
-		Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.PictureBox2.Location = New System.Drawing.Point(119, 185)
-		Me.PictureBox2.Name = "PictureBox2"
-		Me.PictureBox2.Size = New System.Drawing.Size(75, 71)
-		Me.PictureBox2.TabIndex = 48
-		Me.PictureBox2.TabStop = False
-		'
-		'PictureBox1
-		'
-		Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.PictureBox1.Location = New System.Drawing.Point(119, 108)
-		Me.PictureBox1.Name = "PictureBox1"
-		Me.PictureBox1.Size = New System.Drawing.Size(75, 71)
-		Me.PictureBox1.TabIndex = 47
-		Me.PictureBox1.TabStop = False
-		'
-		'PictureBox43
-		'
-		Me.PictureBox43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.PictureBox43.Location = New System.Drawing.Point(119, 31)
-		Me.PictureBox43.Name = "PictureBox43"
-		Me.PictureBox43.Size = New System.Drawing.Size(75, 71)
-		Me.PictureBox43.TabIndex = 46
-		Me.PictureBox43.TabStop = False
-		'
 		'lblClefable
 		'
 		Me.lblClefable.AutoSize = True
@@ -253,15 +217,6 @@ Partial Class frmBox3
 		Me.btnWigglytuff.Text = "Select"
 		Me.btnWigglytuff.UseVisualStyleBackColor = True
 		'
-		'PictureBox7
-		'
-		Me.PictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.PictureBox7.Location = New System.Drawing.Point(119, 259)
-		Me.PictureBox7.Name = "PictureBox7"
-		Me.PictureBox7.Size = New System.Drawing.Size(75, 71)
-		Me.PictureBox7.TabIndex = 53
-		Me.PictureBox7.TabStop = False
-		'
 		'btnJigglypuff
 		'
 		Me.btnJigglypuff.Enabled = False
@@ -271,15 +226,6 @@ Partial Class frmBox3
 		Me.btnJigglypuff.TabIndex = 56
 		Me.btnJigglypuff.Text = "Select"
 		Me.btnJigglypuff.UseVisualStyleBackColor = True
-		'
-		'PictureBox6
-		'
-		Me.PictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.PictureBox6.Location = New System.Drawing.Point(119, 182)
-		Me.PictureBox6.Name = "PictureBox6"
-		Me.PictureBox6.Size = New System.Drawing.Size(75, 71)
-		Me.PictureBox6.TabIndex = 52
-		Me.PictureBox6.TabStop = False
 		'
 		'btnNinetales
 		'
@@ -300,24 +246,6 @@ Partial Class frmBox3
 		Me.btnVulpix.TabIndex = 54
 		Me.btnVulpix.Text = "Select"
 		Me.btnVulpix.UseVisualStyleBackColor = True
-		'
-		'PictureBox5
-		'
-		Me.PictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.PictureBox5.Location = New System.Drawing.Point(119, 105)
-		Me.PictureBox5.Name = "PictureBox5"
-		Me.PictureBox5.Size = New System.Drawing.Size(75, 71)
-		Me.PictureBox5.TabIndex = 51
-		Me.PictureBox5.TabStop = False
-		'
-		'PictureBox4
-		'
-		Me.PictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.PictureBox4.Location = New System.Drawing.Point(119, 28)
-		Me.PictureBox4.Name = "PictureBox4"
-		Me.PictureBox4.Size = New System.Drawing.Size(75, 71)
-		Me.PictureBox4.TabIndex = 50
-		Me.PictureBox4.TabStop = False
 		'
 		'lblKakuna
 		'
@@ -385,15 +313,6 @@ Partial Class frmBox3
 		Me.btnParas.Text = "Select"
 		Me.btnParas.UseVisualStyleBackColor = True
 		'
-		'PictureBox11
-		'
-		Me.PictureBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.PictureBox11.Location = New System.Drawing.Point(119, 28)
-		Me.PictureBox11.Name = "PictureBox11"
-		Me.PictureBox11.Size = New System.Drawing.Size(75, 71)
-		Me.PictureBox11.TabIndex = 57
-		Me.PictureBox11.TabStop = False
-		'
 		'btnVileplume
 		'
 		Me.btnVileplume.Enabled = False
@@ -403,15 +322,6 @@ Partial Class frmBox3
 		Me.btnVileplume.TabIndex = 60
 		Me.btnVileplume.Text = "Select"
 		Me.btnVileplume.UseVisualStyleBackColor = True
-		'
-		'PictureBox10
-		'
-		Me.PictureBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.PictureBox10.Location = New System.Drawing.Point(119, 105)
-		Me.PictureBox10.Name = "PictureBox10"
-		Me.PictureBox10.Size = New System.Drawing.Size(75, 71)
-		Me.PictureBox10.TabIndex = 56
-		Me.PictureBox10.TabStop = False
 		'
 		'btnGloom
 		'
@@ -432,24 +342,6 @@ Partial Class frmBox3
 		Me.btnOddish.TabIndex = 58
 		Me.btnOddish.Text = "Select"
 		Me.btnOddish.UseVisualStyleBackColor = True
-		'
-		'PictureBox9
-		'
-		Me.PictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.PictureBox9.Location = New System.Drawing.Point(119, 182)
-		Me.PictureBox9.Name = "PictureBox9"
-		Me.PictureBox9.Size = New System.Drawing.Size(75, 71)
-		Me.PictureBox9.TabIndex = 55
-		Me.PictureBox9.TabStop = False
-		'
-		'PictureBox8
-		'
-		Me.PictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.PictureBox8.Location = New System.Drawing.Point(119, 259)
-		Me.PictureBox8.Name = "PictureBox8"
-		Me.PictureBox8.Size = New System.Drawing.Size(75, 71)
-		Me.PictureBox8.TabIndex = 54
-		Me.PictureBox8.TabStop = False
 		'
 		'lblParas
 		'
@@ -505,6 +397,138 @@ Partial Class frmBox3
 		Me.btnNext.Text = "Next"
 		Me.btnNext.UseVisualStyleBackColor = True
 		'
+		'PictureBox11
+		'
+		Me.PictureBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.PictureBox11.Image = Global.Pokeman.My.Resources.Resources.oddish
+		Me.PictureBox11.Location = New System.Drawing.Point(119, 28)
+		Me.PictureBox11.Name = "PictureBox11"
+		Me.PictureBox11.Size = New System.Drawing.Size(75, 71)
+		Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+		Me.PictureBox11.TabIndex = 57
+		Me.PictureBox11.TabStop = False
+		'
+		'PictureBox10
+		'
+		Me.PictureBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.PictureBox10.Image = Global.Pokeman.My.Resources.Resources.gloom
+		Me.PictureBox10.Location = New System.Drawing.Point(119, 105)
+		Me.PictureBox10.Name = "PictureBox10"
+		Me.PictureBox10.Size = New System.Drawing.Size(75, 71)
+		Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+		Me.PictureBox10.TabIndex = 56
+		Me.PictureBox10.TabStop = False
+		'
+		'PictureBox9
+		'
+		Me.PictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.PictureBox9.Image = Global.Pokeman.My.Resources.Resources.vileplume
+		Me.PictureBox9.Location = New System.Drawing.Point(119, 182)
+		Me.PictureBox9.Name = "PictureBox9"
+		Me.PictureBox9.Size = New System.Drawing.Size(75, 71)
+		Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+		Me.PictureBox9.TabIndex = 55
+		Me.PictureBox9.TabStop = False
+		'
+		'PictureBox8
+		'
+		Me.PictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.PictureBox8.Image = Global.Pokeman.My.Resources.Resources.paras
+		Me.PictureBox8.Location = New System.Drawing.Point(119, 259)
+		Me.PictureBox8.Name = "PictureBox8"
+		Me.PictureBox8.Size = New System.Drawing.Size(75, 71)
+		Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+		Me.PictureBox8.TabIndex = 54
+		Me.PictureBox8.TabStop = False
+		'
+		'PictureBox7
+		'
+		Me.PictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.PictureBox7.Image = Global.Pokeman.My.Resources.Resources.wigglytuff
+		Me.PictureBox7.Location = New System.Drawing.Point(119, 259)
+		Me.PictureBox7.Name = "PictureBox7"
+		Me.PictureBox7.Size = New System.Drawing.Size(75, 71)
+		Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+		Me.PictureBox7.TabIndex = 53
+		Me.PictureBox7.TabStop = False
+		'
+		'PictureBox6
+		'
+		Me.PictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.PictureBox6.Image = Global.Pokeman.My.Resources.Resources.Jigglypuff
+		Me.PictureBox6.Location = New System.Drawing.Point(119, 182)
+		Me.PictureBox6.Name = "PictureBox6"
+		Me.PictureBox6.Size = New System.Drawing.Size(75, 71)
+		Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+		Me.PictureBox6.TabIndex = 52
+		Me.PictureBox6.TabStop = False
+		'
+		'PictureBox5
+		'
+		Me.PictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.PictureBox5.Image = Global.Pokeman.My.Resources.Resources.ninetales
+		Me.PictureBox5.Location = New System.Drawing.Point(119, 105)
+		Me.PictureBox5.Name = "PictureBox5"
+		Me.PictureBox5.Size = New System.Drawing.Size(75, 71)
+		Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+		Me.PictureBox5.TabIndex = 51
+		Me.PictureBox5.TabStop = False
+		'
+		'PictureBox4
+		'
+		Me.PictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.PictureBox4.Image = Global.Pokeman.My.Resources.Resources.vulpix
+		Me.PictureBox4.Location = New System.Drawing.Point(119, 28)
+		Me.PictureBox4.Name = "PictureBox4"
+		Me.PictureBox4.Size = New System.Drawing.Size(75, 71)
+		Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+		Me.PictureBox4.TabIndex = 50
+		Me.PictureBox4.TabStop = False
+		'
+		'PictureBox3
+		'
+		Me.PictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.PictureBox3.Image = Global.Pokeman.My.Resources.Resources.clefable
+		Me.PictureBox3.Location = New System.Drawing.Point(119, 262)
+		Me.PictureBox3.Name = "PictureBox3"
+		Me.PictureBox3.Size = New System.Drawing.Size(75, 71)
+		Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+		Me.PictureBox3.TabIndex = 49
+		Me.PictureBox3.TabStop = False
+		'
+		'PictureBox2
+		'
+		Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.PictureBox2.Image = Global.Pokeman.My.Resources.Resources.clefairy
+		Me.PictureBox2.Location = New System.Drawing.Point(119, 185)
+		Me.PictureBox2.Name = "PictureBox2"
+		Me.PictureBox2.Size = New System.Drawing.Size(75, 71)
+		Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+		Me.PictureBox2.TabIndex = 48
+		Me.PictureBox2.TabStop = False
+		'
+		'PictureBox1
+		'
+		Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.PictureBox1.Image = Global.Pokeman.My.Resources.Resources.nidoking
+		Me.PictureBox1.Location = New System.Drawing.Point(119, 108)
+		Me.PictureBox1.Name = "PictureBox1"
+		Me.PictureBox1.Size = New System.Drawing.Size(75, 71)
+		Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+		Me.PictureBox1.TabIndex = 47
+		Me.PictureBox1.TabStop = False
+		'
+		'PictureBox43
+		'
+		Me.PictureBox43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.PictureBox43.Image = Global.Pokeman.My.Resources.Resources.nidorino
+		Me.PictureBox43.Location = New System.Drawing.Point(119, 31)
+		Me.PictureBox43.Name = "PictureBox43"
+		Me.PictureBox43.Size = New System.Drawing.Size(75, 71)
+		Me.PictureBox43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+		Me.PictureBox43.TabIndex = 46
+		Me.PictureBox43.TabStop = False
+		'
 		'frmBox3
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -519,22 +543,22 @@ Partial Class frmBox3
 		Me.Text = "frmBox3"
 		Me.GroupBox1.ResumeLayout(False)
 		Me.GroupBox1.PerformLayout()
-		CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.PictureBox43, System.ComponentModel.ISupportInitialize).EndInit()
 		Me.GroupBox2.ResumeLayout(False)
 		Me.GroupBox2.PerformLayout()
-		CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
 		Me.GroupBox3.ResumeLayout(False)
 		Me.GroupBox3.PerformLayout()
 		CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
 		CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
 		CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
 		CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.PictureBox43, System.ComponentModel.ISupportInitialize).EndInit()
 		Me.ResumeLayout(False)
 
 	End Sub
