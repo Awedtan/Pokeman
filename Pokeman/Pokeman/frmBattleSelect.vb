@@ -39,7 +39,7 @@
 				enemypokemon1 = frmMainMenu.Pidgey
 			Case 4
 				enemypokemon1 = frmMainMenu.Weedle
-			Case 5
+			Case 0
 				enemypokemon1 = frmMainMenu.Caterpie
 		End Select
 
@@ -76,7 +76,7 @@
 				enemypokemon1 = frmMainMenu.Vulpix
 			Case 5
 				enemypokemon1 = frmMainMenu.Nidoranf
-			Case 6
+			Case 0
 				enemypokemon1 = frmMainMenu.Nidoranm
 		End Select
 
@@ -125,7 +125,7 @@
 				enemypokemon1 = frmMainMenu.Nidorino
 			Case 7
 				enemypokemon1 = frmMainMenu.Nidorina
-			Case 8
+			Case 0
 				enemypokemon1 = frmMainMenu.Raticate
 		End Select
 
@@ -166,7 +166,7 @@
 				enemypokemon1 = frmMainMenu.Meowth
 			Case 6
 				enemypokemon1 = frmMainMenu.Magnemite
-			Case 7
+			Case 0
 				enemypokemon1 = frmMainMenu.Voltorb
 		End Select
 
@@ -223,7 +223,7 @@
 				enemypokemon1 = frmMainMenu.Gastly
 			Case 9
 				enemypokemon1 = frmMainMenu.Electabuzz
-			Case 10
+			Case 0
 				enemypokemon1 = frmMainMenu.Jolteon
 		End Select
 
@@ -264,54 +264,54 @@
 
 		Randomize()
 
-		'If frmMainMenu.route6counter < 3 Then
+		If frmMainMenu.route6counter < 3 Then
 
-		'num = Int(6 * Rnd(1))
+		num = Int(6 * Rnd(1))
 
-		'Select Case num
-		'	Case 1
-		'		enemypokemon1 = frmMainMenu.Ponyta
-		'	Case 2
-		'		enemypokemon1 = frmMainMenu.Pidgeot
-		'	Case 3
-		'		enemypokemon1 = frmMainMenu.Fearow
-		'	Case 4
-		'		enemypokemon1 = frmMainMenu.Growlithe
-		'	Case 5
-		'		enemypokemon1 = frmMainMenu.Arcanine
-		'	Case 6
-		'		enemypokemon1 = frmMainMenu.Farfetchd
-		'End Select
+		Select Case num
+			Case 1
+				enemypokemon1 = frmMainMenu.Ponyta
+			Case 2
+				enemypokemon1 = frmMainMenu.Pidgeot
+			Case 3
+				enemypokemon1 = frmMainMenu.Fearow
+			Case 4
+				enemypokemon1 = frmMainMenu.Growlithe
+			Case 5
+				enemypokemon1 = frmMainMenu.Arcanine
+			Case 0
+				enemypokemon1 = frmMainMenu.Farfetchd
+		End Select
 
-		'frmMainMenu.route6counter += 1
+		frmMainMenu.route6counter += 1
 
-		'Else
+		Else
 
-		'num = int(10 * Rnd(1))
-		'End If
+		num = int(10 * Rnd(1))
+		End If
 
-		'Select Case num
-		'	Case 1
-		'		enemypokemon1 = frmMainMenu.Ponyta
-		'	Case 2
-		'		enemypokemon1 = frmMainMenu.Pidgeot
-		'	Case 3
-		'		enemypokemon1 = frmMainMenu.Fearow
-		'	Case 4
-		'		enemypokemon1 = frmMainMenu.Growlithe
-		'	Case 5
-		'		enemypokemon1 = frmMainMenu.Arcanine
-		'	Case 6
-		'		enemypokemon1 = frmMainMenu.Farfetchd
-		'	Case 7
-		'		enemypokemon1 = frmMainMenu.Rapidash
-		'	Case 8
-		'		enemypokemon1 = frmMainMenu.Ninetales
-		'	Case 9
-		'		enemypokemon1 = frmMainMenu.Magmar
-		'	Case 10
-		'		enemypokemon1 = frmMainMenu.Flareon
-		'End Select
+		Select Case num
+			Case 1
+				enemypokemon1 = frmMainMenu.Ponyta
+			Case 2
+				enemypokemon1 = frmMainMenu.Pidgeot
+			Case 3
+				enemypokemon1 = frmMainMenu.Fearow
+			Case 4
+				enemypokemon1 = frmMainMenu.Growlithe
+			Case 5
+				enemypokemon1 = frmMainMenu.Arcanine
+			Case 6
+				enemypokemon1 = frmMainMenu.Farfetchd
+			Case 7
+				enemypokemon1 = frmMainMenu.Rapidash
+			Case 8
+				enemypokemon1 = frmMainMenu.Ninetales
+			Case 9
+				enemypokemon1 = frmMainMenu.Magmar
+			Case 0
+				enemypokemon1 = frmMainMenu.Flareon
+		End Select
 
 
 		frmInBattle.Show()
@@ -361,7 +361,7 @@
 		'		enemypokemon1 = frmMainMenu.Shellder
 		'	Case 6
 		'		enemypokemon1 = frmMainMenu.Krabby
-		'	Case 7
+		'	Case 0
 		'		enemypokemon1 = frmMainMenu.Magikarp
 		'End Select
 
@@ -395,7 +395,7 @@
 		'		enemypokemon1 = frmMainMenu.Kingler
 		'	Case 11
 		'		enemypokemon1 = frmMaineMenu.Lapras
-		'	Case 12
+		'	Case 0
 		'		pokeon1 = frmMainMenu.Vaporeon
 		'End Select
 
@@ -455,7 +455,7 @@
 				enemypokemon1 = frmMainMenu.Doduo
 			Case 10
 				enemypokemon1 = frmMainMenu.Dodrio
-			Case 11
+			Case 0
 				enemypokemon1 = frmMainMenu.Tauros
 		End Select
 
@@ -490,7 +490,7 @@
 				enemypokemon1 = frmMainMenu.Moltres
 			Case 2
 				enemypokemon1 = frmMainMenu.Zapdos
-			Case 3
+			Case 0
 				enemypokemon1 = frmMainMenu.Articuno
 		End Select
 
@@ -537,7 +537,7 @@
 				enemypokemon1 = frmMainMenu.Doduo
 			Case 15
 				enemypokemon1 = frmMainMenu.Dodrio
-			Case 16
+			Case 0
 				enemypokemon1 = frmMainMenu.Tauros
 		End Select
 
@@ -582,7 +582,7 @@
 				enemypokemon1 = frmMainMenu.Onix
 			Case 7
 				enemypokemon1 = frmMainMenu.Kangaskhan
-			Case 8
+			Case 0
 				enemypokemon1 = frmMainMenu.Machamp
 		End Select
 
