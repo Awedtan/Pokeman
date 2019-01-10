@@ -254,11 +254,12 @@
         End Select
     End Function
 
-    Dim yourpokemon() As String = frmMainMenu.Pidgeot 'functional changing stats
-    Dim enemypokemon() As String = frmMainMenu.Squirtle
+    Dim yourpokemon(frmMainMenu.Pikachu.Length) As String
+    'Array.Copy(frmMainMenu.Pikachu, yourpokemon) 'functional changing stats
+    Dim enemypokemon() As String = frmMainMenu.Charizard
 
-    Dim yourpokemonstat() As String = frmMainMenu.Pidgeot 'just so stat boosting moves have a base value to work off of
-    Dim enemypokemonstat() As String = frmMainMenu.Squirtle
+    Dim yourpokemonstat() As String = frmMainMenu.Pikachu 'just so stat boosting moves have a base value to work off of
+    Dim enemypokemonstat() As String = frmMainMenu.Charizard
 
     Dim EYourPokemon(14) As String
     Dim EEnemyPokemon(14) As String
@@ -12094,7 +12095,7 @@
     End Sub
 
     Private Sub frmInBattle_Load(sender As Object, e As EventArgs) Handles Me.Load
-
+        Array.Copy(frmMainMenu.Pikachu, yourpokemon, frmMainMenu.Pikachu.Length) 'functional changing stats
         btnMove1.Enabled = True
             btnMove2.Enabled = True
             btnMove3.Enabled = True
@@ -22948,6 +22949,9 @@
                 btnMove3.Enabled = True
                 btnMove4.Enabled = True
                 counter = 0
+                If yourpokemon(1) Or enemypokemon(1) <= 0 Then
+                    ' Me.Close()
+                End If
         End Select
 
     End Sub
