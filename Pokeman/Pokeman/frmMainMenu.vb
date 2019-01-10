@@ -35,12 +35,12 @@ Public Class frmMainMenu
     Public Shared Kakuna() As String = {"Kakuna", 45, 25, 50, 35, 25, 0, 0, 1, 12, "Harden", "Nothing", "Nothing", "Nothing"}
     Public Shared Beedrill() As String = {"Beedrill", 35, 80, 40, 75, 45, 0, 0, 1, 12, "Poison Sting", "Pin Missile", "Body Slam", "Swords Dance"}
     Public Shared Pidgey() As String = {"Pidgey", 40, 45, 40, 56, 35, 0, 0, 11, 6, "Wing Attack", "Quick Attack", "Sand Attack", "Whirlwind"}
-    Public Shared Pidgeotto() As String = {"Pidgeotto", 63, 60, 55, 71, 50, 0, 0, 11, 6, "Wing Attack", "Whirlwind", "Razor Wind", "Fly"}
-    Public Shared Pidgeot() As String = {"Pidgeot", 83, 80, 75, 91, 70, 1, 0, 11, 6, "Wing Attack", "Take Down", "Whirlwind", "Razor Wind"}
+    Public Shared Pidgeotto() As String = {"Pidgeotto", 63, 60, 55, 71, 50, 0, 0, 11, 6, "Wing Attack", "Whirlwind", "Tackle", "Fly"}
+    Public Shared Pidgeot() As String = {"Pidgeot", 83, 80, 75, 91, 70, 1, 0, 11, 6, "Wing Attack", "Take Down", "Whirlwind", "Peck"}
     Public Shared Rattata() As String = {"Rattata", 30, 56, 35, 72, 25, 0, 0, 11, 0, "Quick Attack", "Tail Whip", "Super Fang", "Fury Swipes"}
     Public Shared Raticate() As String = {"Raticate", 55, 81, 60, 97, 50, 0, 0, 11, 0, "Hyper Fang", "Super Fang", "Bite", "Dig"}
     Public Shared Spearow() As String = {"Spearow", 40, 60, 30, 70, 31, 0, 0, 11, 6, "Drill Peck", "Fury Attack", "Growl", "Peck"}
-    Public Shared Fearow() As String = {"Fearow", 65, 90, 65, 100, 61, 0, 0, 11, 6, "Drill Peck", "Razor Wind", "Take Down", "Razor Wind"}
+    Public Shared Fearow() As String = {"Fearow", 65, 90, 65, 100, 61, 0, 0, 11, 6, "Drill Peck", "Roost", "Take Down", "Fury Attack"}
     Public Shared Ekans() As String = {"Ekans", 35, 60, 44, 55, 40, 0, 0, 12, 0, "Poison Sting", "Bite", "Glare", "Screech"}
     Public Shared Arbok() As String = {"Arbok", 60, 85, 69, 80, 65, 0, 0, 12, 0, "Wrap", "Bite", "Body Slam", "Poison Sting"}
     Public Shared Pikachu() As String = {"Pikachu", 35, 55, 30, 90, 50, 0, 0, 10, 0, "Thunderbolt", "Thunder Wave", "Slam", "Agility"}
