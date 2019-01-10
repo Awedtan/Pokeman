@@ -254,28 +254,43 @@
         End Select
     End Function
 
-    Dim yourpokemon(frmMainMenu.Pikachu.Length) As String
+    Dim yourpokemon(14) As String
     'Array.Copy(frmMainMenu.Pikachu, yourpokemon) 'functional changing stats
-    Dim enemypokemon() As String = frmMainMenu.Charizard
+    Dim enemypokemon(14) As String
 
-    Dim yourpokemonstat() As String = frmMainMenu.Pikachu 'just so stat boosting moves have a base value to work off of
-    Dim enemypokemonstat() As String = frmMainMenu.Charizard
+    Dim yourpokemonstat(14) As String  'just so stat boosting moves have a base value to work off of
+    Dim enemypokemonstat(14) As String
 
     Dim EYourPokemon(14) As String
     Dim EEnemyPokemon(14) As String
-    Dim TempSwapStat() As String
+
 
     Dim tempattack As Double 'for super effective moves
     Dim tempspecial As Double
     ' tempattack = tempattack * 2
     'tempspecial = tempspecial * 2
 
-    Dim enemypokemon1inbattle() As String = enemypokemon
+    Dim enemypokemon1inbattle(14) As String
     Dim enemypokemon2inbattle(14) As String
+    Public Shared enemypokemon2U As Boolean
+
     Dim enemypokemon3inbattle(14) As String
+    Public Shared enemypokemon3U As Boolean
+
     Dim enemypokemon4inbattle(14) As String
+    Public Shared enemypokemon4U As Boolean
+
     Dim enemypokemon5inbattle(14) As String
+    Public Shared enemypokemon5U As Boolean
+
     Dim enemypokemon6inbattle(14) As String
+    Public Shared enemypokemon6U As Boolean
+
+    Dim yourpokemon2U As Boolean
+    Dim yourpokemon3U As Boolean
+    Dim yourpokemon4U As Boolean
+    Dim yourpokemon5U As Boolean
+    Dim yourpokemon6U As Boolean
 
     Dim countBarrage As Integer
     Dim countFuryAttack As Integer
@@ -3021,7 +3036,7 @@
         btnMove4.Enabled = False
     End Sub
 
-    Private Sub btnPokeball_Click(sender As Object, e As EventArgs) Handles btnPokeball.Click
+    Private async Sub btnPokeball_Click(sender As Object, e As EventArgs) Handles btnPokeball.Click
 
         'enemypokemon1inbattle(0) = "Rattata"
 
@@ -3709,6 +3724,21 @@
 
         End Select
 
+        If catchp(num) = True Then
+            Label7.Text = enemypokemon(0) & " was caught!"
+            Await Task.Delay(1200)
+            Me.Close()
+        ElseIf catchp(num) = False Then
+            Label7.Text = enemypokemon(0) & " failed to be caught!"
+            btnMove1.Enabled = False
+            btnMove2.Enabled = False
+            btnMove3.Enabled = False
+            btnMove4.Enabled = False
+            Await Task.Delay(500)
+            yturn.Enabled = True
+
+
+        End If
     End Sub
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
@@ -12095,7 +12125,16 @@
     End Sub
 
     Private Sub frmInBattle_Load(sender As Object, e As EventArgs) Handles Me.Load
-        Array.Copy(frmMainMenu.Pikachu, yourpokemon, frmMainMenu.Pikachu.Length) 'functional changing stats
+        Array.Copy(frmMainMenu.yourpokemon1, yourpokemon, 14) 'functional changing stats
+        Array.Copy(frmBattleSelect.enemypokemon1, enemypokemon, 14)
+
+        Array.Copy(frmBattleSelect.enemypokemon2, enemypokemon2inbattle, 14)
+        Array.Copy(frmBattleSelect.enemypokemon3, enemypokemon3inbattle, 14)
+        Array.Copy(frmBattleSelect.enemypokemon4, enemypokemon4inbattle, 14)
+        Array.Copy(frmBattleSelect.enemypokemon5, enemypokemon5inbattle, 14)
+        Array.Copy(frmBattleSelect.enemypokemon6, enemypokemon6inbattle, 14)
+        Array.Copy(frmMainMenu.yourpokemon1, yourpokemonstat, 14)
+        Array.Copy(frmBattleSelect.enemypokemon1, enemypokemonstat, 14)
         btnMove1.Enabled = True
             btnMove2.Enabled = True
             btnMove3.Enabled = True
@@ -12110,6 +12149,22 @@
         lblYHp.Text = yourpokemon(1) & " / " & yourpokemonstat(1)
         lblEName.Text = enemypokemon(0)
         lblEHp.Text = enemypokemon(1) & " / " & enemypokemonstat(1)
+
+        If frmMainMenu.yourpokemon2(0) IsNot Nothing Then
+            yourpokemon2U = True
+        End If
+        If frmMainMenu.yourpokemon3(0) IsNot Nothing Then
+            yourpokemon3U = True
+        End If
+        If frmMainMenu.yourpokemon4(0) IsNot Nothing Then
+            yourpokemon4U = True
+        End If
+        If frmMainMenu.yourpokemon5(0) IsNot Nothing Then
+            yourpokemon5U = True
+        End If
+        If frmMainMenu.yourpokemon6(0) IsNot Nothing Then
+            yourpokemon6U = True
+        End If
     End Sub
 
     Private Sub yturn_Tick(sender As Object, e As EventArgs) Handles yturn.Tick
@@ -12125,10 +12180,100 @@
                 End If
             Case 2
                 yourpokemon(1) = Int(yourpokemon(1))
+                If yourpokemon(1) < 0 Then
+                    yourpokemon(1) = 0
+                End If
                 enemypokemon(1) = Int(enemypokemon(1))
+                If enemypokemon(1) < 0 Then
+                    enemypokemon(1) = 0
+                End If
                 lblYHp.Text = yourpokemon(1) & " / " & yourpokemonstat(1)
                 lblEHp.Text = enemypokemon(1) & " / " & enemypokemonstat(1)
+                If yourpokemon(1) And enemypokemon(1) <> 0 Then
+                    counter += 1
+                End If
             Case 3
+                If enemypokemon(1) <= 0 And yourpokemon(1) <= 0 Then
+                    Label7.Text = "Both Pokemon have fainted!"
+                ElseIf enemypokemon(1) = 0 Then
+                    Label7.Text = "The enemy pokemon fainted!"
+                ElseIf yourpokemon(1) = 0 Then
+                    Label7.Text = "Your pokemon has fainted!"
+                End If
+                If enemypokemon(1) = 0 Then
+                    Label7.Text = "The enemy pokemon fainted!"
+                    If frmBattleSelect.trainerbattle = False Then
+                        counter = 11
+                    ElseIf frmBattleSelect.trainerbattle = True Then
+                        If enemypokemon2U = True Then
+                            enemypokemon2U = False
+                            enemypokemon = enemypokemon2inbattle
+                            Array.Copy(enemypokemon2inbattle, enemypokemonstat, 14)
+                            counter = 6
+                        ElseIf enemypokemon3U = True Then
+                            enemypokemon = enemypokemon3inbattle
+                            enemypokemon3U = False
+                            Array.Copy(enemypokemon3inbattle, enemypokemonstat, 14)
+                            counter = 6
+                        ElseIf enemypokemon4U = True Then
+                            enemypokemon = enemypokemon4inbattle
+                            Array.Copy(enemypokemon4inbattle, enemypokemonstat, 14)
+                            enemypokemon4U = False
+                            counter = 6
+                        ElseIf enemypokemon5U = True Then
+                            enemypokemon = enemypokemon5inbattle
+                            enemypokemon5U = False
+                            Array.Copy(enemypokemon5inbattle, enemypokemonstat, 14)
+                            counter = 6
+                        ElseIf enemypokemon6U = True Then
+                            enemypokemon = enemypokemon6inbattle
+                            enemypokemon6U = False
+                            Array.Copy(enemypokemon6inbattle, enemypokemonstat, 14)
+                            counter = 6
+                        Else
+                            counter = 11
+                        End If
+                    End If
+                End If
+                    If yourpokemon(1) = 0 Then
+                        Label7.Text = "Your  Pokemon Fainted!"
+                        If yourpokemon2U = True Then
+                            yourpokemon2U = False
+                            Array.Copy(frmMainMenu.yourpokemon2, yourpokemon, 14)
+                            Array.Copy(frmMainMenu.yourpokemon2, yourpokemonstat, 14)
+                            counter = 6
+                        ElseIf yourpokemon3U = True Then
+                            yourpokemon3U = False
+                            Array.Copy(frmMainMenu.yourpokemon3, yourpokemon, 14)
+                            Array.Copy(frmMainMenu.yourpokemon3, yourpokemonstat, 14)
+                            counter = 6
+                        ElseIf yourpokemon4U = True Then
+                            yourpokemon4U = False
+                            Array.Copy(frmMainMenu.yourpokemon4, yourpokemon, 14)
+                            Array.Copy(frmMainMenu.yourpokemon4, yourpokemonstat, 14)
+                            counter = 6
+                        ElseIf yourpokemon5U = True Then
+                            yourpokemon5U = False
+                            Array.Copy(frmMainMenu.yourpokemon5, yourpokemon, 14)
+                            Array.Copy(frmMainMenu.yourpokemon5, yourpokemonstat, 14)
+                            counter = 6
+                        ElseIf yourpokemon6U = True Then
+                            yourpokemon6U = False
+                            Array.Copy(frmMainMenu.yourpokemon6, yourpokemon, 14)
+                            Array.Copy(frmMainMenu.yourpokemon6, yourpokemonstat, 14)
+                            counter = 6
+                        Else
+                            counter = 12
+
+                        End If
+
+
+                    End If
+            Case 4
+                btnMove1.Text = yourpokemon(10)
+                btnMove2.Text = yourpokemon(11)
+                btnMove3.Text = yourpokemon(12)
+                btnMove4.Text = yourpokemon(13)
                 EYourPokemon = yourpokemon
                 EEnemyPokemon = enemypokemon
                 enemypokemon = EYourPokemon
@@ -22932,26 +23077,117 @@
                         End Select
                         Label7.Text = yourpokemon(0) & " used " & yourpokemon(13) & "!"
                 End Select
-            Case 4
-                EYourPokemon = yourpokemon
+                    Case 5
+                    EYourPokemon = yourpokemon
                 EEnemyPokemon = enemypokemon
                 enemypokemon = EYourPokemon
                 yourpokemon = EEnemyPokemon
-            Case 5
                 yourpokemon(1) = Int(yourpokemon(1))
+                If yourpokemon(1) < 0 Then
+                    yourpokemon(1) = 0
+                End If
+
+
                 enemypokemon(1) = Int(enemypokemon(1))
+                If enemypokemon(1) < 0 Then
+                    enemypokemon(1) = 0
+                End If
                 lblYHp.Text = yourpokemon(1) & " / " & yourpokemonstat(1)
                 lblEHp.Text = enemypokemon(1) & " / " & enemypokemonstat(1)
+
             Case 6
+                If enemypokemon(1) <= 0 And yourpokemon(1) <= 0 Then
+                    Label7.Text = "Both Pokemon have fainted!"
+                ElseIf enemypokemon(1) = 0 Then
+                    Label7.Text = "The enemy pokemon fainted!"
+                ElseIf yourpokemon(1) = 0 Then
+                    Label7.Text = "Your pokemon has fainted!"
+                End If
+                If enemypokemon(1) = 0 Then
+                    If frmBattleSelect.trainerbattle = False Then
+                        counter = 11
+                    ElseIf frmBattleSelect.trainerbattle = True Then
+                        If enemypokemon2U = True Then
+                            enemypokemon2U = False
+                            enemypokemon = enemypokemon2inbattle
+                            Array.Copy(enemypokemon2inbattle, enemypokemonstat, 14)
+
+                        ElseIf enemypokemon3U = True Then
+                            enemypokemon = enemypokemon3inbattle
+                            enemypokemon3U = False
+                            Array.Copy(enemypokemon3inbattle, enemypokemonstat, 14)
+                        ElseIf enemypokemon4U = True Then
+                            enemypokemon = enemypokemon4inbattle
+                            enemypokemon4U = False
+                            Array.Copy(enemypokemon4inbattle, enemypokemonstat, 14)
+                        ElseIf enemypokemon5U = True Then
+                            enemypokemon = enemypokemon5inbattle
+                            enemypokemon5U = False
+                            Array.Copy(enemypokemon5inbattle, enemypokemonstat, 14)
+                        ElseIf enemypokemon6U = True Then
+                            enemypokemon = enemypokemon6inbattle
+                            enemypokemon6U = False
+                            Array.Copy(enemypokemon6inbattle, enemypokemonstat, 14)
+                        Else
+                            counter = 11
+
+                        End If
+                    End If
+                End If
+                If yourpokemon(1) = 0 Then
+
+                    If yourpokemon2U = True Then
+                        yourpokemon2U = False
+                        Array.Copy(frmMainMenu.yourpokemon2, yourpokemon, 14)
+                        Array.Copy(frmMainMenu.yourpokemon2, yourpokemonstat, 14)
+                    ElseIf yourpokemon3U = True Then
+                        yourpokemon3U = False
+                        Array.Copy(frmMainMenu.yourpokemon3, yourpokemon, 14)
+                        Array.Copy(frmMainMenu.yourpokemon3, yourpokemonstat, 14)
+                    ElseIf yourpokemon4U = True Then
+                        yourpokemon4U = False
+                        Array.Copy(frmMainMenu.yourpokemon4, yourpokemon, 14)
+                        Array.Copy(frmMainMenu.yourpokemon4, yourpokemonstat, 14)
+                    ElseIf yourpokemon5U = True Then
+                        yourpokemon5U = False
+                        Array.Copy(frmMainMenu.yourpokemon5, yourpokemon, 14)
+                        Array.Copy(frmMainMenu.yourpokemon5, yourpokemonstat, 14)
+                    ElseIf yourpokemon6U = True Then
+                        yourpokemon6U = False
+                        Array.Copy(frmMainMenu.yourpokemon6, yourpokemon, 14)
+                        Array.Copy(frmMainMenu.yourpokemon6, yourpokemonstat, 14)
+                    Else
+                        counter = 12
+                    End If
+
+
+                End If
+
+            Case 7
                 yturn.Enabled = False
                 btnMove1.Enabled = True
                 btnMove2.Enabled = True
                 btnMove3.Enabled = True
                 btnMove4.Enabled = True
                 counter = 0
-                If yourpokemon(1) Or enemypokemon(1) <= 0 Then
-                    ' Me.Close()
-                End If
+                lblYName.Text = yourpokemon(0)
+                lblYHp.Text = yourpokemon(1) & " / " & yourpokemonstat(1)
+                lblEName.Text = enemypokemon(0)
+                lblEHp.Text = enemypokemon(1) & " / " & enemypokemonstat(1)
+                btnMove1.Text = yourpokemon(10)
+                btnMove2.Text = yourpokemon(11)
+                btnMove3.Text = yourpokemon(12)
+                btnMove4.Text = yourpokemon(13)
+
+            Case 12
+                Label7.Text = "you win"
+                yturn.Enabled = False
+
+                Me.Close()
+            Case 13
+                Label7.Text = "you lose"
+                yturn.Enabled = False
+                Me.Close()
         End Select
 
     End Sub
