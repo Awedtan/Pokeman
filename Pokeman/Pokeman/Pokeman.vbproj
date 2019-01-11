@@ -599,5 +599,35 @@
   <ItemGroup>
     <None Include="Resources\3701.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gengar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brenna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ekaterina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hagith.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jumong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tammy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

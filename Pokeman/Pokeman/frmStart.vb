@@ -1,7 +1,7 @@
 ﻿Public Class frmStart
 	Private Async Sub frmStart_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-		lblDialogue.Text = "Hey, there"
+		lblDialogue.Text = "Hey there"
 		Await Task.Delay(5000)
 		lblDialogue.Text = "I'm Professor Black Ash"
 		Await Task.Delay(5000)
@@ -11,7 +11,7 @@
 		Await Task.Delay(5000)
 		lblDialogue.Text = "If you catch enough, you'll be able to take on the gyms"
 		Await Task.Delay(5000)
-		lblDialogue.Text = "Beating all the gyms will allow you to challenge the Elite Four, the best trainers this side of Kanto"
+		lblDialogue.Text = "Beating all the gyms will allow you to challenge the Pokeman champion, the best trainer this side of Kanto"
 		Await Task.Delay(7000)
 		lblDialogue.Text = "You might even encounter some rare legendary pokemon along the way"
 		Await Task.Delay(5000)

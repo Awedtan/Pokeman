@@ -38,8 +38,8 @@
 			btnOnix.Enabled = True
 		End If
 
-		If frmMainMenu.Hypno(6) = 1 Then
-			btnHypno.Enabled = True
+		If frmMainMenu.Gengar(6) = 1 Then
+			btnGengar.Enabled = True
 		End If
 
 		If frmMainMenu.Krabby(6) = 1 Then
@@ -346,36 +346,36 @@
 				frmMainMenu.Onix(7) = 1
 			End If
 		End If
-		If pokemon = "Hypno" Then
+		If pokemon = "Gengar" Then
 
-			If frmMainMenu.Hypno(7) = 0 Then
+			If frmMainMenu.Gengar(7) = 0 Then
 				slot = Val(InputBox("Which slot from 1 to 6 would you like to put this pokeman in? (0 to cancel)", "Confirm Selection"))
 			End If
 
 			If slot = 1 Then
 
-				frmMainMenu.yourpokemon1 = frmMainMenu.Hypno
-				frmMainMenu.Hypno(7) = 1
+				frmMainMenu.yourpokemon1 = frmMainMenu.Gengar
+				frmMainMenu.Gengar(7) = 1
 			ElseIf slot = 2 Then
 
-				frmMainMenu.yourpokemon2 = frmMainMenu.Hypno
-				frmMainMenu.Hypno(7) = 1
+				frmMainMenu.yourpokemon2 = frmMainMenu.Gengar
+				frmMainMenu.Gengar(7) = 1
 			ElseIf slot = 3 Then
 
-				frmMainMenu.yourpokemon3 = frmMainMenu.Hypno
-				frmMainMenu.Hypno(7) = 1
+				frmMainMenu.yourpokemon3 = frmMainMenu.Gengar
+				frmMainMenu.Gengar(7) = 1
 			ElseIf slot = 4 Then
 
-				frmMainMenu.yourpokemon4 = frmMainMenu.Hypno
-				frmMainMenu.Hypno(7) = 1
+				frmMainMenu.yourpokemon4 = frmMainMenu.Gengar
+				frmMainMenu.Gengar(7) = 1
 			ElseIf slot = 5 Then
 
-				frmMainMenu.yourpokemon5 = frmMainMenu.Hypno
-				frmMainMenu.Hypno(7) = 1
+				frmMainMenu.yourpokemon5 = frmMainMenu.Gengar
+				frmMainMenu.Gengar(7) = 1
 			ElseIf slot = 6 Then
 
-				frmMainMenu.yourpokemon6 = frmMainMenu.Hypno
-				frmMainMenu.Hypno(7) = 1
+				frmMainMenu.yourpokemon6 = frmMainMenu.Gengar
+				frmMainMenu.Gengar(7) = 1
 			End If
 		End If
 		If pokemon = "Krabby" Then
@@ -480,8 +480,8 @@
 		switch("Onix")
 	End Sub
 
-	Private Sub btnHypno_Click(sender As Object, e As EventArgs) Handles btnHypno.Click
-		switch("Hypno")
+	Private Sub btnGengar_Click(sender As Object, e As EventArgs) Handles btnGengar.Click
+		switch("Gengar")
 	End Sub
 
 	Private Sub btnKrabby_Click(sender As Object, e As EventArgs) Handles btnKrabby.Click

@@ -29,10 +29,6 @@
 		If frmMainMenu.Dragonite(6) = 1 Then
 			btnDragonite.Enabled = True
 		End If
-
-		If frmMainMenu.Lapras(6) = 1 Then
-			btnLapras.Enabled = True
-		End If
 	End Sub
 
 	Function switch(ByVal pokemon As String)
@@ -265,38 +261,6 @@
 				frmMainMenu.Dragonite(7) = 1
 			End If
 		End If
-		If pokemon = "Lapras" Then
-
-			If frmMainMenu.Lapras(7) = 0 Then
-				slot = Val(InputBox("Which slot from 1 to 6 would you like to put this pokeman in? (0 to cancel)", "Confirm Selection"))
-			End If
-
-			If slot = 1 Then
-
-				frmMainMenu.yourpokemon1 = frmMainMenu.Lapras
-				frmMainMenu.Lapras(7) = 1
-			ElseIf slot = 2 Then
-
-				frmMainMenu.yourpokemon2 = frmMainMenu.Lapras
-				frmMainMenu.Lapras(7) = 1
-			ElseIf slot = 3 Then
-
-				frmMainMenu.yourpokemon3 = frmMainMenu.Lapras
-				frmMainMenu.Lapras(7) = 1
-			ElseIf slot = 4 Then
-
-				frmMainMenu.yourpokemon4 = frmMainMenu.Lapras
-				frmMainMenu.Lapras(7) = 1
-			ElseIf slot = 5 Then
-
-				frmMainMenu.yourpokemon5 = frmMainMenu.Lapras
-				frmMainMenu.Lapras(7) = 1
-			ElseIf slot = 6 Then
-
-				frmMainMenu.yourpokemon6 = frmMainMenu.Lapras
-				frmMainMenu.Lapras(7) = 1
-			End If
-		End If
 	End Function
 
 	Private Sub btnAerodactyl_Click(sender As Object, e As EventArgs) Handles btnAerodactyl.Click
@@ -327,9 +291,6 @@
 		switch("Dragonite")
 	End Sub
 
-	Private Sub btnLapras_Click(sender As Object, e As EventArgs) Handles btnLapras.Click
-		switch("Lapras")
-	End Sub
 	Private Sub btnPrevious_Click(sender As Object, e As EventArgs) Handles btnPrevious.Click
 		frmBox7.Show()
 		Me.Close()

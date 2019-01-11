@@ -9,9 +9,11 @@
 	Dim HauntedHouse As New frmHauntedHouse
 	Dim MewtwoEncounter As New frmMewtwoEncounter
 	Dim InBattle As New frmInBattle
-	'Dim BirdNest As New frmBirdNest
+	Dim BirdNest As New frmBirdNest
+	Dim TrainerBattleStart As New frmTrainerBattleStart
 
 	Public Shared trainerbattle As Boolean
+	Public Shared trainer As String
 
 	Public Shared enemypokemon1(14) As String
 	Public Shared enemypokemon2(14) As String
@@ -52,10 +54,8 @@
 		trainerbattle = True
 
 		enemypokemon1 = frmMainMenu.Caterpie
-
-		frmInBattle.Show()
-
-		frmTrainerBattleStart.trainer = 1
+		trainer = "Hagith"
+		frmTrainerBattleStart.Show()
 
 	End Sub
 
@@ -91,8 +91,9 @@
 		trainerbattle = True
 
 		enemypokemon1 = frmMainMenu.Pidgeotto
+		trainer = "Jumong"
+		frmTrainerBattleStart.Show()
 
-		frmInBattle.Show()
 
 	End Sub
 
@@ -100,7 +101,7 @@
 
 		trainerbattle = True
 
-		frmGym1.Show()
+		'frmGym1.Show()
 
 	End Sub
 
@@ -143,8 +144,8 @@
         enemypokemon2 = frmMainMenu.Squirtle
         frmInBattle.enemypokemon2U = True
 
-        frmInBattle.Show()
-
+		trainer = "Tom"
+		frmTrainerBattleStart.Show()
 	End Sub
 
 	Private Sub btnRoute4_Click(sender As Object, e As EventArgs) Handles btnRoute4.Click
@@ -186,15 +187,15 @@
         enemypokemon3 = frmMainMenu.Diglett
         frmInBattle.enemypokemon3U = True
 
-        frmInBattle.Show()
-
+		trainer = "Sam"
+		frmTrainerBattleStart.Show()
 	End Sub
 
 	Private Sub btnGym2_Click(sender As Object, e As EventArgs) Handles btnGym2.Click
 
 		trainerbattle = True
 
-		frmGym2.Show()
+		'frmGym2.Show()
 
 	End Sub
 
@@ -242,8 +243,9 @@
         frmInBattle.enemypokemon2U = True
         enemypokemon3 = frmMainMenu.Gastly
         frmInBattle.enemypokemon3U = True
-        frmInBattle.Show()
 
+		trainer = "Ekaterina"
+		frmTrainerBattleStart.Show()
 	End Sub
 
 	Private Sub btnHauntedHouse_Click(sender As Object, e As EventArgs) Handles btnHauntedHouse.Click
@@ -325,10 +327,10 @@
 		trainerbattle = True
 
 		enemypokemon1 = frmMainMenu.Fearow
-        enemypokemon2 = frmMainMenu.Graveler
-        frmInBattle.enemypokemon2U = True
-
-        frmInBattle.Show()
+		enemypokemon2 = frmMainMenu.Graveler
+		frmInBattle.enemypokemon2U = True
+		trainer = "Manny"
+		frmTrainerBattleStart.Show()
 
 	End Sub
 
@@ -336,7 +338,7 @@
 
 		trainerbattle = True
 
-		frmGym3.Show()
+		'frmGym3.Show()
 
 	End Sub
 
@@ -415,8 +417,8 @@
         frmInBattle.enemypokemon2U = True
         enemypokemon3 = frmMainMenu.Sandslash
         frmInBattle.enemypokemon3U = True
-
-        frmInBattle.Show()
+		trainer = "Tammy"
+		frmTrainerBattleStart.Show()
 
 	End Sub
 
@@ -424,7 +426,7 @@
 
 		trainerbattle = True
 
-		frmGym4.Show()
+		'frmGym4.Show()
 
 	End Sub
 
@@ -476,8 +478,8 @@
         frmInBattle.enemypokemon3U = True
         enemypokemon4 = frmMainMenu.Gloom
         frmInBattle.enemypokemon4U = True
-
-        frmInBattle.Show()
+		trainer = "Brenna"
+		frmTrainerBattleStart.Show()
 
 	End Sub
 
@@ -518,7 +520,7 @@
 			Case 4
 				enemypokemon1 = frmMainMenu.Machoke
 			Case 5
-				enemypokemon1 = frmMainMenu.Hypno
+				enemypokemon1 = frmMainMenu.Psyduck
 			Case 6
 				enemypokemon1 = frmMainMenu.Arbok
 			Case 7
@@ -557,7 +559,7 @@
 		enemypokemon4 = frmMainMenu.Gyarados
 		enemypokemon5 = frmMainMenu.Dragonite
 
-		frmGym5.Show()
+		'frmGym5.Show()
 
 	End Sub
 
@@ -603,8 +605,8 @@
         frmInBattle.enemypokemon3U = True
         enemypokemon4 = frmMainMenu.Magikarp
         frmInBattle.enemypokemon4U = True
-
-        frmInBattle.Show()
+		trainer = "V"
+		frmTrainerBattleStart.Show()
 
 	End Sub
 

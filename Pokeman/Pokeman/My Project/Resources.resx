@@ -190,6 +190,9 @@
   <data name="grimer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\grimer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="kakuna" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kakuna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="doduo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\doduo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -202,8 +205,8 @@
   <data name="hypno" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hypno.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="poliwag" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\poliwag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="meowth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\meowth.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Jigglypuff" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Jigglypuff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -231,6 +234,9 @@
   </data>
   <data name="nidoranf" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nidoranf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gengar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gengar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pikachu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pikachu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -274,14 +280,17 @@
   <data name="pidgeot" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pidgeot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="gastly" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gastly.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="nidoking" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nidoking.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="rapidash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rapidash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gastly" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gastly.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="3701" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3701.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="caterpie" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\caterpie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -306,9 +315,6 @@
   </data>
   <data name="poliwrath" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\poliwrath.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="meowth" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\meowth.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="squirtle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\squirtle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -352,14 +358,14 @@
   <data name="electabuzz" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\electabuzz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="kangaskhan" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kangaskhan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="weedle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weedle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dragonite" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dragonite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fearow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fearow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="kangaskhan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kangaskhan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tauros" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tauros.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -394,16 +400,40 @@
   <data name="raticate" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\raticate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="weedle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\weedle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="poliwag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poliwag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="metapod" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\metapod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="kakuna" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kakuna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fearow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fearow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="3701" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3701.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="brenna" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\brenna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ekaterina" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ekaterina.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hagith" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hagith.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jumong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jumong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="manny" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\manny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sam" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sam.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tammy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tammy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="v" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\v.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
