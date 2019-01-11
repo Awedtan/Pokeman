@@ -263,6 +263,8 @@
 
     Dim EYourPokemon(14) As String
     Dim EEnemyPokemon(14) As String
+    Dim eyourpokemonstat(14) As String
+    Dim eenemypokemonstat(14) As String
 
 
     Dim tempattack As Double 'for super effective moves
@@ -3047,684 +3049,684 @@
 
         Randomize()
 
-		num = Int(20 * Rnd(1))
+        num = Int(20 * Rnd(1))
 
-		Select Case enemypokemon(0)
-			Case "Rattata"
+        Select Case enemypokemon(0)
+            Case "Rattata"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Rattata(6) = 1
+                    frmMainMenu.Rattata(6) = 1
 
-				End If
+                End If
 
-			Case "Spearow"
+            Case "Spearow"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Spearow(6) = 1
+                    frmMainMenu.Spearow(6) = 1
 
-				End If
+                End If
 
-			Case "Pidgey"
+            Case "Pidgey"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Pidgey(6) = 1
+                    frmMainMenu.Pidgey(6) = 1
 
-				End If
+                End If
 
-			Case "Weedle"
+            Case "Weedle"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Weedle(6) = 1
+                    frmMainMenu.Weedle(6) = 1
 
-				End If
+                End If
 
-			Case "Caterpie"
+            Case "Caterpie"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Caterpie(6) = 1
+                    frmMainMenu.Caterpie(6) = 1
 
-				End If
+                End If
 
-			Case "Eevee"
+            Case "Eevee"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Eevee(6) = 1
+                    frmMainMenu.Eevee(6) = 1
 
-				End If
+                End If
 
-			Case "Bellspout"
+            Case "Bellspout"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Bellsprout(6) = 1
+                    frmMainMenu.Bellsprout(6) = 1
 
-				End If
+                End If
 
-			Case "Oddish"
+            Case "Oddish"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Oddish(6) = 1
+                    frmMainMenu.Oddish(6) = 1
 
-				End If
+                End If
 
-			Case "Vulpix"
+            Case "Vulpix"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Vulpix(6) = 1
+                    frmMainMenu.Vulpix(6) = 1
 
-				End If
+                End If
 
-			Case "Nidoran (male)"
+            Case "Nidoran (male)"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Nidoranm(6) = 1
+                    frmMainMenu.Nidoranm(6) = 1
 
-				End If
+                End If
 
-			Case "Nidoran (female)"
+            Case "Nidoran (female)"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Nidoranf(6) = 1
+                    frmMainMenu.Nidoranf(6) = 1
 
-				End If
+                End If
 
-			Case "Metapod"
+            Case "Metapod"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Metapod(6) = 1
+                    frmMainMenu.Metapod(6) = 1
 
-				End If
+                End If
 
-			Case "Butterfree"
+            Case "Butterfree"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Butterfree(6) = 1
+                    frmMainMenu.Butterfree(6) = 1
 
-				End If
+                End If
 
-			Case "Kakuna"
+            Case "Kakuna"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Kakuna(6) = 1
+                    frmMainMenu.Kakuna(6) = 1
 
-				End If
+                End If
 
-			Case "Beedrill"
+            Case "Beedrill"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Beedrill(6) = 1
+                    frmMainMenu.Beedrill(6) = 1
 
-				End If
+                End If
 
-			Case "Pidgeotto"
+            Case "Pidgeotto"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Pidgeotto(6) = 1
+                    frmMainMenu.Pidgeotto(6) = 1
 
-				End If
+                End If
 
-			Case "Nidorino"
+            Case "Nidorino"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Nidorino(6) = 1
+                    frmMainMenu.Nidorino(6) = 1
 
-				End If
+                End If
 
-			Case "Nidorina"
+            Case "Nidorina"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Nidorina(6) = 1
+                    frmMainMenu.Nidorina(6) = 1
 
-				End If
+                End If
 
-			Case "Raticate"
+            Case "Raticate"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Raticate(6) = 1
+                    frmMainMenu.Raticate(6) = 1
 
-				End If
+                End If
 
-			Case "Ekans"
+            Case "Ekans"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Ekans(6) = 1
+                    frmMainMenu.Ekans(6) = 1
 
-				End If
+                End If
 
-			Case "Pikachu"
+            Case "Pikachu"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Pikachu(6) = 1
+                    frmMainMenu.Pikachu(6) = 1
 
-				End If
+                End If
 
-			Case "Raichu"
+            Case "Raichu"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Raichu(6) = 1
+                    frmMainMenu.Raichu(6) = 1
 
-				End If
+                End If
 
-			Case "Diglett"
+            Case "Diglett"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Diglett(6) = 1
+                    frmMainMenu.Diglett(6) = 1
 
-				End If
+                End If
 
-			Case "Meowth"
+            Case "Meowth"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Meowth(6) = 1
+                    frmMainMenu.Meowth(6) = 1
 
-				End If
+                End If
 
-			Case "Magnemite"
+            Case "Magnemite"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Magnemite(6) = 1
+                    frmMainMenu.Magnemite(6) = 1
 
-				End If
+                End If
 
-			Case "Voltorb"
+            Case "Voltorb"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Voltorb(6) = 1
+                    frmMainMenu.Voltorb(6) = 1
 
-				End If
+                End If
 
-			Case "Gloom"
+            Case "Gloom"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Gloom(6) = 1
+                    frmMainMenu.Gloom(6) = 1
 
-				End If
+                End If
 
-			Case "Paras"
+            Case "Paras"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Paras(6) = 1
+                    frmMainMenu.Paras(6) = 1
 
-				End If
+                End If
 
-			Case "Parasect"
+            Case "Parasect"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Parasect(6) = 1
+                    frmMainMenu.Parasect(6) = 1
 
-				End If
+                End If
 
-			Case "Venonat"
+            Case "Venonat"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Venonat(6) = 1
+                    frmMainMenu.Venonat(6) = 1
 
-				End If
+                End If
 
-			Case "Magneton"
+            Case "Magneton"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Magneton(6) = 1
+                    frmMainMenu.Magneton(6) = 1
 
-				End If
+                End If
 
-			Case "Electrode"
+            Case "Electrode"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Electrode(6) = 1
+                    frmMainMenu.Electrode(6) = 1
 
-				End If
+                End If
 
-			Case "Gastly"
+            Case "Gastly"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Gastly(6) = 1
+                    frmMainMenu.Gastly(6) = 1
 
-				End If
+                End If
 
-			Case "Electabuzz"
+            Case "Electabuzz"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Electabuzz(6) = 1
+                    frmMainMenu.Electabuzz(6) = 1
 
-				End If
+                End If
 
-			Case "Jolteon"
+            Case "Jolteon"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Jolteon(6) = 1
+                    frmMainMenu.Jolteon(6) = 1
 
-				End If
+                End If
 
-			Case "Ponyta"
+            Case "Ponyta"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Ponyta(6) = 1
+                    frmMainMenu.Ponyta(6) = 1
 
-				End If
+                End If
 
-			Case "Pidgeot"
+            Case "Pidgeot"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Pidgeot(6) = 1
+                    frmMainMenu.Pidgeot(6) = 1
 
-				End If
+                End If
 
-			Case "Fearow"
+            Case "Fearow"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Fearow(6) = 1
+                    frmMainMenu.Fearow(6) = 1
 
-				End If
+                End If
 
-			Case "Growlithe"
+            Case "Growlithe"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Growlithe(6) = 1
+                    frmMainMenu.Growlithe(6) = 1
 
-				End If
+                End If
 
-			Case "Arcanine"
+            Case "Arcanine"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Arcanine(6) = 1
+                    frmMainMenu.Arcanine(6) = 1
 
-				End If
+                End If
 
-			Case "Farfetch'd"
+            Case "Farfetch'd"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Farfetchd(6) = 1
+                    frmMainMenu.Farfetchd(6) = 1
 
-				End If
+                End If
 
-			Case "Rapidash"
+            Case "Rapidash"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Rapidash(6) = 1
+                    frmMainMenu.Rapidash(6) = 1
 
-				End If
+                End If
 
-			Case "Ninetales"
+            Case "Ninetales"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Ninetales(6) = 1
+                    frmMainMenu.Ninetales(6) = 1
 
-				End If
+                End If
 
-			Case "Magmar"
+            Case "Magmar"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Magmar(6) = 1
+                    frmMainMenu.Magmar(6) = 1
 
-				End If
+                End If
 
-			Case "Flareon"
+            Case "Flareon"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Flareon(6) = 1
+                    frmMainMenu.Flareon(6) = 1
 
-				End If
+                End If
 
-			Case "Vileplume"
+            Case "Vileplume"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Vileplume(6) = 1
+                    frmMainMenu.Vileplume(6) = 1
 
-				End If
+                End If
 
-			Case "Poliwag"
+            Case "Poliwag"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Poliwag(6) = 1
+                    frmMainMenu.Poliwag(6) = 1
 
-				End If
+                End If
 
-			Case "Poliwhirl"
+            Case "Poliwhirl"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Poliwhirl(6) = 1
+                    frmMainMenu.Poliwhirl(6) = 1
 
-				End If
+                End If
 
-			Case "Seel"
+            Case "Seel"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Seel(6) = 1
+                    frmMainMenu.Seel(6) = 1
 
-				End If
+                End If
 
-			Case "Shellder"
+            Case "Shellder"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Shellder(6) = 1
+                    frmMainMenu.Shellder(6) = 1
 
-				End If
+                End If
 
-			Case "Krabby"
+            Case "Krabby"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Krabby(6) = 1
+                    frmMainMenu.Krabby(6) = 1
 
-				End If
+                End If
 
-			Case "Magikarp"
+            Case "Magikarp"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Magikarp(6) = 1
+                    frmMainMenu.Magikarp(6) = 1
 
-				End If
+                End If
 
-			Case "Poliwrath"
+            Case "Poliwrath"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Poliwrath(6) = 1
+                    frmMainMenu.Poliwrath(6) = 1
 
-				End If
+                End If
 
-			Case "Dewgong"
+            Case "Dewgong"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Dewgong(6) = 1
+                    frmMainMenu.Dewgong(6) = 1
 
-				End If
+                End If
 
-			Case "Kingler"
+            Case "Kingler"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Kingler(6) = 1
+                    frmMainMenu.Kingler(6) = 1
 
-				End If
+                End If
 
-			Case "Lapras"
+            Case "Lapras"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Lapras(6) = 1
+                    frmMainMenu.Lapras(6) = 1
 
-				End If
+                End If
 
-			Case "Vaporeon"
+            Case "Vaporeon"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Vaporeon(6) = 1
+                    frmMainMenu.Vaporeon(6) = 1
 
-				End If
+                End If
 
-			Case "Arbok"
+            Case "Arbok"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Arbok(6) = 1
+                    frmMainMenu.Arbok(6) = 1
 
-				End If
+                End If
 
-			Case "Clefairy"
+            Case "Clefairy"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Clefairy(6) = 1
+                    frmMainMenu.Clefairy(6) = 1
 
-				End If
+                End If
 
-			Case "Clefable"
+            Case "Clefable"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Clefable(6) = 1
+                    frmMainMenu.Clefable(6) = 1
 
-				End If
+                End If
 
-			Case "Jigglypuff"
+            Case "Jigglypuff"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Jigglypuff(6) = 1
+                    frmMainMenu.Jigglypuff(6) = 1
 
-				End If
+                End If
 
-			Case "Wigglytuff"
+            Case "Wigglytuff"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Wigglytuff(6) = 1
+                    frmMainMenu.Wigglytuff(6) = 1
 
-				End If
+                End If
 
-			Case "Venomoth"
+            Case "Venomoth"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Venomoth(6) = 1
+                    frmMainMenu.Venomoth(6) = 1
 
-				End If
+                End If
 
-			Case "Abra"
+            Case "Abra"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Abra(6) = 1
+                    frmMainMenu.Abra(6) = 1
 
-				End If
+                End If
 
-			Case "Kadabra"
+            Case "Kadabra"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Kadabra(6) = 1
+                    frmMainMenu.Kadabra(6) = 1
 
-				End If
+                End If
 
-			Case "Doduo"
+            Case "Doduo"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Doduo(6) = 1
+                    frmMainMenu.Doduo(6) = 1
 
-				End If
+                End If
 
-			Case "Dodrio"
+            Case "Dodrio"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Dodrio(6) = 1
+                    frmMainMenu.Dodrio(6) = 1
 
-				End If
+                End If
 
-			Case "Tauros"
+            Case "Tauros"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Tauros(6) = 1
+                    frmMainMenu.Tauros(6) = 1
 
-				End If
+                End If
 
-			Case "Moltres"
+            Case "Moltres"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Moltres(6) = 1
+                    frmMainMenu.Moltres(6) = 1
 
-				End If
+                End If
 
-			Case "Zapdos"
+            Case "Zapdos"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Zapdos(6) = 1
+                    frmMainMenu.Zapdos(6) = 1
 
-				End If
+                End If
 
-			Case "Articuno"
+            Case "Articuno"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Articuno(6) = 1
+                    frmMainMenu.Articuno(6) = 1
 
-				End If
+                End If
 
-			Case "Psyduck"
+            Case "Psyduck"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Psyduck(6) = 1
+                    frmMainMenu.Psyduck(6) = 1
 
-				End If
+                End If
 
-			Case "Golduck"
+            Case "Golduck"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Golduck(6) = 1
+                    frmMainMenu.Golduck(6) = 1
 
-				End If
+                End If
 
-			Case "Machoke"
+            Case "Machoke"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Machoke(6) = 1
+                    frmMainMenu.Machoke(6) = 1
 
-				End If
+                End If
 
-			Case "Machop"
+            Case "Machop"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Machop(6) = 1
+                    frmMainMenu.Machop(6) = 1
 
-				End If
+                End If
 
-			Case "Hypno"
+            Case "Hypno"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Hypno(6) = 1
+                    frmMainMenu.Hypno(6) = 1
 
-				End If
+                End If
 
-			Case "Snorlax"
+            Case "Snorlax"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Snorlax(6) = 1
+                    frmMainMenu.Snorlax(6) = 1
 
-				End If
+                End If
 
-			Case "Dragonair"
+            Case "Dragonair"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Dragonair(6) = 1
+                    frmMainMenu.Dragonair(6) = 1
 
-				End If
+                End If
 
-			Case "Dragonite"
+            Case "Dragonite"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Dragonite(6) = 1
+                    frmMainMenu.Dragonite(6) = 1
 
-				End If
+                End If
 
-			Case "Alakazam"
+            Case "Alakazam"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Alakazam(6) = 1
+                    frmMainMenu.Alakazam(6) = 1
 
-				End If
+                End If
 
-			Case "Golem"
+            Case "Golem"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Golem(6) = 1
+                    frmMainMenu.Golem(6) = 1
 
-				End If
+                End If
 
-			Case "Onix"
+            Case "Onix"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Onix(6) = 1
+                    frmMainMenu.Onix(6) = 1
 
-				End If
+                End If
 
-			Case "Kangaskhan"
+            Case "Kangaskhan"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Kangaskhan(6) = 1
+                    frmMainMenu.Kangaskhan(6) = 1
 
-				End If
+                End If
 
-			Case "Machamp"
+            Case "Machamp"
 
-				If catchp(num) Then
+                If catchp(num) Then
 
-					frmMainMenu.Machamp(6) = 1
+                    frmMainMenu.Machamp(6) = 1
 
-				End If
+                End If
 
-		End Select
+        End Select
 
-		If catchp(num) = True Then
+        If catchp(num) = True Then
             Label7.Text = enemypokemon(0) & " was caught!"
             Await Task.Delay(1200)
             Me.Close()
@@ -3741,14 +3743,14 @@
         End If
     End Sub
 
-	Private Sub Button1_Click_1(sender As Object, e As EventArgs)
-		lblYName.Text = yourpokemon(0)
-		lblYHp.Text = yourpokemon(1)
-		lblEName.Text = enemypokemon(0)
-		lblEHp.Text = enemypokemon(1)
-	End Sub
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+        lblYName.Text = yourpokemon(0)
+        lblYHp.Text = yourpokemon(1)
+        lblEName.Text = enemypokemon(0)
+        lblEHp.Text = enemypokemon(1)
+    End Sub
 
-	Private Sub TimerBarrage_Tick(sender As Object, e As EventArgs) Handles TimerBarrage.Tick
+    Private Sub TimerBarrage_Tick(sender As Object, e As EventArgs) Handles TimerBarrage.Tick
         tempcounter += 1
         Select Case DAttackS(11)
             Case 1
@@ -12165,6 +12167,502 @@
         If frmMainMenu.yourpokemon6(0) IsNot Nothing Then
             yourpokemon6U = True
         End If
+        If frmBattleSelect.trainerbattle = True Then
+            btnPokeball.Enabled = False
+        End If
+        Select Case yourpokemon(0)
+            Case "Bulbasaur"
+                picYPokemon.Image = My.Resources.BulbasaurB
+
+            Case "Abra"
+                picYPokemon.Image = My.Resources.AbraB
+            Case "Aerodactyl"
+                picYPokemon.Image = My.Resources.AerodactylB
+            Case "Alakazam"
+                picYPokemon.Image = My.Resources.AlakazamB
+            Case "Arbok"
+                picYPokemon.Image = My.Resources.ArbokB
+            Case "Arcanine"
+                picYPokemon.Image = My.Resources.ArcanineB
+            Case "Articuno"
+                picYPokemon.Image = My.Resources.ArticunoB
+            Case "Beedrill"
+                picYPokemon.Image = My.Resources.BeedrillB
+            Case "Bellsprout"
+                picYPokemon.Image = My.Resources.BellsproutB
+            Case "Butterfree"
+                picYPokemon.Image = My.Resources.ButterfreeB
+            Case "Caterpie"
+                picYPokemon.Image = My.Resources.CaterpieB
+            Case "Charmander"
+                picYPokemon.Image = My.Resources.CharmanderB
+            Case "Clefable"
+                picYPokemon.Image = My.Resources.ClefableB
+            Case "Clefairy"
+                picYPokemon.Image = My.Resources.ClefairyB
+            Case "Dewgong"
+                picYPokemon.Image = My.Resources.DewgongB
+            Case "Diglett"
+                picYPokemon.Image = My.Resources.DiglettB
+            Case "Dodrio"
+                picYPokemon.Image = My.Resources.DodrioB
+            Case "Doduo"
+                picYPokemon.Image = My.Resources.DoduoB
+            Case "Dragonair"
+                picYPokemon.Image = My.Resources.DragonairB
+            Case "Dragonite"
+                picYPokemon.Image = My.Resources.DragoniteB
+            Case "Eevee"
+                picYPokemon.Image = My.Resources.EeveeB
+            Case "Ekans"
+                picYPokemon.Image = My.Resources.EkansB
+            Case "Electabuzz"
+                picYPokemon.Image = My.Resources.ElectabuzzB
+            Case "Electrode"
+                picYPokemon.Image = My.Resources.ElectrodeB
+            Case "Farfetchd"
+                picYPokemon.Image = My.Resources.FarfetchdB
+            Case "Fearow"
+                picYPokemon.Image = My.Resources.FearowB
+            Case "Flareon"
+                picYPokemon.Image = My.Resources.FlareonB
+            Case "Gastly"
+                picYPokemon.Image = My.Resources.GastlyB
+            Case "Gengar"
+                picYPokemon.Image = My.Resources.GengarB
+            Case "Gloom"
+                picYPokemon.Image = My.Resources.GloomB
+            Case "Golduck"
+                picYPokemon.Image = My.Resources.GolduckB
+            Case "Golem"
+                picYPokemon.Image = My.Resources.GolemB
+            Case "Grimer"
+                picYPokemon.Image = My.Resources.GrimerB
+            Case "Growlithe"
+                picYPokemon.Image = My.Resources.GrowlitheB
+            Case "Jigglypuff"
+                picYPokemon.Image = My.Resources.JigglypuffB
+            Case "Jolteon"
+                picYPokemon.Image = My.Resources.JolteonB
+            Case "Kadabra"
+                picYPokemon.Image = My.Resources.KadabraB
+            Case "Kakuna"
+                picYPokemon.Image = My.Resources.KakunaB
+            Case "Kangaskhan"
+                picYPokemon.Image = My.Resources.KangaskhanB
+            Case "Kingler"
+                picYPokemon.Image = My.Resources.KinglerB
+            Case "Krabby"
+                picYPokemon.Image = My.Resources.KrabbyB
+            Case "Lapras"
+                picYPokemon.Image = My.Resources.LaprasB
+            Case "Machamp"
+                picYPokemon.Image = My.Resources.MachampB
+            Case "Machoke"
+                picYPokemon.Image = My.Resources.MachokeB
+            Case "Machop"
+                picYPokemon.Image = My.Resources.MachopB
+            Case "Magikarp"
+                picYPokemon.Image = My.Resources.MagikarpB
+            Case "Magmar"
+                picYPokemon.Image = My.Resources.MagmarB
+            Case "Magnemite"
+                picYPokemon.Image = My.Resources.MagnemiteB
+            Case "Magneton"
+                picYPokemon.Image = My.Resources.MagnetonB
+            Case "Meowth"
+                picYPokemon.Image = My.Resources.MeowthB
+            Case "Metapod"
+                picYPokemon.Image = My.Resources.MetapodB
+            Case "Mew"
+                picYPokemon.Image = My.Resources.MewB
+            Case "Mewtwo"
+                picYPokemon.Image = My.Resources.MewtwoB
+            Case "Moltres"
+                picYPokemon.Image = My.Resources.MoltresB
+            Case "Muk"
+                picYPokemon.Image = My.Resources.MukB
+            Case "Nidoking"
+                picYPokemon.Image = My.Resources.NidokingB
+            Case "Nidoqueen"
+                picYPokemon.Image = My.Resources.NidoqueenB
+            Case "Nidoranf"
+                picYPokemon.Image = My.Resources.NidoranfB
+            Case "Nidoranm"
+                picYPokemon.Image = My.Resources.NidoranmB
+            Case "Nidorina"
+                picYPokemon.Image = My.Resources.NidorinaB
+            Case "Nidorino"
+                picYPokemon.Image = My.Resources.NidorinomB
+            Case "Ninetales"
+                picYPokemon.Image = My.Resources.NinetalesB
+            Case "Oddish"
+                picYPokemon.Image = My.Resources.OddishB
+            Case "Onix"
+                picYPokemon.Image = My.Resources.OnixB
+            Case "Paras"
+                picYPokemon.Image = My.Resources.ParasB
+            Case "Parasect"
+                picYPokemon.Image = My.Resources.ParasectB
+            Case "Pidgeot"
+                picYPokemon.Image = My.Resources.PidgeotB
+            Case "Pidgeotto"
+                picYPokemon.Image = My.Resources.PidgeottoB
+            Case "Pidgey"
+                picYPokemon.Image = My.Resources.PidgeyB
+            Case "Pikachu"
+                picYPokemon.Image = My.Resources.PikachuB
+            Case "Poliwag"
+                picYPokemon.Image = My.Resources.PoliwagB
+            Case "Poliwhirl"
+                picYPokemon.Image = My.Resources.PoliwhirlB
+            Case "Poliwrath"
+                picYPokemon.Image = My.Resources.PoliwrathB
+            Case "Ponyta"
+                picYPokemon.Image = My.Resources.PonytaB
+            Case "Psyduck"
+                picYPokemon.Image = My.Resources.PsyduckB
+            Case "Raichu"
+                picYPokemon.Image = My.Resources.RaichuB
+            Case "Rapidash"
+                picYPokemon.Image = My.Resources.RapidashB
+            Case "Raticate"
+                picYPokemon.Image = My.Resources.RaticateB
+            Case "Rattata"
+                picYPokemon.Image = My.Resources.RattataB
+            Case "Seel"
+                picYPokemon.Image = My.Resources.SeelB
+            Case "Snorlax"
+                picYPokemon.Image = My.Resources.SnorlaxB
+            Case "Spearow"
+                picYPokemon.Image = My.Resources.SpearowB
+            Case "Squirtle"
+                picYPokemon.Image = My.Resources.SquirtleB
+            Case "Tauros"
+                picYPokemon.Image = My.Resources.TaurosB
+            Case "Vaporeon"
+                picYPokemon.Image = My.Resources.VaporeonB
+            Case "Venomoth"
+                picYPokemon.Image = My.Resources.VenomothB
+            Case "Venonat"
+                picYPokemon.Image = My.Resources.VenonatB
+            Case "Vileplume"
+                picYPokemon.Image = My.Resources.VileplumeB
+            Case "Voltorb"
+                picYPokemon.Image = My.Resources.VoltorbB
+            Case "Vulpix"
+                picYPokemon.Image = My.Resources.VulpixB
+            Case "Weedle"
+                picYPokemon.Image = My.Resources.WeedleB
+            Case "Wigglytuff"
+                picYPokemon.Image = My.Resources.WigglytuffB
+            Case "Zapdos"
+                picYPokemon.Image = My.Resources.ZapdosB
+        End Select
+        Select Case enemypokemon(0)
+            Case "Bulbasaur"
+                picEPokemon.Image = My.Resources.BulbasaurF
+            Case "Ivysaur"
+                picEPokemon.Image = My.Resources.IvysaurF
+            Case "Venusaur"
+                picEPokemon.Image = My.Resources.VenusaurF
+            Case "Charmander"
+                picEPokemon.Image = My.Resources.CharmanderF
+            Case "Charmeleon"
+                picEPokemon.Image = My.Resources.CharmeleonF
+            Case "Charizard"
+                picEPokemon.Image = My.Resources.CharizardF
+            Case "Squirtle"
+                picEPokemon.Image = My.Resources.SquirtleF
+            Case "Wartortle"
+                picEPokemon.Image = My.Resources.WartortleF
+            Case "Blastoise"
+                picEPokemon.Image = My.Resources.BlastoiseF
+            Case "Caterpie"
+                picEPokemon.Image = My.Resources.CaterpieF
+            Case "Metapod"
+                picEPokemon.Image = My.Resources.MetapodF
+            Case "Butterfree"
+                picEPokemon.Image = My.Resources.ButterfreeF
+            Case "Weedle"
+                picEPokemon.Image = My.Resources.WeedleF
+            Case "Kakuna"
+                picEPokemon.Image = My.Resources.KakunaF
+            Case "Beedrill"
+                picEPokemon.Image = My.Resources.BeedrillF
+            Case "Pidgey"
+                picEPokemon.Image = My.Resources.PidgeyF
+            Case "Pidgeotto"
+                picEPokemon.Image = My.Resources.PidgeottoF
+            Case "Pidgeot"
+                picEPokemon.Image = My.Resources.PidgeotF
+            Case "Rattata"
+                picEPokemon.Image = My.Resources.RattataF
+            Case "Raticate"
+                picEPokemon.Image = My.Resources.RaticateF
+            Case "Spearow"
+                picEPokemon.Image = My.Resources.SpearowF
+            Case "Fearow"
+                picEPokemon.Image = My.Resources.FearowF
+            Case "Ekans"
+                picEPokemon.Image = My.Resources.EkansF
+            Case "Arbok"
+                picEPokemon.Image = My.Resources.ArbokF
+            Case "Pikachu"
+                picEPokemon.Image = My.Resources.PikachuF
+            Case "Raichu"
+                picEPokemon.Image = My.Resources.RaichuF
+            Case "Sandshrew"
+                picEPokemon.Image = My.Resources.SandshrewF
+            Case "Sandslash"
+                picEPokemon.Image = My.Resources.SandslashF
+            Case "Nidoranf"
+                picEPokemon.Image = My.Resources.NidoranfF
+            Case "Nidorina"
+                picEPokemon.Image = My.Resources.NidorinaF
+            Case "Nidoqueen"
+                picEPokemon.Image = My.Resources.NidoqueenF
+            Case "Nidoranm"
+                picEPokemon.Image = My.Resources.NidoranmF
+            Case "Nidorino"
+                picEPokemon.Image = My.Resources.NidorinoF
+            Case "Nidoking"
+                picEPokemon.Image = My.Resources.NidokingF
+            Case "Clefairy"
+                picEPokemon.Image = My.Resources.ClefairyF
+            Case "Clefable"
+                picEPokemon.Image = My.Resources.ClefableF
+            Case "Vulpix"
+                picEPokemon.Image = My.Resources.VulpixF
+            Case "Ninetales"
+                picEPokemon.Image = My.Resources.NinetalesF
+            Case "Jigglypuff"
+                picEPokemon.Image = My.Resources.JigglypuffF
+            Case "Wigglytuff"
+                picEPokemon.Image = My.Resources.WigglytuffF
+            Case "Zubat"
+                picEPokemon.Image = My.Resources.ZubatF
+            Case "Golbat"
+                picEPokemon.Image = My.Resources.GolbatF
+            Case "Oddish"
+                picEPokemon.Image = My.Resources.OddishF
+            Case "Gloom"
+                picEPokemon.Image = My.Resources.GloomF
+            Case "Vileplume"
+                picEPokemon.Image = My.Resources.VileplumeF
+            Case "Paras"
+                picEPokemon.Image = My.Resources.ParasF
+            Case "Parasect"
+                picEPokemon.Image = My.Resources.ParasectF
+            Case "Venonat"
+                picEPokemon.Image = My.Resources.VenonatF
+            Case "Venomoth"
+                picEPokemon.Image = My.Resources.VenomothF
+            Case "Diglett"
+                picEPokemon.Image = My.Resources.DiglettF
+            Case "Dugtrio"
+                picEPokemon.Image = My.Resources.DugtrioF
+            Case "Meowth"
+                picEPokemon.Image = My.Resources.MeowthF
+            Case "Persian"
+                picEPokemon.Image = My.Resources.PersianF
+            Case "Psyduck"
+                picEPokemon.Image = My.Resources.PsyduckF
+            Case "Golduck"
+                picEPokemon.Image = My.Resources.GolduckF
+            Case "Mankey"
+                picEPokemon.Image = My.Resources.MankeyF
+            Case "Primeape"
+                picEPokemon.Image = My.Resources.PrimeapeF
+            Case "Growlithe"
+                picEPokemon.Image = My.Resources.GrowlitheF
+            Case "Arcanine"
+                picEPokemon.Image = My.Resources.ArcanineF
+            Case "Poliwag"
+                picEPokemon.Image = My.Resources.PoliwagF
+            Case "Poiwhirl"
+                picEPokemon.Image = My.Resources.PoliwhirlF
+            Case "Poliwrath"
+                picEPokemon.Image = My.Resources.PoliwrathF
+            Case "Abra"
+                picEPokemon.Image = My.Resources.AbraF
+            Case "Kadabra"
+                picEPokemon.Image = My.Resources.KadabraF
+            Case "Alakazam"
+                picEPokemon.Image = My.Resources.AlakazamF
+            Case "Machop"
+                picEPokemon.Image = My.Resources.MachopF
+            Case "Machoke"
+                picEPokemon.Image = My.Resources.MachokeF
+            Case "Machamp"
+                picEPokemon.Image = My.Resources.MachampF
+            Case "Bellsprout"
+                picEPokemon.Image = My.Resources.BellsproutF
+            Case "Weepinbell"
+                picEPokemon.Image = My.Resources.WeepinbellF
+            Case "Victreebel"
+                picEPokemon.Image = My.Resources.VictreebelF
+            Case "Tentacool"
+                picEPokemon.Image = My.Resources.TentacoolF
+            Case "Tentacruel"
+                picEPokemon.Image = My.Resources.TentacruelF
+            Case "Geodude"
+                picEPokemon.Image = My.Resources.GeodudeF
+            Case "Graveler"
+                picEPokemon.Image = My.Resources.GravelerF
+            Case "Golem"
+                picEPokemon.Image = My.Resources.GolemF
+            Case "Ponyta"
+                picEPokemon.Image = My.Resources.PonytaF
+            Case "Rapidash"
+                picEPokemon.Image = My.Resources.RapidashF
+            Case "Slowpoke"
+                picEPokemon.Image = My.Resources.SlowpokeF
+            Case "Slowbro"
+                picEPokemon.Image = My.Resources.SlowbroF
+            Case "Magnemite"
+                picEPokemon.Image = My.Resources.MagnemiteF
+            Case "Magneton"
+                picEPokemon.Image = My.Resources.MagnetonF
+            Case "Farfetchd"
+                picEPokemon.Image = My.Resources.FarfetchdF
+            Case "Doduo"
+                picEPokemon.Image = My.Resources.DoduoF
+            Case "Dodrio"
+                picEPokemon.Image = My.Resources.DodrioF
+            Case "Seel"
+                picEPokemon.Image = My.Resources.SeelF
+            Case "Dewgong"
+                picEPokemon.Image = My.Resources.DewgongF
+            Case "Grimer"
+                picEPokemon.Image = My.Resources.GrimerF
+            Case "Muk"
+                picEPokemon.Image = My.Resources.MukF
+            Case "Shellder"
+                picEPokemon.Image = My.Resources.ShellderF
+            Case "Cloyster"
+                picEPokemon.Image = My.Resources.CloysterF
+            Case "Gastly"
+                picEPokemon.Image = My.Resources.GastlyF
+            Case "Haunter"
+                picEPokemon.Image = My.Resources.HaunterF
+            Case "Gengar"
+                picEPokemon.Image = My.Resources.gengar
+            Case "Onix"
+                picEPokemon.Image = My.Resources.OnixF
+            Case "Drowzee"
+                picEPokemon.Image = My.Resources.DrowzeeF
+            Case "Hypno"
+                picEPokemon.Image = My.Resources.HypnoF
+            Case "Krabby"
+                picEPokemon.Image = My.Resources.KrabbyF
+            Case "Kingler"
+                picEPokemon.Image = My.Resources.KinglerF
+            Case "Voltorb"
+                picEPokemon.Image = My.Resources.VoltorbF
+            Case "Eletrode"
+                picEPokemon.Image = My.Resources.ElectrodeF
+            Case "Exeggcute"
+                picEPokemon.Image = My.Resources.ExeggcuteF
+            Case "Exeggutor"
+                picEPokemon.Image = My.Resources.ExeggutorF
+            Case "Cubone"
+                picEPokemon.Image = My.Resources.CuboneF
+            Case "Marowak"
+                picEPokemon.Image = My.Resources.MarowakF
+            Case "Hitmonlee"
+                picEPokemon.Image = My.Resources.HitmonleeF
+            Case "Hitmonchan"
+                picEPokemon.Image = My.Resources.HitmonchanF
+            Case "Lickitung"
+                picEPokemon.Image = My.Resources.LickitungF
+            Case "Koffing"
+                picEPokemon.Image = My.Resources.KoffingF
+            Case "Weezing"
+                picEPokemon.Image = My.Resources.WeezingF
+            Case "Rhyhorn"
+                picEPokemon.Image = My.Resources.RhyhornF
+            Case "Rhydon"
+                picEPokemon.Image = My.Resources.RhydonF
+            Case "Chansey"
+                picEPokemon.Image = My.Resources.ChanseyF
+            Case "Tangela"
+                picEPokemon.Image = My.Resources.TangelaF
+            Case "Kangaskhan"
+                picEPokemon.Image = My.Resources.KangaskhanF
+            Case "Horsea"
+                picEPokemon.Image = My.Resources.HorseaF
+            Case "Seadra"
+                picEPokemon.Image = My.Resources.SeadraF
+            Case "Goldeen"
+                picEPokemon.Image = My.Resources.GoldeenF
+            Case "Seaking"
+                picEPokemon.Image = My.Resources.SeakingF
+            Case "Staryu"
+                picEPokemon.Image = My.Resources.StaryuF
+            Case "Starmie"
+                picEPokemon.Image = My.Resources.StarmieF
+            Case "MrMime"
+                picEPokemon.Image = My.Resources.MrMimeF
+            Case "Scyther"
+                picEPokemon.Image = My.Resources.ScytherF
+            Case "Jynx"
+                picEPokemon.Image = My.Resources.JynxF
+            Case "Electabuzz"
+                picEPokemon.Image = My.Resources.ElectabuzzF
+            Case "Magmar"
+                picEPokemon.Image = My.Resources.MagmarF
+            Case "Pinsir"
+                picEPokemon.Image = My.Resources.PinsirF
+            Case "Tauros"
+                picEPokemon.Image = My.Resources.TaurosF
+            Case "Magikarp"
+                picEPokemon.Image = My.Resources.MagikarpF
+            Case "Gyarados"
+                picEPokemon.Image = My.Resources.GyaradosF
+            Case "Lapras"
+                picEPokemon.Image = My.Resources.LaprasF
+            Case "Ditto"
+                picEPokemon.Image = My.Resources.DittoF
+            Case "Eevee"
+                picEPokemon.Image = My.Resources.EeveeF
+            Case "Vaporeon"
+                picEPokemon.Image = My.Resources.VaporeonF
+            Case "Jolteon"
+                picEPokemon.Image = My.Resources.JolteonF
+            Case "Flareon"
+                picEPokemon.Image = My.Resources.FlareonF
+            Case "Porygon"
+                picEPokemon.Image = My.Resources.PorygonF
+            Case "Omanyte"
+                picEPokemon.Image = My.Resources.OmanyteF
+            Case "Omastar"
+                picEPokemon.Image = My.Resources.OmastarF
+            Case "Kabuto"
+                picEPokemon.Image = My.Resources.KabutoF
+            Case "Kabutops"
+                picEPokemon.Image = My.Resources.KabutopsF
+            Case "Aerodactyl"
+                picEPokemon.Image = My.Resources.AerodactylF
+            Case "Snorlax"
+                picEPokemon.Image = My.Resources.SnorlaxF
+            Case "Articuno"
+                picEPokemon.Image = My.Resources.ArticunoF
+            Case "Zapdos"
+                picEPokemon.Image = My.Resources.ZapdosF
+            Case "Moltres"
+                picEPokemon.Image = My.Resources.MoltresF
+            Case "Dratini"
+                picEPokemon.Image = My.Resources.DratiniF
+            Case "Dragonair"
+                picEPokemon.Image = My.Resources.DragonairF
+            Case "Dragonite"
+                picEPokemon.Image = My.Resources.DragoniteF
+            Case "Mewtwo"
+                picEPokemon.Image = My.Resources.MewtwoF
+            Case "Mew"
+                picEPokemon.Image = My.Resources.MewF
+        End Select
     End Sub
 
     Private Sub yturn_Tick(sender As Object, e As EventArgs) Handles yturn.Tick
@@ -12274,10 +12772,506 @@
                 btnMove2.Text = yourpokemon(11)
                 btnMove3.Text = yourpokemon(12)
                 btnMove4.Text = yourpokemon(13)
+                Select Case yourpokemon(0)
+                    Case "Bulbasaur"
+                        picYPokemon.Image = My.Resources.BulbasaurB
+                    Case "Abra"
+                        picYPokemon.Image = My.Resources.AbraB
+                    Case "Aerodactyl"
+                        picYPokemon.Image = My.Resources.AerodactylB
+                    Case "Alakazam"
+                        picYPokemon.Image = My.Resources.AlakazamB
+                    Case "Arbok"
+                        picYPokemon.Image = My.Resources.ArbokB
+                    Case "Arcanine"
+                        picYPokemon.Image = My.Resources.ArcanineB
+                    Case "Articuno"
+                        picYPokemon.Image = My.Resources.ArticunoB
+                    Case "Beedrill"
+                        picYPokemon.Image = My.Resources.BeedrillB
+                    Case "Bellsprout"
+                        picYPokemon.Image = My.Resources.BellsproutB
+                    Case "Butterfree"
+                        picYPokemon.Image = My.Resources.ButterfreeB
+                    Case "Caterpie"
+                        picYPokemon.Image = My.Resources.CaterpieB
+                    Case "Charmander"
+                        picYPokemon.Image = My.Resources.CharmanderB
+                    Case "Clefable"
+                        picYPokemon.Image = My.Resources.ClefableB
+                    Case "Clefairy"
+                        picYPokemon.Image = My.Resources.ClefairyB
+                    Case "Dewgong"
+                        picYPokemon.Image = My.Resources.DewgongB
+                    Case "Diglett"
+                        picYPokemon.Image = My.Resources.DiglettB
+                    Case "Dodrio"
+                        picYPokemon.Image = My.Resources.DodrioB
+                    Case "Doduo"
+                        picYPokemon.Image = My.Resources.DoduoB
+                    Case "Dragonair"
+                        picYPokemon.Image = My.Resources.DragonairB
+                    Case "Dragonite"
+                        picYPokemon.Image = My.Resources.DragoniteB
+                    Case "Eevee"
+                        picYPokemon.Image = My.Resources.EeveeB
+                    Case "Ekans"
+                        picYPokemon.Image = My.Resources.EkansB
+                    Case "Electabuzz"
+                        picYPokemon.Image = My.Resources.ElectabuzzB
+                    Case "Electrode"
+                        picYPokemon.Image = My.Resources.ElectrodeB
+                    Case "Farfetchd"
+                        picYPokemon.Image = My.Resources.FarfetchdB
+                    Case "Fearow"
+                        picYPokemon.Image = My.Resources.FearowB
+                    Case "Flareon"
+                        picYPokemon.Image = My.Resources.FlareonB
+                    Case "Gastly"
+                        picYPokemon.Image = My.Resources.GastlyB
+                    Case "Gengar"
+                        picYPokemon.Image = My.Resources.GengarB
+                    Case "Gloom"
+                        picYPokemon.Image = My.Resources.GloomB
+                    Case "Golduck"
+                        picYPokemon.Image = My.Resources.GolduckB
+                    Case "Golem"
+                        picYPokemon.Image = My.Resources.GolemB
+                    Case "Grimer"
+                        picYPokemon.Image = My.Resources.GrimerB
+                    Case "Growlithe"
+                        picYPokemon.Image = My.Resources.GrowlitheB
+                    Case "Jigglypuff"
+                        picYPokemon.Image = My.Resources.JigglypuffB
+                    Case "Jolteon"
+                        picYPokemon.Image = My.Resources.JolteonB
+                    Case "Kadabra"
+                        picYPokemon.Image = My.Resources.KadabraB
+                    Case "Kakuna"
+                        picYPokemon.Image = My.Resources.KakunaB
+                    Case "Kangaskhan"
+                        picYPokemon.Image = My.Resources.KangaskhanB
+                    Case "Kingler"
+                        picYPokemon.Image = My.Resources.KinglerB
+                    Case "Krabby"
+                        picYPokemon.Image = My.Resources.KrabbyB
+                    Case "Lapras"
+                        picYPokemon.Image = My.Resources.LaprasB
+                    Case "Machamp"
+                        picYPokemon.Image = My.Resources.MachampB
+                    Case "Machoke"
+                        picYPokemon.Image = My.Resources.MachokeB
+                    Case "Machop"
+                        picYPokemon.Image = My.Resources.MachopB
+                    Case "Magikarp"
+                        picYPokemon.Image = My.Resources.MagikarpB
+                    Case "Magmar"
+                        picYPokemon.Image = My.Resources.MagmarB
+                    Case "Magnemite"
+                        picYPokemon.Image = My.Resources.MagnemiteB
+                    Case "Magneton"
+                        picYPokemon.Image = My.Resources.MagnetonB
+                    Case "Meowth"
+                        picYPokemon.Image = My.Resources.MeowthB
+                    Case "Metapod"
+                        picYPokemon.Image = My.Resources.MetapodB
+                    Case "Mew"
+                        picYPokemon.Image = My.Resources.MewB
+                    Case "Mewtwo"
+                        picYPokemon.Image = My.Resources.MewtwoB
+                    Case "Moltres"
+                        picYPokemon.Image = My.Resources.MoltresB
+                    Case "Muk"
+                        picYPokemon.Image = My.Resources.MukB
+                    Case "Nidoking"
+                        picYPokemon.Image = My.Resources.NidokingB
+                    Case "Nidoqueen"
+                        picYPokemon.Image = My.Resources.NidoqueenB
+                    Case "Nidoranf"
+                        picYPokemon.Image = My.Resources.NidoranfB
+                    Case "Nidoranm"
+                        picYPokemon.Image = My.Resources.NidoranmB
+                    Case "Nidorina"
+                        picYPokemon.Image = My.Resources.NidorinaB
+                    Case "Nidorino"
+                        picYPokemon.Image = My.Resources.NidorinomB
+                    Case "Ninetales"
+                        picYPokemon.Image = My.Resources.NinetalesB
+                    Case "Oddish"
+                        picYPokemon.Image = My.Resources.OddishB
+                    Case "Onix"
+                        picYPokemon.Image = My.Resources.OnixB
+                    Case "Paras"
+                        picYPokemon.Image = My.Resources.ParasB
+                    Case "Parasect"
+                        picYPokemon.Image = My.Resources.ParasectB
+                    Case "Pidgeot"
+                        picYPokemon.Image = My.Resources.PidgeotB
+                    Case "Pidgeotto"
+                        picYPokemon.Image = My.Resources.PidgeottoB
+                    Case "Pidgey"
+                        picYPokemon.Image = My.Resources.PidgeyB
+                    Case "Pikachu"
+                        picYPokemon.Image = My.Resources.PikachuB
+                    Case "Poliwag"
+                        picYPokemon.Image = My.Resources.PoliwagB
+                    Case "Poliwhirl"
+                        picYPokemon.Image = My.Resources.PoliwhirlB
+                    Case "Poliwrath"
+                        picYPokemon.Image = My.Resources.PoliwrathB
+                    Case "Ponyta"
+                        picYPokemon.Image = My.Resources.PonytaB
+                    Case "Psyduck"
+                        picYPokemon.Image = My.Resources.PsyduckB
+                    Case "Raichu"
+                        picYPokemon.Image = My.Resources.RaichuB
+                    Case "Rapidash"
+                        picYPokemon.Image = My.Resources.RapidashB
+                    Case "Raticate"
+                        picYPokemon.Image = My.Resources.RaticateB
+                    Case "Rattata"
+                        picYPokemon.Image = My.Resources.RattataB
+                    Case "Seel"
+                        picYPokemon.Image = My.Resources.SeelB
+                    Case "Snorlax"
+                        picYPokemon.Image = My.Resources.SnorlaxB
+                    Case "Spearow"
+                        picYPokemon.Image = My.Resources.SpearowB
+                    Case "Squirtle"
+                        picYPokemon.Image = My.Resources.SquirtleB
+                    Case "Tauros"
+                        picYPokemon.Image = My.Resources.TaurosB
+                    Case "Vaporeon"
+                        picYPokemon.Image = My.Resources.VaporeonB
+                    Case "Venomoth"
+                        picYPokemon.Image = My.Resources.VenomothB
+                    Case "Venonat"
+                        picYPokemon.Image = My.Resources.VenonatB
+                    Case "Vileplume"
+                        picYPokemon.Image = My.Resources.VileplumeB
+                    Case "Voltorb"
+                        picYPokemon.Image = My.Resources.VoltorbB
+                    Case "Vulpix"
+                        picYPokemon.Image = My.Resources.VulpixB
+                    Case "Weedle"
+                        picYPokemon.Image = My.Resources.WeedleB
+                    Case "Wigglytuff"
+                        picYPokemon.Image = My.Resources.WigglytuffB
+                    Case "Zapdos"
+                        picYPokemon.Image = My.Resources.ZapdosB
+                End Select
+                Select Case enemypokemon(0)
+                    Case "Bulbasaur"
+                        picEPokemon.Image = My.Resources.BulbasaurF
+                    Case "Ivysaur"
+                        picEPokemon.Image = My.Resources.IvysaurF
+                    Case "Venusaur"
+                        picEPokemon.Image = My.Resources.VenusaurF
+                    Case "Charmander"
+                        picEPokemon.Image = My.Resources.CharmanderF
+                    Case "Charmeleon"
+                        picEPokemon.Image = My.Resources.CharmeleonF
+                    Case "Charizard"
+                        picEPokemon.Image = My.Resources.CharizardF
+                    Case "Squirtle"
+                        picEPokemon.Image = My.Resources.SquirtleF
+                    Case "Wartortle"
+                        picEPokemon.Image = My.Resources.WartortleF
+                    Case "Blastoise"
+                        picEPokemon.Image = My.Resources.BlastoiseF
+                    Case "Caterpie"
+                        picEPokemon.Image = My.Resources.CaterpieF
+                    Case "Metapod"
+                        picEPokemon.Image = My.Resources.MetapodF
+                    Case "Butterfree"
+                        picEPokemon.Image = My.Resources.ButterfreeF
+                    Case "Weedle"
+                        picEPokemon.Image = My.Resources.WeedleF
+                    Case "Kakuna"
+                        picEPokemon.Image = My.Resources.KakunaF
+                    Case "Beedrill"
+                        picEPokemon.Image = My.Resources.BeedrillF
+                    Case "Pidgey"
+                        picEPokemon.Image = My.Resources.PidgeyF
+                    Case "Pidgeotto"
+                        picEPokemon.Image = My.Resources.PidgeottoF
+                    Case "Pidgeot"
+                        picEPokemon.Image = My.Resources.PidgeotF
+                    Case "Rattata"
+                        picEPokemon.Image = My.Resources.RattataF
+                    Case "Raticate"
+                        picEPokemon.Image = My.Resources.RaticateF
+                    Case "Spearow"
+                        picEPokemon.Image = My.Resources.SpearowF
+                    Case "Fearow"
+                        picEPokemon.Image = My.Resources.FearowF
+                    Case "Ekans"
+                        picEPokemon.Image = My.Resources.EkansF
+                    Case "Arbok"
+                        picEPokemon.Image = My.Resources.ArbokF
+                    Case "Pikachu"
+                        picEPokemon.Image = My.Resources.PikachuF
+                    Case "Raichu"
+                        picEPokemon.Image = My.Resources.RaichuF
+                    Case "Sandshrew"
+                        picEPokemon.Image = My.Resources.SandshrewF
+                    Case "Sandslash"
+                        picEPokemon.Image = My.Resources.SandslashF
+                    Case "Nidoranf"
+                        picEPokemon.Image = My.Resources.NidoranfF
+                    Case "Nidorina"
+                        picEPokemon.Image = My.Resources.NidorinaF
+                    Case "Nidoqueen"
+                        picEPokemon.Image = My.Resources.NidoqueenF
+                    Case "Nidoranm"
+                        picEPokemon.Image = My.Resources.NidoranmF
+                    Case "Nidorino"
+                        picEPokemon.Image = My.Resources.NidorinoF
+                    Case "Nidoking"
+                        picEPokemon.Image = My.Resources.NidokingF
+                    Case "Clefairy"
+                        picEPokemon.Image = My.Resources.ClefairyF
+                    Case "Clefable"
+                        picEPokemon.Image = My.Resources.ClefableF
+                    Case "Vulpix"
+                        picEPokemon.Image = My.Resources.VulpixF
+                    Case "Ninetales"
+                        picEPokemon.Image = My.Resources.NinetalesF
+                    Case "Jigglypuff"
+                        picEPokemon.Image = My.Resources.JigglypuffF
+                    Case "Wigglytuff"
+                        picEPokemon.Image = My.Resources.WigglytuffF
+                    Case "Zubat"
+                        picEPokemon.Image = My.Resources.ZubatF
+                    Case "Golbat"
+                        picEPokemon.Image = My.Resources.GolbatF
+                    Case "Oddish"
+                        picEPokemon.Image = My.Resources.OddishF
+                    Case "Gloom"
+                        picEPokemon.Image = My.Resources.GloomF
+                    Case "Vileplume"
+                        picEPokemon.Image = My.Resources.VileplumeF
+                    Case "Paras"
+                        picEPokemon.Image = My.Resources.ParasF
+                    Case "Parasect"
+                        picEPokemon.Image = My.Resources.ParasectF
+                    Case "Venonat"
+                        picEPokemon.Image = My.Resources.VenonatF
+                    Case "Venomoth"
+                        picEPokemon.Image = My.Resources.VenomothF
+                    Case "Diglett"
+                        picEPokemon.Image = My.Resources.DiglettF
+                    Case "Dugtrio"
+                        picEPokemon.Image = My.Resources.DugtrioF
+                    Case "Meowth"
+                        picEPokemon.Image = My.Resources.MeowthF
+                    Case "Persian"
+                        picEPokemon.Image = My.Resources.PersianF
+                    Case "Psyduck"
+                        picEPokemon.Image = My.Resources.PsyduckF
+                    Case "Golduck"
+                        picEPokemon.Image = My.Resources.GolduckF
+                    Case "Mankey"
+                        picEPokemon.Image = My.Resources.MankeyF
+                    Case "Primeape"
+                        picEPokemon.Image = My.Resources.PrimeapeF
+                    Case "Growlithe"
+                        picEPokemon.Image = My.Resources.GrowlitheF
+                    Case "Arcanine"
+                        picEPokemon.Image = My.Resources.ArcanineF
+                    Case "Poliwag"
+                        picEPokemon.Image = My.Resources.PoliwagF
+                    Case "Poiwhirl"
+                        picEPokemon.Image = My.Resources.PoliwhirlF
+                    Case "Poliwrath"
+                        picEPokemon.Image = My.Resources.PoliwrathF
+                    Case "Abra"
+                        picEPokemon.Image = My.Resources.AbraF
+                    Case "Kadabra"
+                        picEPokemon.Image = My.Resources.KadabraF
+                    Case "Alakazam"
+                        picEPokemon.Image = My.Resources.AlakazamF
+                    Case "Machop"
+                        picEPokemon.Image = My.Resources.MachopF
+                    Case "Machoke"
+                        picEPokemon.Image = My.Resources.MachokeF
+                    Case "Machamp"
+                        picEPokemon.Image = My.Resources.MachampF
+                    Case "Bellsprout"
+                        picEPokemon.Image = My.Resources.BellsproutF
+                    Case "Weepinbell"
+                        picEPokemon.Image = My.Resources.WeepinbellF
+                    Case "Victreebel"
+                        picEPokemon.Image = My.Resources.VictreebelF
+                    Case "Tentacool"
+                        picEPokemon.Image = My.Resources.TentacoolF
+                    Case "Tentacruel"
+                        picEPokemon.Image = My.Resources.TentacruelF
+                    Case "Geodude"
+                        picEPokemon.Image = My.Resources.GeodudeF
+                    Case "Graveler"
+                        picEPokemon.Image = My.Resources.GravelerF
+                    Case "Golem"
+                        picEPokemon.Image = My.Resources.GolemF
+                    Case "Ponyta"
+                        picEPokemon.Image = My.Resources.PonytaF
+                    Case "Rapidash"
+                        picEPokemon.Image = My.Resources.RapidashF
+                    Case "Slowpoke"
+                        picEPokemon.Image = My.Resources.SlowpokeF
+                    Case "Slowbro"
+                        picEPokemon.Image = My.Resources.SlowbroF
+                    Case "Magnemite"
+                        picEPokemon.Image = My.Resources.MagnemiteF
+                    Case "Magneton"
+                        picEPokemon.Image = My.Resources.MagnetonF
+                    Case "Farfetchd"
+                        picEPokemon.Image = My.Resources.FarfetchdF
+                    Case "Doduo"
+                        picEPokemon.Image = My.Resources.DoduoF
+                    Case "Dodrio"
+                        picEPokemon.Image = My.Resources.DodrioF
+                    Case "Seel"
+                        picEPokemon.Image = My.Resources.SeelF
+                    Case "Dewgong"
+                        picEPokemon.Image = My.Resources.DewgongF
+                    Case "Grimer"
+                        picEPokemon.Image = My.Resources.GrimerF
+                    Case "Muk"
+                        picEPokemon.Image = My.Resources.MukF
+                    Case "Shellder"
+                        picEPokemon.Image = My.Resources.ShellderF
+                    Case "Cloyster"
+                        picEPokemon.Image = My.Resources.CloysterF
+                    Case "Gastly"
+                        picEPokemon.Image = My.Resources.GastlyF
+                    Case "Haunter"
+                        picEPokemon.Image = My.Resources.HaunterF
+                    Case "Gengar"
+                        picEPokemon.Image = My.Resources.gengar
+                    Case "Onix"
+                        picEPokemon.Image = My.Resources.OnixF
+                    Case "Drowzee"
+                        picEPokemon.Image = My.Resources.DrowzeeF
+                    Case "Hypno"
+                        picEPokemon.Image = My.Resources.HypnoF
+                    Case "Krabby"
+                        picEPokemon.Image = My.Resources.KrabbyF
+                    Case "Kingler"
+                        picEPokemon.Image = My.Resources.KinglerF
+                    Case "Voltorb"
+                        picEPokemon.Image = My.Resources.VoltorbF
+                    Case "Eletrode"
+                        picEPokemon.Image = My.Resources.ElectrodeF
+                    Case "Exeggcute"
+                        picEPokemon.Image = My.Resources.ExeggcuteF
+                    Case "Exeggutor"
+                        picEPokemon.Image = My.Resources.ExeggutorF
+                    Case "Cubone"
+                        picEPokemon.Image = My.Resources.CuboneF
+                    Case "Marowak"
+                        picEPokemon.Image = My.Resources.MarowakF
+                    Case "Hitmonlee"
+                        picEPokemon.Image = My.Resources.HitmonleeF
+                    Case "Hitmonchan"
+                        picEPokemon.Image = My.Resources.HitmonchanF
+                    Case "Lickitung"
+                        picEPokemon.Image = My.Resources.LickitungF
+                    Case "Koffing"
+                        picEPokemon.Image = My.Resources.KoffingF
+                    Case "Weezing"
+                        picEPokemon.Image = My.Resources.WeezingF
+                    Case "Rhyhorn"
+                        picEPokemon.Image = My.Resources.RhyhornF
+                    Case "Rhydon"
+                        picEPokemon.Image = My.Resources.RhydonF
+                    Case "Chansey"
+                        picEPokemon.Image = My.Resources.ChanseyF
+                    Case "Tangela"
+                        picEPokemon.Image = My.Resources.TangelaF
+                    Case "Kangaskhan"
+                        picEPokemon.Image = My.Resources.KangaskhanF
+                    Case "Horsea"
+                        picEPokemon.Image = My.Resources.HorseaF
+                    Case "Seadra"
+                        picEPokemon.Image = My.Resources.SeadraF
+                    Case "Goldeen"
+                        picEPokemon.Image = My.Resources.GoldeenF
+                    Case "Seaking"
+                        picEPokemon.Image = My.Resources.SeakingF
+                    Case "Staryu"
+                        picEPokemon.Image = My.Resources.StaryuF
+                    Case "Starmie"
+                        picEPokemon.Image = My.Resources.StarmieF
+                    Case "MrMime"
+                        picEPokemon.Image = My.Resources.MrMimeF
+                    Case "Scyther"
+                        picEPokemon.Image = My.Resources.ScytherF
+                    Case "Jynx"
+                        picEPokemon.Image = My.Resources.JynxF
+                    Case "Electabuzz"
+                        picEPokemon.Image = My.Resources.ElectabuzzF
+                    Case "Magmar"
+                        picEPokemon.Image = My.Resources.MagmarF
+                    Case "Pinsir"
+                        picEPokemon.Image = My.Resources.PinsirF
+                    Case "Tauros"
+                        picEPokemon.Image = My.Resources.TaurosF
+                    Case "Magikarp"
+                        picEPokemon.Image = My.Resources.MagikarpF
+                    Case "Gyarados"
+                        picEPokemon.Image = My.Resources.GyaradosF
+                    Case "Lapras"
+                        picEPokemon.Image = My.Resources.LaprasF
+                    Case "Ditto"
+                        picEPokemon.Image = My.Resources.DittoF
+                    Case "Eevee"
+                        picEPokemon.Image = My.Resources.EeveeF
+                    Case "Vaporeon"
+                        picEPokemon.Image = My.Resources.VaporeonF
+                    Case "Jolteon"
+                        picEPokemon.Image = My.Resources.JolteonF
+                    Case "Flareon"
+                        picEPokemon.Image = My.Resources.FlareonF
+                    Case "Porygon"
+                        picEPokemon.Image = My.Resources.PorygonF
+                    Case "Omanyte"
+                        picEPokemon.Image = My.Resources.OmanyteF
+                    Case "Omastar"
+                        picEPokemon.Image = My.Resources.OmastarF
+                    Case "Kabuto"
+                        picEPokemon.Image = My.Resources.KabutoF
+                    Case "Kabutops"
+                        picEPokemon.Image = My.Resources.KabutopsF
+                    Case "Aerodactyl"
+                        picEPokemon.Image = My.Resources.AerodactylF
+                    Case "Snorlax"
+                        picEPokemon.Image = My.Resources.SnorlaxF
+                    Case "Articuno"
+                        picEPokemon.Image = My.Resources.ArticunoF
+                    Case "Zapdos"
+                        picEPokemon.Image = My.Resources.ZapdosF
+                    Case "Moltres"
+                        picEPokemon.Image = My.Resources.MoltresF
+                    Case "Dratini"
+                        picEPokemon.Image = My.Resources.DratiniF
+                    Case "Dragonair"
+                        picEPokemon.Image = My.Resources.DragonairF
+                    Case "Dragonite"
+                        picEPokemon.Image = My.Resources.DragoniteF
+                    Case "Mewtwo"
+                        picEPokemon.Image = My.Resources.MewtwoF
+                    Case "Mew"
+                        picEPokemon.Image = My.Resources.MewF
+                End Select
                 EYourPokemon = yourpokemon
                 EEnemyPokemon = enemypokemon
                 enemypokemon = EYourPokemon
                 yourpokemon = EEnemyPokemon
+                eyourpokemonstat = yourpokemonstat
+                eenemypokemonstat = enemypokemonstat
+                enemypokemonstat = eyourpokemonstat
+                yourpokemonstat = eenemypokemonstat
                 emovechance = 1 + Rnd() * 4
                 Select Case emovechance
                     Case 1
@@ -23082,6 +24076,10 @@
                 EEnemyPokemon = enemypokemon
                 enemypokemon = EYourPokemon
                 yourpokemon = EEnemyPokemon
+                eyourpokemonstat = yourpokemonstat
+                eenemypokemonstat = enemypokemonstat
+                enemypokemonstat = eyourpokemonstat
+                yourpokemonstat = eenemypokemonstat
                 yourpokemon(1) = Int(yourpokemon(1))
                 If yourpokemon(1) < 0 Then
                     yourpokemon(1) = 0
@@ -23171,6 +24169,498 @@
                 btnMove4.Enabled = True
                 counter = 0
                 lblYName.Text = yourpokemon(0)
+                Select Case yourpokemon(0)
+                    Case "Bulbasaur"
+                        picYPokemon.Image = My.Resources.BulbasaurB
+                    Case "Abra"
+                        picYPokemon.Image = My.Resources.AbraB
+                    Case "Aerodactyl"
+                        picYPokemon.Image = My.Resources.AerodactylB
+                    Case "Alakazam"
+                        picYPokemon.Image = My.Resources.AlakazamB
+                    Case "Arbok"
+                        picYPokemon.Image = My.Resources.ArbokB
+                    Case "Arcanine"
+                        picYPokemon.Image = My.Resources.ArcanineB
+                    Case "Articuno"
+                        picYPokemon.Image = My.Resources.ArticunoB
+                    Case "Beedrill"
+                        picYPokemon.Image = My.Resources.BeedrillB
+                    Case "Bellsprout"
+                        picYPokemon.Image = My.Resources.BellsproutB
+                    Case "Butterfree"
+                        picYPokemon.Image = My.Resources.ButterfreeB
+                    Case "Caterpie"
+                        picYPokemon.Image = My.Resources.CaterpieB
+                    Case "Charmander"
+                        picYPokemon.Image = My.Resources.CharmanderB
+                    Case "Clefable"
+                        picYPokemon.Image = My.Resources.ClefableB
+                    Case "Clefairy"
+                        picYPokemon.Image = My.Resources.ClefairyB
+                    Case "Dewgong"
+                        picYPokemon.Image = My.Resources.DewgongB
+                    Case "Diglett"
+                        picYPokemon.Image = My.Resources.DiglettB
+                    Case "Dodrio"
+                        picYPokemon.Image = My.Resources.DodrioB
+                    Case "Doduo"
+                        picYPokemon.Image = My.Resources.DoduoB
+                    Case "Dragonair"
+                        picYPokemon.Image = My.Resources.DragonairB
+                    Case "Dragonite"
+                        picYPokemon.Image = My.Resources.DragoniteB
+                    Case "Eevee"
+                        picYPokemon.Image = My.Resources.EeveeB
+                    Case "Ekans"
+                        picYPokemon.Image = My.Resources.EkansB
+                    Case "Electabuzz"
+                        picYPokemon.Image = My.Resources.ElectabuzzB
+                    Case "Electrode"
+                        picYPokemon.Image = My.Resources.ElectrodeB
+                    Case "Farfetchd"
+                        picYPokemon.Image = My.Resources.FarfetchdB
+                    Case "Fearow"
+                        picYPokemon.Image = My.Resources.FearowB
+                    Case "Flareon"
+                        picYPokemon.Image = My.Resources.FlareonB
+                    Case "Gastly"
+                        picYPokemon.Image = My.Resources.GastlyB
+                    Case "Gengar"
+                        picYPokemon.Image = My.Resources.GengarB
+                    Case "Gloom"
+                        picYPokemon.Image = My.Resources.GloomB
+                    Case "Golduck"
+                        picYPokemon.Image = My.Resources.GolduckB
+                    Case "Golem"
+                        picYPokemon.Image = My.Resources.GolemB
+                    Case "Grimer"
+                        picYPokemon.Image = My.Resources.GrimerB
+                    Case "Growlithe"
+                        picYPokemon.Image = My.Resources.GrowlitheB
+                    Case "Jigglypuff"
+                        picYPokemon.Image = My.Resources.JigglypuffB
+                    Case "Jolteon"
+                        picYPokemon.Image = My.Resources.JolteonB
+                    Case "Kadabra"
+                        picYPokemon.Image = My.Resources.KadabraB
+                    Case "Kakuna"
+                        picYPokemon.Image = My.Resources.KakunaB
+                    Case "Kangaskhan"
+                        picYPokemon.Image = My.Resources.KangaskhanB
+                    Case "Kingler"
+                        picYPokemon.Image = My.Resources.KinglerB
+                    Case "Krabby"
+                        picYPokemon.Image = My.Resources.KrabbyB
+                    Case "Lapras"
+                        picYPokemon.Image = My.Resources.LaprasB
+                    Case "Machamp"
+                        picYPokemon.Image = My.Resources.MachampB
+                    Case "Machoke"
+                        picYPokemon.Image = My.Resources.MachokeB
+                    Case "Machop"
+                        picYPokemon.Image = My.Resources.MachopB
+                    Case "Magikarp"
+                        picYPokemon.Image = My.Resources.MagikarpB
+                    Case "Magmar"
+                        picYPokemon.Image = My.Resources.MagmarB
+                    Case "Magnemite"
+                        picYPokemon.Image = My.Resources.MagnemiteB
+                    Case "Magneton"
+                        picYPokemon.Image = My.Resources.MagnetonB
+                    Case "Meowth"
+                        picYPokemon.Image = My.Resources.MeowthB
+                    Case "Metapod"
+                        picYPokemon.Image = My.Resources.MetapodB
+                    Case "Mew"
+                        picYPokemon.Image = My.Resources.MewB
+                    Case "Mewtwo"
+                        picYPokemon.Image = My.Resources.MewtwoB
+                    Case "Moltres"
+                        picYPokemon.Image = My.Resources.MoltresB
+                    Case "Muk"
+                        picYPokemon.Image = My.Resources.MukB
+                    Case "Nidoking"
+                        picYPokemon.Image = My.Resources.NidokingB
+                    Case "Nidoqueen"
+                        picYPokemon.Image = My.Resources.NidoqueenB
+                    Case "Nidoranf"
+                        picYPokemon.Image = My.Resources.NidoranfB
+                    Case "Nidoranm"
+                        picYPokemon.Image = My.Resources.NidoranmB
+                    Case "Nidorina"
+                        picYPokemon.Image = My.Resources.NidorinaB
+                    Case "Nidorino"
+                        picYPokemon.Image = My.Resources.NidorinomB
+                    Case "Ninetales"
+                        picYPokemon.Image = My.Resources.NinetalesB
+                    Case "Oddish"
+                        picYPokemon.Image = My.Resources.OddishB
+                    Case "Onix"
+                        picYPokemon.Image = My.Resources.OnixB
+                    Case "Paras"
+                        picYPokemon.Image = My.Resources.ParasB
+                    Case "Parasect"
+                        picYPokemon.Image = My.Resources.ParasectB
+                    Case "Pidgeot"
+                        picYPokemon.Image = My.Resources.PidgeotB
+                    Case "Pidgeotto"
+                        picYPokemon.Image = My.Resources.PidgeottoB
+                    Case "Pidgey"
+                        picYPokemon.Image = My.Resources.PidgeyB
+                    Case "Pikachu"
+                        picYPokemon.Image = My.Resources.PikachuB
+                    Case "Poliwag"
+                        picYPokemon.Image = My.Resources.PoliwagB
+                    Case "Poliwhirl"
+                        picYPokemon.Image = My.Resources.PoliwhirlB
+                    Case "Poliwrath"
+                        picYPokemon.Image = My.Resources.PoliwrathB
+                    Case "Ponyta"
+                        picYPokemon.Image = My.Resources.PonytaB
+                    Case "Psyduck"
+                        picYPokemon.Image = My.Resources.PsyduckB
+                    Case "Raichu"
+                        picYPokemon.Image = My.Resources.RaichuB
+                    Case "Rapidash"
+                        picYPokemon.Image = My.Resources.RapidashB
+                    Case "Raticate"
+                        picYPokemon.Image = My.Resources.RaticateB
+                    Case "Rattata"
+                        picYPokemon.Image = My.Resources.RattataB
+                    Case "Seel"
+                        picYPokemon.Image = My.Resources.SeelB
+                    Case "Snorlax"
+                        picYPokemon.Image = My.Resources.SnorlaxB
+                    Case "Spearow"
+                        picYPokemon.Image = My.Resources.SpearowB
+                    Case "Squirtle"
+                        picYPokemon.Image = My.Resources.SquirtleB
+                    Case "Tauros"
+                        picYPokemon.Image = My.Resources.TaurosB
+                    Case "Vaporeon"
+                        picYPokemon.Image = My.Resources.VaporeonB
+                    Case "Venomoth"
+                        picYPokemon.Image = My.Resources.VenomothB
+                    Case "Venonat"
+                        picYPokemon.Image = My.Resources.VenonatB
+                    Case "Vileplume"
+                        picYPokemon.Image = My.Resources.VileplumeB
+                    Case "Voltorb"
+                        picYPokemon.Image = My.Resources.VoltorbB
+                    Case "Vulpix"
+                        picYPokemon.Image = My.Resources.VulpixB
+                    Case "Weedle"
+                        picYPokemon.Image = My.Resources.WeedleB
+                    Case "Wigglytuff"
+                        picYPokemon.Image = My.Resources.WigglytuffB
+                    Case "Zapdos"
+                        picYPokemon.Image = My.Resources.ZapdosB
+                End Select
+                Select Case enemypokemon(0)
+                    Case "Bulbasaur"
+                        picEPokemon.Image = My.Resources.BulbasaurF
+                    Case "Ivysaur"
+                        picEPokemon.Image = My.Resources.IvysaurF
+                    Case "Venusaur"
+                        picEPokemon.Image = My.Resources.VenusaurF
+                    Case "Charmander"
+                        picEPokemon.Image = My.Resources.CharmanderF
+                    Case "Charmeleon"
+                        picEPokemon.Image = My.Resources.CharmeleonF
+                    Case "Charizard"
+                        picEPokemon.Image = My.Resources.CharizardF
+                    Case "Squirtle"
+                        picEPokemon.Image = My.Resources.SquirtleF
+                    Case "Wartortle"
+                        picEPokemon.Image = My.Resources.WartortleF
+                    Case "Blastoise"
+                        picEPokemon.Image = My.Resources.BlastoiseF
+                    Case "Caterpie"
+                        picEPokemon.Image = My.Resources.CaterpieF
+                    Case "Metapod"
+                        picEPokemon.Image = My.Resources.MetapodF
+                    Case "Butterfree"
+                        picEPokemon.Image = My.Resources.ButterfreeF
+                    Case "Weedle"
+                        picEPokemon.Image = My.Resources.WeedleF
+                    Case "Kakuna"
+                        picEPokemon.Image = My.Resources.KakunaF
+                    Case "Beedrill"
+                        picEPokemon.Image = My.Resources.BeedrillF
+                    Case "Pidgey"
+                        picEPokemon.Image = My.Resources.PidgeyF
+                    Case "Pidgeotto"
+                        picEPokemon.Image = My.Resources.PidgeottoF
+                    Case "Pidgeot"
+                        picEPokemon.Image = My.Resources.PidgeotF
+                    Case "Rattata"
+                        picEPokemon.Image = My.Resources.RattataF
+                    Case "Raticate"
+                        picEPokemon.Image = My.Resources.RaticateF
+                    Case "Spearow"
+                        picEPokemon.Image = My.Resources.SpearowF
+                    Case "Fearow"
+                        picEPokemon.Image = My.Resources.FearowF
+                    Case "Ekans"
+                        picEPokemon.Image = My.Resources.EkansF
+                    Case "Arbok"
+                        picEPokemon.Image = My.Resources.ArbokF
+                    Case "Pikachu"
+                        picEPokemon.Image = My.Resources.PikachuF
+                    Case "Raichu"
+                        picEPokemon.Image = My.Resources.RaichuF
+                    Case "Sandshrew"
+                        picEPokemon.Image = My.Resources.SandshrewF
+                    Case "Sandslash"
+                        picEPokemon.Image = My.Resources.SandslashF
+                    Case "Nidoranf"
+                        picEPokemon.Image = My.Resources.NidoranfF
+                    Case "Nidorina"
+                        picEPokemon.Image = My.Resources.NidorinaF
+                    Case "Nidoqueen"
+                        picEPokemon.Image = My.Resources.NidoqueenF
+                    Case "Nidoranm"
+                        picEPokemon.Image = My.Resources.NidoranmF
+                    Case "Nidorino"
+                        picEPokemon.Image = My.Resources.NidorinoF
+                    Case "Nidoking"
+                        picEPokemon.Image = My.Resources.NidokingF
+                    Case "Clefairy"
+                        picEPokemon.Image = My.Resources.ClefairyF
+                    Case "Clefable"
+                        picEPokemon.Image = My.Resources.ClefableF
+                    Case "Vulpix"
+                        picEPokemon.Image = My.Resources.VulpixF
+                    Case "Ninetales"
+                        picEPokemon.Image = My.Resources.NinetalesF
+                    Case "Jigglypuff"
+                        picEPokemon.Image = My.Resources.JigglypuffF
+                    Case "Wigglytuff"
+                        picEPokemon.Image = My.Resources.WigglytuffF
+                    Case "Zubat"
+                        picEPokemon.Image = My.Resources.ZubatF
+                    Case "Golbat"
+                        picEPokemon.Image = My.Resources.GolbatF
+                    Case "Oddish"
+                        picEPokemon.Image = My.Resources.OddishF
+                    Case "Gloom"
+                        picEPokemon.Image = My.Resources.GloomF
+                    Case "Vileplume"
+                        picEPokemon.Image = My.Resources.VileplumeF
+                    Case "Paras"
+                        picEPokemon.Image = My.Resources.ParasF
+                    Case "Parasect"
+                        picEPokemon.Image = My.Resources.ParasectF
+                    Case "Venonat"
+                        picEPokemon.Image = My.Resources.VenonatF
+                    Case "Venomoth"
+                        picEPokemon.Image = My.Resources.VenomothF
+                    Case "Diglett"
+                        picEPokemon.Image = My.Resources.DiglettF
+                    Case "Dugtrio"
+                        picEPokemon.Image = My.Resources.DugtrioF
+                    Case "Meowth"
+                        picEPokemon.Image = My.Resources.MeowthF
+                    Case "Persian"
+                        picEPokemon.Image = My.Resources.PersianF
+                    Case "Psyduck"
+                        picEPokemon.Image = My.Resources.PsyduckF
+                    Case "Golduck"
+                        picEPokemon.Image = My.Resources.GolduckF
+                    Case "Mankey"
+                        picEPokemon.Image = My.Resources.MankeyF
+                    Case "Primeape"
+                        picEPokemon.Image = My.Resources.PrimeapeF
+                    Case "Growlithe"
+                        picEPokemon.Image = My.Resources.GrowlitheF
+                    Case "Arcanine"
+                        picEPokemon.Image = My.Resources.ArcanineF
+                    Case "Poliwag"
+                        picEPokemon.Image = My.Resources.PoliwagF
+                    Case "Poiwhirl"
+                        picEPokemon.Image = My.Resources.PoliwhirlF
+                    Case "Poliwrath"
+                        picEPokemon.Image = My.Resources.PoliwrathF
+                    Case "Abra"
+                        picEPokemon.Image = My.Resources.AbraF
+                    Case "Kadabra"
+                        picEPokemon.Image = My.Resources.KadabraF
+                    Case "Alakazam"
+                        picEPokemon.Image = My.Resources.AlakazamF
+                    Case "Machop"
+                        picEPokemon.Image = My.Resources.MachopF
+                    Case "Machoke"
+                        picEPokemon.Image = My.Resources.MachokeF
+                    Case "Machamp"
+                        picEPokemon.Image = My.Resources.MachampF
+                    Case "Bellsprout"
+                        picEPokemon.Image = My.Resources.BellsproutF
+                    Case "Weepinbell"
+                        picEPokemon.Image = My.Resources.WeepinbellF
+                    Case "Victreebel"
+                        picEPokemon.Image = My.Resources.VictreebelF
+                    Case "Tentacool"
+                        picEPokemon.Image = My.Resources.TentacoolF
+                    Case "Tentacruel"
+                        picEPokemon.Image = My.Resources.TentacruelF
+                    Case "Geodude"
+                        picEPokemon.Image = My.Resources.GeodudeF
+                    Case "Graveler"
+                        picEPokemon.Image = My.Resources.GravelerF
+                    Case "Golem"
+                        picEPokemon.Image = My.Resources.GolemF
+                    Case "Ponyta"
+                        picEPokemon.Image = My.Resources.PonytaF
+                    Case "Rapidash"
+                        picEPokemon.Image = My.Resources.RapidashF
+                    Case "Slowpoke"
+                        picEPokemon.Image = My.Resources.SlowpokeF
+                    Case "Slowbro"
+                        picEPokemon.Image = My.Resources.SlowbroF
+                    Case "Magnemite"
+                        picEPokemon.Image = My.Resources.MagnemiteF
+                    Case "Magneton"
+                        picEPokemon.Image = My.Resources.MagnetonF
+                    Case "Farfetchd"
+                        picEPokemon.Image = My.Resources.FarfetchdF
+                    Case "Doduo"
+                        picEPokemon.Image = My.Resources.DoduoF
+                    Case "Dodrio"
+                        picEPokemon.Image = My.Resources.DodrioF
+                    Case "Seel"
+                        picEPokemon.Image = My.Resources.SeelF
+                    Case "Dewgong"
+                        picEPokemon.Image = My.Resources.DewgongF
+                    Case "Grimer"
+                        picEPokemon.Image = My.Resources.GrimerF
+                    Case "Muk"
+                        picEPokemon.Image = My.Resources.MukF
+                    Case "Shellder"
+                        picEPokemon.Image = My.Resources.ShellderF
+                    Case "Cloyster"
+                        picEPokemon.Image = My.Resources.CloysterF
+                    Case "Gastly"
+                        picEPokemon.Image = My.Resources.GastlyF
+                    Case "Haunter"
+                        picEPokemon.Image = My.Resources.HaunterF
+                    Case "Gengar"
+                        picEPokemon.Image = My.Resources.gengar
+                    Case "Onix"
+                        picEPokemon.Image = My.Resources.OnixF
+                    Case "Drowzee"
+                        picEPokemon.Image = My.Resources.DrowzeeF
+                    Case "Hypno"
+                        picEPokemon.Image = My.Resources.HypnoF
+                    Case "Krabby"
+                        picEPokemon.Image = My.Resources.KrabbyF
+                    Case "Kingler"
+                        picEPokemon.Image = My.Resources.KinglerF
+                    Case "Voltorb"
+                        picEPokemon.Image = My.Resources.VoltorbF
+                    Case "Eletrode"
+                        picEPokemon.Image = My.Resources.ElectrodeF
+                    Case "Exeggcute"
+                        picEPokemon.Image = My.Resources.ExeggcuteF
+                    Case "Exeggutor"
+                        picEPokemon.Image = My.Resources.ExeggutorF
+                    Case "Cubone"
+                        picEPokemon.Image = My.Resources.CuboneF
+                    Case "Marowak"
+                        picEPokemon.Image = My.Resources.MarowakF
+                    Case "Hitmonlee"
+                        picEPokemon.Image = My.Resources.HitmonleeF
+                    Case "Hitmonchan"
+                        picEPokemon.Image = My.Resources.HitmonchanF
+                    Case "Lickitung"
+                        picEPokemon.Image = My.Resources.LickitungF
+                    Case "Koffing"
+                        picEPokemon.Image = My.Resources.KoffingF
+                    Case "Weezing"
+                        picEPokemon.Image = My.Resources.WeezingF
+                    Case "Rhyhorn"
+                        picEPokemon.Image = My.Resources.RhyhornF
+                    Case "Rhydon"
+                        picEPokemon.Image = My.Resources.RhydonF
+                    Case "Chansey"
+                        picEPokemon.Image = My.Resources.ChanseyF
+                    Case "Tangela"
+                        picEPokemon.Image = My.Resources.TangelaF
+                    Case "Kangaskhan"
+                        picEPokemon.Image = My.Resources.KangaskhanF
+                    Case "Horsea"
+                        picEPokemon.Image = My.Resources.HorseaF
+                    Case "Seadra"
+                        picEPokemon.Image = My.Resources.SeadraF
+                    Case "Goldeen"
+                        picEPokemon.Image = My.Resources.GoldeenF
+                    Case "Seaking"
+                        picEPokemon.Image = My.Resources.SeakingF
+                    Case "Staryu"
+                        picEPokemon.Image = My.Resources.StaryuF
+                    Case "Starmie"
+                        picEPokemon.Image = My.Resources.StarmieF
+                    Case "MrMime"
+                        picEPokemon.Image = My.Resources.MrMimeF
+                    Case "Scyther"
+                        picEPokemon.Image = My.Resources.ScytherF
+                    Case "Jynx"
+                        picEPokemon.Image = My.Resources.JynxF
+                    Case "Electabuzz"
+                        picEPokemon.Image = My.Resources.ElectabuzzF
+                    Case "Magmar"
+                        picEPokemon.Image = My.Resources.MagmarF
+                    Case "Pinsir"
+                        picEPokemon.Image = My.Resources.PinsirF
+                    Case "Tauros"
+                        picEPokemon.Image = My.Resources.TaurosF
+                    Case "Magikarp"
+                        picEPokemon.Image = My.Resources.MagikarpF
+                    Case "Gyarados"
+                        picEPokemon.Image = My.Resources.GyaradosF
+                    Case "Lapras"
+                        picEPokemon.Image = My.Resources.LaprasF
+                    Case "Ditto"
+                        picEPokemon.Image = My.Resources.DittoF
+                    Case "Eevee"
+                        picEPokemon.Image = My.Resources.EeveeF
+                    Case "Vaporeon"
+                        picEPokemon.Image = My.Resources.VaporeonF
+                    Case "Jolteon"
+                        picEPokemon.Image = My.Resources.JolteonF
+                    Case "Flareon"
+                        picEPokemon.Image = My.Resources.FlareonF
+                    Case "Porygon"
+                        picEPokemon.Image = My.Resources.PorygonF
+                    Case "Omanyte"
+                        picEPokemon.Image = My.Resources.OmanyteF
+                    Case "Omastar"
+                        picEPokemon.Image = My.Resources.OmastarF
+                    Case "Kabuto"
+                        picEPokemon.Image = My.Resources.KabutoF
+                    Case "Kabutops"
+                        picEPokemon.Image = My.Resources.KabutopsF
+                    Case "Aerodactyl"
+                        picEPokemon.Image = My.Resources.AerodactylF
+                    Case "Snorlax"
+                        picEPokemon.Image = My.Resources.SnorlaxF
+                    Case "Articuno"
+                        picEPokemon.Image = My.Resources.ArticunoF
+                    Case "Zapdos"
+                        picEPokemon.Image = My.Resources.ZapdosF
+                    Case "Moltres"
+                        picEPokemon.Image = My.Resources.MoltresF
+                    Case "Dratini"
+                        picEPokemon.Image = My.Resources.DratiniF
+                    Case "Dragonair"
+                        picEPokemon.Image = My.Resources.DragonairF
+                    Case "Dragonite"
+                        picEPokemon.Image = My.Resources.DragoniteF
+                    Case "Mewtwo"
+                        picEPokemon.Image = My.Resources.MewtwoF
+                    Case "Mew"
+                        picEPokemon.Image = My.Resources.MewF
+                End Select
                 lblYHp.Text = yourpokemon(1) & " / " & yourpokemonstat(1)
                 lblEName.Text = enemypokemon(0)
                 lblEHp.Text = enemypokemon(1) & " / " & enemypokemonstat(1)
