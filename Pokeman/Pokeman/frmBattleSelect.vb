@@ -21,6 +21,7 @@
 	Public Shared enemypokemon4(14) As String
 	Public Shared enemypokemon5(14) As String
 	Public Shared enemypokemon6(14) As String
+	Dim emptypokemon(14) As String
 
 	Dim num As Integer
 
@@ -54,6 +55,12 @@
 		trainerbattle = True
 
 		enemypokemon1 = frmMainMenu.Caterpie
+		frmInBattle.enemypokemon2U = False
+		frmInBattle.enemypokemon3U = False
+		frmInBattle.enemypokemon4U = False
+		frmInBattle.enemypokemon5U = False
+		frmInBattle.enemypokemon6U = False
+
 		trainer = "Hagith"
 		frmTrainerBattleStart.Show()
 
@@ -91,6 +98,11 @@
 		trainerbattle = True
 
 		enemypokemon1 = frmMainMenu.Pidgeotto
+		frmInBattle.enemypokemon2U = False
+		frmInBattle.enemypokemon3U = False
+		frmInBattle.enemypokemon4U = False
+		frmInBattle.enemypokemon5U = False
+		frmInBattle.enemypokemon6U = False
 		trainer = "Jumong"
 		frmTrainerBattleStart.Show()
 
@@ -141,8 +153,12 @@
 		trainerbattle = True
 
 		enemypokemon1 = frmMainMenu.Squirtle
-        enemypokemon2 = frmMainMenu.Squirtle
-        frmInBattle.enemypokemon2U = True
+		enemypokemon2 = frmMainMenu.Squirtle
+		frmInBattle.enemypokemon2U = True
+		frmInBattle.enemypokemon3U = False
+		frmInBattle.enemypokemon4U = False
+		frmInBattle.enemypokemon5U = False
+		frmInBattle.enemypokemon6U = False
 
 		trainer = "Tom"
 		frmTrainerBattleStart.Show()
@@ -185,7 +201,10 @@
         enemypokemon2 = frmMainMenu.Pikachu
         frmInBattle.enemypokemon2U = True
         enemypokemon3 = frmMainMenu.Diglett
-        frmInBattle.enemypokemon3U = True
+		frmInBattle.enemypokemon3U = True
+		frmInBattle.enemypokemon4U = False
+		frmInBattle.enemypokemon5U = False
+		frmInBattle.enemypokemon6U = False
 
 		trainer = "Sam"
 		frmTrainerBattleStart.Show()
@@ -242,7 +261,10 @@
         enemypokemon2 = frmMainMenu.Pikachu
         frmInBattle.enemypokemon2U = True
         enemypokemon3 = frmMainMenu.Gastly
-        frmInBattle.enemypokemon3U = True
+		frmInBattle.enemypokemon3U = True
+		frmInBattle.enemypokemon4U = False
+		frmInBattle.enemypokemon5U = False
+		frmInBattle.enemypokemon6U = False
 
 		trainer = "Ekaterina"
 		frmTrainerBattleStart.Show()
@@ -329,6 +351,10 @@
 		enemypokemon1 = frmMainMenu.Fearow
 		enemypokemon2 = frmMainMenu.Graveler
 		frmInBattle.enemypokemon2U = True
+		frmInBattle.enemypokemon3U = False
+		frmInBattle.enemypokemon4U = False
+		frmInBattle.enemypokemon5U = False
+		frmInBattle.enemypokemon6U = False
 		trainer = "Manny"
 		frmTrainerBattleStart.Show()
 
@@ -416,7 +442,10 @@
         enemypokemon2 = frmMainMenu.Butterfree
         frmInBattle.enemypokemon2U = True
         enemypokemon3 = frmMainMenu.Sandslash
-        frmInBattle.enemypokemon3U = True
+		frmInBattle.enemypokemon3U = True
+		frmInBattle.enemypokemon4U = False
+		frmInBattle.enemypokemon5U = False
+		frmInBattle.enemypokemon6U = False
 		trainer = "Tammy"
 		frmTrainerBattleStart.Show()
 
@@ -477,7 +506,9 @@
         enemypokemon3 = frmMainMenu.Parasect
         frmInBattle.enemypokemon3U = True
         enemypokemon4 = frmMainMenu.Gloom
-        frmInBattle.enemypokemon4U = True
+		frmInBattle.enemypokemon4U = True
+		frmInBattle.enemypokemon5U = False
+		frmInBattle.enemypokemon6U = False
 		trainer = "Brenna"
 		frmTrainerBattleStart.Show()
 
@@ -604,7 +635,9 @@
         enemypokemon3 = frmMainMenu.Venusaur
         frmInBattle.enemypokemon3U = True
         enemypokemon4 = frmMainMenu.Magikarp
-        frmInBattle.enemypokemon4U = True
+		frmInBattle.enemypokemon4U = True
+		frmInBattle.enemypokemon5U = False
+		frmInBattle.enemypokemon6U = False
 		trainer = "V"
 		frmTrainerBattleStart.Show()
 

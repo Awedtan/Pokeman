@@ -6,7 +6,7 @@
 
 			picTrainer.Image = My.Resources.hagith
 			lblDialogue.Text = "Ohh, my back!"
-			lblName.Text = "School Hagith approaches!"
+			lblName.Text = "School Boy Hagith approaches!"
 		ElseIf frmBattleSelect.trainer = "Jumong" Then
 
 			picTrainer.Image = My.Resources.jumong

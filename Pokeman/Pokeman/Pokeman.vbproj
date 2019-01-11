@@ -1358,5 +1358,8 @@
   <ItemGroup>
     <None Include="Resources\ZubatF.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArcanineF.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
