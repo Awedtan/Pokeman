@@ -55,6 +55,8 @@
 
 		frmInBattle.Show()
 
+		frmTrainerBattleStart.trainer = 1
+
 	End Sub
 
 	Private Sub btnRoute2_Click(sender As Object, e As EventArgs) Handles btnRoute2.Click

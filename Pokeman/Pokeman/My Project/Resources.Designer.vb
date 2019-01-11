@@ -63,6 +63,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property _3701() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("3701", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property abra() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("abra", resourceCulture)
@@ -306,6 +316,16 @@ Namespace My.Resources
         Friend ReadOnly Property farfetchd() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("farfetchd", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property fd18c6d26d4d9d26a0bd9d1a2fb2bd04() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("fd18c6d26d4d9d26a0bd9d1a2fb2bd04", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -756,6 +776,16 @@ Namespace My.Resources
         Friend ReadOnly Property pikachu() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("pikachu", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Pokemon_logo_497D61B223_seeklogo_com() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Pokemon-logo-497D61B223-seeklogo.com", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

@@ -22,6 +22,11 @@ Pokeman
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:Pokeman.My.Resources.Resources._3701">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Pokeman.My.Resources.Resources.abra">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -143,6 +148,11 @@ Pokeman
 </summary>
 </member>
 <member name="P:Pokeman.My.Resources.Resources.farfetchd">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Pokeman.My.Resources.Resources.fd18c6d26d4d9d26a0bd9d1a2fb2bd04">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -368,6 +378,11 @@ Pokeman
 </summary>
 </member>
 <member name="P:Pokeman.My.Resources.Resources.pikachu">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Pokeman.My.Resources.Resources.Pokemon_logo_497D61B223_seeklogo_com">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

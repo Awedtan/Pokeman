@@ -1,11 +1,19 @@
 Public Class frmMainMenu
 
-    Dim Currency As Integer
+	'TO DO LIST:
+	'
+	'GYMS AND SPECIAL EVENTS
+	'TRAINER DIALOGUE
+	'HEALING ITEMS
+	'PLAY TEST
+
+	Dim Currency As Integer
     Dim Ballcount As Integer
 
     Dim ShopMenu As New frmShopMenu
     Dim Box As New frmBox
-    Dim BattleSelect As New frmBattleSelect
+	Dim BattleSelect As New frmBattleSelect
+	Dim Start As New frmStart
 
 	Public Shared route6counter As Integer
 	Public Shared route7counter As Integer
@@ -194,9 +202,11 @@ Public Class frmMainMenu
 		lblPokeman5.Text = yourpokemon5(0)
 		lblPokeman6.Text = yourpokemon6(0)
 
+
+
 	End Sub
 
-	Private Sub btnStore_Click(sender As Object, e As EventArgs) Handles btnStore.Click
+	Private Sub btnStore_Click(sender As Object, e As EventArgs)
 		frmShopMenu.Show()
 	End Sub
 
@@ -208,4 +218,8 @@ Public Class frmMainMenu
         frmBattleSelect.Show()
     End Sub
 
+	Private Async Sub frmMainMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+		Await Task.Delay(1000)
+		frmStart.Show()
+	End Sub
 End Class

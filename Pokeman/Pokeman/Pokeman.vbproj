@@ -188,6 +188,24 @@
     <Compile Include="frmMewtwoEncounter.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmStart.Designer.vb">
+      <DependentUpon>frmStart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStart.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrainerBattleEnd.Designer.vb">
+      <DependentUpon>frmTrainerBattleEnd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTrainerBattleEnd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrainerBattleStart.Designer.vb">
+      <DependentUpon>frmTrainerBattleStart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTrainerBattleStart.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -264,6 +282,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMewtwoEncounter.resx">
       <DependentUpon>frmMewtwoEncounter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStart.resx">
+      <DependentUpon>frmStart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTrainerBattleStart.resx">
+      <DependentUpon>frmTrainerBattleStart.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -565,6 +589,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\zapdos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fd18c6d26d4d9d26a0bd9d1a2fb2bd04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pokemon-logo-497D61B223-seeklogo.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3701.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

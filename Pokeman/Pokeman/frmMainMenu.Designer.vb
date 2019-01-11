@@ -24,7 +24,6 @@ Partial Class frmMainMenu
     Private Sub InitializeComponent()
 		Me.components = New System.ComponentModel.Container()
 		Me.btnBattle = New System.Windows.Forms.Button()
-		Me.btnStore = New System.Windows.Forms.Button()
 		Me.btnBox = New System.Windows.Forms.Button()
 		Me.lblPokeman1 = New System.Windows.Forms.Label()
 		Me.lblPokeman2 = New System.Windows.Forms.Label()
@@ -32,31 +31,20 @@ Partial Class frmMainMenu
 		Me.lblPokeman4 = New System.Windows.Forms.Label()
 		Me.lblPokeman5 = New System.Windows.Forms.Label()
 		Me.lblPokeman6 = New System.Windows.Forms.Label()
-		Me.lblBall = New System.Windows.Forms.Label()
-		Me.lblCurrency = New System.Windows.Forms.Label()
-		Me.lblLotion = New System.Windows.Forms.Label()
-		Me.lblMedpack = New System.Windows.Forms.Label()
-		Me.lblFeast = New System.Windows.Forms.Label()
 		Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+		Me.PictureBox11 = New System.Windows.Forms.PictureBox()
+		CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.SuspendLayout()
 		'
 		'btnBattle
 		'
+		Me.btnBattle.Cursor = System.Windows.Forms.Cursors.Default
 		Me.btnBattle.Location = New System.Drawing.Point(339, 223)
 		Me.btnBattle.Name = "btnBattle"
 		Me.btnBattle.Size = New System.Drawing.Size(110, 56)
 		Me.btnBattle.TabIndex = 0
 		Me.btnBattle.Text = "Battle!"
 		Me.btnBattle.UseVisualStyleBackColor = True
-		'
-		'btnStore
-		'
-		Me.btnStore.Location = New System.Drawing.Point(614, 177)
-		Me.btnStore.Name = "btnStore"
-		Me.btnStore.Size = New System.Drawing.Size(110, 36)
-		Me.btnStore.TabIndex = 1
-		Me.btnStore.Text = "Store"
-		Me.btnStore.UseVisualStyleBackColor = True
 		'
 		'btnBox
 		'
@@ -121,66 +109,29 @@ Partial Class frmMainMenu
 		Me.lblPokeman6.TabIndex = 8
 		Me.lblPokeman6.Text = "Pokeman 6"
 		'
-		'lblBall
-		'
-		Me.lblBall.AutoSize = True
-		Me.lblBall.Location = New System.Drawing.Point(75, 82)
-		Me.lblBall.Name = "lblBall"
-		Me.lblBall.Size = New System.Drawing.Size(75, 13)
-		Me.lblBall.TabIndex = 9
-		Me.lblBall.Text = "# of Pokeballs"
-		'
-		'lblCurrency
-		'
-		Me.lblCurrency.AutoSize = True
-		Me.lblCurrency.Location = New System.Drawing.Point(55, 30)
-		Me.lblCurrency.Name = "lblCurrency"
-		Me.lblCurrency.Size = New System.Drawing.Size(49, 13)
-		Me.lblCurrency.TabIndex = 10
-		Me.lblCurrency.Text = "Currency"
-		'
-		'lblLotion
-		'
-		Me.lblLotion.AutoSize = True
-		Me.lblLotion.Location = New System.Drawing.Point(75, 105)
-		Me.lblLotion.Name = "lblLotion"
-		Me.lblLotion.Size = New System.Drawing.Size(83, 13)
-		Me.lblLotion.TabIndex = 11
-		Me.lblLotion.Text = "# of Little Lotion"
-		'
-		'lblMedpack
-		'
-		Me.lblMedpack.AutoSize = True
-		Me.lblMedpack.Location = New System.Drawing.Point(74, 128)
-		Me.lblMedpack.Name = "lblMedpack"
-		Me.lblMedpack.Size = New System.Drawing.Size(114, 13)
-		Me.lblMedpack.TabIndex = 12
-		Me.lblMedpack.Text = "# of Medium Medpack"
-		'
-		'lblFeast
-		'
-		Me.lblFeast.AutoSize = True
-		Me.lblFeast.Location = New System.Drawing.Point(75, 152)
-		Me.lblFeast.Name = "lblFeast"
-		Me.lblFeast.Size = New System.Drawing.Size(74, 13)
-		Me.lblFeast.TabIndex = 13
-		Me.lblFeast.Text = "# of Full Feast"
-		'
 		'Timer1
 		'
 		Me.Timer1.Enabled = True
 		Me.Timer1.Interval = 1
+		'
+		'PictureBox11
+		'
+		Me.PictureBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.PictureBox11.Cursor = System.Windows.Forms.Cursors.Default
+		Me.PictureBox11.Image = Global.Pokeman.My.Resources.Resources.Pokemon_logo_497D61B223_seeklogo_com
+		Me.PictureBox11.Location = New System.Drawing.Point(201, 12)
+		Me.PictureBox11.Name = "PictureBox11"
+		Me.PictureBox11.Size = New System.Drawing.Size(420, 188)
+		Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+		Me.PictureBox11.TabIndex = 58
+		Me.PictureBox11.TabStop = False
 		'
 		'frmMainMenu
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
 		Me.ClientSize = New System.Drawing.Size(800, 450)
-		Me.Controls.Add(Me.lblFeast)
-		Me.Controls.Add(Me.lblMedpack)
-		Me.Controls.Add(Me.lblLotion)
-		Me.Controls.Add(Me.lblCurrency)
-		Me.Controls.Add(Me.lblBall)
+		Me.Controls.Add(Me.PictureBox11)
 		Me.Controls.Add(Me.lblPokeman6)
 		Me.Controls.Add(Me.lblPokeman5)
 		Me.Controls.Add(Me.lblPokeman4)
@@ -188,28 +139,23 @@ Partial Class frmMainMenu
 		Me.Controls.Add(Me.lblPokeman2)
 		Me.Controls.Add(Me.lblPokeman1)
 		Me.Controls.Add(Me.btnBox)
-		Me.Controls.Add(Me.btnStore)
 		Me.Controls.Add(Me.btnBattle)
 		Me.Name = "frmMainMenu"
 		Me.Text = "Form1"
+		CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
 		Me.ResumeLayout(False)
 		Me.PerformLayout()
 
 	End Sub
 
 	Friend WithEvents btnBattle As Button
-    Friend WithEvents btnStore As Button
-    Friend WithEvents btnBox As Button
-    Friend WithEvents lblPokeman1 As Label
-    Friend WithEvents lblPokeman2 As Label
-    Friend WithEvents lblPokeman3 As Label
-    Friend WithEvents lblPokeman4 As Label
-    Friend WithEvents lblPokeman5 As Label
-    Friend WithEvents lblPokeman6 As Label
-    Friend WithEvents lblBall As Label
-    Friend WithEvents lblCurrency As Label
-    Friend WithEvents lblLotion As Label
-    Friend WithEvents lblMedpack As Label
-    Friend WithEvents lblFeast As Label
+	Friend WithEvents btnBox As Button
+	Friend WithEvents lblPokeman1 As Label
+	Friend WithEvents lblPokeman2 As Label
+	Friend WithEvents lblPokeman3 As Label
+	Friend WithEvents lblPokeman4 As Label
+	Friend WithEvents lblPokeman5 As Label
+	Friend WithEvents lblPokeman6 As Label
 	Friend WithEvents Timer1 As Timer
+	Friend WithEvents PictureBox11 As PictureBox
 End Class
