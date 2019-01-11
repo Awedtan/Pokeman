@@ -22,21 +22,12 @@ Partial Class frmTrainerBattleStart
 	'Do not modify it using the code editor.
 	<System.Diagnostics.DebuggerStepThrough()> _
 	Private Sub InitializeComponent()
-		Me.picTrainer = New System.Windows.Forms.PictureBox()
 		Me.lblDialogue = New System.Windows.Forms.Label()
 		Me.Button1 = New System.Windows.Forms.Button()
 		Me.lblName = New System.Windows.Forms.Label()
+		Me.picTrainer = New System.Windows.Forms.PictureBox()
 		CType(Me.picTrainer, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.SuspendLayout()
-		'
-		'picTrainer
-		'
-		Me.picTrainer.Location = New System.Drawing.Point(401, 21)
-		Me.picTrainer.Name = "picTrainer"
-		Me.picTrainer.Size = New System.Drawing.Size(190, 190)
-		Me.picTrainer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-		Me.picTrainer.TabIndex = 48
-		Me.picTrainer.TabStop = False
 		'
 		'lblDialogue
 		'
@@ -64,6 +55,15 @@ Partial Class frmTrainerBattleStart
 		Me.lblName.Size = New System.Drawing.Size(39, 13)
 		Me.lblName.TabIndex = 51
 		Me.lblName.Text = "Label1"
+		'
+		'picTrainer
+		'
+		Me.picTrainer.Location = New System.Drawing.Point(401, 21)
+		Me.picTrainer.Name = "picTrainer"
+		Me.picTrainer.Size = New System.Drawing.Size(190, 190)
+		Me.picTrainer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+		Me.picTrainer.TabIndex = 48
+		Me.picTrainer.TabStop = False
 		'
 		'frmTrainerBattleStart
 		'
