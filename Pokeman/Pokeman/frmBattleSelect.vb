@@ -6,6 +6,12 @@
 	Dim gym4 As New frmGym4
 	Dim gym5 As New frmGym5
 
+	Public Shared gym1c As Integer
+	Public Shared gym2c As Integer
+	Public Shared gym3c As Integer
+	Public Shared gym4c As Integer
+	Public Shared gym5c As Integer
+
 	Dim HauntedHouse As New frmHauntedHouse
 	Dim MewtwoEncounter As New frmMewtwoEncounter
 	Dim InBattle As New frmInBattle
@@ -112,8 +118,39 @@
 	Private Sub btnGym1_Click(sender As Object, e As EventArgs) Handles btnGym1.Click
 
 		trainerbattle = True
+		'gym1c + 1
 
-		'frmGym1.Show()
+		Select Case gym1c
+			Case 0
+				enemypokemon1 = frmMainMenu.Oddish
+				frmInBattle.enemypokemon2U = False
+				frmInBattle.enemypokemon3U = False
+				frmInBattle.enemypokemon4U = False
+				frmInBattle.enemypokemon5U = False
+				frmInBattle.enemypokemon6U = False
+
+				trainer = "Gym 1.1"
+			Case 1
+				enemypokemon1 = frmMainMenu.Weepinbell
+				frmInBattle.enemypokemon2U = False
+				frmInBattle.enemypokemon3U = False
+				frmInBattle.enemypokemon4U = False
+				frmInBattle.enemypokemon5U = False
+				frmInBattle.enemypokemon6U = False
+
+				trainer = "Gym 1.2"
+			Case 2
+				enemypokemon1 = frmMainMenu.Ivysaur
+				enemypokemon2 = frmMainMenu.Gloom
+				frmInBattle.enemypokemon3U = False
+				frmInBattle.enemypokemon4U = False
+				frmInBattle.enemypokemon5U = False
+				frmInBattle.enemypokemon6U = False
+
+				trainer = "Gym 1.0"
+		End Select
+
+		frmTrainerBattleStart.Show()
 
 	End Sub
 
@@ -213,8 +250,47 @@
 	Private Sub btnGym2_Click(sender As Object, e As EventArgs) Handles btnGym2.Click
 
 		trainerbattle = True
+		'gym2c + 1
 
-		'frmGym2.Show()
+		Select Case gym2c
+			Case 0
+				enemypokemon1 = frmMainMenu.Magnemite
+				enemypokemon2 = frmMainMenu.Voltorb
+				frmInBattle.enemypokemon3U = False
+				frmInBattle.enemypokemon4U = False
+				frmInBattle.enemypokemon5U = False
+				frmInBattle.enemypokemon6U = False
+
+				trainer = "Gym 2.1"
+			Case 1
+				enemypokemon1 = frmMainMenu.Voltorb
+				enemypokemon2 = frmMainMenu.Voltorb
+				frmInBattle.enemypokemon3U = False
+				frmInBattle.enemypokemon4U = False
+				frmInBattle.enemypokemon5U = False
+				frmInBattle.enemypokemon6U = False
+
+				trainer = "Gym 2.2"
+			Case 2
+				enemypokemon1 = frmMainMenu.Pikachu
+				frmInBattle.enemypokemon2U = False
+				frmInBattle.enemypokemon3U = False
+				frmInBattle.enemypokemon4U = False
+				frmInBattle.enemypokemon5U = False
+				frmInBattle.enemypokemon6U = False
+				trainer = "Gym 2.3"
+			Case 3
+				enemypokemon1 = frmMainMenu.Magneton
+				enemypokemon2 = frmMainMenu.Raichu
+				enemypokemon3 = frmMainMenu.Jolteon
+				frmInBattle.enemypokemon4U = False
+				frmInBattle.enemypokemon5U = False
+				frmInBattle.enemypokemon6U = False
+
+				trainer = "Gym 2.0"
+		End Select
+
+		frmTrainerBattleStart.Show()
 
 	End Sub
 
@@ -363,9 +439,39 @@
 	Private Sub btnGym3_Click(sender As Object, e As EventArgs) Handles btnGym3.Click
 
 		trainerbattle = True
+		'gym2c + 1
 
-		'frmGym3.Show()
+		Select Case gym2c
+			Case 0
+				enemypokemon1 = frmMainMenu.Vulpix
+				enemypokemon2 = frmMainMenu.Ponyta
+				enemypokemon3 = frmMainMenu.Growlithe
+				frmInBattle.enemypokemon4U = False
+				frmInBattle.enemypokemon5U = False
+				frmInBattle.enemypokemon6U = False
 
+				trainer = "Gym 3.1"
+			Case 1
+				enemypokemon1 = frmMainMenu.Magmar
+				enemypokemon2 = frmMainMenu.Flareon
+				frmInBattle.enemypokemon3U = False
+				frmInBattle.enemypokemon4U = False
+				frmInBattle.enemypokemon5U = False
+				frmInBattle.enemypokemon6U = False
+
+				trainer = "Gym 3.2"
+			Case 2
+				enemypokemon1 = frmMainMenu.Charizard
+				enemypokemon2 = frmMainMenu.Arcanine
+				enemypokemon3 = frmMainMenu.Rapidash
+				frmInBattle.enemypokemon4U = False
+				frmInBattle.enemypokemon5U = False
+				frmInBattle.enemypokemon6U = False
+
+				trainer = "Gym 3.0"
+		End Select
+
+		frmTrainerBattleStart.Show()
 	End Sub
 
 	Private Sub btnRoute7_Click(sender As Object, e As EventArgs) Handles btnRoute7.Click
@@ -454,8 +560,40 @@
 	Private Sub btnGym4_Click(sender As Object, e As EventArgs) Handles btnGym4.Click
 
 		trainerbattle = True
+		trainerbattle = True
+		'gym2c + 1
 
-		'frmGym4.Show()
+		Select Case gym2c
+			Case 0
+				enemypokemon1 = frmMainMenu.Seel
+				enemypokemon2 = frmMainMenu.Tentacruel
+				enemypokemon3 = frmMainMenu.Seel
+				frmInBattle.enemypokemon4U = False
+				frmInBattle.enemypokemon5U = False
+				frmInBattle.enemypokemon6U = False
+
+				trainer = "Gym 4.1"
+			Case 1
+				enemypokemon1 = frmMainMenu.Kingler
+				enemypokemon2 = frmMainMenu.Staryu
+				enemypokemon3 = frmMainMenu.Goldeen
+				frmInBattle.enemypokemon4U = False
+				frmInBattle.enemypokemon5U = False
+				frmInBattle.enemypokemon6U = False
+
+				trainer = "Gym 4.2"
+			Case 2
+				enemypokemon1 = frmMainMenu.Dewgong
+				enemypokemon2 = frmMainMenu.Lapras
+				enemypokemon3 = frmMainMenu.Cloyster
+				enemypokemon4 = frmMainMenu.Gyarados
+				frmInBattle.enemypokemon5U = False
+				frmInBattle.enemypokemon6U = False
+
+				trainer = "Gym 4.0"
+		End Select
+
+		frmTrainerBattleStart.Show()
 
 	End Sub
 
@@ -589,8 +727,10 @@
 		enemypokemon3 = frmMainMenu.Arbok
 		enemypokemon4 = frmMainMenu.Gyarados
 		enemypokemon5 = frmMainMenu.Dragonite
+		frmInBattle.enemypokemon6U = False
 
-		'frmGym5.Show()
+		trainer = "Gym 5.0"
+		frmTrainerBattleStart.Show()
 
 	End Sub
 
