@@ -286,6 +286,9 @@
     <EmbeddedResource Include="frmStart.resx">
       <DependentUpon>frmStart.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmTrainerBattleEnd.resx">
+      <DependentUpon>frmTrainerBattleEnd.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmTrainerBattleStart.resx">
       <DependentUpon>frmTrainerBattleStart.vb</DependentUpon>
     </EmbeddedResource>
@@ -1360,6 +1363,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ArcanineF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gym10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gym11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gym12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gym20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gym21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gym31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gym32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gym40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gym41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gym42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gym50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gym22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gym30.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

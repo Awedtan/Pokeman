@@ -82,3 +82,4 @@ C:\Users\danie\Documents\School\Pokeman\Pokeman\Pokeman\obj\Debug\Pokeman.frmBox
 C:\Users\danie\Documents\School\Pokeman\Pokeman\Pokeman\obj\Debug\Pokeman.frmBox8.resources
 C:\Users\danie\Documents\School\pokeman\Pokeman\Pokeman\obj\Debug\Pokeman.frmStart.resources
 C:\Users\danie\Documents\School\Pokeman\Pokeman\Pokeman\obj\Debug\Pokeman.frmTrainerBattleStart.resources
+C:\Users\danie\Documents\School\Pokeman\Pokeman\Pokeman\obj\Debug\Pokeman.frmTrainerBattleEnd.resources
