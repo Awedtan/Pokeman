@@ -57,10 +57,10 @@ Public Class frmMainMenu
     Public Shared Sandslash() As String = {"Sandslash", 75, 100, 110, 65, 55, 0, 0, 9, 0, "Fury Swipes", "Slash", "Poison Sting", "Sand Attack"}
     Public Shared Nidoranm() As String = {"Nidoran (female)", 55, 47, 52, 41, 40, 0, 0, 12, 0, "Horn Attack", "Poison Sting", "Fury Attack", "Leer"}
     Public Shared Nidorina() As String = {"Nidorina", 70, 62, 67, 56, 55, 0, 0, 12, 0, "Horn Attack", "Double Kick", "Poison Sting", "Fury Attack"}
-    Public Shared Nidoqueen() As String = {"Nidoqueen", 90, 82, 87, 76, 75, 0, 0, 12, 9}
+    Public Shared Nidoqueen() As String = {"Nidoqueen", 90, 82, 87, 76, 75, 0, 0, 12, 9, "Horn Attack", "Double Kick", "Poison Sting", "Fury Attack"}
     Public Shared Nidoranf() As String = {"Nidoran (male)", 46, 57, 40, 50, 40, 0, 0, 12, 0, "Horn Attack", "Poison Sting", "Fury Attack", "Leer"}
     Public Shared Nidorino() As String = {"Nidorino", 61, 72, 57, 65, 55, 0, 0, 12, 0, "Horn Attack", "Double Kick", "Poison Sting", "Fury Attack"}
-    Public Shared Nidoking() As String = {"Nidoking", 81, 92, 77, 85, 75, 0, 0, 12, 9}
+    Public Shared Nidoking() As String = {"Nidoking", 81, 92, 77, 85, 75, 0, 0, 12, 9, "Horn Attack", "Double Kick", "Poison Sting", "Fury Attack"}
     Public Shared Clefairy() As String = {"Clefairy", 70, 45, 48, 35, 60, 0, 0, 11, 0, "Double Slap", "Body Slam", "Light Screen", "Defense Curl"}
     Public Shared Clefable() As String = {"Clefable", 95, 70, 73, 60, 85, 0, 0, 11, 0, "Double Slap", "Body Slam", "Light Screen", "Defense Curl"}
     Public Shared Vulpix() As String = {"Vulpix", 38, 41, 40, 65, 65, 0, 0, 5, 0, "Ember", "Flamethrower", "Tail Whip", "Body Slam"}
@@ -168,7 +168,7 @@ Public Class frmMainMenu
     Public Shared Omastar() As String = {"Omastar", 70, 60, 125, 55, 115, 0, 0, 14, 15}
     Public Shared Kabuto() As String = {"Kabuto", 30, 80, 90, 55, 45, 0, 0, 14, 15}
     Public Shared Kabutops() As String = {"Kabutops", 60, 115, 105, 80, 70, 0, 0, 14, 15}
-    Public Shared Aerodactyl() As String = {"Aerodactyl", 80, 60, 105, 65, 130, 0, 0, 14, 6}
+    Public Shared Aerodactyl() As String = {"Aerodactyl", 80, 60, 105, 65, 130, 0, 0, 14, 6, "Wing Attack", "Double-Edge", "Hyper Beam", "Earthquake"}
     Public Shared Snorlax() As String = {"Snorlax", 160, 110, 65, 30, 65, 0, 0, 11, 0, "Rest", "Harden", "Double-Edge", "Hyper Beam"}
     Public Shared Articuno() As String = {"Articuno", 90, 85, 100, 85, 125, 0, 0, 3, 6, "Blizzard", "Wing Attack", "Hyper Beam", "Mist"}
     Public Shared Zapdos() As String = {"Zapdos", 90, 90, 85, 100, 125, 0, 0, 10, 6, "Thunder", "Wing Attack", "Thunder Wave", "Hyper Beam"}
