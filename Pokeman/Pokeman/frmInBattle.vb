@@ -24710,9 +24710,6 @@
 			Case 13
                 Label7.Text = "you lose"
 				yturn.Enabled = False
-				If frmBattleSelect.trainerbattle = True Then
-					frmTrainerBattleEnd.Show()
-				End If
 				Me.Close()
         End Select
 
