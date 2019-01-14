@@ -307,7 +307,7 @@ Partial Class frmInBattle
         'picEPokemon
         '
         Me.picEPokemon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.picEPokemon.Image = Global.Pokeman.My.Resources.Resources.CharmanderF
+        Me.picEPokemon.Image = Global.Pokeman.My.Resources.Resources.KenF
         Me.picEPokemon.Location = New System.Drawing.Point(559, 33)
         Me.picEPokemon.Name = "picEPokemon"
         Me.picEPokemon.Size = New System.Drawing.Size(164, 137)
