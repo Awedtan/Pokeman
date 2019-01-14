@@ -677,7 +677,7 @@
 				enemypokemon1 = frmMainMenu.Articuno
 		End Select
 
-		'frmBirdNest.Show()
+		frmInBattle.Show()
 
 	End Sub
 
