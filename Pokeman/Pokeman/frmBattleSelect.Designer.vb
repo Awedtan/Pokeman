@@ -47,7 +47,6 @@ Partial Class frmBattleSelect
 		Me.btnTrainer6 = New System.Windows.Forms.Button()
 		Me.btnTrainer7 = New System.Windows.Forms.Button()
 		Me.btnTrainer8 = New System.Windows.Forms.Button()
-		Me.btnGengar = New System.Windows.Forms.Button()
 		Me.btnTrainerV = New System.Windows.Forms.Button()
 		Me.btnRoute9 = New System.Windows.Forms.Button()
 		Me.btnBirdNest = New System.Windows.Forms.Button()
@@ -279,15 +278,6 @@ Partial Class frmBattleSelect
 		Me.btnTrainer8.Text = "Trainer 8"
 		Me.btnTrainer8.UseVisualStyleBackColor = True
 		'
-		'btnGengar
-		'
-		Me.btnGengar.Location = New System.Drawing.Point(414, 176)
-		Me.btnGengar.Name = "btnGengar"
-		Me.btnGengar.Size = New System.Drawing.Size(75, 35)
-		Me.btnGengar.TabIndex = 25
-		Me.btnGengar.Text = "Gengar Boss"
-		Me.btnGengar.UseVisualStyleBackColor = True
-		'
 		'btnTrainerV
 		'
 		Me.btnTrainerV.Location = New System.Drawing.Point(856, 96)
@@ -323,7 +313,6 @@ Partial Class frmBattleSelect
 		Me.Controls.Add(Me.btnBirdNest)
 		Me.Controls.Add(Me.btnRoute9)
 		Me.Controls.Add(Me.btnTrainerV)
-		Me.Controls.Add(Me.btnGengar)
 		Me.Controls.Add(Me.btnTrainer8)
 		Me.Controls.Add(Me.btnTrainer7)
 		Me.Controls.Add(Me.btnTrainer6)
@@ -380,8 +369,7 @@ Partial Class frmBattleSelect
     Friend WithEvents btnTrainer6 As Button
     Friend WithEvents btnTrainer7 As Button
     Friend WithEvents btnTrainer8 As Button
-    Friend WithEvents btnGengar As Button
-    Friend WithEvents btnTrainerV As Button
+	Friend WithEvents btnTrainerV As Button
 	Friend WithEvents btnRoute9 As Button
 	Friend WithEvents btnBirdNest As Button
 End Class

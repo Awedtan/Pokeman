@@ -12552,8 +12552,8 @@
             Case "Haunter"
                 picEPokemon.Image = My.Resources.HaunterF
             Case "Gengar"
-                picEPokemon.Image = My.Resources.gengar
-            Case "Onix"
+				picEPokemon.Image = My.Resources.GengarF
+			Case "Onix"
                 picEPokemon.Image = My.Resources.OnixF
             Case "Drowzee"
                 picEPokemon.Image = My.Resources.DrowzeeF
@@ -13165,7 +13165,7 @@
 					Case "Haunter"
 						picEPokemon.Image = My.Resources.HaunterF
 					Case "Gengar"
-						picEPokemon.Image = My.Resources.gengar
+						picEPokemon.Image = My.Resources.GengarF
 					Case "Onix"
 						picEPokemon.Image = My.Resources.OnixF
 					Case "Drowzee"
@@ -24574,8 +24574,8 @@
                     Case "Haunter"
                         picEPokemon.Image = My.Resources.HaunterF
                     Case "Gengar"
-                        picEPokemon.Image = My.Resources.gengar
-                    Case "Onix"
+						picEPokemon.Image = My.Resources.GengarF
+					Case "Onix"
                         picEPokemon.Image = My.Resources.OnixF
                     Case "Drowzee"
                         picEPokemon.Image = My.Resources.DrowzeeF

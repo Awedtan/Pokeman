@@ -336,7 +336,7 @@
 
 	Private Sub btnTrainer5_Click(sender As Object, e As EventArgs) Handles btnTrainer5.Click
 
-		trainerbattle = True
+		trainerbattle = False
 
 		enemypokemon1 = frmMainMenu.Zubat
         enemypokemon2 = frmMainMenu.Pikachu
@@ -353,15 +353,10 @@
 
 	Private Sub btnHauntedHouse_Click(sender As Object, e As EventArgs) Handles btnHauntedHouse.Click
 
-		frmHauntedHouse.Show()
-
-	End Sub
-
-	Private Sub btnGengar_Click(sender As Object, e As EventArgs) Handles btnGengar.Click
-
 		trainerbattle = True
 
 		enemypokemon1 = frmMainMenu.Gengar 'make him powerful or something
+		frmInBattle.Show()
 
 	End Sub
 
