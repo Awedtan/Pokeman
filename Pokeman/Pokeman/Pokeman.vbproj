@@ -1403,5 +1403,23 @@
   <ItemGroup>
     <None Include="Resources\gym30.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AkumaF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BalrogF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BisonF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlankaF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KenF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RyuF.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

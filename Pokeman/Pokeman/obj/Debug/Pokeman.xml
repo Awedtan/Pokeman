@@ -57,6 +57,11 @@ Pokeman
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Pokeman.My.Resources.Resources.AkumaF">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Pokeman.My.Resources.Resources.alakazam">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -117,6 +122,11 @@ Pokeman
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Pokeman.My.Resources.Resources.BalrogF">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Pokeman.My.Resources.Resources.beedrill">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -143,6 +153,16 @@ Pokeman
 </summary>
 </member>
 <member name="P:Pokeman.My.Resources.Resources.BellsproutF">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Pokeman.My.Resources.Resources.BisonF">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Pokeman.My.Resources.Resources.BlankaF">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -837,6 +857,11 @@ Pokeman
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Pokeman.My.Resources.Resources.KenF">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Pokeman.My.Resources.Resources.kingler">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -1508,6 +1533,11 @@ Pokeman
 </summary>
 </member>
 <member name="P:Pokeman.My.Resources.Resources.RhyhornF">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Pokeman.My.Resources.Resources.RyuF">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

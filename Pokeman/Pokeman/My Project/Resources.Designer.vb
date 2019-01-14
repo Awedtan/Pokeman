@@ -133,6 +133,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property AkumaF() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("AkumaF", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property alakazam() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("alakazam", resourceCulture)
@@ -253,6 +263,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property BalrogF() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("BalrogF", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property beedrill() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("beedrill", resourceCulture)
@@ -306,6 +326,26 @@ Namespace My.Resources
         Friend ReadOnly Property BellsproutF() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("BellsproutF", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property BisonF() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("BisonF", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property BlankaF() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("BlankaF", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -1693,6 +1733,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property KenF() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("KenF", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property kingler() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("kingler", resourceCulture)
@@ -3036,6 +3086,16 @@ Namespace My.Resources
         Friend ReadOnly Property RhyhornF() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("RhyhornF", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property RyuF() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("RyuF", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
