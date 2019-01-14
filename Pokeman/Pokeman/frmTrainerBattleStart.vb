@@ -1,5 +1,7 @@
 ﻿Public Class frmTrainerBattleStart
 
+	Dim InBattle As New frmInBattle
+
 	Private Sub frmTrainerBattleStart_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
 		If frmBattleSelect.trainer = "Hagith" Then

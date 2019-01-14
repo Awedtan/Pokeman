@@ -1,7 +1,9 @@
 ﻿Public Class frmInBattle
     Dim yourturn As Boolean
 
-    Dim movetype As Integer
+	Dim TrainerBattleEnd As New frmTrainerBattleEnd
+
+	Dim movetype As Integer
     'burn, freeze, paralyze, poison, badly poisoned, sleep, confused, bound, LS, flinch
     '  1     2        3         4           5          6      7          8    9, 10      11 Woke up
 
@@ -266,8 +268,7 @@
     Dim eyourpokemonstat(14) As String
     Dim eenemypokemonstat(14) As String
 
-
-    Dim tempattack As Double 'for super effective moves
+	Dim tempattack As Double 'for super effective moves
     Dim tempspecial As Double
     ' tempattack = tempattack * 2
     'tempspecial = tempspecial * 2
@@ -24701,11 +24702,18 @@
                 Label7.Text = "you win"
                 yturn.Enabled = False
 
-                Me.Close()
-            Case 13
+				If frmBattleSelect.trainerbattle = True Then
+					frmTrainerBattleEnd.Show()
+				End If
+
+				Me.Close()
+			Case 13
                 Label7.Text = "you lose"
-                yturn.Enabled = False
-                Me.Close()
+				yturn.Enabled = False
+				If frmBattleSelect.trainerbattle = True Then
+					frmTrainerBattleEnd.Show()
+				End If
+				Me.Close()
         End Select
 
     End Sub
