@@ -1,4 +1,6 @@
 ﻿Public Class frmInBattle
+Public binpatht As String = My.Application.Info.DirectoryPath
+Public binpath As String = binpatht.Remove(binpatht.Length - 9, 9) & "Resources"
     Dim yourturn As Boolean
 
 	Dim TrainerBattleEnd As New frmTrainerBattleEnd
@@ -3750,7 +3752,9 @@
 
         End If
     End Sub
-
+Private Sub frmInBattle_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+My.Computer.Audio.Stop()
+End Sub
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
         lblYName.Text = yourpokemon(0)
         lblYHp.Text = yourpokemon(1)
@@ -12132,6 +12136,24 @@
     End Sub
 
     Private Sub frmInBattle_Load(sender As Object, e As EventArgs) Handles Me.Load
+	
+		If frmBattleSelect.elite = True Then
+
+    ElseIf frmBattleSelect.champ = True Then
+
+
+    ElseIf frmBattleSelect.gymleader = True Then
+
+    ElseIf frmBattleSelect.strong = True Then
+
+    ElseIf frmBattleSelect.legendary = True Then
+
+    ElseIf frmBattleSelect.trainerbattle = True Then
+        My.Computer.Audio.Play(binpath & "TrainerM.wav", AudioPlayMode.BackgroundLoop)
+    Else
+        My.Computer.Audio.Play(binpath & "WildM.wav", AudioPlayMode.BackgroundLoop)
+    End If
+	
         Array.Copy(frmMainMenu.yourpokemon1, yourpokemon, 14) 'functional changing stats
         Array.Copy(frmBattleSelect.enemypokemon1, enemypokemon, 14)
 
