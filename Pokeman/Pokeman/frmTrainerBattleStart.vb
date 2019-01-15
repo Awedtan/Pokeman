@@ -1,9 +1,25 @@
 ﻿Public Class frmTrainerBattleStart
-
+ Public binpatht As String = My.Application.Info.DirectoryPath
+    Public binpath As String = binpatht.Remove(binpatht.Length - 9, 9) & "Resources\"
 	Dim InBattle As New frmInBattle
 
 	Private Sub frmTrainerBattleStart_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+If frmBattleSelect.elite = True Then
 
+        ElseIf frmBattleSelect.champ = True Then
+
+
+        ElseIf frmBattleSelect.gymleader = True Then
+
+        ElseIf frmBattleSelect.strong = True Then
+
+        ElseIf frmBattleSelect.legendary = True Then
+
+        ElseIf frmBattleSelect.trainerbattle = True Then
+            My.Computer.Audio.Play(binpath & "TrainerM.wav", AudioPlayMode.BackgroundLoop)
+        Else
+            My.Computer.Audio.Play(binpath & "WildM.wav", AudioPlayMode.BackgroundLoop)
+        End If
 		If frmBattleSelect.trainer = "Hagith" Then
 
 			picTrainer.Image = My.Resources.hagith
