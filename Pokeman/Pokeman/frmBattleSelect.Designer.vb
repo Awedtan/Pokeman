@@ -63,6 +63,7 @@ Partial Class frmBattleSelect
 		'
 		'btnRoute2
 		'
+		Me.btnRoute2.Enabled = False
 		Me.btnRoute2.Location = New System.Drawing.Point(74, 142)
 		Me.btnRoute2.Name = "btnRoute2"
 		Me.btnRoute2.Size = New System.Drawing.Size(75, 23)
@@ -72,6 +73,7 @@ Partial Class frmBattleSelect
 		'
 		'btnGym1
 		'
+		Me.btnGym1.Enabled = False
 		Me.btnGym1.Location = New System.Drawing.Point(74, 231)
 		Me.btnGym1.Name = "btnGym1"
 		Me.btnGym1.Size = New System.Drawing.Size(75, 23)
@@ -81,6 +83,7 @@ Partial Class frmBattleSelect
 		'
 		'btnRoute3
 		'
+		Me.btnRoute3.Enabled = False
 		Me.btnRoute3.Location = New System.Drawing.Point(243, 60)
 		Me.btnRoute3.Name = "btnRoute3"
 		Me.btnRoute3.Size = New System.Drawing.Size(75, 23)
@@ -90,6 +93,7 @@ Partial Class frmBattleSelect
 		'
 		'btnRoute4
 		'
+		Me.btnRoute4.Enabled = False
 		Me.btnRoute4.Location = New System.Drawing.Point(243, 142)
 		Me.btnRoute4.Name = "btnRoute4"
 		Me.btnRoute4.Size = New System.Drawing.Size(75, 23)
@@ -99,6 +103,7 @@ Partial Class frmBattleSelect
 		'
 		'btnGym2
 		'
+		Me.btnGym2.Enabled = False
 		Me.btnGym2.Location = New System.Drawing.Point(243, 231)
 		Me.btnGym2.Name = "btnGym2"
 		Me.btnGym2.Size = New System.Drawing.Size(75, 23)
@@ -108,6 +113,7 @@ Partial Class frmBattleSelect
 		'
 		'btnRoute5
 		'
+		Me.btnRoute5.Enabled = False
 		Me.btnRoute5.Location = New System.Drawing.Point(414, 60)
 		Me.btnRoute5.Name = "btnRoute5"
 		Me.btnRoute5.Size = New System.Drawing.Size(75, 23)
@@ -117,6 +123,7 @@ Partial Class frmBattleSelect
 		'
 		'btnHauntedHouse
 		'
+		Me.btnHauntedHouse.Enabled = False
 		Me.btnHauntedHouse.Location = New System.Drawing.Point(414, 136)
 		Me.btnHauntedHouse.Name = "btnHauntedHouse"
 		Me.btnHauntedHouse.Size = New System.Drawing.Size(75, 34)
@@ -126,6 +133,7 @@ Partial Class frmBattleSelect
 		'
 		'btnRoute6
 		'
+		Me.btnRoute6.Enabled = False
 		Me.btnRoute6.Location = New System.Drawing.Point(414, 231)
 		Me.btnRoute6.Name = "btnRoute6"
 		Me.btnRoute6.Size = New System.Drawing.Size(75, 23)
@@ -135,6 +143,7 @@ Partial Class frmBattleSelect
 		'
 		'btnGym3
 		'
+		Me.btnGym3.Enabled = False
 		Me.btnGym3.Location = New System.Drawing.Point(414, 310)
 		Me.btnGym3.Name = "btnGym3"
 		Me.btnGym3.Size = New System.Drawing.Size(75, 23)
@@ -144,6 +153,7 @@ Partial Class frmBattleSelect
 		'
 		'btnRoute7
 		'
+		Me.btnRoute7.Enabled = False
 		Me.btnRoute7.Location = New System.Drawing.Point(567, 60)
 		Me.btnRoute7.Name = "btnRoute7"
 		Me.btnRoute7.Size = New System.Drawing.Size(75, 23)
@@ -153,6 +163,7 @@ Partial Class frmBattleSelect
 		'
 		'btnGym4
 		'
+		Me.btnGym4.Enabled = False
 		Me.btnGym4.Location = New System.Drawing.Point(567, 142)
 		Me.btnGym4.Name = "btnGym4"
 		Me.btnGym4.Size = New System.Drawing.Size(75, 23)
@@ -162,6 +173,7 @@ Partial Class frmBattleSelect
 		'
 		'btnRoute8
 		'
+		Me.btnRoute8.Enabled = False
 		Me.btnRoute8.Location = New System.Drawing.Point(713, 60)
 		Me.btnRoute8.Name = "btnRoute8"
 		Me.btnRoute8.Size = New System.Drawing.Size(75, 23)
@@ -171,6 +183,7 @@ Partial Class frmBattleSelect
 		'
 		'btnGym5
 		'
+		Me.btnGym5.Enabled = False
 		Me.btnGym5.Location = New System.Drawing.Point(713, 231)
 		Me.btnGym5.Name = "btnGym5"
 		Me.btnGym5.Size = New System.Drawing.Size(75, 23)
@@ -180,6 +193,7 @@ Partial Class frmBattleSelect
 		'
 		'btnVictoryRoad
 		'
+		Me.btnVictoryRoad.Enabled = False
 		Me.btnVictoryRoad.Location = New System.Drawing.Point(856, 53)
 		Me.btnVictoryRoad.Name = "btnVictoryRoad"
 		Me.btnVictoryRoad.Size = New System.Drawing.Size(75, 37)
@@ -217,6 +231,7 @@ Partial Class frmBattleSelect
 		'
 		'btnTrainer2
 		'
+		Me.btnTrainer2.Enabled = False
 		Me.btnTrainer2.Location = New System.Drawing.Point(74, 171)
 		Me.btnTrainer2.Name = "btnTrainer2"
 		Me.btnTrainer2.Size = New System.Drawing.Size(75, 23)
@@ -226,6 +241,7 @@ Partial Class frmBattleSelect
 		'
 		'btnTrainer3
 		'
+		Me.btnTrainer3.Enabled = False
 		Me.btnTrainer3.Location = New System.Drawing.Point(243, 89)
 		Me.btnTrainer3.Name = "btnTrainer3"
 		Me.btnTrainer3.Size = New System.Drawing.Size(75, 23)
@@ -235,6 +251,7 @@ Partial Class frmBattleSelect
 		'
 		'btnTrainer4
 		'
+		Me.btnTrainer4.Enabled = False
 		Me.btnTrainer4.Location = New System.Drawing.Point(243, 171)
 		Me.btnTrainer4.Name = "btnTrainer4"
 		Me.btnTrainer4.Size = New System.Drawing.Size(75, 23)
@@ -244,6 +261,7 @@ Partial Class frmBattleSelect
 		'
 		'btnTrainer5
 		'
+		Me.btnTrainer5.Enabled = False
 		Me.btnTrainer5.Location = New System.Drawing.Point(414, 90)
 		Me.btnTrainer5.Name = "btnTrainer5"
 		Me.btnTrainer5.Size = New System.Drawing.Size(75, 23)
@@ -253,6 +271,7 @@ Partial Class frmBattleSelect
 		'
 		'btnTrainer6
 		'
+		Me.btnTrainer6.Enabled = False
 		Me.btnTrainer6.Location = New System.Drawing.Point(414, 260)
 		Me.btnTrainer6.Name = "btnTrainer6"
 		Me.btnTrainer6.Size = New System.Drawing.Size(75, 23)
@@ -262,6 +281,7 @@ Partial Class frmBattleSelect
 		'
 		'btnTrainer7
 		'
+		Me.btnTrainer7.Enabled = False
 		Me.btnTrainer7.Location = New System.Drawing.Point(567, 89)
 		Me.btnTrainer7.Name = "btnTrainer7"
 		Me.btnTrainer7.Size = New System.Drawing.Size(75, 23)
@@ -271,6 +291,7 @@ Partial Class frmBattleSelect
 		'
 		'btnTrainer8
 		'
+		Me.btnTrainer8.Enabled = False
 		Me.btnTrainer8.Location = New System.Drawing.Point(713, 89)
 		Me.btnTrainer8.Name = "btnTrainer8"
 		Me.btnTrainer8.Size = New System.Drawing.Size(75, 23)
@@ -280,6 +301,7 @@ Partial Class frmBattleSelect
 		'
 		'btnTrainerV
 		'
+		Me.btnTrainerV.Enabled = False
 		Me.btnTrainerV.Location = New System.Drawing.Point(856, 96)
 		Me.btnTrainerV.Name = "btnTrainerV"
 		Me.btnTrainerV.Size = New System.Drawing.Size(75, 23)
@@ -289,6 +311,7 @@ Partial Class frmBattleSelect
 		'
 		'btnRoute9
 		'
+		Me.btnRoute9.Enabled = False
 		Me.btnRoute9.Location = New System.Drawing.Point(713, 171)
 		Me.btnRoute9.Name = "btnRoute9"
 		Me.btnRoute9.Size = New System.Drawing.Size(75, 23)
@@ -298,6 +321,7 @@ Partial Class frmBattleSelect
 		'
 		'btnBirdNest
 		'
+		Me.btnBirdNest.Enabled = False
 		Me.btnBirdNest.Location = New System.Drawing.Point(713, 142)
 		Me.btnBirdNest.Name = "btnBirdNest"
 		Me.btnBirdNest.Size = New System.Drawing.Size(75, 23)

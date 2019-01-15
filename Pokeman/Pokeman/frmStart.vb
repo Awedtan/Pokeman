@@ -30,6 +30,10 @@
 		frmMainMenu.Squirtle(6) = 1
 		frmMainMenu.yourpokemon1 = frmMainMenu.Squirtle
 
+		btnCharmander.Enabled = False
+		btnBulbasaur.Enabled = False
+		btnSquirtle.Enabled = False
+
 		lblDialogue.Text = "Great choice!"
 		Await Task.Delay(10000)
 		lblDialogue.Text = "Well, what are you waiting for? Close this tab already and start your journey!"
@@ -39,6 +43,10 @@
 		frmMainMenu.Bulbasaur(6) = 1
 		frmMainMenu.yourpokemon1 = frmMainMenu.Bulbasaur
 
+		btnCharmander.Enabled = False
+		btnBulbasaur.Enabled = False
+		btnSquirtle.Enabled = False
+
 		lblDialogue.Text = "Great choice!"
 		Await Task.Delay(10000)
 		lblDialogue.Text = "Well, what are you waiting for? Close this tab already and start your journey!"
@@ -47,6 +55,10 @@
 	Private Async Sub btnCharmander_Click(sender As Object, e As EventArgs) Handles btnCharmander.Click
 		frmMainMenu.Charmander(6) = 1
 		frmMainMenu.yourpokemon1 = frmMainMenu.Charmander
+
+		btnCharmander.Enabled = False
+		btnBulbasaur.Enabled = False
+		btnSquirtle.Enabled = False
 
 		lblDialogue.Text = "Great choice!"
 		Await Task.Delay(10000)

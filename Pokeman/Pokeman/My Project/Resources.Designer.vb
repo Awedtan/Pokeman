@@ -1463,6 +1463,46 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property gym61() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("gym61", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property gym62() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("gym62", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property gym63() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("gym63", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property gym64() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("gym64", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property hagith() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("hagith", resourceCulture)

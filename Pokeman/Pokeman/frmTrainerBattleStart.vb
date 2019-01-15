@@ -173,6 +173,41 @@
 			lblDialogue.Text = "Mwahaha! Good luck beating my unbeatable dragon pokeman!"
 			lblName.Text = "Gym Leader Doug approaches!"
 			picTrainer.Size = New Size(280, 190)
+
+		ElseIf frmBattleSelect.trainer = "Gym 6.1" Then
+
+			picTrainer.Image = My.Resources.gym61
+			lblDialogue.Text = "Get ready for battle!"
+			lblName.Text = "Elite Four Spooky Simone approaches!"
+			picTrainer.Size = New Size(190, 190)
+
+		ElseIf frmBattleSelect.trainer = "Gym 6.2" Then
+
+			picTrainer.Image = My.Resources.gym62
+			lblDialogue.Text = "Get ready for battle!"
+			lblName.Text = "Elite Four Stone-Faced Rocky approaches!"
+			picTrainer.Size = New Size(190, 190)
+
+		ElseIf frmBattleSelect.trainer = "Gym 6.3" Then
+
+			picTrainer.Image = My.Resources.gym63
+			lblDialogue.Text = "Get ready for battle!"
+			lblName.Text = "Elite Four Soarin' Steve approaches!"
+			picTrainer.Size = New Size(280, 190)
+
+		ElseIf frmBattleSelect.trainer = "Gym 6.4" Then
+
+			picTrainer.Image = My.Resources.gym64
+			lblDialogue.Text = "Hey."
+			lblName.Text = "Bob approaches."
+			picTrainer.Size = New Size(280, 190)
+
+		ElseIf frmBattleSelect.trainer = "Gym 6.0" Then
+
+			picTrainer.Image = My.Resources.gym40
+			lblDialogue.Text = "This is Street Fighter right?"
+			lblName.Text = "Pokeman Champion Mr. Chu approaches!"
+			picTrainer.Size = New Size(280, 190)
 		End If
 	End Sub
 

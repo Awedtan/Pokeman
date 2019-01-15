@@ -198,7 +198,7 @@
                 trainer = "Gym 1.0"
 		End Select
 
-		gym1c += 1
+
 
 		frmTrainerBattleStart.Show()
 
@@ -373,8 +373,8 @@
                 gymleader = True
                 trainer = "Gym 2.0"
         End Select
-        gym2c += 1
-        frmTrainerBattleStart.Show()
+
+		frmTrainerBattleStart.Show()
 
     End Sub
 
@@ -588,8 +588,8 @@
                 gymleader = True
                 trainer = "Gym 3.0"
         End Select
-        gym3c += 1
-        frmTrainerBattleStart.Show()
+
+		frmTrainerBattleStart.Show()
     End Sub
 
     Private Sub btnRoute7_Click(sender As Object, e As EventArgs) Handles btnRoute7.Click
@@ -603,63 +603,58 @@
         elite = False
         Randomize()
 
-        'If frmMainMenu.route7counter < 3 Then
+		If frmMainMenu.route7counter < 3 Then
 
-        'num = Int(7 * Rnd(1))
-
-        'Select Case num
-        '	Case 1
-        '		enemypokemon1 = frmMainMenu.Vileplume
-        '	Case 2
-        '		enemypokemon1 = frmMainMenu.Poliwag
-        '	Case 3
-        '		enemypokemon1 = frmMainMenu.Poliwhirl
-        '	Case 4
-        '		enemypokemon1 = frmMainMenu.Seel
-        '	Case 5
-        '		enemypokemon1 = frmMainMenu.Shellder
-        '	Case 6
-        '		enemypokemon1 = frmMainMenu.Krabby
-        '	Case 0
-        '		enemypokemon1 = frmMainMenu.Magikarp
-        'End Select
-
-        'frmMainMenu.route7counter += 1
-
-        'Else
-
-        'num = int(12 * Rnd(1))
-        'End If
-
-        'Select Case num
-        '	Case 1
-        '		enemypokemon1 = frmMainMenu.Vileplume
-        '	Case 2
-        '		enemypokemon1 = frmMainMenu.Poliwag
-        '	Case 3
-        '		enemypokemon1 = frmMainMenu.Poliwhirl
-        '	Case 4
-        '		enemypokemon1 = frmMainMenu.Seel
-        '	Case 5
-        '		enemypokemon1 = frmMainMenu.Shellder
-        '	Case 6
-        '		enemypokemon1 = frmMainMenu.Krabby
-        '	Case 7
-        '		enemypokemon1 = frmMainMenu.Magikarp
-        '	Case 8
-        '		enemypokemon1 = frmMainMenu.Poliwrath
-        '	Case 9
-        '		enemypokemon1 = frmMainMenu.Dewgong
-        '	Case 10
-        '		enemypokemon1 = frmMainMenu.Kingler
-        '	Case 11
-        '		enemypokemon1 = frmMaineMenu.Lapras
-        '	Case 0
-        '		pokeon1 = frmMainMenu.Vaporeon
-        'End Select
+			num = Int(7 * Rnd(1))
+			Select Case num
+				Case 1
+					enemypokemon1 = frmMainMenu.Vileplume
+				Case 2
+					enemypokemon1 = frmMainMenu.Poliwag
+				Case 3
+					enemypokemon1 = frmMainMenu.Poliwhirl
+				Case 4
+					enemypokemon1 = frmMainMenu.Seel
+				Case 5
+					enemypokemon1 = frmMainMenu.Shellder
+				Case 6
+					enemypokemon1 = frmMainMenu.Krabby
+				Case 0
+					enemypokemon1 = frmMainMenu.Magikarp
+			End Select
+			frmMainMenu.route7counter += 1
+		Else
+			num = Int(12 * Rnd(1))
+		End If
+		Select Case num
+			Case 1
+				enemypokemon1 = frmMainMenu.Vileplume
+			Case 2
+				enemypokemon1 = frmMainMenu.Poliwag
+			Case 3
+				enemypokemon1 = frmMainMenu.Poliwhirl
+			Case 4
+				enemypokemon1 = frmMainMenu.Seel
+			Case 5
+				enemypokemon1 = frmMainMenu.Shellder
+			Case 6
+				enemypokemon1 = frmMainMenu.Krabby
+			Case 7
+				enemypokemon1 = frmMainMenu.Magikarp
+			Case 8
+				enemypokemon1 = frmMainMenu.Poliwrath
+			Case 9
+				enemypokemon1 = frmMainMenu.Dewgong
+			Case 10
+				enemypokemon1 = frmMainMenu.Kingler
+			Case 11
+				enemypokemon1 = frmMainMenu.Lapras
+			Case 0
+				enemypokemon1 = frmMainMenu.Vaporeon
+		End Select
 
 
-        frmInBattle.Show()
+		frmInBattle.Show()
 
     End Sub
 
@@ -732,8 +727,8 @@
                 gymleader = True
                 trainer = "Gym 4.0"
         End Select
-        gym4c += 1
-        frmTrainerBattleStart.Show()
+
+		frmTrainerBattleStart.Show()
 
     End Sub
 
@@ -979,21 +974,77 @@
         mewtwo = False
         elite = False
 
-        enemypokemon1 = frmMainMenu.Ryu
-        frmInBattle.enemypokemon2U = True
-        enemypokemon2 = frmMainMenu.Ken
-        frmInBattle.enemypokemon3U = True
-        enemypokemon3 = frmMainMenu.Blanka
-        frmInBattle.enemypokemon4U = True
-        enemypokemon4 = frmMainMenu.MBison
-        frmInBattle.enemypokemon5U = True
-        enemypokemon5 = frmMainMenu.Akuma
-        frmInBattle.enemypokemon6U = True
-        enemypokemon6 = frmMainMenu.Balrog
+		Select Case gym4c
+			Case 0
+				enemypokemon1 = frmMainMenu.Gengar
+				enemypokemon2 = frmMainMenu.Haunter
+				enemypokemon3 = frmMainMenu.Hypno
+				enemypokemon4 = frmMainMenu.Gastly
+				enemypokemon5 = frmMainMenu.Gengar
+				frmInBattle.enemypokemon2U = True
+				frmInBattle.enemypokemon3U = True
+				frmInBattle.enemypokemon4U = True
+				frmInBattle.enemypokemon5U = True
+				frmInBattle.enemypokemon6U = False
+				elite = True
+				trainer = "Gym 6.1"
+			Case 1
+				enemypokemon1 = frmMainMenu.Graveler
+				enemypokemon2 = frmMainMenu.Golem
+				enemypokemon3 = frmMainMenu.Diglett
+				enemypokemon4 = frmMainMenu.Golem
+				enemypokemon5 = frmMainMenu.Onix
+				frmInBattle.enemypokemon2U = True
+				frmInBattle.enemypokemon3U = True
+				frmInBattle.enemypokemon4U = True
+				frmInBattle.enemypokemon5U = True
+				frmInBattle.enemypokemon6U = False
+				elite = True
+				trainer = "Gym 6.2"
+			Case 2
+				enemypokemon1 = frmMainMenu.Pidgeot
+				enemypokemon2 = frmMainMenu.Fearow
+				enemypokemon3 = frmMainMenu.Aerodactyl
+				enemypokemon4 = frmMainMenu.Charizard
+				enemypokemon5 = frmMainMenu.Fearow
+				frmInBattle.enemypokemon2U = True
+				frmInBattle.enemypokemon3U = True
+				frmInBattle.enemypokemon4U = True
+				frmInBattle.enemypokemon5U = True
+				frmInBattle.enemypokemon6U = False
+				elite = True
+				trainer = "Gym 6.3"
+			Case 3
+				enemypokemon1 = frmMainMenu.Snorlax
+				enemypokemon2 = frmMainMenu.Eevee
+				enemypokemon3 = frmMainMenu.Nidoking
+				enemypokemon4 = frmMainMenu.Nidoqueen
+				frmInBattle.enemypokemon2U = True
+				frmInBattle.enemypokemon3U = True
+				frmInBattle.enemypokemon4U = True
+				frmInBattle.enemypokemon5U = False
+				frmInBattle.enemypokemon6U = False
+				elite = True
+				trainer = "Gym 6.4"
+			Case 4
+				enemypokemon1 = frmMainMenu.Ryu
+				frmInBattle.enemypokemon2U = True
+				enemypokemon2 = frmMainMenu.Ken
+				frmInBattle.enemypokemon3U = True
+				enemypokemon3 = frmMainMenu.Blanka
+				frmInBattle.enemypokemon4U = True
+				enemypokemon4 = frmMainMenu.MBison
+				frmInBattle.enemypokemon5U = True
+				enemypokemon5 = frmMainMenu.Akuma
+				frmInBattle.enemypokemon6U = True
+				enemypokemon6 = frmMainMenu.Balrog
+				champ = True
+				trainer = "Gym 6.0"
+		End Select
 
-        frmInBattle.Show()
+		frmTrainerBattleStart.Show()
 
-    End Sub
+	End Sub
 
     Private Sub Button17_Click(sender As Object, e As EventArgs) Handles Button17.Click
 
