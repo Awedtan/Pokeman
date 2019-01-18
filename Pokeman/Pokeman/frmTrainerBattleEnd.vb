@@ -198,6 +198,35 @@
 			frmBattleSelect.btnVictoryRoad.Enabled = True
 			frmBattleSelect.btnTrainerV.Enabled = True
 
+		ElseIf frmBattleSelect.trainer = "Gym 6.1" Then
+
+			picTrainer.Image = My.Resources.gym61
+			lblDialogue.Text = "Nice job! Keep going!"
+			picTrainer.Size = New Size(190, 190)
+
+		ElseIf frmBattleSelect.trainer = "Gym 6.2" Then
+
+			picTrainer.Image = My.Resources.gym62
+			lblDialogue.Text = "Nice job! Keep going!"
+			picTrainer.Size = New Size(190, 190)
+
+		ElseIf frmBattleSelect.trainer = "Gym 6.3" Then
+
+			picTrainer.Image = My.Resources.gym63
+			lblDialogue.Text = "Nice job! Keep going!"
+			picTrainer.Size = New Size(280, 190)
+
+		ElseIf frmBattleSelect.trainer = "Gym 6.4" Then
+
+			picTrainer.Image = My.Resources.gym64
+			lblDialogue.Text = "Nice."
+			picTrainer.Size = New Size(280, 190)
+
+		ElseIf frmBattleSelect.trainer = "Gym 6.0" Then
+
+			picTrainer.Image = My.Resources.gymleader
+			lblDialogue.Text = "Congrats! You beat me!"
+			picTrainer.Size = New Size(280, 190)
 		End If
 	End Sub
 

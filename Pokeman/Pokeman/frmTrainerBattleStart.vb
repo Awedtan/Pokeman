@@ -220,7 +220,7 @@ If frmBattleSelect.elite = True Then
 
 		ElseIf frmBattleSelect.trainer = "Gym 6.0" Then
 
-			picTrainer.Image = My.Resources.gym40
+			picTrainer.Image = My.Resources.gymleader
 			lblDialogue.Text = "This is Street Fighter right?"
 			lblName.Text = "Pokeman Champion Mr. Chu approaches!"
 			picTrainer.Size = New Size(280, 190)

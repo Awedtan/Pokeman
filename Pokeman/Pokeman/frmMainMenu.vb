@@ -18,17 +18,17 @@ Public Class frmMainMenu
 	Public Shared route6counter As Integer
 	Public Shared route7counter As Integer
 
-    'Pokeman name, health, attack, defense, speed, special, obtained, selected, type1, type2, move1, move2, move3, move4
-    '      0          1       2       3       4       5         6         7       8      9      10     11     13    14
+	'Pokeman name, health, attack, defense, speed, special, obtained, selected, type1, type2, move1, move2, move3, move4
+	'      0          1       2       3       4       5         6         7       8      9      10     11     13    14
 
-    'Bug, Dragon, Ice, FIghting, Fire, Flying, Grass, Ghost, Ground, Electric, Normal , Poison, Psychic, Rock, Water
-    ' 1      2     3     4         5      6     7        8       9      10       11       12        13     14     15
+	'Bug, Dragon, Ice, FIghting, Fire, Flying, Grass, Ghost, Ground, Electric, Normal , Poison, Psychic, Rock, Water
+	' 1      2     3     4         5      6     7        8       9      10       11       12        13     14     15
 
-    'Special cases:
-    'Nidoran(m&f), Farfetch'd, Mr. Mime
+	'Special cases:
+	'Nidoran(m&f), Farfetch'd, Mr. Mime
 
-    Public Shared Bulbasaur() As String = {"Bulbasaur", 45, 49, 49, 45, 65, 1, 0, 7, 12, "Absorb", "Razor Leaf", "Cut", "Vine Whip"}
-    Public Shared Ivysaur() As String = {"Ivysaur", 60, 62, 63, 60, 80, 0, 0, 7, 12, "Mega Drain", "Razor Leaf", "Take Down", "Poison Powder"}
+	Public Shared Bulbasaur() As String = {"Bulbasaur", 45, 49, 49, 45, 65, 0, 0, 7, 12, "Absorb", "Razor Leaf", "Cut", "Vine Whip"}
+	Public Shared Ivysaur() As String = {"Ivysaur", 60, 62, 63, 60, 80, 0, 0, 7, 12, "Mega Drain", "Razor Leaf", "Take Down", "Poison Powder"}
     Public Shared Venusaur() As String = {"Venusaur", 80, 82, 83, 80, 100, 0, 0, 7, 12, "Mega Drain", "Poison Powder", "Double-Edge", "Solar Beam"}
     Public Shared Charmander() As String = {"Charmander", 39, 52, 43, 65, 50, 0, 0, 5, 0, "Ember", "Scratch", "Growl", "Fire Spin"}
 	Public Shared Charmeleon() As String = {"Charmeleon", 58, 64, 58, 80, 65, 0, 0, 5, 0}
@@ -44,8 +44,8 @@ Public Class frmMainMenu
     Public Shared Beedrill() As String = {"Beedrill", 35, 80, 40, 75, 45, 0, 0, 1, 12, "Poison Sting", "Pin Missile", "Body Slam", "Swords Dance"}
     Public Shared Pidgey() As String = {"Pidgey", 40, 45, 40, 56, 35, 0, 0, 11, 6, "Wing Attack", "Quick Attack", "Sand Attack", "Whirlwind"}
     Public Shared Pidgeotto() As String = {"Pidgeotto", 63, 60, 55, 71, 50, 0, 0, 11, 6, "Wing Attack", "Whirlwind", "Tackle", "Fly"}
-    Public Shared Pidgeot() As String = {"Pidgeot", 83, 80, 75, 91, 70, 1, 0, 11, 6, "Wing Attack", "Take Down", "Whirlwind", "Peck"}
-    Public Shared Rattata() As String = {"Rattata", 30, 56, 35, 72, 25, 0, 0, 11, 0, "Quick Attack", "Tail Whip", "Super Fang", "Fury Swipes"}
+	Public Shared Pidgeot() As String = {"Pidgeot", 83, 80, 75, 91, 70, 0, 0, 11, 6, "Wing Attack", "Take Down", "Whirlwind", "Peck"}
+	Public Shared Rattata() As String = {"Rattata", 30, 56, 35, 72, 25, 0, 0, 11, 0, "Quick Attack", "Tail Whip", "Super Fang", "Fury Swipes"}
     Public Shared Raticate() As String = {"Raticate", 55, 81, 60, 97, 50, 0, 0, 11, 0, "Hyper Fang", "Super Fang", "Bite", "Dig"}
     Public Shared Spearow() As String = {"Spearow", 40, 60, 30, 70, 31, 0, 0, 11, 6, "Drill Peck", "Fury Attack", "Growl", "Peck"}
     Public Shared Fearow() As String = {"Fearow", 65, 90, 65, 100, 61, 0, 0, 11, 6, "Drill Peck", "Roost", "Take Down", "Fury Attack"}
