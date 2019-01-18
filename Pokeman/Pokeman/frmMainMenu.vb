@@ -1,11 +1,6 @@
 Public Class frmMainMenu
 
-	'TO DO LIST:
-	'
-	'GYMS AND SPECIAL EVENTS
-	'TRAINER DIALOGUE
-	'HEALING ITEMS
-	'PLAY TEST
+	https://github.com/Awedtan/Pokeman
 
 	Dim Currency As Integer
     Dim Ballcount As Integer
