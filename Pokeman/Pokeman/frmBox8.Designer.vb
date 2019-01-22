@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmBox8
 	Inherits System.Windows.Forms.Form
 
 	'Form overrides dispose to clean up the component list.
-	<System.Diagnostics.DebuggerNonUserCode()> _
+	<System.Diagnostics.DebuggerNonUserCode()>
 	Protected Overrides Sub Dispose(ByVal disposing As Boolean)
 		Try
 			If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmBox8
 	'NOTE: The following procedure is required by the Windows Form Designer
 	'It can be modified using the Windows Form Designer.  
 	'Do not modify it using the code editor.
-	<System.Diagnostics.DebuggerStepThrough()> _
+	<System.Diagnostics.DebuggerStepThrough()>
 	Private Sub InitializeComponent()
 		Me.lblAerodactyl = New System.Windows.Forms.Label()
 		Me.GroupBox1 = New System.Windows.Forms.GroupBox()
@@ -36,49 +36,37 @@ Partial Class frmBox8
 		Me.lblArticuno = New System.Windows.Forms.Label()
 		Me.lblSnorlax = New System.Windows.Forms.Label()
 		Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+		Me.lblMew = New System.Windows.Forms.Label()
 		Me.lblMoltres = New System.Windows.Forms.Label()
 		Me.btnDragonite = New System.Windows.Forms.Button()
+		Me.PictureBox11 = New System.Windows.Forms.PictureBox()
 		Me.PictureBox6 = New System.Windows.Forms.PictureBox()
 		Me.btnDragonair = New System.Windows.Forms.Button()
 		Me.btnMoltres = New System.Windows.Forms.Button()
+		Me.btnMew = New System.Windows.Forms.Button()
 		Me.PictureBox5 = New System.Windows.Forms.PictureBox()
 		Me.PictureBox4 = New System.Windows.Forms.PictureBox()
 		Me.lblKakuna = New System.Windows.Forms.Label()
 		Me.lblDragonite = New System.Windows.Forms.Label()
 		Me.lblDragonair = New System.Windows.Forms.Label()
-		Me.lblMew = New System.Windows.Forms.Label()
 		Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-		Me.btnFlareon = New System.Windows.Forms.Button()
-		Me.PictureBox11 = New System.Windows.Forms.PictureBox()
-		Me.btnJolteon = New System.Windows.Forms.Button()
 		Me.PictureBox10 = New System.Windows.Forms.PictureBox()
 		Me.btnMewtwo = New System.Windows.Forms.Button()
-		Me.btnMew = New System.Windows.Forms.Button()
-		Me.PictureBox9 = New System.Windows.Forms.PictureBox()
-		Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-		Me.lblFlareon = New System.Windows.Forms.Label()
-		Me.lblJolteon = New System.Windows.Forms.Label()
 		Me.lblMewtwo = New System.Windows.Forms.Label()
 		Me.btnPrevious = New System.Windows.Forms.Button()
 		Me.btnNext = New System.Windows.Forms.Button()
-		Me.Button1 = New System.Windows.Forms.Button()
-		Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-		Me.Label1 = New System.Windows.Forms.Label()
 		Me.GroupBox1.SuspendLayout()
 		CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.PictureBox43, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.GroupBox2.SuspendLayout()
+		CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.GroupBox3.SuspendLayout()
-		CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.SuspendLayout()
 		'
 		'lblAerodactyl
@@ -242,6 +230,15 @@ Partial Class frmBox8
 		Me.GroupBox2.TabIndex = 11
 		Me.GroupBox2.TabStop = False
 		'
+		'lblMew
+		'
+		Me.lblMew.AutoSize = True
+		Me.lblMew.Location = New System.Drawing.Point(6, 296)
+		Me.lblMew.Name = "lblMew"
+		Me.lblMew.Size = New System.Drawing.Size(30, 13)
+		Me.lblMew.TabIndex = 54
+		Me.lblMew.Text = "Mew"
+		'
 		'lblMoltres
 		'
 		Me.lblMoltres.AutoSize = True
@@ -260,6 +257,17 @@ Partial Class frmBox8
 		Me.btnDragonite.TabIndex = 56
 		Me.btnDragonite.Text = "Select"
 		Me.btnDragonite.UseVisualStyleBackColor = True
+		'
+		'PictureBox11
+		'
+		Me.PictureBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.PictureBox11.Image = Global.Pokeman.My.Resources.Resources.mew
+		Me.PictureBox11.Location = New System.Drawing.Point(119, 262)
+		Me.PictureBox11.Name = "PictureBox11"
+		Me.PictureBox11.Size = New System.Drawing.Size(75, 71)
+		Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+		Me.PictureBox11.TabIndex = 57
+		Me.PictureBox11.TabStop = False
 		'
 		'PictureBox6
 		'
@@ -291,6 +299,16 @@ Partial Class frmBox8
 		Me.btnMoltres.TabIndex = 54
 		Me.btnMoltres.Text = "Select"
 		Me.btnMoltres.UseVisualStyleBackColor = True
+		'
+		'btnMew
+		'
+		Me.btnMew.Enabled = False
+		Me.btnMew.Location = New System.Drawing.Point(0, 312)
+		Me.btnMew.Name = "btnMew"
+		Me.btnMew.Size = New System.Drawing.Size(59, 24)
+		Me.btnMew.TabIndex = 58
+		Me.btnMew.Text = "Select"
+		Me.btnMew.UseVisualStyleBackColor = True
 		'
 		'PictureBox5
 		'
@@ -341,65 +359,16 @@ Partial Class frmBox8
 		Me.lblDragonair.TabIndex = 0
 		Me.lblDragonair.Text = "Dragonair"
 		'
-		'lblMew
-		'
-		Me.lblMew.AutoSize = True
-		Me.lblMew.Location = New System.Drawing.Point(6, 296)
-		Me.lblMew.Name = "lblMew"
-		Me.lblMew.Size = New System.Drawing.Size(30, 13)
-		Me.lblMew.TabIndex = 54
-		Me.lblMew.Text = "Mew"
-		'
 		'GroupBox3
 		'
-		Me.GroupBox3.Controls.Add(Me.Button1)
-		Me.GroupBox3.Controls.Add(Me.PictureBox7)
-		Me.GroupBox3.Controls.Add(Me.Label1)
-		Me.GroupBox3.Controls.Add(Me.btnFlareon)
-		Me.GroupBox3.Controls.Add(Me.btnJolteon)
 		Me.GroupBox3.Controls.Add(Me.PictureBox10)
 		Me.GroupBox3.Controls.Add(Me.btnMewtwo)
-		Me.GroupBox3.Controls.Add(Me.PictureBox9)
-		Me.GroupBox3.Controls.Add(Me.PictureBox8)
-		Me.GroupBox3.Controls.Add(Me.lblFlareon)
-		Me.GroupBox3.Controls.Add(Me.lblJolteon)
 		Me.GroupBox3.Controls.Add(Me.lblMewtwo)
 		Me.GroupBox3.Location = New System.Drawing.Point(462, 15)
 		Me.GroupBox3.Name = "GroupBox3"
 		Me.GroupBox3.Size = New System.Drawing.Size(200, 359)
 		Me.GroupBox3.TabIndex = 12
 		Me.GroupBox3.TabStop = False
-		'
-		'btnFlareon
-		'
-		Me.btnFlareon.Enabled = False
-		Me.btnFlareon.Location = New System.Drawing.Point(0, 309)
-		Me.btnFlareon.Name = "btnFlareon"
-		Me.btnFlareon.Size = New System.Drawing.Size(59, 24)
-		Me.btnFlareon.TabIndex = 61
-		Me.btnFlareon.Text = "Select"
-		Me.btnFlareon.UseVisualStyleBackColor = True
-		'
-		'PictureBox11
-		'
-		Me.PictureBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.PictureBox11.Image = Global.Pokeman.My.Resources.Resources.mew
-		Me.PictureBox11.Location = New System.Drawing.Point(119, 262)
-		Me.PictureBox11.Name = "PictureBox11"
-		Me.PictureBox11.Size = New System.Drawing.Size(75, 71)
-		Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-		Me.PictureBox11.TabIndex = 57
-		Me.PictureBox11.TabStop = False
-		'
-		'btnJolteon
-		'
-		Me.btnJolteon.Enabled = False
-		Me.btnJolteon.Location = New System.Drawing.Point(0, 232)
-		Me.btnJolteon.Name = "btnJolteon"
-		Me.btnJolteon.Size = New System.Drawing.Size(59, 24)
-		Me.btnJolteon.TabIndex = 60
-		Me.btnJolteon.Text = "Select"
-		Me.btnJolteon.UseVisualStyleBackColor = True
 		'
 		'PictureBox10
 		'
@@ -421,52 +390,6 @@ Partial Class frmBox8
 		Me.btnMewtwo.TabIndex = 59
 		Me.btnMewtwo.Text = "Select"
 		Me.btnMewtwo.UseVisualStyleBackColor = True
-		'
-		'btnMew
-		'
-		Me.btnMew.Enabled = False
-		Me.btnMew.Location = New System.Drawing.Point(0, 312)
-		Me.btnMew.Name = "btnMew"
-		Me.btnMew.Size = New System.Drawing.Size(59, 24)
-		Me.btnMew.TabIndex = 58
-		Me.btnMew.Text = "Select"
-		Me.btnMew.UseVisualStyleBackColor = True
-		'
-		'PictureBox9
-		'
-		Me.PictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.PictureBox9.Location = New System.Drawing.Point(119, 182)
-		Me.PictureBox9.Name = "PictureBox9"
-		Me.PictureBox9.Size = New System.Drawing.Size(75, 71)
-		Me.PictureBox9.TabIndex = 55
-		Me.PictureBox9.TabStop = False
-		'
-		'PictureBox8
-		'
-		Me.PictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.PictureBox8.Location = New System.Drawing.Point(119, 259)
-		Me.PictureBox8.Name = "PictureBox8"
-		Me.PictureBox8.Size = New System.Drawing.Size(75, 71)
-		Me.PictureBox8.TabIndex = 54
-		Me.PictureBox8.TabStop = False
-		'
-		'lblFlareon
-		'
-		Me.lblFlareon.AutoSize = True
-		Me.lblFlareon.Location = New System.Drawing.Point(6, 293)
-		Me.lblFlareon.Name = "lblFlareon"
-		Me.lblFlareon.Size = New System.Drawing.Size(27, 13)
-		Me.lblFlareon.TabIndex = 8
-		Me.lblFlareon.Text = "asdf"
-		'
-		'lblJolteon
-		'
-		Me.lblJolteon.AutoSize = True
-		Me.lblJolteon.Location = New System.Drawing.Point(6, 216)
-		Me.lblJolteon.Name = "lblJolteon"
-		Me.lblJolteon.Size = New System.Drawing.Size(27, 13)
-		Me.lblJolteon.TabIndex = 6
-		Me.lblJolteon.Text = "asdf"
 		'
 		'lblMewtwo
 		'
@@ -495,34 +418,6 @@ Partial Class frmBox8
 		Me.btnNext.Text = "Next"
 		Me.btnNext.UseVisualStyleBackColor = True
 		'
-		'Button1
-		'
-		Me.Button1.Enabled = False
-		Me.Button1.Location = New System.Drawing.Point(0, 155)
-		Me.Button1.Name = "Button1"
-		Me.Button1.Size = New System.Drawing.Size(59, 24)
-		Me.Button1.TabIndex = 64
-		Me.Button1.Text = "Select"
-		Me.Button1.UseVisualStyleBackColor = True
-		'
-		'PictureBox7
-		'
-		Me.PictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.PictureBox7.Location = New System.Drawing.Point(119, 105)
-		Me.PictureBox7.Name = "PictureBox7"
-		Me.PictureBox7.Size = New System.Drawing.Size(75, 71)
-		Me.PictureBox7.TabIndex = 63
-		Me.PictureBox7.TabStop = False
-		'
-		'Label1
-		'
-		Me.Label1.AutoSize = True
-		Me.Label1.Location = New System.Drawing.Point(6, 139)
-		Me.Label1.Name = "Label1"
-		Me.Label1.Size = New System.Drawing.Size(27, 13)
-		Me.Label1.TabIndex = 62
-		Me.Label1.Text = "asdf"
-		'
 		'frmBox8
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -543,16 +438,13 @@ Partial Class frmBox8
 		CType(Me.PictureBox43, System.ComponentModel.ISupportInitialize).EndInit()
 		Me.GroupBox2.ResumeLayout(False)
 		Me.GroupBox2.PerformLayout()
+		CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
 		CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
 		CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
 		CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
 		Me.GroupBox3.ResumeLayout(False)
 		Me.GroupBox3.PerformLayout()
-		CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
 		CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
 		Me.ResumeLayout(False)
 
 	End Sub
@@ -567,8 +459,6 @@ Partial Class frmBox8
 	Friend WithEvents lblDragonite As Label
 	Friend WithEvents lblDragonair As Label
 	Friend WithEvents GroupBox3 As GroupBox
-	Friend WithEvents lblFlareon As Label
-	Friend WithEvents lblJolteon As Label
 	Friend WithEvents lblMewtwo As Label
 	Friend WithEvents btnZapdos As Button
 	Friend WithEvents btnArticuno As Button
@@ -583,20 +473,13 @@ Partial Class frmBox8
 	Friend WithEvents PictureBox4 As PictureBox
 	Friend WithEvents PictureBox11 As PictureBox
 	Friend WithEvents PictureBox10 As PictureBox
-	Friend WithEvents PictureBox9 As PictureBox
-	Friend WithEvents PictureBox8 As PictureBox
 	Friend WithEvents btnDragonite As Button
 	Friend WithEvents btnDragonair As Button
 	Friend WithEvents btnMoltres As Button
-	Friend WithEvents btnFlareon As Button
-	Friend WithEvents btnJolteon As Button
 	Friend WithEvents btnMewtwo As Button
 	Friend WithEvents btnMew As Button
 	Friend WithEvents btnPrevious As Button
 	Friend WithEvents btnNext As Button
 	Friend WithEvents lblMew As Label
 	Friend WithEvents lblMoltres As Label
-	Friend WithEvents Button1 As Button
-	Friend WithEvents PictureBox7 As PictureBox
-	Friend WithEvents Label1 As Label
 End Class

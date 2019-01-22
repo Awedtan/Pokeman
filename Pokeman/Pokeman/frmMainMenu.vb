@@ -1,6 +1,6 @@
 Public Class frmMainMenu
 
-	https://github.com/Awedtan/Pokeman
+	'https://github.com/Awedtan/Pokeman
 
 	Dim Currency As Integer
     Dim Ballcount As Integer

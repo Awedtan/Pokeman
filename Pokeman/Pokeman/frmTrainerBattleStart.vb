@@ -7,15 +7,15 @@
 If frmBattleSelect.elite = True Then
 
         ElseIf frmBattleSelect.champ = True Then
+			My.Computer.Audio.Play(binpath & "ChampM.wav", AudioPlayMode.BackgroundLoop)
 
-
-        ElseIf frmBattleSelect.gymleader = True Then
-
-        ElseIf frmBattleSelect.strong = True Then
-
-        ElseIf frmBattleSelect.legendary = True Then
-
-        ElseIf frmBattleSelect.trainerbattle = True Then
+		ElseIf frmBattleSelect.gymleader = True Then
+			My.Computer.Audio.Play(binpath & "GymLeaderM.wav", AudioPlayMode.BackgroundLoop)
+		ElseIf frmBattleSelect.strong = True Then
+			My.Computer.Audio.Play(binpath & "StrongM.wav", AudioPlayMode.BackgroundLoop)
+		ElseIf frmBattleSelect.legendary = True Then
+			My.Computer.Audio.Play(binpath & "LegendaryM.wav", AudioPlayMode.BackgroundLoop)
+		ElseIf frmBattleSelect.trainerbattle = True Then
             My.Computer.Audio.Play(binpath & "TrainerM.wav", AudioPlayMode.BackgroundLoop)
         Else
             My.Computer.Audio.Play(binpath & "WildM.wav", AudioPlayMode.BackgroundLoop)

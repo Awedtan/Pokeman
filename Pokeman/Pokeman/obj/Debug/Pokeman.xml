@@ -22,6 +22,11 @@ Pokeman
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:Pokeman.My.Resources.Resources._20180420_125006">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Pokeman.My.Resources.Resources._3701">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -718,6 +723,31 @@ Pokeman
 </summary>
 </member>
 <member name="P:Pokeman.My.Resources.Resources.gym50">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Pokeman.My.Resources.Resources.gym61">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Pokeman.My.Resources.Resources.gym62">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Pokeman.My.Resources.Resources.gym63">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Pokeman.My.Resources.Resources.gym64">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Pokeman.My.Resources.Resources.gymleader">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

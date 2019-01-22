@@ -203,6 +203,7 @@ Partial Class frmBattleSelect
 		'
 		'btnLeague
 		'
+		Me.btnLeague.Enabled = False
 		Me.btnLeague.Location = New System.Drawing.Point(856, 142)
 		Me.btnLeague.Name = "btnLeague"
 		Me.btnLeague.Size = New System.Drawing.Size(75, 37)
